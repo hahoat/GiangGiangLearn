@@ -116,7 +116,7 @@ kbd { font-family: inherit; font-size: 11px; padding: 1px 6px; border-radius: 5p
 .level-select select { height: 40px; padding: 0 12px; border-radius: 12px; border: 1px solid var(--line); background: var(--surface); font-weight: 600; font-size: 14px; cursor: pointer }
 
 /* ============ Bố cục ============ */
-.layout { display: grid; grid-template-columns: 290px minmax(0, 1fr); max-width: 1680px; margin: 0 auto }
+.layout { display: grid; grid-template-columns: 300px minmax(0, 1fr) }
 .main { padding: 24px 32px 120px; min-width: 0 }
 .sidebar { position: sticky; top: 64px; height: calc(100vh - 64px); overflow-y: auto; padding: 24px 12px 24px 24px; scrollbar-width: thin }
 .backdrop { display: none }
@@ -146,7 +146,7 @@ kbd { font-family: inherit; font-size: 11px; padding: 1px 6px; border-radius: 5p
 .bar i { display: block; height: 100%; background: var(--ok); border-radius: 9px }
 
 /* ============ Bài học ============ */
-.lesson { max-width: 1180px; margin: 0 auto }
+.lesson { max-width: 2000px; margin: 0 auto }
 .lesson-head { display: flex; justify-content: space-between; align-items: center; gap: 20px; scroll-margin-top: 80px }
 .crumb { font-size: 13px; font-weight: 600; color: var(--brand-ink) }
 .lesson-head h1 { margin: 6px 0 2px; font-size: calc(40px * var(--hs)); font-weight: 700; line-height: 1.35 }
