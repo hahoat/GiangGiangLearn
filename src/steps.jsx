@@ -22,6 +22,12 @@ const isTyping = e => e.target.closest?.('input, select, textarea')
 export function LectureStep({ course, lesson, onDone }) {
   const [deckIndex, setDeckIndex] = useState(0)
   const [manifests, setManifests] = useState(null)
+  const area = useRef(null)
+  // Khi slide tải xong, cuộn để khung slide nằm gọn trong màn hình (dưới thanh tiêu đề).
+  useEffect(() => {
+    const el = area.current
+    if (manifests && el && el.getBoundingClientRect().top > 120) el.scrollIntoView({ block: 'start', behavior: 'smooth' })
+  }, [manifests])
   useEffect(() => {
     let alive = true
     setManifests(null)
@@ -39,6 +45,7 @@ export function LectureStep({ course, lesson, onDone }) {
   const manifest = manifests[deckIndex]
   return <>
     {head}
+    <div className="lecture-area" ref={area}>
     {lesson.decks.length > 1 && <div className="deck-tabs">
       {lesson.decks.map((d, i) => <button key={d} className={i === deckIndex ? 'on' : ''} disabled={!manifests[i]} onClick={() => setDeckIndex(i)}>
         Phần {i + 1}{manifests[i] && <small>{manifests[i].slides.length} slide</small>}
@@ -46,6 +53,7 @@ export function LectureStep({ course, lesson, onDone }) {
     </div>}
     {manifest ? <SlideViewer key={manifest.id} course={course} manifest={manifest} onEnd={deckIndex + 1 < lesson.decks.length ? () => setDeckIndex(deckIndex + 1) : onDone} last={deckIndex + 1 >= lesson.decks.length} />
       : <div className="empty-state small"><p>Phần này đang được cập nhật.</p></div>}
+    </div>
   </>
 }
 
