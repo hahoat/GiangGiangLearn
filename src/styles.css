@@ -347,9 +347,14 @@ a.logo { color: inherit; text-decoration: none }
 .deck-tabs button.on { background: var(--ink); color: var(--bg); border-color: var(--ink) }
 .deck-tabs button.on small { color: inherit; opacity: .7 }
 .slides { display: flex; flex-direction: column; gap: 10px; background: var(--surface) }
-.slides:fullscreen { padding: 16px; justify-content: center; background: #111 }
-.slides:fullscreen .slide-stage { flex: 1; min-height: 0 }
-.slides:fullscreen .slide-stage img { max-height: calc(100vh - 170px) }
+/* Toàn màn hình: slide co vừa phần còn lại sau thanh điều khiển và dải ảnh nhỏ */
+.slides:fullscreen, .slides.is-full { padding: 12px 16px; gap: 8px; background: #111; color: #f1f1f1; height: 100vh; height: 100dvh }
+.slides.is-full { position: fixed; inset: 0; z-index: 100 }
+.slides:fullscreen .slide-stage, .slides.is-full .slide-stage { flex: 1 1 auto; min-height: 0; max-height: none; aspect-ratio: auto; border-radius: 6px }
+.slides:fullscreen .slide-stage img, .slides.is-full .slide-stage img { width: 100%; height: 100%; max-height: none; object-fit: contain }
+.slides:fullscreen .slide-bar, .slides.is-full .slide-bar, .slides:fullscreen .slide-strip, .slides.is-full .slide-strip { flex: 0 0 auto }
+.slides:fullscreen .btn-ghost, .slides.is-full .btn-ghost { background: #2a2a2e; border-color: #3a3a40; color: #f1f1f1 }
+.slides:fullscreen .slide-note, .slides.is-full .slide-note { color: #bbb }
 .slide-stage { position: relative; border-radius: 14px; overflow: hidden; background: #000; cursor: pointer; aspect-ratio: 16 / 9; max-height: 54vh; display: grid; place-items: center }
 .slide-stage img { width: 100%; height: 100%; object-fit: contain; display: block; user-select: none }
 .slide-bar { display: flex; align-items: center; gap: 8px; flex-wrap: wrap }

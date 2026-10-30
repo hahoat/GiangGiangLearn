@@ -1,4 +1,5 @@
 import React, { useCallback, useEffect, useRef, useState } from 'react'
+import { createPortal } from 'react-dom'
 import { grades, intervalLabel, isDue, lookup } from './lib/chinese.js'
 import { deckFile, loadDeck } from './lib/content.js'
 import { PinyinText, Sentence, SpeakButton, StepHead, Translation, Word, useApp, useSpeaker } from './ui.jsx'
@@ -84,9 +85,29 @@ function SlideViewer({ course, manifest, onEnd, last }) {
     audio.current.onended = () => setPlaying(null)
     audio.current.play().then(() => setPlaying(src)).catch(() => setPlaying(null))
   }
-  const fullscreen = () => (document.fullscreenElement ? document.exitFullscreen() : box.current?.requestFullscreen?.())?.catch?.(() => {})
+  // Toàn màn hình thật nếu trình duyệt hỗ trợ; nếu không (iPhone/iPad) thì phủ kín cửa sổ bằng CSS.
+  const [full, setFull] = useState(false)
+  useEffect(() => {
+    const sync = () => setFull(document.fullscreenElement === box.current)
+    document.addEventListener('fullscreenchange', sync)
+    return () => document.removeEventListener('fullscreenchange', sync)
+  }, [])
+  useEffect(() => {
+    if (!full) return
+    const onKey = e => { if (e.key === 'Escape' && !document.fullscreenElement) setFull(false) }
+    window.addEventListener('keydown', onKey)
+    return () => window.removeEventListener('keydown', onKey)
+  }, [full])
+  const fullscreen = () => {
+    if (document.fullscreenElement) { document.exitFullscreen().catch(() => {}); return }
+    if (full) { setFull(false); return }
+    const request = box.current?.requestFullscreen?.()
+    if (request) request.catch(() => setFull(true)); else setFull(true)
+  }
 
-  return <div className="slides" ref={box}>
+  // Chế độ phóng to dự phòng được đưa ra ngoài cùng trang để phủ kín màn hình
+  const portal = full && document.fullscreenElement !== box.current
+  const viewer = <div className={`slides ${portal ? 'is-full' : ''}`} ref={box}>
     <div className="slide-stage" onClick={e => { const r = e.currentTarget.getBoundingClientRect(); go(e.clientX - r.left > r.width / 3 ? 1 : -1) }}>
       <img src={file(slide.img)} alt={`Slide ${index + 1}`} />
     </div>
@@ -97,7 +118,7 @@ function SlideViewer({ course, manifest, onEnd, last }) {
       {slide.audio?.map((a, i) => <button key={a} className={`btn btn-soft btn-sm ${playing === a ? 'on' : ''}`} onClick={() => play(a)}>{playing === a ? '◼ Dừng' : `▶ Nghe${slide.audio.length > 1 ? ` ${i + 1}` : ''}`}</button>)}
       {slide.hasVideo && <span className="slide-note" title="Video sẽ được bổ sung sau">🎬 có video</span>}
       <span className="spacer" />
-      <button className="btn btn-ghost btn-sm" onClick={fullscreen} title="Toàn màn hình" aria-label="Toàn màn hình"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" strokeWidth="1.8"><path d="M1 5V1h4M9 1h4v4M13 9v4H9M5 13H1V9" /></svg></button>
+      <button className="btn btn-ghost btn-sm" onClick={fullscreen} title={full ? "Thoát toàn màn hình (Esc)" : "Toàn màn hình"} aria-label="Toàn màn hình"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" strokeWidth="1.8"><path d="M1 5V1h4M9 1h4v4M13 9v4H9M5 13H1V9" /></svg></button>
       {index === total - 1 && <button className="btn btn-primary btn-sm" onClick={onEnd}>{last ? 'Xong bài giảng ✓' : 'Phần tiếp →'}</button>}
     </div>
     <div className="slide-strip" ref={strip}>
@@ -106,6 +127,7 @@ function SlideViewer({ course, manifest, onEnd, last }) {
       </button>)}
     </div>
   </div>
+  return portal ? createPortal(viewer, document.body) : viewer
 }
 
 /* ================= Ôn tập ================= */
