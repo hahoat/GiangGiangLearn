@@ -1,0 +1,98 @@
+id: 16
+title: 复习课
+py: Fù xí kè
+vi: Bài ôn tập
+goal: Ôn lại toàn bộ HSK 1: giới thiệu bản thân và gia đình, thời gian, mua sắm, vị trí, các loại câu hỏi, động từ năng nguyện và trợ từ 了.
+slides: 16 复习课
+
+== vocab
+复习 | fù xí | động từ | ôn tập | 我们今天复习。 | Hôm nay chúng ta ôn tập.
+课 | kè | danh từ | bài học, tiết học | 这是复习课。 | Đây là bài ôn tập.
+是 | shì | động từ | là | 我是越南人。 | Tôi là người Việt Nam.
+有 | yǒu | động từ | có | 我家有五口人。 | Nhà tôi có năm người.
+在 | zài | động từ / giới từ | ở; đang | 我爸爸在医院工作。 | Bố tôi làm việc ở bệnh viện.
+会 | huì | động từ năng nguyện | biết (kỹ năng) | 我会说汉语。 | Tôi biết nói tiếng Hán.
+能 | néng | động từ năng nguyện | có thể | 下午你能来吗？ | Chiều nay bạn đến được không?
+想 | xiǎng | động từ năng nguyện | muốn | 我想去中国。 | Tôi muốn đi Trung Quốc.
+要 | yào | động từ năng nguyện | muốn, sẽ | 妈妈要去超市。 | Mẹ định đi siêu thị.
+可以 | kě yǐ | động từ năng nguyện | được phép | 我可以坐吗？ | Tôi ngồi được không?
+喜欢 | xǐ huan | động từ | thích | 你喜欢吃什么？ | Bạn thích ăn gì?
+多少 | duō shao | đại từ | bao nhiêu | 苹果多少钱一斤？ | Táo bao nhiêu tiền một cân?
+几 | jǐ | đại từ | mấy | 你家有几口人？ | Nhà bạn có mấy người?
+什么 | shén me | đại từ | cái gì | 你叫什么名字？ | Bạn tên là gì?
+哪儿 | nǎr | đại từ | ở đâu | 你去哪儿？ | Bạn đi đâu?
+谁 | shéi | đại từ | ai | 他是谁？ | Anh ấy là ai?
+怎么样 | zěn me yàng | đại từ | thế nào | 今天天气怎么样？ | Hôm nay thời tiết thế nào?
+什么时候 | shén me shí hou | đại từ | khi nào | 你什么时候回家？ | Khi nào bạn về nhà?
+
+== grammar
+## Ba cách đặt câu hỏi
+(1) Thêm 吗 cuối câu. (2) Câu chính phản V不V / V没V. (3) Dùng đại từ nghi vấn (谁, 什么, 哪儿, 几, 多少, 怎么, 怎么样, 什么时候) đặt đúng vị trí thông tin cần hỏi, không thêm 吗.
+f: … 吗？ · V不V？ · Đại từ nghi vấn
+ex: 你是学生吗？ | Bạn là học sinh phải không?
+ex: 你忙不忙？ | Bạn có bận không?
+ex: 你去哪儿？ | Bạn đi đâu?
+## Động từ năng nguyện
+会 biết (do học), 能 có thể (khả năng, điều kiện), 想 muốn, 要 muốn / sẽ, 可以 được phép. Tất cả đứng trước động từ chính.
+f: Chủ ngữ + 会 / 能 / 想 / 要 / 可以 + Động từ
+ex: 我会做饭。 | Tôi biết nấu cơm.
+ex: 我可以问一个问题吗？ | Tôi có thể hỏi một câu không?
+## Thứ tự trạng ngữ
+Chủ ngữ + thời gian + 在 + nơi chốn + động từ + tân ngữ.
+f: Chủ ngữ + Thời gian + 在 + Nơi chốn + Động từ
+ex: 我明天上午在学校学习。 | Sáng mai tôi học ở trường.
+## Hai cách dùng 了
+了 cuối câu: tình huống thay đổi (下雨了). 了 sau động từ: hành động đã hoàn thành (我看了一个电影). Phủ định: 没 + động từ, bỏ 了.
+f: Câu + 了 · Động từ + 了 + Tân ngữ · 没 + Động từ
+ex: 下雨了。 | Trời mưa rồi.
+ex: 我买了一个新电脑。 | Tôi đã mua một cái máy tính mới.
+## Phủ định: 不 và 没
+不 phủ định hiện tại, tương lai, thói quen và tính từ. 没 phủ định hành động đã xảy ra và phủ định 有.
+f: 不 + Động từ / Tính từ · 没 (有) + Động từ
+ex: 我明天不去。 | Ngày mai tôi không đi.
+ex: 我昨天没去。 | Hôm qua tôi không đi.
+
+== text Ôn tập 1 – Giới thiệu gia đình
+张心华: 大家好，我叫张心华。我家有五口人：爸爸、妈妈、哥哥、姐姐和我。我没有弟弟和妹妹。我今年十三岁，爸爸四十五岁，妈妈四十岁。 | Chào mọi người, tôi tên là Trương Tâm Hoa. Nhà tôi có năm người: bố, mẹ, anh trai, chị gái và tôi. Tôi không có em trai và em gái. Năm nay tôi 13 tuổi, bố 45 tuổi, mẹ 40 tuổi.
+
+== text Ôn tập 2 – Một ngày của tôi
+白家月: 我早上七点起床，八点去学校上课。中午我在学校吃午饭。下午四点半下课。晚上我在家里看书、看电视，十点睡觉。 | Tôi dậy lúc 7 giờ sáng, 8 giờ đến trường học. Buổi trưa tôi ăn trưa ở trường. 4 giờ rưỡi chiều tan học. Buổi tối tôi ở nhà đọc sách, xem ti vi, 10 giờ đi ngủ.
+
+== text Ôn tập 3 – Đi mua đồ
+A: 你明天去哪儿？ | Ngày mai bạn đi đâu?
+B: 我想去超市买些水果。 | Mình muốn đi siêu thị mua ít trái cây.
+A: 你怎么去？ | Bạn đi bằng gì?
+B: 坐出租车去。你想去吗？ | Đi taxi. Bạn muốn đi không?
+A: 我明天没有时间，要上课。 | Mai mình không có thời gian, phải đi học.
+
+== sentences
+你 叫 什么 名字 ？ | Bạn tên là gì? | 叫 | 是 有 在
+我 家 有 五 口 人 。 | Nhà tôi có năm người. | 口 | 岁 本 只
+你 会 做 中国 菜 吗 ？ | Bạn biết nấu món Trung Quốc không? | 会 | 是 在 了
+今天 几 月 几 号 ？ | Hôm nay ngày bao nhiêu tháng mấy? | 号 | 点 岁 口
+我 想 去 超市 买 东西 。 | Tôi muốn đi siêu thị mua đồ. | 买 | 坐 在 是
+我 晚上 六 点 半 下班 。 | Tôi tan làm lúc 6 giờ rưỡi tối. | 半 | 分 后 课
+房间 里 有 一 只 小 猫 。 | Trong phòng có một con mèo nhỏ. | 只 | 本 口 岁
+我 明天 上午 在 学校 学习 。 | Sáng mai tôi học ở trường. | 在 | 是 有 了
+苹果 多少 钱 一 斤 ？ | Táo bao nhiêu tiền một cân? | 钱 | 岁 口 本
+你 去 没 去 书店 ？ | Bạn có đến hiệu sách không? | 没 | 吗 很 也
+昨天 下 雪 了 ， 太 冷 了 。 | Hôm qua tuyết rơi, lạnh quá. | 太 | 再 都 有
+请 给 我 一 杯 茶 。 | Cho tôi một cốc trà. | 给 | 在 是 有
+我 看 了 一 个 电影 。 | Tôi đã xem một bộ phim. | 了 | 吗 呢 吧
+我们 在 机场 见 吧 。 | Chúng ta gặp nhau ở sân bay nhé. | 机场 | 小时 时间 家人
+你 喜欢 吃 什么 ？ | Bạn thích ăn gì? | 什么 | 谁 哪儿 几
+我 是 越南 人 。 | Tôi là người Việt Nam. | 越南 | 中国 美国 法国
+你 家 有 几 口 人 ？ | Nhà bạn có mấy người? | 几 | 多少 什么 哪
+她 有 两 个 孩子 。 | Cô ấy có hai đứa con. | 两 | 二 几 多
+我 会 说 汉语 。 | Tôi biết nói tiếng Hán. | 说 | 写 听 读
+你 现在 在 哪儿 ？ | Bây giờ bạn ở đâu? | 哪儿 | 什么 谁 几
+我们 坐 出租车 去 吧 。 | Chúng ta đi taxi đi. | 出租车 | 火车 飞机 车
+这 件 衣服 很 便宜 。 | Cái áo này rất rẻ. | 便宜 | 贵 漂亮 好看
+我 正在 看 书 呢 。 | Tôi đang đọc sách. | 书 | 电视 电影 歌
+我 觉得 有点儿 冷 。 | Tôi thấy hơi lạnh. | 冷 | 热 忙 累
+我 可以 问 你 一 个 问题 吗 ？ | Tôi có thể hỏi bạn một câu hỏi không? | 问题 | 字 书 歌
+我们 都 是 学生 。 | Chúng tôi đều là học sinh. | 都 | 也 还 再
+我 爸爸 在 医院 工作 。 | Bố tôi làm việc ở bệnh viện. | 医院 | 学校 公司 商店
+你 什么 时候 回 家 ？ | Khi nào bạn về nhà? | 时候 | 时间 小时 年
+他 今年 二十 岁 。 | Năm nay anh ấy 20 tuổi. | 岁 | 口 个 年
+明天 见 ！ | Mai gặp lại! | 明天 | 今天 昨天 现在

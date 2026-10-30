@@ -1,0 +1,103 @@
+id: 9
+title: 我明天上午在学校学习
+py: Wǒ míng tiān shàng wǔ zài xué xiào xué xí
+vi: Sáng mai tôi học ở trường
+goal: Sắp xếp trạng ngữ thời gian và nơi chốn; nói số thứ tự với 第; dùng lượng từ 本, 家; nói làm gì cùng ai với 和.
+slides: 09 我明天上午在学校学习
+
+== vocab
+前边 | qián bian | danh từ | phía trước | 学校前边有一家电影院。 | Phía trước trường có một rạp chiếu phim.
+家 | jiā | lượng từ | (lượng từ cho cửa hàng, công ty, nhà hàng) | 一家书店 | một hiệu sách
+那个 | nà ge | đại từ | cái đó, cái kia | 我们去那个电影院吧。 | Chúng ta đến rạp chiếu phim đó nhé.
+椅子 | yǐ zi | danh từ | cái ghế | 椅子上有一本书。 | Trên ghế có một quyển sách.
+本 | běn | lượng từ | quyển, cuốn | 一本中文书 | một quyển sách tiếng Trung
+书 | shū | danh từ | sách | 那是谁的书？ | Đó là sách của ai?
+第 | dì | tiền tố | thứ (chỉ số thứ tự) | 这是我的第二本中文书。 | Đây là quyển sách tiếng Trung thứ hai của tôi.
+学习 | xué xí | động từ | học, học tập | 我明天上午在学校学习。 | Sáng mai tôi học ở trường.
+白天 | bái tiān | danh từ | ban ngày | 我白天在家里读书。 | Ban ngày tôi đọc sách ở nhà.
+读书 | dú shū | động từ | đọc sách, học | 你喜欢读书吗？ | Bạn có thích đọc sách không?
+和 | hé | giới từ | với, cùng với | 我和朋友们去唱歌。 | Tôi đi hát cùng các bạn.
+朋友 | péng you | danh từ | bạn, bạn bè | 他是我的好朋友。 | Anh ấy là bạn thân của tôi.
+唱 | chàng | động từ | hát | 你会唱中国歌吗？ | Bạn biết hát bài hát Trung Quốc không?
+歌 | gē | danh từ | bài hát | 我喜欢唱歌。 | Tôi thích hát.
+好听 | hǎo tīng | tính từ | hay (nghe), êm tai | 你唱歌很好听。 | Bạn hát rất hay.
+电视 | diàn shì | danh từ | ti vi | 我在家里看电视。 | Tôi xem ti vi ở nhà.
+狗 | gǒu | danh từ | con chó | 我也有一只小狗。 | Tôi cũng có một chú chó nhỏ.
+玩 | wán | động từ | chơi | 我和孩子们、小狗玩。 | Tôi chơi với các con và chú chó nhỏ.
+
+== grammar
+## Thứ tự trạng ngữ thời gian và nơi chốn
+Khi câu có cả thời gian và nơi chốn, thời gian đứng trước, nơi chốn (在 + địa điểm) đứng sau, cả hai đều trước động từ.
+f: Chủ ngữ + Thời gian + 在 + Nơi chốn + Động từ
+ex: 我们七点在电影院外边见。 | 7 giờ chúng ta gặp nhau bên ngoài rạp chiếu phim.
+ex: 陈天中明天中午在学校吃午饭。 | Trưa mai Trần Thiên Trung ăn trưa ở trường.
+## Số thứ tự với 第
+第 đặt trước số để chỉ thứ tự: thứ nhất, thứ hai…
+f: 第 + Số (+ Lượng từ + Danh từ)
+ex: 第一个学生 | học sinh thứ nhất
+ex: 这是我的第二本中文书。 | Đây là quyển sách tiếng Trung thứ hai của tôi.
+## Lượng từ 本 và 家
+本 dùng cho sách vở; 家 dùng cho cửa hàng, công ty, nhà hàng, rạp chiếu phim…
+f: Số + 本 / 家 + Danh từ
+ex: 一本书 | một quyển sách
+ex: 学校前边有一家电影院。 | Phía trước trường có một rạp chiếu phim.
+## 和 + người + động từ: làm gì cùng ai
+f: Chủ ngữ + 和 + Người + Động từ
+ex: 晚上我和朋友们去外边唱歌。 | Buổi tối tôi cùng các bạn ra ngoài hát.
+ex: 我和孩子们、小狗玩。 | Tôi chơi với các con và chú chó nhỏ.
+## Hỏi ý kiến: …，好吗？
+Thêm 好吗？ sau một đề nghị để hỏi ý kiến người nghe.
+f: Đề nghị，好吗？
+ex: 我们七点见，好吗？ | Chúng ta gặp lúc 7 giờ, được không?
+
+== text Bài khóa 1
+李文: 学校前边有一家电影院。 | Phía trước trường có một rạp chiếu phim.
+白家月: 对。我们晚上去那个电影院看电影吧。 | Đúng rồi. Tối nay chúng ta đến rạp đó xem phim nhé.
+李文: 好！我们七点在电影院外边见，好吗？ | Được! 7 giờ chúng ta gặp nhau bên ngoài rạp, được không?
+白家月: 好的，晚上七点见！ | Được, 7 giờ tối gặp nhé!
+
+== text Bài khóa 2
+陈天中: 椅子上有一本中文书，那是谁的书？ | Trên ghế có một quyển sách tiếng Trung, đó là sách của ai?
+白家月: 是我的书，谢谢。这是我的第二本中文书。 | Là sách của mình, cảm ơn. Đây là quyển sách tiếng Trung thứ hai của mình.
+陈天中: 不客气。你明天上午在哪儿？ | Không có gì. Sáng mai bạn ở đâu?
+白家月: 我明天上午在学校学习。 | Sáng mai mình học ở trường.
+
+== text Bài khóa 3
+王一雪: 明天星期六，你做什么？ | Mai thứ Bảy, em làm gì?
+杨同乐: 我白天在家里读书，晚上和朋友们去外边唱歌。 | Ban ngày em đọc sách ở nhà, buổi tối cùng các bạn ra ngoài hát.
+王一雪: 你唱歌很好听。 | Em hát rất hay.
+杨同乐: 谢谢！您星期六做什么？ | Cảm ơn chị! Thứ Bảy chị làm gì?
+王一雪: 我在家里做饭、看电视，和孩子们、小狗玩。 | Chị ở nhà nấu cơm, xem ti vi, chơi với các con và chú chó nhỏ.
+杨同乐: 我也有一只小狗。 | Em cũng có một chú chó nhỏ.
+
+== sentences
+学校 前边 有 一 家 电影院 。 | Phía trước trường có một rạp chiếu phim. | 家 | 本 只 口
+我们 晚上 去 那个 电影院 看 电影 吧 。 | Tối nay chúng ta đến rạp chiếu phim đó xem phim nhé. | 那个 | 第 本 只
+我们 七 点 在 电影院 外边 见 ， 好 吗 ？ | 7 giờ chúng ta gặp bên ngoài rạp, được không? | 外边 | 椅子 第 本
+椅子 上 有 一 本 中文 书 。 | Trên ghế có một quyển sách tiếng Trung. | 本 | 只 家 口
+这 是 我 的 第 二 本 中文 书 。 | Đây là quyển sách tiếng Trung thứ hai của tôi. | 第 | 本 家 只
+我 明天 上午 在 学校 学习 。 | Sáng mai tôi học ở trường. | 学习 | 椅子 歌 狗
+我 白天 在 家里 读书 。 | Ban ngày tôi đọc sách ở nhà. | 白天 | 椅子 狗 歌
+晚上 我 和 朋友们 去 外边 唱歌 。 | Buổi tối tôi cùng các bạn ra ngoài hát. | 和 | 第 本 家
+你 唱歌 很 好听 。 | Bạn hát rất hay. | 好听 | 好吃 椅子 第
+我 在 家里 看 电视 。 | Tôi xem ti vi ở nhà. | 电视 | 歌 第 本
+我 和 孩子们 、 小狗 玩 。 | Tôi chơi với các con và chú chó nhỏ. | 玩 | 第 本 椅子
+我 也 有 一 只 小狗 。 | Tôi cũng có một chú chó nhỏ. | 只 | 本 家 第
+第 一 个 学生 是 谁 ？ | Học sinh thứ nhất là ai? | 第 | 本 家 只
+那 是 谁 的 书 ？ | Đó là sách của ai? | 书 | 第 唱 玩
+明天 星期六 ， 你 做 什么 ？ | Mai thứ Bảy, bạn làm gì? | 做 | 第 本 家
+我 有 三 本 中文 书 。 | Tôi có ba quyển sách tiếng Trung. | 本 | 只 家 口
+安妮 下午 在 家里 学 中文 。 | Buổi chiều Annie học tiếng Trung ở nhà. | 下午 | 上午 晚上 白天
+陈天中 明天 中午 在 学校 吃 午饭 。 | Trưa mai Trần Thiên Trung ăn trưa ở trường. | 学校 | 书店 医院 家
+她 喜欢 唱歌 。 | Cô ấy thích hát. | 唱歌 | 读书 学习 玩
+他 唱 的 歌 很 好听 。 | Bài hát anh ấy hát rất hay. | 好听 | 好吃 好看 漂亮
+我 喜欢 和 小狗 玩 。 | Tôi thích chơi với chó con. | 玩 | 唱 读 写
+你 星期六 做 什么 ？ | Thứ Bảy bạn làm gì? | 星期六 | 星期日 星期一 今天
+我们 七 点 在 电影院 外边 见 。 | 7 giờ chúng ta gặp nhau bên ngoài rạp chiếu phim. | 七 | 八 九 六
+椅子 上 有 一 本 书 。 | Trên ghế có một quyển sách. | 椅子 | 桌子 房间 书店
+我 白天 工作 ， 晚上 学习 。 | Ban ngày tôi làm việc, buổi tối học bài. | 白天 | 上午 下午 中午
+我 晚上 看 电视 。 | Buổi tối tôi xem ti vi. | 电视 | 电影 书 歌
+我们 学校 前边 有 一 家 书店 。 | Phía trước trường chúng tôi có một hiệu sách. | 前边 | 外边 后边 上边
+谢谢 ！ 不客气 。 | Cảm ơn! – Không có gì. | 不客气 | 再见 你好 对不起
+我 在 家里 读书 。 | Tôi đọc sách ở nhà. | 读书 | 唱歌 玩 看
+这 是 我 的 第 一 本 书 。 | Đây là quyển sách đầu tiên của tôi. | 第 | 家 只 个

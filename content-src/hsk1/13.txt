@@ -1,0 +1,102 @@
+id: 13
+title: 请给我一杯茶
+py: Qǐng gěi wǒ yì bēi chá
+vi: Cho tôi một cốc trà
+goal: Xin phép với 可以; làm nhẹ động tác với 动词 + 一下; gọi món ở nhà hàng với 要 và câu hai tân ngữ (给 / 问 + người + vật).
+slides: 13 请给我一杯茶
+
+== vocab
+可以 | kě yǐ | động từ năng nguyện | có thể, được (phép) | 我可以坐吗？ | Tôi ngồi đây được không?
+再 | zài | phó từ | lại, thêm, nữa | 我可以再问您一个问题吗？ | Em có thể hỏi thầy thêm một câu nữa không?
+问题 | wèn tí | danh từ | câu hỏi; vấn đề | 你有什么问题？ | Bạn có câu hỏi gì?
+卖 | mài | động từ | bán | 那个小店卖不卖手机？ | Cửa hàng nhỏ đó có bán điện thoại không?
+一下 | yí xià | số lượng từ | (làm) một chút, thử | 你可以打电话问一下。 | Bạn có thể gọi điện hỏi thử.
+打电话 | dǎ diàn huà | động từ | gọi điện thoại | 我给妈妈打电话。 | Tôi gọi điện cho mẹ.
+服务员 | fú wù yuán | danh từ | nhân viên phục vụ | 服务员，请给我一杯水。 | Phục vụ ơi, cho tôi một cốc nước.
+女士 | nǚ shì | danh từ | quý bà, chị (lịch sự) | 女士，请坐！ | Mời chị ngồi!
+先生 | xiān sheng | danh từ | ông, anh (lịch sự) | 先生，您要什么？ | Thưa anh, anh dùng gì ạ?
+请 | qǐng | động từ | mời; xin | 请坐！ | Mời ngồi!
+坐 | zuò | động từ | ngồi | 我可以坐吗？ | Tôi ngồi được không?
+给 | gěi | động từ | cho, đưa | 请给我一杯牛奶。 | Cho tôi một cốc sữa.
+杯 | bēi | lượng từ | cốc, ly | 一杯茶 | một cốc trà
+要 | yào | động từ | cần, muốn có, gọi (món) | 您还要什么？ | Chị còn muốn gọi gì nữa?
+早饭 | zǎo fàn | danh từ | bữa sáng | 我还没吃早饭。 | Tôi vẫn chưa ăn sáng.
+这个 | zhè ge | đại từ | cái này | 我要这个。 | Tôi lấy cái này.
+面包 | miàn bāo | danh từ | bánh mì | 再要这个面包吧。 | Lấy thêm cái bánh mì này nhé.
+鸡蛋 | jī dàn | danh từ | trứng gà | 我早上吃鸡蛋。 | Buổi sáng tôi ăn trứng.
+一半 | yí bàn | số từ | một nửa | 我要一半吧。 | Tôi lấy một nửa thôi.
+茶 | chá | danh từ | trà | 请给我一杯茶吧。 | Cho tôi một cốc trà nhé.
+
+== grammar
+## Động từ năng nguyện 可以
+可以 + động từ: được phép / có thể làm gì. Dùng để xin phép hoặc gợi ý. Trả lời ngắn: 可以 / 不可以.
+f: Chủ ngữ + 可以 + Động từ (+ 吗？)
+ex: 我可以再问您一个问题吗？ | Em có thể hỏi thầy thêm một câu nữa không?
+ex: A：我可以坐吗？ B：可以，请坐！ | A: Tôi ngồi được không? B: Được, mời ngồi!
+## Động từ + 一下
+一下 đặt sau động từ làm cho hành động nhẹ nhàng, ngắn, mang tính thử: "… một chút", "… thử".
+f: Động từ + 一下
+ex: 你可以打电话问一下。 | Bạn có thể gọi điện hỏi thử.
+ex: 请休息一下。 | Xin nghỉ một chút.
+## Câu hai tân ngữ (1)
+Một số động từ như 给 (cho), 问 (hỏi) có hai tân ngữ: người đứng trước, vật đứng sau.
+f: Chủ ngữ + 给 / 问 + Người + Vật
+ex: 请给我一杯牛奶。 | Cho tôi một cốc sữa.
+ex: 我问老师两个问题。 | Tôi hỏi thầy hai câu hỏi.
+## Gọi món với 要 và 再
+要 + món: gọi, lấy món gì. 再 + động từ: thêm, lại lần nữa. 还 + 要: còn muốn thêm.
+f: 我要 + Món · 再要 + Món · 还要什么？
+ex: 我要一斤饺子。 | Tôi lấy một cân sủi cảo.
+ex: 再要这个面包和鸡蛋吧。 | Lấy thêm bánh mì này và trứng nhé.
+
+== text Bài khóa 1
+白家月: 王老师，我可以再问您一个问题吗？ | Thầy Vương, em có thể hỏi thầy thêm một câu nữa không ạ?
+王一飞: 可以。你有什么问题？ | Được. Em có câu hỏi gì?
+白家月: 那个小店卖不卖手机？ | Cửa hàng nhỏ đó có bán điện thoại không ạ?
+王一飞: 我不知道。你可以打电话问一下。 | Thầy không biết. Em có thể gọi điện hỏi thử.
+
+== text Bài khóa 2
+服务员: 女士，请坐！您喝什么？ | Mời chị ngồi! Chị uống gì ạ?
+王一雪: 我看一下。请给我一杯牛奶。 | Để tôi xem đã. Cho tôi một cốc sữa.
+服务员: 好的。您还要什么？ | Vâng. Chị còn gọi gì nữa không ạ?
+王一雪: 我还没吃早饭，再要这个面包和鸡蛋吧。 | Tôi chưa ăn sáng, lấy thêm bánh mì này và trứng nhé.
+
+== text Bài khóa 3
+服务员: 先生，请坐！您要什么？ | Mời anh ngồi! Anh dùng gì ạ?
+刘明: 我要一斤饺子。 | Tôi lấy một cân sủi cảo.
+服务员: 好的。一斤饺子四十个。 | Vâng. Một cân sủi cảo là 40 cái.
+刘明: 四十个太多了，我要一半吧。 | 40 cái nhiều quá, tôi lấy một nửa thôi.
+服务员: 半斤二十个。您想喝什么？ | Nửa cân là 20 cái. Anh muốn uống gì ạ?
+刘明: 请给我一杯茶吧。 | Cho tôi một cốc trà nhé.
+
+== sentences
+我 可以 再 问 您 一 个 问题 吗 ？ | Em có thể hỏi thầy thêm một câu nữa không? | 可以 | 一半 先生 杯
+你 有 什么 问题 ？ | Bạn có câu hỏi gì? | 问题 | 一下 一半 再
+那 个 小 店 卖 不 卖 手机 ？ | Cửa hàng nhỏ đó có bán điện thoại không? | 店 | 杯 一下 先生
+你 可以 打 电话 问 一下 。 | Bạn có thể gọi điện hỏi thử. | 一下 | 一半 杯 先生
+女士 ， 请 坐 ！ | Mời chị ngồi! | 坐 | 给 卖 杯
+请 给 我 一 杯 牛奶 。 | Cho tôi một cốc sữa. | 给 | 坐 问题 一下
+您 还 要 什么 ？ | Chị còn muốn gọi gì nữa? | 要 | 坐 杯 一半
+我 还 没 吃 早饭 。 | Tôi vẫn chưa ăn sáng. | 早饭 | 问题 女士 先生
+再 要 这个 面包 和 鸡蛋 吧 。 | Lấy thêm bánh mì này và trứng nhé. | 鸡蛋 | 问题 女士 先生
+先生 ， 请 坐 ！ | Mời anh ngồi! | 先生 | 一半 一下 问题
+我 要 一 斤 饺子 。 | Tôi lấy một cân sủi cảo. | 斤 | 杯 本 件
+四十 个 太 多 了 ， 我 要 一半 吧 。 | 40 cái nhiều quá, tôi lấy một nửa thôi. | 一半 | 一下 问题 女士
+请 给 我 一 杯 茶 吧 。 | Cho tôi một cốc trà nhé. | 杯 | 本 只 件
+白家月 给 安妮 一 个 苹果 。 | Bạch Gia Nguyệt cho Annie một quả táo. | 给 | 坐 问题 杯
+请 休息 一下 。 | Xin nghỉ một chút. | 一下 | 一半 杯 问题
+我 可以 坐 吗 ？ | Tôi ngồi đây được không (xin phép)? | 可以 | 一下 一半 先生
+我 问 老师 两 个 问题 。 | Tôi hỏi thầy giáo hai câu hỏi. | 问题 | 鸡蛋 面包 茶
+你 看 一下 吧 。 | Bạn xem thử đi. | 一下 | 一半 一些 一点儿
+他 是 服务员 。 | Anh ấy là nhân viên phục vụ. | 服务员 | 售货员 医生 老师
+我 早上 吃 面包 和 鸡蛋 。 | Buổi sáng tôi ăn bánh mì và trứng. | 面包 | 包子 米饭 饺子
+这 个 商店 卖 水果 。 | Cửa hàng này bán trái cây. | 卖 | 买 给 要
+请 给 我 一 杯 水 。 | Cho tôi một cốc nước. | 杯 | 斤 本 只
+你 想 喝 茶 吗 ？ | Bạn có muốn uống trà không? | 茶 | 水 牛奶 药
+我 再 问 您 一 个 问题 。 | Em hỏi thầy thêm một câu nữa. | 再 | 还 也 太
+女士 ， 您 喝 什么 ？ | Thưa chị, chị uống gì ạ? | 女士 | 先生 服务员 老师
+你 吃 早饭 了 吗 ？ | Bạn ăn sáng chưa? | 早饭 | 午饭 晚饭 米饭
+半 斤 二十 个 。 | Nửa cân là 20 cái. | 半 | 一 两 几
+我 要 这个 。 | Tôi lấy cái này. | 这个 | 那个 哪个 一个
+请 你 给 我 打 电话 。 | Hãy gọi điện cho tôi nhé. | 给 | 对 和 在
+他 想 买 鸡蛋 。 | Anh ấy muốn mua trứng gà. | 鸡蛋 | 面包 茶 牛奶

@@ -1,0 +1,104 @@
+id: 8
+title: 我爸爸也在医院工作
+py: Wǒ bà ba yě zài yī yuàn gōng zuò
+vi: Bố tôi cũng làm việc ở bệnh viện
+goal: Nói vị trí đồ vật với từ phương vị; câu tồn tại "ở đâu có gì"; nói khả năng với 能; dùng giới từ 在 chỉ nơi làm việc, hoạt động.
+slides: 08  我爸爸也在医院工作
+
+== vocab
+房间 | fáng jiān | danh từ | căn phòng | 房间里有一只小猫。 | Trong phòng có một con mèo nhỏ.
+外 | wài | danh từ | ngoài, bên ngoài | 房间外有一只小猫。 | Ngoài phòng có một con mèo nhỏ.
+外边 | wài bian | danh từ | bên ngoài | 我们在学校外边见。 | Chúng ta gặp nhau ở bên ngoài trường.
+只 | zhī | lượng từ | con (lượng từ cho một số con vật) | 一只小猫 | một con mèo nhỏ
+小 | xiǎo | tính từ | nhỏ, bé | 这个房间很小。 | Căn phòng này rất nhỏ.
+猫 | māo | danh từ | con mèo | 这只猫真漂亮！ | Con mèo này thật đẹp!
+没 | méi | phó từ | không, chưa (phủ định hành động đã xảy ra) | 我没看见。 | Tôi không nhìn thấy.
+看见 | kàn jiàn | động từ | nhìn thấy | 你看见我的手机了吗？ | Bạn có thấy điện thoại của tôi không?
+桌子 | zhuō zi | danh từ | cái bàn | 它在桌子下呢。 | Nó ở dưới bàn.
+下 | xià | danh từ | dưới | 桌子下 | dưới bàn
+漂亮 | piào liang | tính từ | đẹp, xinh | 这只小猫真漂亮！ | Con mèo nhỏ này thật đẹp!
+学校 | xué xiào | danh từ | trường học | 我在学校吃午饭。 | Tôi ăn trưa ở trường.
+书店 | shū diàn | danh từ | hiệu sách | 在学校书店前见吧。 | Gặp ở trước hiệu sách của trường nhé.
+能 | néng | động từ năng nguyện | có thể, được | 下午两点你能到吗？ | 2 giờ chiều bạn đến được không?
+到 | dào | động từ | đến, tới | 我能到。 | Tôi đến được.
+午饭 | wǔ fàn | danh từ | bữa trưa | 我不能去学校吃午饭。 | Tôi không thể đến trường ăn trưa.
+饭 | fàn | danh từ | cơm, bữa ăn | 还没吃饭呢？ | Vẫn chưa ăn cơm à?
+大 | dà | tính từ | to, lớn | 大医院病人多。 | Bệnh viện lớn nhiều bệnh nhân.
+病人 | bìng rén | danh từ | bệnh nhân | 医院的病人很多。 | Bệnh viện rất nhiều bệnh nhân.
+多 | duō | tính từ | nhiều | 病人很多。 | Bệnh nhân rất nhiều.
+医生 | yī shēng | danh từ | bác sĩ | 医生非常忙。 | Bác sĩ rất bận.
+工作 | gōng zuò | động từ | làm việc | 我爸爸也在医院工作。 | Bố tôi cũng làm việc ở bệnh viện.
+
+== grammar
+## Danh từ + từ phương vị
+Từ phương vị (上 trên, 下 dưới, 里 trong, 外 ngoài, 前 trước, 后 sau, 外边 bên ngoài…) đặt SAU danh từ để chỉ vị trí – ngược với tiếng Việt.
+f: Danh từ + 上 / 下 / 里 / 外 / 前 / 后
+ex: 小雪的手机在桌子上呢。 | Điện thoại của Tiểu Tuyết ở trên bàn.
+ex: 房间里有一只小猫。 | Trong phòng có một con mèo nhỏ.
+## Câu tồn tại: Nơi chốn + 有 + Người/Vật
+Diễn tả "ở đâu có gì". Phủ định: 没有. Muốn nói "vật ở đâu" thì dùng: Vật + 在 + Nơi chốn.
+f: Nơi chốn + 有 / 没有 + Danh từ · Danh từ + 在 + Nơi chốn
+ex: 桌子上没有小猫。 | Trên bàn không có mèo.
+ex: 它在桌子下呢。 | Nó ở dưới bàn.
+## Động từ năng nguyện 能
+能 + động từ: có thể, có khả năng hoặc điều kiện làm gì. Phủ định: 不能.
+f: Chủ ngữ + 能 / 不能 + Động từ
+ex: 下午两点你能到吗？ | 2 giờ chiều bạn đến được không?
+ex: 我不能去学校吃午饭。 | Tôi không thể đến trường ăn trưa.
+## Giới từ 在: làm gì ở đâu
+在 + nơi chốn đặt TRƯỚC động từ để nói hành động diễn ra ở đâu.
+f: Chủ ngữ + 在 + Nơi chốn + Động từ
+ex: 我爸爸也在医院工作。 | Bố tôi cũng làm việc ở bệnh viện.
+ex: 我在学校吃午饭。 | Tôi ăn trưa ở trường.
+
+== text Bài khóa 1
+白家月: 房间外有一只小猫。 | Ngoài phòng có một con mèo nhỏ.
+陈天中: 我没看见，它在哪儿呢？ | Mình không thấy, nó ở đâu?
+白家月: 它在桌子下呢。 | Nó ở dưới bàn kìa.
+陈天中: 这只小猫真漂亮！ | Con mèo nhỏ này đẹp thật!
+
+== text Bài khóa 2
+李文: 我们在哪儿见呢？ | Chúng ta gặp nhau ở đâu?
+白家月: 在学校书店前见吧。 | Gặp ở trước hiệu sách của trường nhé.
+李文: 好的。下午两点你能到吗？ | Được. 2 giờ chiều bạn đến được không?
+白家月: 我能到。我在学校吃午饭。 | Mình đến được. Mình ăn trưa ở trường.
+
+== text Bài khóa 3
+刘明: 小胡，还没吃饭呢？ | Tiểu Hồ, vẫn chưa ăn cơm à?
+胡医生: 没吃呢。 | Chưa ăn ạ.
+刘明: 大医院病人多，医生非常忙。 | Bệnh viện lớn bệnh nhân đông, bác sĩ rất bận.
+胡医生: 是的。我爸爸也在医院工作，他也非常忙。 | Đúng vậy. Bố cháu cũng làm ở bệnh viện, ông cũng rất bận.
+刘明: 你家有两个医生？ | Nhà cháu có hai bác sĩ à?
+胡医生: 对。 | Vâng ạ.
+
+== sentences
+房间 外 有 一 只 小 猫 。 | Ngoài phòng có một con mèo nhỏ. | 只 | 口 岁 本
+我 没 看见 ， 它 在 哪儿 呢 ？ | Tôi không thấy, nó ở đâu? | 看见 | 桌子 房间 医生
+它 在 桌子 下 呢 。 | Nó ở dưới bàn. | 桌子 | 看见 漂亮 能
+这 只 小 猫 真 漂亮 ！ | Con mèo nhỏ này thật đẹp! | 漂亮 | 桌子 房间 医生
+我们 在 哪儿 见 呢 ？ | Chúng ta gặp nhau ở đâu? | 哪儿 | 什么 谁 多少
+在 学校 书店 前 见 吧 。 | Gặp ở trước hiệu sách của trường nhé. | 书店 | 午饭 医生 病人
+下午 两 点 你 能 到 吗 ？ | 2 giờ chiều bạn đến được không? | 能 | 没 只 外
+我 在 学校 吃 午饭 。 | Tôi ăn trưa ở trường. | 午饭 | 书店 桌子 房间
+小胡 ， 还 没 吃 饭 呢 ？ | Tiểu Hồ, vẫn chưa ăn cơm à? | 没 | 能 只 外
+大 医院 病人 多 。 | Bệnh viện lớn nhiều bệnh nhân. | 病人 | 桌子 房间 午饭
+医生 非常 忙 。 | Bác sĩ rất bận. | 医生 | 桌子 房间 午饭
+我 爸爸 也 在 医院 工作 。 | Bố tôi cũng làm việc ở bệnh viện. | 在 | 是 有 只
+小雪 的 手机 在 桌子 上 。 | Điện thoại của Tiểu Tuyết ở trên bàn. | 上 | 只 没 能
+我 不 能 去 学校 吃 午饭 。 | Tôi không thể đến trường ăn trưa. | 能 | 没 只 外
+你 家 有 两 个 医生 ？ | Nhà bạn có hai bác sĩ à? | 医生 | 桌子 房间 午饭
+房间 里 有 一 只 小 猫 。 | Trong phòng có một con mèo nhỏ. | 里 | 只 没 能
+我 没 看见 小 猫 。 | Tôi không nhìn thấy con mèo nhỏ. | 看见 | 桌子 房间 医生
+小 猫 在 桌子 下 。 | Mèo nhỏ ở dưới bàn. | 下 | 只 没 能
+我们 去 书店 外 吧 。 | Chúng ta ra ngoài hiệu sách nhé. | 外 | 只 没 能
+爸爸 能 去 。 | Bố có thể đi. | 能 | 没 只 外
+她 在 学校 学习 。 | Cô ấy học ở trường. | 学校 | 书店 医院 房间
+桌子 上 没有 小 猫 。 | Trên bàn không có mèo nhỏ. | 桌子 | 房间 医生 病人
+我 两 点 能 到 。 | 2 giờ tôi có thể đến được. | 能 | 没 只 外
+医院 的 病人 很 多 。 | Bệnh viện rất nhiều bệnh nhân. | 多 | 大 小 少
+他 是 医生 。 | Anh ấy là bác sĩ. | 医生 | 病人 老师 学生
+这 个 房间 很 大 。 | Căn phòng này rất to. | 房间 | 桌子 医生 午饭
+你 吃 午饭 了 吗 ？ | Bạn ăn trưa chưa? | 午饭 | 晚饭 早饭 米饭
+那 只 猫 很 漂亮 。 | Con mèo kia rất đẹp. | 猫 | 狗 书 菜
+我 在 书店 买 书 。 | Tôi mua sách ở hiệu sách. | 书店 | 学校 医院 房间
+我们 在 学校 外边 见 。 | Chúng ta gặp nhau ở bên ngoài trường. | 外边 | 里边 前边 上边

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sơ đồ cấu trúc web học tiếng Trung Giang Giang</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600;700&display=swap">
+<style>
+  :root { --fg: #1f1f22; --muted: #6c6b70; --bg: #f6f5f2; --card: #fff; --line: #e2dfd8; --accent: #c23a2b; --accent-soft: #fbeceb }
+  @media (prefers-color-scheme: dark) { :root { --fg: #ececef; --muted: #a1a1a8; --bg: #141416; --card: #1d1d20; --line: #36363b; --accent: #ef6a62; --accent-soft: #3a2220 } }
+  * { box-sizing: border-box }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 15px/1.6 'Be Vietnam Pro', system-ui, sans-serif }
+  main { max-width: 1120px; margin: 0 auto; padding: 32px 20px 64px }
+  h1 { font-size: 26px; margin: 0 0 6px }
+  h2 { font-size: 18px; margin: 36px 0 10px }
+  .lead { color: var(--muted); margin: 0 0 24px }
+  figure { margin: 0; padding: 20px; background: var(--card); border: 1px solid var(--line); border-radius: 16px }
+  svg { display: block; width: 100%; height: auto; color: var(--fg) }
+  figcaption { margin-top: 12px; font-size: 13px; color: var(--muted) }
+  table { width: 100%; border-collapse: collapse; background: var(--card); border: 1px solid var(--line); border-radius: 12px; overflow: hidden; font-size: 14px }
+  th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--line); vertical-align: top }
+  th { background: var(--accent-soft) }
+  tr:last-child td { border-bottom: 0 }
+  .num { white-space: nowrap; font-weight: 700; color: var(--accent) }
+  ul { padding-left: 20px; margin: 0 }
+  li { margin: 4px 0 }
+  .q { background: var(--card); border: 1px solid var(--line); border-left: 4px solid var(--accent); border-radius: 10px; padding: 12px 16px }
+</style>
+</head>
+<body>
+<main>
+  <h1>Sơ đồ cấu trúc web học tiếng Trung Giang Giang</h1>
+  <p class="lead">Theo yêu cầu: 4 cấp HSK, mỗi cấp gồm nhiều bài, mọi bài có cùng một cấu trúc gồm phần Ôn tập và phần Thực hành.</p>
+
+  <figure>
+    <svg viewBox="0 0 1100 700" role="img" aria-label="Web có 4 cấp HSK (YCT để mở rộng sau); mỗi cấp gồm nhiều bài; mỗi bài chia thành Phần Ôn tập (Flashcard, Tổng hợp ngữ pháp, Tổng hợp từ vựng) và Phần Thực hành (Bài khóa, Chọn đáp án 15 câu, Sắp xếp câu 15 câu, Điền đáp án đúng 15 câu).">
+      <defs>
+        <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+          <path d="M0 0 L10 5 L0 10 z" fill="currentColor"/>
+        </marker>
+      </defs>
+      <g fill="none" stroke="currentColor" stroke-width="1.5" font-family="inherit">
+        <!-- gốc → các cấp -->
+        <path d="M550 70 V95 H150 V118" marker-end="url(#a)"/>
+        <path d="M550 95 H350 V118" marker-end="url(#a)"/>
+        <path d="M550 70 V118" marker-end="url(#a)"/>
+        <path d="M550 95 H750 V118" marker-end="url(#a)"/>
+        <path d="M750 95 H950 V118" stroke-dasharray="5 4" marker-end="url(#a)"/>
+        <!-- các cấp → mỗi bài -->
+        <path d="M150 165 V188 H750"/>
+        <path d="M350 165 V188"/>
+        <path d="M550 165 V188"/>
+        <path d="M750 165 V188"/>
+        <path d="M950 165 V188 H750" stroke-dasharray="5 4"/>
+        <path d="M550 188 V208" marker-end="url(#a)"/>
+        <!-- mỗi bài → 2 phần -->
+        <path d="M550 262 V290 H300 V318" marker-end="url(#a)"/>
+        <path d="M550 290 H800 V318" marker-end="url(#a)"/>
+        <!-- Ôn tập → mục -->
+        <path d="M200 368 V562"/>
+        <path d="M200 422 H223" marker-end="url(#a)"/>
+        <path d="M200 492 H223" marker-end="url(#a)"/>
+        <path d="M200 562 H223" marker-end="url(#a)"/>
+        <!-- Thực hành → mục -->
+        <path d="M700 368 V632"/>
+        <path d="M700 422 H723" marker-end="url(#a)"/>
+        <path d="M700 492 H723" marker-end="url(#a)"/>
+        <path d="M700 562 H723" marker-end="url(#a)"/>
+        <path d="M700 632 H723" marker-end="url(#a)"/>
+
+        <!-- hộp -->
+        <rect x="390" y="20" width="320" height="50" rx="12" stroke-width="2"/>
+        <rect x="70" y="120" width="160" height="45" rx="10"/>
+        <rect x="270" y="120" width="160" height="45" rx="10"/>
+        <rect x="470" y="120" width="160" height="45" rx="10"/>
+        <rect x="670" y="120" width="160" height="45" rx="10"/>
+        <rect x="870" y="120" width="160" height="45" rx="10" stroke-dasharray="5 4"/>
+        <rect x="390" y="210" width="320" height="52" rx="12" stroke-width="2"/>
+        <rect x="180" y="320" width="240" height="48" rx="12" stroke="#c23a2b" stroke-width="2.5"/>
+        <rect x="680" y="320" width="240" height="48" rx="12" stroke="#c23a2b" stroke-width="2.5"/>
+        <rect x="225" y="395" width="300" height="54" rx="10"/>
+        <rect x="225" y="465" width="300" height="54" rx="10"/>
+        <rect x="225" y="535" width="300" height="54" rx="10"/>
+        <rect x="725" y="395" width="300" height="54" rx="10"/>
+        <rect x="725" y="465" width="300" height="54" rx="10"/>
+        <rect x="725" y="535" width="300" height="54" rx="10"/>
+        <rect x="725" y="605" width="300" height="54" rx="10"/>
+      </g>
+
+      <g fill="currentColor" font-family="inherit" text-anchor="middle">
+        <text x="550" y="51" font-size="16" font-weight="700">Web học tiếng Trung Giang Giang</text>
+        <text x="150" y="148" font-size="15" font-weight="700">HSK 1</text>
+        <text x="350" y="148" font-size="15" font-weight="700">HSK 2</text>
+        <text x="550" y="148" font-size="15" font-weight="700">HSK 3</text>
+        <text x="750" y="148" font-size="15" font-weight="700">HSK 4</text>
+        <text x="950" y="148" font-size="13" opacity=".7">YCT 1–4 (mở rộng sau)</text>
+        <text x="560" y="204" font-size="11" text-anchor="start" opacity=".75">mỗi cấp gồm Bài 1 … Bài N</text>
+        <text x="550" y="233" font-size="15" font-weight="700">Mỗi bài học</text>
+        <text x="550" y="252" font-size="12" opacity=".75">cùng một cấu trúc cho mọi bài, mọi cấp</text>
+        <text x="300" y="349" font-size="15" font-weight="700" fill="#c23a2b">Phần Ôn tập</text>
+        <text x="800" y="349" font-size="15" font-weight="700" fill="#c23a2b">Phần Thực hành</text>
+      </g>
+
+      <g fill="currentColor" font-family="inherit">
+        <text x="240" y="417" font-size="14" font-weight="700">1. Flashcard</text>
+        <text x="240" y="437" font-size="12" opacity=".8">Trước: chữ Hán · Sau: pinyin + nghĩa + nghe đọc</text>
+        <text x="240" y="487" font-size="14" font-weight="700">2. Tổng hợp ngữ pháp</text>
+        <text x="240" y="507" font-size="12" opacity=".8">Mẫu câu, công thức, ví dụ</text>
+        <text x="240" y="557" font-size="14" font-weight="700">3. Tổng hợp từ vựng bài</text>
+        <text x="240" y="577" font-size="12" opacity=".8">Chữ Hán · pinyin · nghĩa · ví dụ</text>
+
+        <text x="740" y="417" font-size="14" font-weight="700">1. Bài khóa</text>
+        <text x="740" y="437" font-size="12" opacity=".8">Nghe và cách đọc từng câu</text>
+        <text x="740" y="487" font-size="14" font-weight="700">2. Chọn đáp án</text>
+        <text x="1010" y="487" font-size="13" font-weight="700" fill="#c23a2b" text-anchor="end">15 câu</text>
+        <text x="740" y="507" font-size="12" opacity=".8">Chọn từ đúng điền vào câu</text>
+        <text x="740" y="557" font-size="14" font-weight="700">3. Sắp xếp câu</text>
+        <text x="1010" y="557" font-size="13" font-weight="700" fill="#c23a2b" text-anchor="end">15 câu</text>
+        <text x="740" y="577" font-size="12" opacity=".8">Sắp các từ thành câu đúng</text>
+        <text x="740" y="627" font-size="14" font-weight="700">4. Điền đáp án đúng</text>
+        <text x="1010" y="627" font-size="13" font-weight="700" fill="#c23a2b" text-anchor="end">15 câu</text>
+        <text x="740" y="647" font-size="12" opacity=".8">Gõ chữ Hán còn thiếu</text>
+        <text x="1025" y="688" font-size="13" font-weight="700" text-anchor="end">= 45 câu luyện tập mỗi bài</text>
+      </g>
+    </svg>
+    <figcaption>Mỗi cấp HSK gồm nhiều bài. Bài nào cũng chia thành Phần Ôn tập (3 mục) và Phần Thực hành (4 mục, trong đó có 45 câu bài tập). Đường nét đứt là phần YCT dự kiến mở rộng sau.</figcaption>
+  </figure>
+
+  <h2>Nội dung cần soạn cho mỗi bài</h2>
+  <table>
+    <tr><th>Mục</th><th>Dữ liệu</th><th>Số lượng</th></tr>
+    <tr><td>Flashcard</td><td>Lấy từ danh sách từ vựng của bài; mỗi thẻ có âm thanh đọc chữ Hán</td><td class="num">= số từ của bài</td></tr>
+    <tr><td>Tổng hợp ngữ pháp</td><td>Tên điểm ngữ pháp, giải thích tiếng Việt, công thức, 1–2 câu ví dụ</td><td class="num">2–4 điểm</td></tr>
+    <tr><td>Tổng hợp từ vựng</td><td>Chữ Hán, pinyin, nghĩa tiếng Việt, câu ví dụ</td><td class="num">10–20 từ</td></tr>
+    <tr><td>Bài khóa</td><td>Từng câu: chữ Hán, pinyin, dịch, âm thanh</td><td class="num">1–3 đoạn</td></tr>
+    <tr><td>Chọn đáp án</td><td>Câu có chỗ trống, 4 phương án, đáp án đúng</td><td class="num">15 câu</td></tr>
+    <tr><td>Sắp xếp câu</td><td>Các từ bị xáo trộn, thứ tự đúng</td><td class="num">15 câu</td></tr>
+    <tr><td>Điền đáp án đúng</td><td>Câu có chỗ trống, gợi ý tiếng Việt, đáp án</td><td class="num">15 câu</td></tr>
+  </table>
+
+  <h2>So với web hiện tại</h2>
+  <ul>
+    <li>Các mục đều đã có, nhưng cần sắp lại theo đúng hai nhóm: <b>Ôn tập</b> (Flashcard → Ngữ pháp → Từ vựng) rồi <b>Thực hành</b> (Bài khóa → Chọn → Sắp xếp → Điền).</li>
+    <li>Gộp mục "Hội thoại" hiện có vào <b>Bài khóa</b>.</li>
+    <li>Bài tập phải tăng từ 3 lên <b>15 câu</b> mỗi dạng.</li>
+    <li>Mỗi bài cần có dữ liệu riêng. Hiện bài nào cũng đang hiện nội dung mẫu của bài 1.</li>
+    <li>Dữ liệu HSK 1 sẽ lấy từ slide bài giảng của bạn. HSK 2–4 sẽ bổ sung khi có tài liệu.</li>
+  </ul>
+
+  <h2>Cần bạn xác nhận</h2>
+  <div class="q">
+    <ul>
+      <li>Trong yêu cầu, phần Thực hành được đánh số bắt đầu từ <b>2</b>. Có phải còn thiếu một mục số 1 không, hay chỉ là gõ nhầm?</li>
+      <li>Có thêm nhánh <b>YCT 1–4</b> như bạn nhắc lần trước không?</li>
+      <li>Bài tập 15 câu: mình soạn dựa trên từ vựng và mẫu câu trong slide của từng bài, rồi bạn duyệt lại. Bạn thấy cách này ổn không?</li>
+    </ul>
+  </div>
+</main>
+</body>
+</html>

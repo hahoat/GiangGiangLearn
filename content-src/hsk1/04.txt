@@ -1,0 +1,109 @@
+id: 4
+title: 我有两个孩子
+py: Wǒ yǒu liǎng ge hái zi
+vi: Tôi có hai đứa con
+goal: Nói về gia đình, số lượng và tuổi tác; dùng 有/没有, số đếm 0–99, 两, 几/多少, 呢, 多大.
+slides: 04 我有两个孩子 2
+
+== vocab
+有 | yǒu | động từ | có | 你有中国朋友吗？ | Bạn có bạn người Trung Quốc không?
+没有 | méi yǒu | động từ | không có | 我没有工作。 | Tôi không có việc làm.
+多少 | duō shao | đại từ | bao nhiêu | 她有多少个学生？ | Cô ấy có bao nhiêu học sinh?
+个 | gè | lượng từ | cái, chiếc, người (lượng từ chung) | 我有两个孩子。 | Tôi có hai đứa con.
+两 | liǎng | số từ | hai (dùng trước lượng từ) | 两个学生 | hai học sinh
+呢 | ne | trợ từ | còn … thì sao? | 我有两个哥哥，你呢？ | Tôi có hai anh trai, còn bạn?
+家 | jiā | danh từ | nhà, gia đình | 这是我的家。 | Đây là nhà của tôi.
+几 | jǐ | đại từ | mấy | 你家有几口人？ | Nhà bạn có mấy người?
+口 | kǒu | lượng từ | (lượng từ đếm người trong nhà) | 我家有三口人。 | Nhà tôi có ba người.
+爸爸 | bà ba | danh từ | bố | 这是我爸爸。 | Đây là bố tôi.
+妈妈 | mā ma | danh từ | mẹ | 我妈妈是老师。 | Mẹ tôi là giáo viên.
+哥哥 | gē ge | danh từ | anh trai | 你有哥哥吗？ | Bạn có anh trai không?
+弟弟 | dì di | danh từ | em trai | 我有一个弟弟。 | Tôi có một em trai.
+妹妹 | mèi mei | danh từ | em gái | 她没有妹妹。 | Cô ấy không có em gái.
+儿子 | ér zi | danh từ | con trai | 这是您儿子吗？ | Đây là con trai của ông/bà phải không?
+女儿 | nǚ ér | danh từ | con gái | 您女儿多大？ | Con gái ông/bà bao nhiêu tuổi?
+孩子 | hái zi | danh từ | con, trẻ con | 他们有两个孩子。 | Họ có hai đứa con.
+和 | hé | liên từ | và | 爸爸和妈妈 | bố và mẹ
+岁 | suì | lượng từ | tuổi | 他今年五岁。 | Năm nay cậu bé 5 tuổi.
+今年 | jīn nián | danh từ | năm nay | 你今年多大？ | Năm nay bạn bao nhiêu tuổi?
+多 | duō | đại từ | bao (nhiêu), đến mức nào | 你多大？ | Bạn bao nhiêu tuổi?
+大 | dà | tính từ | lớn (tuổi) | 王老师多大？ | Thầy Vương bao nhiêu tuổi?
+
+== grammar
+## 有 và 没有
+有 nghĩa là "có". Phủ định của 有 là 没有, không dùng 不有.
+f: A + 有 / 没有 + B
+ex: 我有两个哥哥。 | Tôi có hai anh trai.
+ex: 我没有姐姐。 | Tôi không có chị gái.
+## Số đếm 0–99 và 两
+11–19: 十 + số (十二); chục: số + 十 (二十); 21–99: số + 十 + số (二十四). Trước lượng từ, "hai" dùng 两 chứ không dùng 二.
+f: 两 + 个 + Danh từ
+ex: 她有二十四个学生。 | Cô ấy có 24 học sinh.
+ex: 我有两个孩子。 | Tôi có hai đứa con.
+## Hỏi số lượng: 几 và 多少
+几 dùng khi đoán số lượng nhỏ (thường dưới 10), phải có lượng từ. 多少 dùng cho số lượng bất kỳ, có thể bỏ lượng từ.
+f: 几 + Lượng từ + Danh từ · 多少 + (Lượng từ) + Danh từ
+ex: 你家有几口人？ | Nhà bạn có mấy người?
+ex: 她有多少个学生？ | Cô ấy có bao nhiêu học sinh?
+## Trợ từ 呢: hỏi lại
+Sau khi nói về mình, dùng "你呢？" để hỏi lại người kia cùng nội dung đó.
+f: Câu trần thuật，Danh từ / Đại từ + 呢？
+ex: 我叫白家月，你呢？ | Tôi tên là Bạch Gia Nguyệt, còn bạn?
+ex: 我是中国人，你呢？ | Tôi là người Trung Quốc, còn bạn?
+## Hỏi tuổi: 几岁 / 多大
+Hỏi trẻ em (dưới 10 tuổi): 几岁？ Hỏi người lớn hoặc bạn bè: 多大？ Với người lớn tuổi hơn nên hỏi lịch sự.
+f: 你几岁？ · 你多大？
+ex: 您儿子几岁？ | Con trai ông/bà mấy tuổi?
+ex: 你今年多大？ | Năm nay bạn bao nhiêu tuổi?
+
+== text Bài khóa 1
+李文: 王老师，您有多少个学生？ | Thầy Vương, thầy có bao nhiêu học sinh?
+王一飞: 我有二十个学生。 | Thầy có hai mươi học sinh.
+李文: 他们都是中国人吗？ | Họ đều là người Trung Quốc ạ?
+王一飞: 不是，他们是法国人和泰国人。 | Không, họ là người Pháp và người Thái Lan.
+
+== text Bài khóa 2
+王一雪: 你家有几口人？ | Nhà em có mấy người?
+杨同乐: 我家有四口人，爸爸、妈妈、妹妹和我。 | Nhà em có bốn người: bố, mẹ, em gái và em.
+王一雪: 你有哥哥吗？ | Em có anh trai không?
+杨同乐: 我没有哥哥。 | Em không có anh trai.
+
+== text Bài khóa 3
+杨同乐: 这是您儿子吗？ | Đây là con trai chị ạ?
+王一雪: 是的。我有两个孩子，一个儿子，一个女儿。 | Đúng vậy. Chị có hai đứa con, một trai, một gái.
+杨同乐: 您儿子几岁？ | Con trai chị mấy tuổi ạ?
+王一雪: 他今年五岁。 | Năm nay cháu 5 tuổi.
+杨同乐: 您女儿多大？ | Con gái chị bao nhiêu tuổi ạ?
+王一雪: 她今年十二。 | Năm nay cháu 12.
+
+== sentences
+我 有 两 个 哥哥 。 | Tôi có hai anh trai. | 两 | 二 几 多
+你 家 有 几 口 人 ？ | Nhà bạn có mấy người? | 口 | 岁 和 呢
+我 没有 姐姐 。 | Tôi không có chị gái. | 没有 | 不 和 呢
+我 叫 白家月 ， 你 呢 ？ | Tôi tên là Bạch Gia Nguyệt, còn bạn? | 呢 | 吗 和 几
+我 家 有 三 口 人 ， 爸爸 、 妈妈 和 我 。 | Nhà tôi có ba người: bố, mẹ và tôi. | 和 | 呢 也 有
+她 有 多少 个 学生 ？ | Cô ấy có bao nhiêu học sinh? | 多少 | 呢 和 没有
+您 女儿 多 大 ？ | Con gái của ông/bà bao nhiêu tuổi? | 多 | 几 呢 和
+他 今年 五 岁 。 | Năm nay cậu bé 5 tuổi. | 岁 | 口 个 呢
+他们 有 一 个 儿子 和 一 个 女儿 。 | Họ có một con trai và một con gái. | 儿子 | 爸爸 哥哥 妈妈
+这 是 谁 的 家 ？ | Đây là nhà của ai? | 家 | 口 岁 多少
+你 有 弟弟 吗 ？ | Bạn có em trai không? | 弟弟 | 岁 口 多少
+大家 好 ， 我 叫 张心华 。 | Chào mọi người, tôi tên là Trương Tâm Hoa. | 大家 | 多少 几 口
+我 今年 二十 岁 ， 你 呢 ？ | Năm nay tôi 20 tuổi, còn bạn? | 今年 | 多少 口 个
+王 老师 有 二十 个 学生 。 | Thầy Vương có 20 học sinh. | 个 | 口 岁 和
+她 没有 孩子 。 | Cô ấy không có con. | 孩子 | 岁 口 多
+我 家 有 四 口 人 。 | Nhà tôi có bốn người. | 口 | 个 岁 和
+你 有 哥哥 吗 ？ | Bạn có anh trai không? | 有 | 是 和 呢
+我 有 两 个 孩子 。 | Tôi có hai đứa con. | 两 | 二 几 多
+你 家 有 几 口 人 ？ | Nhà bạn có mấy người? | 家 | 口 岁 和
+他 没有 妹妹 。 | Anh ấy không có em gái. | 没有 | 不 和 呢
+这 是 我 爸爸 和 妈妈 。 | Đây là bố và mẹ tôi. | 和 | 呢 也 有
+您 儿子 几 岁 ？ | Con trai của ông/bà mấy tuổi? | 儿子 | 女儿 爸爸 妈妈
+她 今年 十二 岁 。 | Năm nay cô bé 12 tuổi. | 岁 | 口 个 呢
+我 有 一 个 女儿 。 | Tôi có một con gái. | 女儿 | 儿子 哥哥 弟弟
+我 是 中国 人 ， 你 呢 ？ | Tôi là người Trung Quốc, còn bạn? | 呢 | 吗 和 几
+你 有 多少 个 中国 朋友 ？ | Bạn có bao nhiêu người bạn Trung Quốc? | 多少 | 呢 和 没有
+王 老师 今年 多 大 ？ | Thầy Vương năm nay bao nhiêu tuổi? | 大 | 几 岁 口
+我 有 一 个 妹妹 。 | Tôi có một em gái. | 妹妹 | 姐姐 哥哥 弟弟
+他们 家 有 五 口 人 。 | Nhà họ có năm người. | 五 | 两 几 多
+这 是 我 的 家 。 | Đây là nhà của tôi. | 家 | 口 岁 多少

@@ -1,0 +1,107 @@
+id: 12
+title: 昨天下雪了
+py: Zuó tiān xià xuě le
+vi: Hôm qua tuyết rơi
+goal: Nói về thời tiết và sức khỏe; dùng câu không chủ ngữ (下雨了), trợ từ 了 chỉ sự thay đổi, 太…了, 有点儿, …后再….
+slides: 12 昨天下雪了
+
+== vocab
+天气 | tiān qì | danh từ | thời tiết | 今天天气怎么样？ | Hôm nay thời tiết thế nào?
+这里 | zhè lǐ | đại từ | ở đây | 这里的天不太好。 | Thời tiết ở đây không tốt lắm.
+天 | tiān | danh từ | trời, thời tiết | 今天天很好。 | Hôm nay trời rất đẹp.
+下雨 | xià yǔ | động từ | mưa | 下雨了。 | Trời mưa rồi.
+雨 | yǔ | danh từ | mưa | 雨大吗？ | Mưa to không?
+有点儿 | yǒu diǎnr | phó từ | hơi, có chút (không như ý) | 雨有点儿大。 | Mưa hơi to.
+觉得 | jué de | động từ | cảm thấy, thấy | 我觉得很冷。 | Tôi thấy rất lạnh.
+冷 | lěng | tính từ | lạnh | 太冷了！ | Lạnh quá!
+下 | xià | động từ | rơi (mưa, tuyết) | 昨天下雪了。 | Hôm qua tuyết rơi.
+雪 | xuě | danh từ | tuyết | 北京下雪了。 | Bắc Kinh có tuyết rồi.
+热 | rè | tính từ | nóng | 今天很热。 | Hôm nay rất nóng.
+来 | lái | động từ | đến, tới | 你昨天没来公司。 | Hôm qua bạn không đến công ty.
+公司 | gōng sī | danh từ | công ty | 我去公司上班。 | Tôi đến công ty làm việc.
+生病 | shēng bìng | động từ | bị ốm | 你生病了？ | Bạn bị ốm à?
+看病 | kàn bìng | động từ | đi khám bệnh | 我去医院看病了。 | Tôi đi bệnh viện khám bệnh.
+病 | bìng | động từ | ốm, bệnh | 医生，我病了。 | Bác sĩ, tôi bị ốm.
+一点儿 | yì diǎnr | số lượng từ | một chút, một ít | 吃一点儿药。 | Uống một chút thuốc.
+药 | yào | danh từ | thuốc | 你吃药了吗？ | Bạn uống thuốc chưa?
+回 | huí | động từ | về, trở về | 你什么时候回家？ | Khi nào bạn về nhà?
+再 | zài | phó từ | rồi mới, sau đó | 回家后再喝些热水。 | Về nhà rồi uống thêm ít nước nóng.
+喝 | hē | động từ | uống | 请喝水。 | Mời uống nước.
+水 | shuǐ | danh từ | nước | 我喝一点儿水。 | Tôi uống một chút nước.
+
+== grammar
+## Câu không chủ ngữ
+Câu chỉ có vị ngữ, thường nói về thời tiết, hiện tượng, lời chào, lời xin lỗi.
+f: Động từ / Tính từ + (了)
+ex: 下雨了。 | Trời mưa rồi.
+ex: 对不起！—— 没关系！ | Xin lỗi! – Không sao!
+## Trợ từ ngữ khí 了 (1): sự thay đổi
+了 ở cuối câu cho biết tình huống mới xuất hiện hoặc đã thay đổi. Hỏi: … 了吗？ Phủ định: 没 … 呢.
+f: Câu + 了
+ex: 十二点了，吃午饭吧。 | 12 giờ rồi, ăn trưa thôi.
+ex: A：弟弟起床了吗？ B：没起床呢。 | A: Em trai dậy chưa? B: Chưa dậy.
+## 太 … 了
+Diễn tả mức độ rất cao, dùng để cảm thán (khen hoặc chê).
+f: 太 + Tính từ + 了
+ex: 太冷了！ | Lạnh quá!
+ex: 我们今天太高兴了！ | Hôm nay chúng tôi vui quá!
+## 有点儿 + tính từ
+有点儿 đặt trước tính từ: "hơi …", thường mang ý không hài lòng. Khác với 一点儿 (một chút) đứng sau động từ.
+f: 有点儿 + Tính từ · Động từ + 一点儿 + Danh từ
+ex: 雨有点儿大。 | Mưa hơi to.
+ex: 吃一点儿药。 | Uống một chút thuốc.
+## … 后再 …: sau khi … rồi mới …
+f: Hành động 1 + 后 + 再 + Hành động 2
+ex: 回家后再喝些热水。 | Về nhà rồi uống thêm ít nước nóng.
+
+== text Bài khóa 1
+王一飞: 今天天气怎么样？ | Hôm nay thời tiết thế nào ạ?
+王一雪: 这里的天不太好，下雨了。 | Trời ở đây không đẹp lắm, mưa rồi.
+王一飞: 雨大吗？ | Mưa to không ạ?
+王一雪: 有点儿大，我觉得很冷。 | Hơi to, chị thấy rất lạnh.
+
+== text Bài khóa 2
+王一雪: 昨天下雪了。 | Hôm qua tuyết rơi.
+杨同乐: 是的，太冷了。 | Vâng, lạnh quá.
+王一雪: 你昨天没来公司，生病了？ | Hôm qua em không đến công ty, em bị ốm à?
+杨同乐: 对，我昨天去医院看病了。 | Vâng, hôm qua em đi bệnh viện khám bệnh.
+
+== text Bài khóa 3
+杨同乐: 医生，我病了。 | Bác sĩ, tôi bị ốm rồi.
+胡医生: 我看看。你觉得怎么样？ | Để tôi xem. Anh thấy thế nào?
+杨同乐: 我很冷。 | Tôi thấy rất lạnh.
+胡医生: 好的，吃一点儿药，今天休息半天吧。 | Được, uống một chút thuốc, hôm nay nghỉ nửa ngày nhé.
+杨同乐: 好的。 | Vâng.
+胡医生: 回家后再喝些热水。 | Về nhà rồi uống thêm ít nước nóng.
+
+== sentences
+今天 天气 怎么样 ？ | Hôm nay thời tiết thế nào? | 天气 | 公司 药 雪
+这里 的 天 不 太 好 。 | Thời tiết ở đây không tốt lắm. | 这里 | 有点儿 一点儿 再
+下雨 了 。 | Trời mưa rồi. | 下雨 | 公司 药 觉得
+雨 有点儿 大 。 | Mưa hơi to. | 有点儿 | 一点儿 再 回
+我 觉得 很 冷 。 | Tôi thấy rất lạnh. | 觉得 | 公司 药 雪
+昨天 下 雪 了 。 | Hôm qua tuyết rơi. | 雪 | 药 公司 天气
+是 的 ， 太 冷 了 。 | Đúng vậy, lạnh quá. | 太 | 再 回 来
+你 昨天 没 来 公司 。 | Hôm qua bạn không đến công ty. | 来 | 冷 热 雪
+我 昨天 去 医院 看病 了 。 | Hôm qua tôi đi bệnh viện khám bệnh. | 看病 | 天气 雪 公司
+医生 ， 我 病 了 。 | Bác sĩ, tôi bị ốm rồi. | 病 | 药 雪 天气
+吃 一点儿 药 。 | Uống một chút thuốc. | 药 | 雪 雨 天气
+今天 休息 半 天 吧 。 | Hôm nay nghỉ nửa ngày đi. | 半 | 再 有点儿 回
+回 家 后 再 喝 些 热水 。 | Về nhà rồi uống thêm ít nước nóng. | 再 | 太 有点儿 觉得
+十二 点 了 ， 吃 午饭 吧 。 | 12 giờ rồi, ăn trưa thôi. | 了 | 吗 的 也
+这 个 杯子 太 小 了 。 | Cái cốc này nhỏ quá. | 小 | 下雨 公司 药
+今天 很 热 。 | Hôm nay rất nóng. | 热 | 冷 雪 雨
+北京 下 雪 了 。 | Bắc Kinh có tuyết rơi rồi. | 雪 | 雨 药 水
+我 觉得 有点儿 冷 。 | Tôi thấy hơi lạnh. | 有点儿 | 一点儿 再 太
+他 生病 了 。 | Anh ấy bị ốm rồi. | 生病 | 看病 天气 公司
+我 去 公司 上班 。 | Tôi đến công ty làm việc. | 公司 | 医院 学校 商店
+我们 今天 太 高兴 了 ！ | Hôm nay chúng tôi vui quá! | 高兴 | 冷 热 忙
+请 喝 水 。 | Mời uống nước. | 水 | 药 茶 雪
+你 什么 时候 回 家 ？ | Khi nào bạn về nhà? | 回 | 来 去 到
+对不起 ！ 没关系 ！ | Xin lỗi! – Không sao! | 没关系 | 谢谢 再见 不客气
+弟弟 起床 了 吗 ？ | Em trai dậy chưa? | 了 | 的 也 很
+你 吃 药 了 吗 ？ | Bạn uống thuốc chưa? | 药 | 水 茶 雪
+外边 下雨 了 。 | Bên ngoài trời mưa rồi. | 下雨 | 下雪 天气 生病
+你 明天 来 学校 吗 ？ | Ngày mai bạn có đến trường không? | 学校 | 公司 医院 商店
+今天 的 天气 很 好 。 | Thời tiết hôm nay rất đẹp. | 天气 | 公司 药 雪
+我 喝 一点儿 水 。 | Tôi uống một chút nước. | 一点儿 | 有点儿 再 太

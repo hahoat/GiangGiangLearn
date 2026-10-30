@@ -1,0 +1,104 @@
+id: 10
+title: 这儿的苹果真便宜
+py: Zhèr de píng guǒ zhēn pián yi
+vi: Táo ở đây rẻ thật
+goal: Mua bán: hỏi giá, nói số tiền (元/块, 角), đơn vị cân 斤; dùng 这儿/那儿, 这些/那些; hỏi ý kiến với 怎么样.
+slides: 10 这儿的苹果真便宜
+
+== vocab
+杯子 | bēi zi | danh từ | cái cốc, cái ly | 请问，有杯子吗？ | Xin hỏi, có cốc không?
+售货员 | shòu huò yuán | danh từ | nhân viên bán hàng | 她是售货员。 | Cô ấy là nhân viên bán hàng.
+这边 | zhè biān | đại từ | bên này | 杯子在这边。 | Cốc ở bên này.
+钱 | qián | danh từ | tiền | 多少钱一个？ | Bao nhiêu tiền một cái?
+块 | kuài | lượng từ | đồng (tệ, văn nói) | 五块钱一个 | 5 đồng một cái
+元 | yuán | lượng từ | tệ, đồng (văn viết) | 这件一百元。 | Cái này 100 tệ.
+角 | jiǎo | lượng từ | hào (1/10 tệ) | 一元五角 | 1 tệ 5 hào
+这儿 | zhèr | đại từ | ở đây | 这儿的苹果真便宜！ | Táo ở đây rẻ thật!
+那儿 | nàr | đại từ | ở đó, đằng kia | 男孩子的衣服在那儿。 | Quần áo con trai ở đằng kia.
+水果 | shuǐ guǒ | danh từ | trái cây | 这儿的水果真不少！ | Trái cây ở đây nhiều thật!
+苹果 | píng guǒ | danh từ | quả táo | 我想买两斤苹果。 | Tôi muốn mua hai cân táo.
+少 | shǎo | tính từ | ít | 这儿的人很少。 | Ở đây rất ít người.
+斤 | jīn | lượng từ | cân (= 0,5 kg) | 苹果三块五一斤。 | Táo 3 đồng 5 một cân.
+便宜 | pián yi | tính từ | rẻ | 这儿的衣服很便宜。 | Quần áo ở đây rất rẻ.
+贵 | guì | tính từ | đắt | 好看，也不贵。 | Đẹp, cũng không đắt.
+商店 | shāng diàn | danh từ | cửa hàng | 这家商店衣服真多！ | Cửa hàng này nhiều quần áo thật!
+衣服 | yī fu | danh từ | quần áo | 这件衣服怎么样？ | Cái áo này thế nào?
+件 | jiàn | lượng từ | cái, chiếc (quần áo, sự việc) | 买一件吧。 | Mua một cái đi.
+怎么样 | zěn me yàng | đại từ | thế nào | 这件一百元，怎么样？ | Cái này 100 tệ, thế nào?
+穿 | chuān | động từ | mặc, mang | 小雪能穿。 | Tiểu Tuyết mặc được.
+女 | nǚ | tính từ | nữ | 女孩子 | bé gái
+男 | nán | tính từ | nam | 男孩子 | bé trai
+
+== grammar
+## Cách nói số tiền
+Văn viết: 元 – 角 – 分; văn nói: 块 – 毛. Khi nói, đơn vị cuối thường được lược bỏ.
+f: … 元 … 角 = … 块 …
+ex: 一元五角 = 一块五 | 1 tệ 5 hào
+ex: 二十一元四角 = 二十一块四 | 21 tệ 4 hào
+## Hỏi giá
+Hỏi giá một đơn vị: 多少钱 + một + lượng từ? hoặc Danh từ + 多少钱 + một + lượng từ?
+f: (Danh từ) + 多少钱 + 一 + Lượng từ？
+ex: 多少钱一个？ | Bao nhiêu tiền một cái?
+ex: 苹果三块五一斤。 | Táo 3 đồng 5 một cân.
+## 这儿 / 那儿 và 这些 / 那些
+这儿 (ở đây), 那儿 (ở đó) chỉ nơi chốn. 这些 (những … này), 那些 (những … kia) chỉ số nhiều.
+f: 这儿 / 那儿 + 的 + Danh từ · 这些 / 那些 + (Danh từ)
+ex: 这儿的苹果真便宜！ | Táo ở đây rẻ thật!
+ex: 这些五块钱一个，那些十块钱一个。 | Những cái này 5 đồng một cái, những cái kia 10 đồng một cái.
+## Hỏi ý kiến với 怎么样
+怎么样 đặt cuối câu để hỏi ý kiến, đánh giá của người nghe.
+f: … ，怎么样？
+ex: 这件一百元，怎么样？ | Cái này 100 tệ, thế nào?
+ex: 今天天气怎么样？ | Hôm nay thời tiết thế nào?
+
+== text Bài khóa 1
+王一雪: 请问，有杯子吗？ | Xin hỏi, có cốc không?
+售货员: 有，杯子在这边。 | Có, cốc ở bên này.
+王一雪: 多少钱一个？ | Bao nhiêu tiền một cái?
+售货员: 这些五块钱一个，那些十块钱一个。 | Những cái này 5 đồng một cái, những cái kia 10 đồng một cái.
+王一雪: 我买这个吧。 | Tôi mua cái này nhé.
+
+== text Bài khóa 2
+刘明: 这儿的水果真不少！ | Trái cây ở đây nhiều thật!
+售货员: 您想买什么？ | Anh muốn mua gì?
+刘明: 我想买两斤苹果。 | Tôi muốn mua hai cân táo.
+售货员: 苹果三块五一斤。这些七块二，七块钱吧。 | Táo 3 đồng 5 một cân. Chỗ này 7 đồng 2, lấy 7 đồng thôi.
+刘明: 好的，这儿的苹果真便宜！ | Được, táo ở đây rẻ thật!
+
+== text Bài khóa 3
+王一雪: 这家商店衣服真多！这件一百元，怎么样？ | Cửa hàng này nhiều quần áo thật! Cái này 100 tệ, thế nào anh?
+刘明: 好看，也不贵。小雪能穿，买一件吧。 | Đẹp, cũng không đắt. Tiểu Tuyết mặc được, mua một cái đi.
+王一雪: 好的。小明能穿吗？ | Được. Tiểu Minh mặc được không?
+售货员: 不能。这些是女孩子穿的衣服，男孩子的衣服在那儿。 | Không được ạ. Đây là quần áo con gái, quần áo con trai ở đằng kia.
+
+== sentences
+请问 ， 有 杯子 吗 ？ | Xin hỏi, có cốc không? | 杯子 | 块 斤 件
+杯子 在 这边 。 | Cốc ở bên này. | 这边 | 多少 怎么样 块
+多少 钱 一 个 ？ | Bao nhiêu tiền một cái? | 钱 | 斤 件 贵
+这些 五 块 钱 一 个 。 | Những cái này 5 đồng một cái. | 块 | 斤 件 只
+我 买 这 个 吧 。 | Tôi mua cái này nhé. | 买 | 贵 少 便宜
+这儿 的 水果 真 不 少 ！ | Trái cây ở đây nhiều thật! | 水果 | 钱 块 斤
+我 想 买 两 斤 苹果 。 | Tôi muốn mua hai cân táo. | 斤 | 件 只 本
+苹果 三 块 五 一 斤 。 | Táo 3 đồng 5 một cân. | 苹果 | 衣服 杯子 钱
+这儿 的 苹果 真 便宜 ！ | Táo ở đây rẻ thật! | 便宜 | 衣服 斤 件
+这 家 商店 衣服 真 多 ！ | Cửa hàng này nhiều quần áo thật! | 商店 | 斤 件 块
+这 件 一百 元 ， 怎么样 ？ | Cái này 100 tệ, thế nào? | 怎么样 | 多少 哪儿 这边
+好看 ， 也 不 贵 。 | Đẹp, cũng không đắt. | 贵 | 斤 件 块
+小雪 能 穿 ， 买 一 件 吧 。 | Tiểu Tuyết mặc được, mua một cái đi. | 件 | 斤 只 本
+这些 是 女孩子 穿 的 衣服 。 | Đây là quần áo con gái mặc. | 穿 | 斤 块 贵
+男孩子 的 衣服 在 那儿 。 | Quần áo con trai ở đằng kia. | 那儿 | 多少 怎么样 斤
+苹果 多少 钱 一 斤 ？ | Táo bao nhiêu tiền một cân? | 多少 | 怎么样 哪儿 这边
+我 想 买 一 个 杯子 。 | Tôi muốn mua một cái cốc. | 杯子 | 衣服 苹果 水果
+这 件 衣服 很 贵 。 | Cái áo này rất đắt. | 贵 | 便宜 少 多
+我 喜欢 吃 水果 。 | Tôi thích ăn trái cây. | 水果 | 苹果 杯子 衣服
+这儿 的 衣服 很 便宜 。 | Quần áo ở đây rất rẻ. | 便宜 | 贵 少 多
+我 有 二十 块 钱 。 | Tôi có 20 đồng. | 块 | 斤 件 只
+这 件 衣服 怎么样 ？ | Cái áo này thế nào? | 怎么样 | 多少 哪儿 怎么
+她 穿 的 衣服 真 漂亮 。 | Quần áo cô ấy mặc thật đẹp. | 衣服 | 苹果 杯子 水果
+杯子 在 那边 。 | Cốc ở bên kia. | 那边 | 这边 哪儿 这儿
+我 买 三 斤 苹果 。 | Tôi mua ba cân táo. | 斤 | 件 只 块
+这 家 商店 的 东西 很 多 。 | Cửa hàng này có rất nhiều đồ. | 商店 | 书店 饭店 超市
+这 件 衣服 一百 元 。 | Cái áo này 100 tệ. | 元 | 只 本 口
+他 是 售货员 。 | Anh ấy là nhân viên bán hàng. | 售货员 | 医生 老师 学生
+这儿 的 人 很 少 。 | Ở đây rất ít người. | 少 | 多 大 小
+这些 苹果 很 便宜 ， 那些 很 贵 。 | Những quả táo này rẻ, những quả kia đắt. | 这些 | 这儿 那儿 这边

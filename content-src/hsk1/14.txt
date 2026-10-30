@@ -1,0 +1,105 @@
+id: 14
+title: 我看了一个电影
+py: Wǒ kàn le yí ge diàn yǐng
+vi: Tôi đã xem một bộ phim
+goal: Nói hành động đã hoàn thành với 了 (sau động từ) và phủ định bằng 没; dùng 都, 有些/有的, 不要; biết các từ ly hợp (上课, 睡觉, 说话…).
+slides: 14 我看了一个电影
+
+== vocab
+上 | shàng | động từ | lên (xe, tàu); bắt đầu (học) | 你们上火车后看见王老师了吗？ | Sau khi lên tàu các bạn có thấy thầy Vương không?
+火车 | huǒ chē | danh từ | tàu hỏa | 我们坐火车去北京。 | Chúng tôi đi tàu hỏa đến Bắc Kinh.
+中午 | zhōng wǔ | danh từ | buổi trưa | 中午车开了。 | Buổi trưa xe chạy rồi.
+开 | kāi | động từ | (xe, tàu) chạy, khởi hành | 火车开了。 | Tàu chạy rồi.
+有些 | yǒu xiē | đại từ | một số, có những | 有些人在看书。 | Có một số người đang đọc sách.
+有的 | yǒu de | đại từ | có (người, cái) … | 有的人喜欢看书。 | Có người thích đọc sách.
+了 | le | trợ từ | (đặt sau động từ, chỉ hành động đã hoàn thành) | 我看了一个电影。 | Tôi đã xem một bộ phim.
+写 | xiě | động từ | viết | 你会写汉字吗？ | Bạn biết viết chữ Hán không?
+都 | dōu | phó từ | đều | 我们都会写了。 | Chúng tôi đều biết viết rồi.
+听见 | tīng jiàn | động từ | nghe thấy | 同学们都没听见。 | Các bạn học đều không nghe thấy.
+不要 | bú yào | phó từ | đừng, không được | 请大家不要说话！ | Mọi người đừng nói chuyện!
+说话 | shuō huà | động từ | nói chuyện | 不要在这儿说话。 | Đừng nói chuyện ở đây.
+听 | tīng | động từ | nghe | 请听老师的问题。 | Hãy nghe câu hỏi của thầy.
+哪些 | nǎ xiē | đại từ | những … nào | 你们都会写哪些汉字了？ | Các em đều biết viết những chữ Hán nào rồi?
+字 | zì | danh từ | chữ | 我会写这些字了。 | Em biết viết những chữ này rồi.
+中学 | zhōng xué | danh từ | trường trung học | 明年女儿上中学。 | Năm sau con gái lên trung học.
+小学 | xiǎo xué | danh từ | trường tiểu học | 儿子也上小学了。 | Con trai cũng vào tiểu học rồi.
+中学生 | zhōng xué shēng | danh từ | học sinh trung học | 我们家有了一个中学生。 | Nhà ta có một học sinh trung học rồi.
+小学生 | xiǎo xué shēng | danh từ | học sinh tiểu học | 我妹妹是小学生。 | Em gái tôi là học sinh tiểu học.
+上学 | shàng xué | động từ | đi học, bắt đầu đi học | 上学后，他们都忙了。 | Sau khi đi học, chúng đều bận rồi.
+晚 | wǎn | tính từ | muộn | 太晚了，睡觉吧。 | Muộn quá rồi, đi ngủ thôi.
+早 | zǎo | tính từ | sớm | 我今天起床很早。 | Hôm nay tôi dậy rất sớm.
+
+== grammar
+## Trợ từ động thái 了
+了 đứng sau động từ cho biết hành động đã hoàn thành. Phủ định dùng 没 (有) + động từ và bỏ 了.
+f: Chủ ngữ + Động từ + 了 + (Số lượng) + Tân ngữ · 没 + Động từ
+ex: 我看了一个电影。 | Tôi đã xem một bộ phim.
+ex: 我昨天没去商店买东西。 | Hôm qua tôi không đi cửa hàng mua đồ.
+## Phó từ phạm vi 都
+都 (đều) đặt sau chủ ngữ số nhiều, trước động từ.
+f: Chủ ngữ (số nhiều) + 都 + Động từ
+ex: 我们都会写了。 | Chúng tôi đều biết viết rồi.
+ex: 同学们都没听见。 | Các bạn học đều không nghe thấy.
+## 有些 / 有的
+有些, 有的 + danh từ: "có một số …". Thường dùng thành cặp để so sánh.
+f: 有些 / 有的 + Danh từ … ，有些 / 有的 + Danh từ …
+ex: 有些人在看书，有些人睡觉了。 | Có người đang đọc sách, có người ngủ rồi.
+## 不要 + động từ: đừng
+Dùng để khuyên bảo hoặc ngăn cấm.
+f: (请) + 不要 + Động từ
+ex: 请大家不要说话！ | Mọi người đừng nói chuyện!
+## Từ ly hợp
+Một số động từ hai âm tiết thực chất là "động từ + tân ngữ" (上课, 下课, 上班, 下班, 说话, 读书, 睡觉, 看病, 生病). Không thêm tân ngữ phía sau; các thành phần khác như 了 chen vào giữa.
+f: 上 + 了 + 课 · 睡 + 了 + 觉
+ex: 他睡了一个小时。 | Anh ấy ngủ một tiếng.
+
+== text Bài khóa 1
+白家月: 你们上火车后看见王老师了吗？ | Sau khi lên tàu các bạn có thấy thầy Vương không?
+陈天中: 没看见。中午车开后，有些人在看书，有些人睡觉了。你呢？ | Không thấy. Trưa sau khi tàu chạy, có người đọc sách, có người ngủ rồi. Còn bạn?
+白家月: 我看了一个电影。 | Mình đã xem một bộ phim.
+
+== text Bài khóa 2
+王一飞: 你们会说汉语了，也会写汉字了吗？ | Các em biết nói tiếng Hán rồi, cũng biết viết chữ Hán rồi chứ?
+陈天中: 老师，我听不见。 | Thầy ơi, em không nghe thấy.
+王一飞: 请大家不要说话！请听老师的问题：你们都会写哪些汉字了？ | Mọi người đừng nói chuyện! Hãy nghe câu hỏi của thầy: các em đều biết viết những chữ Hán nào rồi?
+白家月: 我会写这些字了，您看！ | Em biết viết những chữ này rồi, thầy xem!
+
+== text Bài khóa 3
+王一雪: 明年女儿上中学。 | Năm sau con gái lên trung học.
+刘明: 对。儿子也上小学了。 | Đúng vậy. Con trai cũng vào tiểu học rồi.
+王一雪: 我们家有了一个中学生。 | Nhà mình có một học sinh trung học rồi.
+刘明: 还有了一个小学生。 | Còn có một học sinh tiểu học nữa.
+王一雪: 上学后，他们都忙了。 | Đi học rồi, chúng nó đều bận cả.
+刘明: 是的。太晚了，睡觉吧。 | Ừ. Muộn quá rồi, đi ngủ thôi.
+
+== sentences
+我 看 了 一 个 电影 。 | Tôi đã xem một bộ phim. | 了 | 吗 呢 吧
+我 买 了 一 个 新 电脑 。 | Tôi đã mua một cái máy tính mới. | 新 | 都 晚 早
+我 昨天 没 去 商店 买 东西 。 | Hôm qua tôi không đi cửa hàng mua đồ. | 没 | 都 了 早
+你们 上 火车 后 看见 王 老师 了 吗 ？ | Sau khi lên tàu các bạn có thấy thầy Vương không? | 火车 | 字 中学 小学
+中午 车 开 后 ， 有些 人 在 看 书 。 | Trưa sau khi xe chạy, có một số người đang đọc sách. | 有些 | 哪些 都 晚
+有些 人 睡觉 了 。 | Có một số người đã ngủ. | 睡觉 | 中学 字 火车
+我们 都 会 写 了 。 | Chúng tôi đều biết viết rồi. | 都 | 晚 早 字
+老师 ， 我 听 不 见 。 | Thưa thầy, em không nghe thấy. | 听 | 写 字 早
+请 大家 不要 说话 ！ | Mọi người đừng nói chuyện! | 不要 | 都 晚 字
+你们 都 会 写 哪些 汉字 了 ？ | Các em đều biết viết những chữ Hán nào rồi? | 哪些 | 有些 晚 早
+我 会 写 这些 字 了 。 | Em biết viết những chữ này rồi. | 字 | 火车 中学 晚
+明年 女儿 上 中学 。 | Năm sau con gái lên trung học. | 中学 | 字 火车 早
+儿子 也 上 小学 了 。 | Con trai cũng vào tiểu học rồi. | 小学 | 字 火车 晚
+上学 后 ， 他们 都 忙 了 。 | Sau khi đi học, chúng đều bận rồi. | 上学 | 字 火车 有些
+太 晚 了 ， 睡觉 吧 。 | Muộn quá rồi, đi ngủ thôi. | 晚 | 字 火车 哪些
+我 和 我 的 朋友们 都 去 。 | Tôi và các bạn của tôi đều đi. | 都 | 也 还 再
+同学们 都 没 听见 。 | Các bạn học đều không nghe thấy. | 听见 | 看见 说话 上学
+你 会 写 汉字 吗 ？ | Bạn biết viết chữ Hán không? | 写 | 听 说 读
+他 是 中学生 。 | Cậu ấy là học sinh trung học. | 中学生 | 小学生 大学生 学生
+我 妹妹 是 小学生 。 | Em gái tôi là học sinh tiểu học. | 小学生 | 中学生 大学生 学生
+我们 坐 火车 去 北京 。 | Chúng tôi đi tàu hỏa đến Bắc Kinh. | 火车 | 飞机 出租车 车
+你 早上 几 点 上学 ？ | Buổi sáng mấy giờ bạn đi học? | 上学 | 上班 上课 下课
+不要 在 这儿 说话 。 | Đừng nói chuyện ở đây. | 说话 | 睡觉 听见 上学
+我 听 老师 的 问题 。 | Tôi nghe câu hỏi của thầy. | 听 | 看 写 说
+有的 人 喜欢 看 书 。 | Có người thích đọc sách. | 有的 | 哪些 都 晚
+我 今天 起床 很 早 。 | Hôm nay tôi dậy rất sớm. | 早 | 晚 好 多
+中午 十二 点 火车 开 了 。 | 12 giờ trưa tàu chạy rồi. | 开 | 来 去 到
+他 昨天 没 来 。 | Hôm qua anh ấy không đến. | 没 | 不 了 都
+我 喝 了 两 杯 茶 。 | Tôi đã uống hai cốc trà. | 了 | 的 吗 呢
+这 个 字 怎么 写 ？ | Chữ này viết thế nào? | 字 | 书 歌 菜

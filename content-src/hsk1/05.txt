@@ -1,0 +1,109 @@
+id: 5
+title: 今天我休息
+py: Jīn tiān wǒ xiū xi
+vi: Hôm nay tôi nghỉ
+goal: Nói ngày, tháng, thứ; nói mình biết làm gì với 会; khen ngợi với 真; nói về sở thích với 喜欢.
+slides: 05 今天我休息
+
+== vocab
+今天 | jīn tiān | danh từ | hôm nay | 今天我休息。 | Hôm nay tôi nghỉ.
+号 | hào | danh từ | ngày (trong tháng, văn nói) | 今天九月八号。 | Hôm nay là ngày 8 tháng 9.
+日 | rì | danh từ | ngày (văn viết) | 五月十六日 | ngày 16 tháng 5
+月 | yuè | danh từ | tháng | 今天几月几号？ | Hôm nay là ngày mấy tháng mấy?
+星期 | xīng qī | danh từ | tuần; thứ | 今天星期几？ | Hôm nay thứ mấy?
+星期日 | xīng qī rì | danh từ | Chủ nhật | 星期日我休息。 | Chủ nhật tôi nghỉ.
+星期天 | xīng qī tiān | danh từ | Chủ nhật | 星期天我也做饭。 | Chủ nhật tôi cũng nấu cơm.
+休息 | xiū xi | động từ | nghỉ ngơi | 星期一你休息吗？ | Thứ Hai bạn có nghỉ không?
+会 | huì | động từ năng nguyện | biết (làm gì đó) | 他会做饭。 | Anh ấy biết nấu cơm.
+做饭 | zuò fàn | động từ | nấu cơm | 你会做饭吗？ | Bạn biết nấu cơm không?
+做 | zuò | động từ | làm, nấu | 我会做饺子。 | Tôi biết làm sủi cảo.
+面条儿 | miàn tiáor | danh từ | mì sợi | 我会做面条儿。 | Tôi biết nấu mì.
+饺子 | jiǎo zi | danh từ | sủi cảo | 我喜欢吃饺子。 | Tôi thích ăn sủi cảo.
+一些 | yì xiē | số lượng từ | một số, một ít | 我会做一些菜。 | Tôi biết nấu một số món.
+菜 | cài | danh từ | món ăn | 你会做中国菜吗？ | Bạn biết nấu món Trung Quốc không?
+下班 | xià bān | động từ | tan làm | 同乐，下班吗？ | Đồng Lạc, tan làm chưa?
+新 | xīn | tính từ | mới | 这是我的新电脑。 | Đây là máy tính mới của tôi.
+电脑 | diàn nǎo | danh từ | máy tính | 你有新电脑吗？ | Bạn có máy tính mới không?
+真 | zhēn | phó từ | thật, thật là | 这个电脑真好看。 | Cái máy tính này thật đẹp.
+好看 | hǎo kàn | tính từ | đẹp, ưa nhìn | 真好看！ | Thật đẹp!
+喜欢 | xǐ huan | động từ | thích | 我喜欢中文。 | Tôi thích tiếng Trung.
+它 | tā | đại từ | nó (chỉ vật, con vật) | 我也很喜欢它。 | Tôi cũng rất thích nó.
+
+== grammar
+## Cách nói ngày tháng
+Tiếng Trung nói thời gian từ lớn đến nhỏ: năm → tháng → ngày → thứ. Năm đọc từng chữ số. Văn nói dùng 号, văn viết dùng 日.
+f: … 年 … 月 … 号 / 日，星期 …
+ex: 今天九月八号。 | Hôm nay là ngày 8 tháng 9.
+ex: 二零二五年五月十六号，星期五。 | Thứ Sáu, ngày 16 tháng 5 năm 2025.
+## Hỏi ngày và thứ
+Thứ Hai đến thứ Bảy: 星期 + 一 … 六. Chủ nhật: 星期日 hoặc 星期天 (không nói 星期七).
+f: 今天几月几号？ · 今天星期几？
+ex: 今天几月几号？ | Hôm nay ngày mấy tháng mấy?
+ex: 今天星期三。 | Hôm nay thứ Tư.
+## Động từ năng nguyện 会
+会 + động từ: biết làm việc gì đó (kỹ năng có được nhờ học). Phủ định: 不会.
+f: Chủ ngữ + 会 / 不会 + Động từ
+ex: 他会做饭。 | Anh ấy biết nấu cơm.
+ex: 她不会做饭。 | Cô ấy không biết nấu cơm.
+## Cảm thán với 真
+真 + tính từ dùng để cảm thán, khen ngợi: "thật là …!".
+f: 真 + Tính từ
+ex: 这个电脑真好看！ | Cái máy tính này thật đẹp!
+ex: 真好！ | Thật tốt!
+## Âm cuốn lưỡi 儿化
+Một số từ thêm 儿 ở cuối, 儿 không đọc thành âm riêng mà cuốn lưỡi vào âm trước (ghi -r).
+f: … + 儿 → …r
+ex: 面条儿 | mì sợi (miàntiáor)
+ex: 好玩儿 | vui (hǎowánr)
+
+== text Bài khóa 1
+刘明: 今天几号？ | Hôm nay ngày bao nhiêu?
+王一雪: 今天九月八号。 | Hôm nay ngày 8 tháng 9.
+刘明: 星期几？ | Thứ mấy?
+王一雪: 星期日。今天我休息。 | Chủ nhật. Hôm nay em nghỉ.
+
+== text Bài khóa 2
+王一雪: 你会做饭吗？ | Em biết nấu cơm không?
+杨同乐: 我会做。 | Em biết nấu.
+王一雪: 你会做什么？ | Em biết nấu món gì?
+杨同乐: 我会做面条儿、饺子，也会做一些菜。星期天我也做饭。 | Em biết nấu mì, sủi cảo, còn biết nấu vài món nữa. Chủ nhật em cũng nấu cơm.
+
+== text Bài khóa 3
+王一雪: 同乐，下班吗？ | Đồng Lạc, tan làm chưa?
+杨同乐: 下班。 | Tan làm rồi ạ.
+王一雪: 这是你的新电脑吗？ | Đây là máy tính mới của em à?
+杨同乐: 是的，是我的新电脑。 | Vâng, là máy tính mới của em.
+王一雪: 真好看！ | Đẹp thật!
+杨同乐: 我也很喜欢它。 | Em cũng rất thích nó.
+
+== sentences
+今天 几 月 几 号 ？ | Hôm nay ngày bao nhiêu tháng mấy? | 月 | 星期 岁 口
+今天 星期 几 ？ | Hôm nay thứ mấy? | 星期 | 号 月 岁
+今天 我 休息 。 | Hôm nay tôi nghỉ. | 休息 | 新 真 一些
+他 会 做饭 。 | Anh ấy biết nấu cơm. | 会 | 真 新 一些
+我 会 做 面条儿 和 饺子 。 | Tôi biết nấu mì và sủi cảo. | 饺子 | 电脑 星期 休息
+你 会 做 中国 菜 吗 ？ | Bạn biết nấu món Trung Quốc không? | 菜 | 电脑 星期 号
+我 也 会 做 一些 菜 。 | Tôi cũng biết nấu một số món. | 一些 | 两 几 多
+星期天 我 也 做饭 。 | Chủ nhật tôi cũng nấu cơm. | 星期天 | 新 真 好看
+同乐 ， 下班 吗 ？ | Đồng Lạc, tan làm chưa? | 下班 | 新 一些 星期
+这 是 我 的 新 电脑 。 | Đây là máy tính mới của tôi. | 新 | 真 会 一些
+这 个 电脑 真 好看 ！ | Cái máy tính này thật đẹp! | 真 | 会 新 一些
+我 很 喜欢 它 。 | Tôi rất thích nó. | 喜欢 | 休息 下班 新
+你 喜欢 做饭 吗 ？ | Bạn có thích nấu cơm không? | 喜欢 | 星期 新 一些
+她 不 会 做饭 。 | Cô ấy không biết nấu cơm. | 会 | 真 新 一些
+今天 九 月 八 号 。 | Hôm nay là ngày 8 tháng 9. | 号 | 岁 口 个
+今天 星期 三 。 | Hôm nay thứ Tư. | 三 | 四 五 六
+明天 我 工作 。 | Ngày mai tôi làm việc. | 明天 | 今天 昨天 星期
+星期一 你 休息 吗 ？ | Thứ Hai bạn có nghỉ không? | 休息 | 下班 喜欢 会
+我 会 做 饺子 。 | Tôi biết làm sủi cảo. | 会 | 真 新 一些
+你 会 做 什么 ？ | Bạn biết nấu món gì? | 什么 | 哪 几 谁
+这 是 你 的 新 电脑 吗 ？ | Đây là máy tính mới của bạn phải không? | 电脑 | 饺子 星期 菜
+真 好看 ！ | Thật đẹp! | 好看 | 休息 下班 喜欢
+我 也 很 喜欢 它 。 | Tôi cũng rất thích nó. | 它 | 她 他 我
+今天 是 二零二五 年 九 月 一 号 。 | Hôm nay là ngày 1 tháng 9 năm 2025. | 年 | 月 号 星期
+昨天 星期 日 。 | Hôm qua là Chủ nhật. | 昨天 | 今天 明天 星期
+我 下班 了 。 | Tôi tan làm rồi. | 下班 | 休息 喜欢 新
+我 会 做 一些 中国 菜 。 | Tôi biết nấu một số món Trung Quốc. | 一些 | 两 几 多
+他 喜欢 吃 饺子 。 | Anh ấy thích ăn sủi cảo. | 饺子 | 电脑 菜 星期
+这 个 电脑 很 新 。 | Cái máy tính này rất mới. | 新 | 真 会 一些
+星期六 我 做饭 。 | Thứ Bảy tôi nấu cơm. | 做饭 | 休息 下班 喜欢

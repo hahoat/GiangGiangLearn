@@ -1,0 +1,130 @@
+{
+ "id": "bai-16",
+ "title": "16 复习课",
+ "level": "hsk1",
+ "width": 1280,
+ "slides": [
+  {
+   "img": "001.webp",
+   "thumb": "thumbs/001.webp"
+  },
+  {
+   "img": "002.webp",
+   "thumb": "thumbs/002.webp"
+  },
+  {
+   "img": "003.webp",
+   "thumb": "thumbs/003.webp"
+  },
+  {
+   "img": "004.webp",
+   "thumb": "thumbs/004.webp"
+  },
+  {
+   "img": "005.webp",
+   "thumb": "thumbs/005.webp"
+  },
+  {
+   "img": "006.webp",
+   "thumb": "thumbs/006.webp"
+  },
+  {
+   "img": "007.webp",
+   "thumb": "thumbs/007.webp"
+  },
+  {
+   "img": "008.webp",
+   "thumb": "thumbs/008.webp"
+  },
+  {
+   "img": "009.webp",
+   "thumb": "thumbs/009.webp"
+  },
+  {
+   "img": "010.webp",
+   "thumb": "thumbs/010.webp"
+  },
+  {
+   "img": "011.webp",
+   "thumb": "thumbs/011.webp"
+  },
+  {
+   "img": "012.webp",
+   "thumb": "thumbs/012.webp"
+  },
+  {
+   "img": "013.webp",
+   "thumb": "thumbs/013.webp"
+  },
+  {
+   "img": "014.webp",
+   "thumb": "thumbs/014.webp"
+  },
+  {
+   "img": "015.webp",
+   "thumb": "thumbs/015.webp"
+  },
+  {
+   "img": "016.webp",
+   "thumb": "thumbs/016.webp"
+  },
+  {
+   "img": "017.webp",
+   "thumb": "thumbs/017.webp"
+  },
+  {
+   "img": "018.webp",
+   "thumb": "thumbs/018.webp"
+  },
+  {
+   "img": "019.webp",
+   "thumb": "thumbs/019.webp"
+  },
+  {
+   "img": "020.webp",
+   "thumb": "thumbs/020.webp"
+  },
+  {
+   "img": "021.webp",
+   "thumb": "thumbs/021.webp"
+  },
+  {
+   "img": "022.webp",
+   "thumb": "thumbs/022.webp"
+  },
+  {
+   "img": "023.webp",
+   "thumb": "thumbs/023.webp"
+  },
+  {
+   "img": "024.webp",
+   "thumb": "thumbs/024.webp"
+  },
+  {
+   "img": "025.webp",
+   "thumb": "thumbs/025.webp"
+  },
+  {
+   "img": "026.webp",
+   "thumb": "thumbs/026.webp"
+  },
+  {
+   "img": "027.webp",
+   "thumb": "thumbs/027.webp"
+  },
+  {
+   "img": "028.webp",
+   "thumb": "thumbs/028.webp"
+  },
+  {
+   "img": "029.webp",
+   "thumb": "thumbs/029.webp"
+  },
+  {
+   "img": "030.webp",
+   "thumb": "thumbs/030.webp"
+  }
+ ],
+ "audioAligned": true,
+ "videosNotExported": []
+}

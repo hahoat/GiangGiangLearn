@@ -1,0 +1,103 @@
+id: 11
+title: 我读大学呢
+py: Wǒ dú dà xué ne
+vi: Tôi đang học đại học
+goal: Hỏi bằng câu chính phản (V不V / V没V); nói hành động đang diễn ra với 在/正在…呢; nói ý định với 要; hỏi thời điểm với 什么时候.
+slides: 11 我读大学呢
+
+== vocab
+时候 | shí hou | danh từ | lúc, khi | 你什么时候能到？ | Khi nào bạn đến được?
+知道 | zhī dào | động từ | biết | 我不知道。 | Tôi không biết.
+正在 | zhèng zài | phó từ | đang | 我正在看电视。 | Tôi đang xem ti vi.
+在 | zài | phó từ | đang | 学生们在上课呢。 | Các học sinh đang học.
+找 | zhǎo | động từ | tìm | 我正在找呢。 | Tôi đang tìm đây.
+开车 | kāi chē | động từ | lái xe | 你开车没开车？ | Bạn có lái xe không?
+车 | chē | danh từ | xe | 我坐车呢。 | Tôi đang đi xe.
+后边 | hòu bian | danh từ | phía sau | 饭店在超市后边。 | Nhà hàng ở phía sau siêu thị.
+读 | dú | động từ | học (ở trường); đọc | 你还在读大学吗？ | Bạn vẫn đang học đại học à?
+大学 | dà xué | danh từ | trường đại học | 我读大学呢。 | Tôi đang học đại học.
+大学生 | dà xué shēng | danh từ | sinh viên | 我还是大学生。 | Tôi vẫn là sinh viên.
+学 | xué | động từ | học | 我学医。 | Tôi học y.
+医 | yī | danh từ | y học | 我学医，我们的课很多。 | Tôi học y, chúng tôi có nhiều tiết học.
+起床 | qǐ chuáng | động từ | thức dậy | 弟弟起床没起床？ | Em trai dậy chưa?
+睡觉 | shuì jiào | động từ | ngủ | 他还在睡觉。 | Nó vẫn đang ngủ.
+睡 | shuì | động từ | ngủ | 还睡呢？ | Vẫn còn ngủ à?
+哪里 | nǎ lǐ | đại từ | ở đâu | 去哪里？ | Đi đâu?
+问 | wèn | động từ | hỏi | 我昨天问他。 | Hôm qua tôi đã hỏi nó.
+对 | duì | giới từ | với, đối với | 他对我说，他不去。 | Nó nói với tôi là nó không đi.
+说 | shuō | động từ | nói | 你说什么？ | Bạn nói gì?
+要 | yào | động từ năng nguyện | muốn, sẽ, định | 他今天要和小朋友玩。 | Hôm nay nó muốn chơi với các bạn nhỏ.
+小朋友 | xiǎo péng you | danh từ | bạn nhỏ, trẻ em | 我和小朋友们玩。 | Tôi chơi với các bạn nhỏ.
+
+== grammar
+## Câu hỏi chính phản
+Đặt dạng khẳng định và phủ định của động từ / tính từ cạnh nhau để hỏi, không dùng thêm 吗. Với hành động đã xảy ra dùng V + 没 + V.
+f: V / Adj + 不 + V / Adj？ · V + 没 + V？
+ex: 这件衣服好看不好看？ | Cái áo này có đẹp không?
+ex: 昨天你去没去书店？ | Hôm qua bạn có đi hiệu sách không?
+## Đang làm gì: 在 / 正在 … 呢
+在, 正在 đứng trước động từ, 呢 ở cuối câu, cho biết hành động đang diễn ra. Có thể dùng một trong hai hoặc cả hai.
+f: Chủ ngữ + (正)在 + Động từ + (呢)
+ex: 学生们正在上课呢。 | Các học sinh đang học.
+ex: A：你在做什么呢？ B：我正在看电视。 | A: Bạn đang làm gì thế? B: Tôi đang xem ti vi.
+## Động từ năng nguyện 要
+要 + động từ: muốn, định, sắp làm gì (ý muốn mạnh hoặc kế hoạch đã định).
+f: Chủ ngữ + 要 + Động từ
+ex: 妈妈要去超市。 | Mẹ định đi siêu thị.
+ex: 白家月要在家里学中文。 | Bạch Gia Nguyệt sẽ học tiếng Trung ở nhà.
+## Vị trí: A 在 B 的 … 边
+f: A + 在 + B + 前边 / 后边 / 外边 …
+ex: 饭店在超市后边。 | Nhà hàng ở phía sau siêu thị.
+ex: 医院在哪儿？ | Bệnh viện ở đâu?
+
+== text Bài khóa 1
+王一飞: 喂，李文，你什么时候能到饭店？ | A lô, Lý Văn, khi nào em đến được nhà hàng?
+李文: 还不知道，正在找呢。它是不是在超市后边？ | Em chưa biết nữa, đang tìm đây. Có phải nó ở phía sau siêu thị không ạ?
+王一飞: 是的。你开车没开车？ | Đúng rồi. Em có lái xe không?
+李文: 我没开车，坐车呢。 | Em không lái xe, em đang đi xe ạ.
+
+== text Bài khóa 2
+安妮: 你还在读大学吗？ | Bạn vẫn đang học đại học à?
+陈天中: 对，我读大学呢，还是大学生。 | Đúng vậy, mình đang học đại học, vẫn là sinh viên.
+安妮: 你们学习忙不忙？ | Các bạn học có bận không?
+陈天中: 非常忙，我学医，我们的课很多。 | Rất bận, mình học y, tụi mình có rất nhiều tiết.
+
+== text Bài khóa 3
+刘明: 弟弟起床没起床呢？ | Em trai dậy chưa?
+刘小雪: 没起床呢，还在睡觉。 | Chưa dậy ạ, vẫn đang ngủ.
+刘明: 还睡呢？他今天去不去那里？ | Vẫn còn ngủ à? Hôm nay nó có đến đó không?
+刘小雪: 去哪里？ | Đến đâu ạ?
+刘明: 去超市。 | Đến siêu thị.
+刘小雪: 我昨天问他，他对我说，他不去，他今天要和小朋友玩。 | Hôm qua con hỏi rồi, em nói với con là em không đi, hôm nay em muốn chơi với các bạn nhỏ.
+
+== sentences
+你 什么 时候 能 到 饭店 ？ | Khi nào bạn có thể đến nhà hàng? | 时候 | 知道 正在 车
+我 还 不 知道 。 | Tôi vẫn chưa biết. | 知道 | 时候 大学 车
+我 正在 找 呢 。 | Tôi đang tìm đây. | 找 | 车 医 大学
+它 是 不 是 在 超市 后边 ？ | Có phải nó ở phía sau siêu thị không? | 后边 | 时候 大学 车
+你 开车 没 开车 ？ | Bạn có lái xe không? | 没 | 吗 很 也
+我 没 开车 ， 坐 车 呢 。 | Tôi không lái xe, đang đi xe. | 坐 | 知道 读 医
+你 还 在 读 大学 吗 ？ | Bạn vẫn đang học đại học à? | 大学 | 时候 医 车
+我 还 是 大学生 。 | Tôi vẫn là sinh viên. | 大学生 | 大学 时候 医
+我 学 医 ， 我们 的 课 很 多 。 | Tôi học y, chúng tôi có rất nhiều tiết học. | 医 | 车 时候 找
+弟弟 起床 没 起床 ？ | Em trai dậy chưa? | 弟弟 | 时候 大学 医
+他 还 在 睡觉 。 | Nó vẫn đang ngủ. | 睡觉 | 时候 大学 医
+他 今天 去 不 去 那里 ？ | Hôm nay nó có đến đó không? | 那里 | 时候 知道 医
+我 昨天 问 他 。 | Hôm qua tôi đã hỏi nó. | 问 | 时候 车 医
+他 对 我 说 ， 他 不 去 。 | Nó nói với tôi là nó không đi. | 对 | 在 时候 知道
+他 今天 要 和 小朋友 玩 。 | Hôm nay nó muốn chơi với các bạn nhỏ. | 要 | 时候 医 车
+学生们 正在 上课 呢 。 | Các học sinh đang học. | 学生们 | 时候 大学 车
+你 在 做 什么 呢 ？ | Bạn đang làm gì thế? | 什么 | 哪里 时候 谁
+我 正在 看 电视 。 | Tôi đang xem ti vi. | 看 | 读 找 说
+你 什么 时候 去 中国 ？ | Khi nào bạn đi Trung Quốc? | 时候 | 知道 大学 车
+我 不 知道 他 在 哪儿 。 | Tôi không biết anh ấy ở đâu. | 知道 | 时候 大学 车
+这 件 衣服 好看 不 好看 ？ | Cái áo này có đẹp không? | 衣服 | 苹果 杯子 水果
+我 去 学校 找 你 。 | Tôi đến trường tìm bạn. | 找 | 问 说 读
+我 爸爸 会 开车 。 | Bố tôi biết lái xe. | 开车 | 起床 睡觉 读书
+她 是 大学生 。 | Cô ấy là sinh viên đại học. | 大学生 | 大学 医生 老师
+我 早上 七 点 起床 。 | Tôi dậy lúc 7 giờ sáng. | 起床 | 睡觉 开车 下课
+你 晚上 几 点 睡觉 ？ | Buổi tối mấy giờ bạn ngủ? | 睡觉 | 起床 开车 下课
+妈妈 要 去 超市 。 | Mẹ định đi siêu thị. | 要 | 能 会 在
+医院 在 超市 后边 。 | Bệnh viện ở phía sau siêu thị. | 后边 | 前边 外边 里边
+你 去 没 去 书店 ？ | Bạn đã đến hiệu sách chưa? | 没 | 吗 很 也
+白家月 要 在 家里 学 中文 。 | Bạch Gia Nguyệt sẽ học tiếng Trung ở nhà. | 家里 | 学校 书店 医院

@@ -1,0 +1,38 @@
+{
+ "id": "buoi-1",
+ "title": "HSK 1 BUỔI 1",
+ "level": "hsk1",
+ "width": 1280,
+ "slides": [
+  {
+   "img": "001.webp",
+   "thumb": "thumbs/001.webp"
+  },
+  {
+   "img": "002.webp",
+   "thumb": "thumbs/002.webp"
+  },
+  {
+   "img": "003.webp",
+   "thumb": "thumbs/003.webp"
+  },
+  {
+   "img": "004.webp",
+   "thumb": "thumbs/004.webp"
+  },
+  {
+   "img": "005.webp",
+   "thumb": "thumbs/005.webp",
+   "hasVideo": true
+  },
+  {
+   "img": "006.webp",
+   "thumb": "thumbs/006.webp"
+  }
+ ],
+ "audioAligned": true,
+ "videosNotExported": [
+  "media1.mp4",
+  "media2.mp4"
+ ]
+}

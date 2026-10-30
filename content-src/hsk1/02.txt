@@ -1,0 +1,92 @@
+id: 2
+title: 你叫什么名字？
+py: Nǐ jiào shén me míng zi
+vi: Bạn tên là gì?
+goal: Giới thiệu bản thân: tên, tuổi, quốc tịch; dùng câu chữ 是, câu hỏi 吗; làm quen với nét bút và bộ thủ cơ bản.
+slides: HSK 1 BUỔI 6; HSK 1 BUỔI 3; HSK 1 BUỔI 4 ( BỘ THỦ)
+
+== vocab
+叫 | jiào | động từ | gọi, tên là | 我叫李月。 | Tôi tên là Lý Nguyệt.
+什么 | shén me | đại từ | cái gì | 你叫什么名字？ | Bạn tên là gì?
+名字 | míng zi | danh từ | tên | 你的名字很好。 | Tên của bạn rất hay.
+是 | shì | động từ | là | 我是越南人。 | Tôi là người Việt Nam.
+不 | bù | phó từ | không | 我不是老师。 | Tôi không phải giáo viên.
+吗 | ma | trợ từ | (trợ từ nghi vấn) … không? | 你是学生吗？ | Bạn là học sinh phải không?
+人 | rén | danh từ | người | 他是中国人。 | Anh ấy là người Trung Quốc.
+国 | guó | danh từ | nước, quốc gia | 你是哪国人？ | Bạn là người nước nào?
+哪 | nǎ | đại từ | nào | 你是哪国人？ | Bạn là người nước nào?
+中国 | Zhōng guó | danh từ riêng | Trung Quốc | 我是中国人。 | Tôi là người Trung Quốc.
+越南 | Yuè nán | danh từ riêng | Việt Nam | 我是越南人。 | Tôi là người Việt Nam.
+美国 | Měi guó | danh từ riêng | Mỹ | 他是美国人。 | Anh ấy là người Mỹ.
+日本 | Rì běn | danh từ riêng | Nhật Bản | 她是日本人吗？ | Cô ấy là người Nhật phải không?
+岁 | suì | lượng từ | tuổi | 我今年二十岁。 | Năm nay tôi 20 tuổi.
+几 | jǐ | đại từ | mấy | 你几岁？ | Em mấy tuổi?
+多大 | duō dà | cụm từ | bao nhiêu tuổi | 你多大？ | Bạn bao nhiêu tuổi?
+今年 | jīn nián | danh từ | năm nay | 你今年多大？ | Năm nay bạn bao nhiêu tuổi?
+
+== grammar
+## Hỏi tên: 你叫什么名字？
+Hỏi tên dùng 叫 + 什么名字. Trả lời: 我叫 + tên. Hỏi lịch sự hơn: 您叫什么名字？
+f: 你叫什么名字？ → 我叫 + Tên
+ex: 你叫什么名字？ | Bạn tên là gì?
+ex: 我叫白家月。 | Tôi tên là Bạch Gia Nguyệt.
+## Câu chữ 是 và phủ định 不是
+是 nối chủ ngữ với danh từ: "A là B". Phủ định thêm 不 trước 是 (不 đọc thành bú vì đứng trước thanh 4).
+f: A + 是 / 不是 + B
+ex: 我是学生。 | Tôi là học sinh.
+ex: 他不是老师。 | Anh ấy không phải giáo viên.
+## Câu hỏi với 吗
+Thêm 吗 vào cuối câu trần thuật để tạo câu hỏi Có/Không.
+f: Câu trần thuật + 吗？
+ex: 你是中国人吗？ | Bạn là người Trung Quốc phải không?
+ex: 你好吗？ | Bạn khỏe không?
+## Hỏi quốc tịch và tuổi
+Quốc tịch: 你是哪国人？→ 我是 + tên nước + 人. Hỏi tuổi trẻ em: 你几岁？; hỏi người lớn: 你多大？
+f: 我是 + Nước + 人 · 我 + số + 岁
+ex: 你是哪国人？ | Bạn là người nước nào?
+ex: 我今年二十岁。 | Năm nay tôi 20 tuổi.
+
+== text Giới thiệu bản thân
+A: 你好！你叫什么名字？ | Xin chào! Bạn tên là gì?
+B: 我叫李月。你呢？ | Tôi tên là Lý Nguyệt. Còn bạn?
+A: 我叫大卫。你是哪国人？ | Tôi tên là David. Bạn là người nước nào?
+B: 我是中国人。你是美国人吗？ | Tôi là người Trung Quốc. Bạn là người Mỹ phải không?
+A: 我不是美国人，我是法国人。 | Tôi không phải người Mỹ, tôi là người Pháp.
+
+== text Hỏi tuổi
+A: 你今年多大？ | Năm nay bạn bao nhiêu tuổi?
+B: 我今年二十岁。 | Năm nay tôi 20 tuổi.
+A: 你是学生吗？ | Bạn là sinh viên phải không?
+B: 是，我是学生。 | Đúng, tôi là sinh viên.
+
+== sentences
+你 叫 什么 名字 ？ | Bạn tên là gì? | 叫 | 是 很 好
+我 叫 李月 。 | Tôi tên là Lý Nguyệt. | 叫 | 们 吗 很
+你 是 哪 国 人 ？ | Bạn là người nước nào? | 哪 | 吗 很 几
+我 是 越南 人 。 | Tôi là người Việt Nam. | 是 | 叫 很 吗
+他 不 是 老师 。 | Anh ấy không phải giáo viên. | 不 | 很 吗 们
+你 是 中国 人 吗 ？ | Bạn là người Trung Quốc phải không? | 吗 | 哪 几 很
+你 今年 多大 ？ | Năm nay bạn bao nhiêu tuổi? | 多大 | 什么 名字 哪
+我 今年 二十 岁 。 | Năm nay tôi 20 tuổi. | 岁 | 人 国 名字
+她 叫 什么 名字 ？ | Cô ấy tên là gì? | 什么 | 哪 几 吗
+他 是 日本 人 。 | Anh ấy là người Nhật. | 人 | 岁 名字 什么
+你 几 岁 ？ | Em mấy tuổi? | 几 | 哪 什么 吗
+我 是 学生 ， 不 是 老师 。 | Tôi là học sinh, không phải giáo viên. | 学生 | 名字 国 岁
+她 是 美国 人 吗 ？ | Cô ấy là người Mỹ phải không? | 美国 | 名字 什么 几
+你 的 名字 很 好 。 | Tên của bạn rất hay. | 名字 | 哪 几 岁
+我 不 是 中国 人 。 | Tôi không phải người Trung Quốc. | 中国 | 名字 什么 岁
+你 叫 什么 名字 ？ | Bạn tên là gì? | 名字 | 人 国 岁
+我 叫 白家月 。 | Tôi tên là Bạch Gia Nguyệt. | 叫 | 是 很 吗
+你 是 哪 国 人 ？ | Bạn là người nước nào? | 国 | 名字 岁 几
+我 是 越南 人 。 | Tôi là người Việt Nam. | 越南 | 名字 什么 哪
+他 是 学生 吗 ？ | Cậu ấy là học sinh phải không? | 吗 | 哪 什么 几
+我 不 是 老师 。 | Tôi không phải giáo viên. | 不 | 很 吗 哪
+你 今年 多大 ？ | Năm nay bạn bao nhiêu tuổi? | 今年 | 名字 什么 哪
+我 八 岁 。 | Em 8 tuổi. | 岁 | 人 国 名字
+她 是 日本 人 。 | Cô ấy là người Nhật Bản. | 日本 | 名字 什么 几
+你 是 中国 人 吗 ？ | Bạn là người Trung Quốc phải không? | 是 | 叫 很 们
+他 叫 什么 名字 ？ | Anh ấy tên là gì? | 什么 | 哪 几 很
+我 是 美国 人 。 | Tôi là người Mỹ. | 美国 | 名字 什么 岁
+你 几 岁 ？ | Em mấy tuổi? | 几 | 什么 哪 吗
+他们 是 中国 人 。 | Họ là người Trung Quốc. | 人 | 岁 名字 几
+我 今年 二十 岁 。 | Năm nay tôi hai mươi tuổi. | 今年 | 名字 哪 几

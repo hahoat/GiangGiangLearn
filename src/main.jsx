@@ -1,84 +1,373 @@
-import React, { useEffect, useMemo, useState } from 'react'
+import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { createRoot } from 'react-dom/client'
-import { flashcards, levels, lessons, practice } from './data.js'
+import { dayKey, isDue, schedule, setGlossary, streakOf } from './lib/chinese.js'
+import { loadGlossary, loadIndex, loadLesson } from './lib/content.js'
+import { mergeState } from './lib/merge.js'
+import { fetchRemote, googleEnabled, pushRemote, signInWithEmail, signInWithGoogle, signOut, syncEnabled, watchUser } from './lib/sync.js'
+import { AppContext, Sentence, WordPopover, useApp } from './ui.jsx'
+import { FlashcardStep, GrammarStep, LectureStep, PracticeStep, ReadingStep, ReviewView, VocabStep, steps } from './steps.jsx'
 import './styles.css'
 
-const tabs = [
-  ['learn', '◈', 'Học bài'], ['flashcard', '▣', 'Flashcard'], ['grammar', '▤', 'Ngữ pháp'], ['vocab', '▥', 'Từ vựng'],
-  ['reading', '▥', 'Bài khóa'], ['choice', '☑', 'Chọn đáp án'], ['order', '☷', 'Sắp xếp câu'], ['fill', '✎', 'Điền đáp án']
-]
+/* ================= Trạng thái lưu trong trình duyệt ================= */
 
-function Icon({ children }) { return <span className="icon" aria-hidden="true">{children}</span> }
+function usePersistent(key, initial) {
+  const [value, setValue] = useState(() => {
+    try { return JSON.parse(localStorage.getItem(key)) ?? initial } catch { return initial }
+  })
+  useEffect(() => { try { localStorage.setItem(key, JSON.stringify(value)) } catch { /* bộ nhớ đầy hoặc bị chặn */ } }, [key, value])
+  return [value, setValue]
+}
 
-function Sidebar({ level, setLevel, selected, setSelected }) {
-  return <aside className="sidebar">
-    <div className="brand"><div className="brand-mark">中</div><div><strong>Tiếng Trung <span>Giang Giang</span></strong><small>Học tiếng Trung mỗi ngày</small></div></div>
-    <div className="level-switcher">
-      {levels.map(item => <button key={item.id} className={level.id === item.id ? 'level active' : 'level'} onClick={() => { setLevel(item); setSelected(1) }}><span>{item.label}</span><small>{item.lessons} bài · {item.words} từ</small></button>)}
+const defaultSettings = { pinyin: true, toneColor: true, translation: true, rate: 0.8, size: 'md', dark: false, goal: 30 }
+
+/* ================= Điều hướng bằng địa chỉ: #/hsk1/3/flashcard ================= */
+
+function useHashRoute() {
+  const parse = () => window.location.hash.replace(/^#\/?/, '').split('/').filter(Boolean)
+  const [parts, setParts] = useState(parse)
+  useEffect(() => {
+    const onChange = () => setParts(parse())
+    window.addEventListener('hashchange', onChange)
+    return () => window.removeEventListener('hashchange', onChange)
+  }, [])
+  const go = useCallback(path => { window.location.hash = `#/${path}` }, [])
+  return [parts, go]
+}
+
+/* ================= Khung trang ================= */
+
+function Header({ view, courses, courseId, onCourse, dueCount, onReview, onLesson, onSettings, onMenu, onLogin, user }) {
+  const groups = [...new Set(courses.map(c => c.group))]
+  return <header className="header">
+    <button className="icon-btn only-mobile" onClick={onMenu} aria-label="Danh sách bài">☰</button>
+    <a className="logo" href="#/"><span className="logo-mark">江</span><span><b>Giang Giang</b><small>Học tiếng Trung</small></span></a>
+    <nav className="main-nav">
+      <button className={view === 'lesson' ? 'active' : ''} onClick={onLesson}>📖 <span>Bài học</span></button>
+      <button className={view === 'review' ? 'active' : ''} onClick={onReview}>🔁 <span>Ôn tập</span>{dueCount > 0 && <i className="badge">{dueCount}</i>}</button>
+    </nav>
+    <label className="level-select">
+      <span className="sr-only">Giáo trình</span>
+      <select value={courseId} onChange={e => onCourse(e.target.value)}>
+        {groups.map(g => <optgroup key={g} label={g}>
+          {courses.filter(c => c.group === g).map(c => <option key={c.id} value={c.id}>{c.label}{c.lessons.length ? '' : ' (sắp có)'}</option>)}
+        </optgroup>)}
+      </select>
+    </label>
+    <button className="icon-btn" onClick={onSettings} aria-label="Cài đặt hiển thị" title="Cài đặt hiển thị">Aa</button>
+    {syncEnabled && <button className={`icon-btn user-btn ${user ? 'in' : ''}`} onClick={onLogin} title={user ? user.email : 'Đăng nhập để đồng bộ tiến độ'}>
+      {user ? (user.email?.[0] ?? '✓').toUpperCase() : <><span className="only-wide">Đăng nhập</span><span className="only-narrow">👤</span></>}
+    </button>}
+  </header>
+}
+
+function TodayCard({ xp, goal, streak, dueCount, onReview }) {
+  const p = Math.min(1, xp / goal)
+  return <section className="today">
+    <div className="today-ring" style={{ '--p': p }}><div><b>{xp}</b><small>/{goal} XP</small></div></div>
+    <div className="today-copy">
+      <strong>{p >= 1 ? 'Đạt mục tiêu hôm nay 🎉' : 'Mục tiêu hôm nay'}</strong>
+      <span>🔥 {streak} ngày liên tiếp</span>
+      {dueCount > 0 ? <button className="link" onClick={onReview}>Ôn {dueCount} thẻ đến hạn →</button> : <span className="muted">Không có thẻ cần ôn</span>}
     </div>
-    <div className="side-heading"><span>{level.label} · Giáo trình</span><button>＋</button></div>
-    <div className="lesson-list">
-      {lessons.map(item => <button key={item.id} onClick={() => setSelected(item.id)} className={selected === item.id ? 'lesson active' : 'lesson'}>
-        <span className="lesson-number">{item.id}</span><span className="lesson-copy"><strong>Bài {item.id}</strong><small>{item.title}</small></span><span className="lesson-status">{item.done ? `${item.done}/${item.words}` : '0%'}</span>
-      </button>)}
-    </div>
-    <div className="sidebar-footer"><button><Icon>◫</Icon><span><strong>Ôn tập hôm nay</strong><small>8 thẻ đang chờ</small></span><b>›</b></button><button><Icon>⚙</Icon><span><strong>Cài đặt</strong><small>Tuỳ chỉnh học tập</small></span></button></div>
-  </aside>
+  </section>
 }
 
-function Hero({ lesson, selected, setSelected }) {
-  return <section className="hero"><div className="hero-glow" /><div className="hero-content"><div className="hero-kicker">{lesson ? 'HSK 1' : 'HSK' } <span>•</span> Bài {selected}</div><h1>{lesson?.title ?? '你好，你好！'}</h1><p>{lesson?.subtitle ?? 'Xin chào, xin chào!'}</p><div className="hero-meta"><span>8 từ vựng</span><span>3 điểm ngữ pháp</span><span>7 bài thực hành</span></div></div><div className="hero-actions"><button onClick={() => setSelected(Math.max(1, selected - 1))} aria-label="Bài trước">‹</button><button onClick={() => setSelected(Math.min(lessons.length, selected + 1))} aria-label="Bài sau">›</button></div></section>
+function Sidebar({ course, lessonId, progress, open, onClose, today, onPick }) {
+  return <>
+    <div className={`backdrop ${open ? 'show' : ''}`} onClick={onClose} />
+    <aside className={`sidebar ${open ? 'open' : ''}`}>
+      {today}
+      <div className="side-title"><span>{course.label} · {course.book}</span><small>{course.lessons.length ? `${course.lessons.length} bài` : ''}</small></div>
+      {!course.lessons.length && <p className="side-empty">Giáo trình này đang được cập nhật. Hãy quay lại sau nhé!</p>}
+      <ol className="lesson-list">
+        {course.lessons.map(item => {
+          const pct = Math.round(((progress[`${course.id}-${item.id}`] ?? []).length / steps.length) * 100)
+          return <li key={item.id}>
+            <button className={lessonId === item.id ? 'active' : ''} onClick={() => { onPick(item.id); onClose() }}>
+              <span className={`num ${pct === 100 ? 'done' : ''}`}>{pct === 100 ? '✓' : item.id}</span>
+              <span className="lesson-copy"><b className="cn">{item.title}</b><small>{item.vi}</small>
+                <span className="bar"><i style={{ width: `${pct}%` }} /></span>
+              </span>
+            </button>
+          </li>
+        })}
+      </ol>
+    </aside>
+  </>
 }
 
-function Flashcard({ card, index, setIndex }) {
-  const [flipped, setFlipped] = useState(false)
-  const [playing, setPlaying] = useState(false)
-  useEffect(() => setFlipped(false), [index])
-  const speak = () => { setPlaying(true); if ('speechSynthesis' in window) { window.speechSynthesis.cancel(); const utterance = new SpeechSynthesisUtterance(card.han); utterance.lang = 'zh-CN'; utterance.onend = () => setPlaying(false); window.speechSynthesis.speak(utterance) } else setTimeout(() => setPlaying(false), 700) }
-  return <div className="study-panel"><div className="panel-heading"><div><h2>Flashcard</h2><p>Học từ vựng qua thẻ ghi nhớ</p></div><div className="pager"><span>{index + 1} <i>/ {flashcards.length}</i></span><button onClick={() => setIndex((index - 1 + flashcards.length) % flashcards.length)}>‹</button><button className="solid" onClick={() => setIndex((index + 1) % flashcards.length)}>›</button></div></div><div className={`flashcard ${flipped ? 'flipped' : ''}`} role="button" tabIndex="0" onClick={() => setFlipped(!flipped)} onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') setFlipped(!flipped) }} aria-label="Lật flashcard"><span className="star">☆</span>{flipped ? <><strong className="han small">{card.py}</strong><span className="meaning">{card.meaning}</span><span className="example">{card.example}</span></> : <><strong className="han">{card.han}</strong><span className="pronounce">{card.py}<button className={playing ? 'speaking' : ''} onClick={(e) => { e.stopPropagation(); speak() }}>◖</button></span><span className="meaning">{card.meaning}</span></>}</div><div className="study-actions"><button onClick={() => setFlipped(!flipped)}><Icon>↻</Icon>Lật thẻ</button><button className="primary" onClick={speak}><Icon>{playing ? '◌' : '▶'}</Icon>{playing ? 'Đang phát âm' : 'Nghe phát âm'}</button><button onClick={() => setFlipped(true)}><Icon>☷</Icon>Ví dụ</button></div></div>
+function SettingsPanel({ open, onClose }) {
+  const { settings, setSettings } = useApp()
+  const set = (k, v) => setSettings({ ...settings, [k]: v })
+  const toggle = (k, label, desc) => <label className="toggle-row"><span><b>{label}</b><small>{desc}</small></span><input type="checkbox" checked={settings[k]} onChange={e => set(k, e.target.checked)} /><i /></label>
+  const choice = (k, label, options) => <div className="choice-row"><b>{label}</b><div className="segmented">{options.map(([v, t]) => <button key={v} className={settings[k] === v ? 'on' : ''} onClick={() => set(k, v)}>{t}</button>)}</div></div>
+  return <>
+    <div className={`backdrop ${open ? 'show' : ''}`} onClick={onClose} />
+    <aside className={`drawer ${open ? 'open' : ''}`} aria-hidden={!open}>
+      <div className="drawer-head"><h2>Cài đặt hiển thị</h2><button className="icon-btn" onClick={onClose} aria-label="Đóng">×</button></div>
+      <div className="preview-box"><Sentence text="你好！我是越南人。" /></div>
+      {toggle('pinyin', 'Hiện pinyin', 'Tắt khi đã quen mặt chữ để luyện đọc')}
+      {toggle('toneColor', 'Tô màu thanh điệu', 'Mỗi thanh một màu, giúp nhớ thanh nhanh hơn')}
+      <div className="tone-legend"><span className="t1">1 ā</span><span className="t2">2 á</span><span className="t3">3 ǎ</span><span className="t4">4 à</span><span className="t5">nhẹ a</span></div>
+      {toggle('translation', 'Hiện bản dịch', 'Ẩn đi để tự đoán nghĩa trước')}
+      {choice('size', 'Cỡ chữ Hán', [['sm', 'Nhỏ'], ['md', 'Vừa'], ['lg', 'Lớn']])}
+      {choice('rate', 'Tốc độ đọc', [[0.6, 'Chậm'], [0.8, 'Vừa'], [1, 'Chuẩn']])}
+      {choice('goal', 'Mục tiêu mỗi ngày', [[20, '20 XP'], [30, '30 XP'], [50, '50 XP']])}
+      {toggle('dark', 'Chế độ tối', 'Dễ chịu hơn khi học buổi tối')}
+    </aside>
+  </>
 }
 
-function ProgressCard({ activeTab, setActiveTab, completed }) {
-  return <aside className="progress-card"><div className="progress-head"><div><p>Tiến độ bài học</p><strong>{Math.round((completed / tabs.length) * 100)}<small>%</small></strong></div><span>{completed}/{tabs.length}</span></div><div className="progress-bar"><span style={{ width: `${(completed / tabs.length) * 100}%` }} /></div><div className="progress-list">{tabs.map(([id, icon, label], i) => <button key={id} className={`${activeTab === id ? 'selected' : ''} ${i < completed ? 'complete' : ''}`} onClick={() => setActiveTab(id)}><span className="step">{i < completed ? '✓' : i + 1}</span><Icon>{icon}</Icon><span>{label}</span><small>{i < completed ? 'Đã xong' : i === 0 ? 'Đang học' : `${id === 'grammar' ? 3 : id === 'vocab' ? 8 : 15} câu`}</small></button>)}</div></aside>
-}
-
-function LearnPanel({ onComplete }) {
-  const [playing, setPlaying] = useState(false)
-  const playLesson = () => {
-    setPlaying(true)
-    if ('speechSynthesis' in window) {
-      window.speechSynthesis.cancel()
-      const utterance = new SpeechSynthesisUtterance('你好！我叫安娜。你叫什么名字？我叫李月。很高兴认识你。')
-      utterance.lang = 'zh-CN'; utterance.onend = () => setPlaying(false); window.speechSynthesis.speak(utterance)
-    } else setTimeout(() => setPlaying(false), 700)
+function LoginPanel({ open, onClose, user, syncState }) {
+  const [email, setEmail] = useState('')
+  const [status, setStatus] = useState(null)
+  const send = async e => {
+    e.preventDefault()
+    setStatus('sending')
+    try { await signInWithEmail(email.trim()); setStatus('sent') } catch (err) { setStatus(`error:${err.message}`) }
   }
-  return <div className="learn-panel"><div className="learn-heading"><div><span className="section-label">BẮT ĐẦU BÀI HỌC</span><h2>Học bài 1 · 你好，你好！</h2><p>Làm quen với cách chào hỏi và giới thiệu tên bằng tiếng Trung.</p></div><button className="primary listen-lesson" onClick={playLesson}>◉ {playing ? 'Đang đọc bài...' : 'Nghe toàn bài'}</button></div><div className="lesson-goal"><strong>🎯 Mục tiêu bài học</strong><span>Sau bài này, bạn có thể chào hỏi, hỏi tên và nói mình là người nước nào.</span></div><div className="learn-grid"><section className="learn-block"><div className="block-title"><span>01</span><div><h3>Từ mới cần nhớ</h3><small>8 từ · khoảng 5 phút</small></div></div><div className="mini-vocab">{flashcards.slice(0, 6).map(item => <div key={item.han}><strong>{item.han}</strong><span>{item.py}</span><small>{item.meaning}</small></div>)}</div></section><section className="learn-block dialogue"><div className="block-title"><span>02</span><div><h3>Hội thoại mở đầu</h3><small>Đọc theo từng câu</small></div></div><div className="dialogue-lines"><p><b>A</b><span>你好！</span><em>Nǐ hǎo! · Xin chào!</em></p><p><b>B</b><span>你叫什么名字？</span><em>Nǐ jiào shénme míngzi? · Bạn tên là gì?</em></p><p><b>A</b><span>我叫安娜。</span><em>Wǒ jiào Ānnà. · Tôi tên là Anna.</em></p><p><b>B</b><span>很高兴认识你！</span><em>Hěn gāoxìng rènshi nǐ! · Rất vui được gặp bạn!</em></p></div></section></div><div className="learn-bottom"><div><strong>💡 Mẹo học</strong><span>Nghe từng câu 2 lần, sau đó đọc nhại lại theo nhịp.</span></div><button className="complete-button" onClick={onComplete}>✓ Đánh dấu đã học</button></div></div>
+  return <>
+    <div className={`backdrop ${open ? 'show' : ''}`} onClick={onClose} />
+    <aside className={`drawer ${open ? 'open' : ''}`} aria-hidden={!open}>
+      <div className="drawer-head"><h2>{user ? 'Tài khoản' : 'Đăng nhập'}</h2><button className="icon-btn" onClick={onClose} aria-label="Đóng">×</button></div>
+      {user ? <>
+        <p className="account">Đang đăng nhập: <b>{user.email}</b></p>
+        <p className={`sync-state ${syncState}`}>{{ idle: '✓ Tiến độ đã được đồng bộ', saving: '… Đang lưu lên tài khoản', error: '⚠ Chưa đồng bộ được – sẽ thử lại khi có mạng', loading: '… Đang tải tiến độ từ tài khoản' }[syncState]}</p>
+        <p className="muted small">Tiến độ học, lịch ôn tập và XP được lưu vào tài khoản. Đăng nhập cùng email trên máy khác để học tiếp.</p>
+        <button className="btn btn-ghost" onClick={() => { signOut(); onClose() }}>Đăng xuất</button>
+      </> : <>
+        <p className="muted small">Đăng nhập để lưu tiến độ vào tài khoản và học tiếp trên điện thoại, máy tính khác. Không cần mật khẩu: web sẽ gửi đường link đăng nhập vào email của bạn.</p>
+        {status === 'sent' ? <p className="sync-state idle">📧 Đã gửi link đăng nhập tới <b>{email}</b>. Mở email trên máy này và bấm vào link.</p>
+          : <form className="login-form" onSubmit={send}>
+            <input type="email" required value={email} onChange={e => setEmail(e.target.value)} placeholder="email@cua-ban.com" autoComplete="email" />
+            <button className="btn btn-primary" disabled={status === 'sending'}>{status === 'sending' ? 'Đang gửi…' : 'Gửi link đăng nhập'}</button>
+          </form>}
+        {status?.startsWith('error:') && <p className="sync-state error">⚠ {status.slice(6)}</p>}
+        {googleEnabled && <button className="btn btn-ghost btn-block" onClick={() => signInWithGoogle()}>Đăng nhập bằng Google</button>}
+        <p className="muted small">Chưa đăng nhập vẫn học bình thường; tiến độ được lưu trên máy này và sẽ được gộp vào tài khoản khi bạn đăng nhập.</p>
+      </>}
+    </aside>
+  </>
 }
 
-function Practice({ type }) {
-  const items = practice[type]
-  const [answers, setAnswers] = useState({})
-  const [checked, setChecked] = useState(false)
-  const [ordered, setOrdered] = useState([])
-  const title = type === 'choice' ? 'Chọn đáp án' : type === 'order' ? 'Sắp xếp câu' : 'Điền đáp án đúng'
-  const subtitle = type === 'choice' ? 'Chọn từ phù hợp để hoàn thành câu.' : type === 'order' ? 'Chạm vào các từ theo đúng trật tự.' : 'Điền từ còn thiếu dựa trên gợi ý.'
-  return <div className="practice-panel"><div className="practice-title"><div><span className="section-label">PHẦN THỰC HÀNH</span><h2>{title}</h2><p>{subtitle}</p></div><span className="question-count">{items.length} câu mẫu <small>/ 15</small></span></div><div className="questions">{items.map((item, i) => <div className="question" key={i}><div className="question-top"><span className="q-number">{String(i + 1).padStart(2, '0')}</span><strong>{item.q}</strong></div>{type === 'choice' && <div className="options">{item.options.map((option, j) => <button key={option} className={`${answers[i] === j ? 'picked' : ''} ${checked && j === item.answer ? 'correct' : ''}`} onClick={() => setAnswers({ ...answers, [i]: j })}>{String.fromCharCode(65 + j)}. {option}</button>)}</div>}{type === 'order' && <><div className="order-result">{(answers[i] || []).map(word => <span key={word}>{word}</span>)}</div><div className="word-bank">{item.words.map(word => <button key={word} disabled={(answers[i] || []).includes(word)} onClick={() => setAnswers({ ...answers, [i]: [...(answers[i] || []), word] })}>{word}</button>)}</div></>}{type === 'fill' && <><p className="hint">{item.hint}</p><input value={answers[i] || ''} onChange={(e) => setAnswers({ ...answers, [i]: e.target.value })} placeholder="Nhập đáp án tiếng Trung" /></>}</div>)}</div><div className="practice-footer"><button className="ghost" onClick={() => { setAnswers({}); setChecked(false) }}>Làm lại</button><button className="primary" onClick={() => setChecked(true)}>Kiểm tra đáp án <span>→</span></button>{checked && <span className="score">✓ Đã kiểm tra</span>}</div></div>
+function Stepper({ step, onStep, done }) {
+  const ref = useRef(null)
+  useEffect(() => {
+    const nav = ref.current, el = nav?.querySelector('.current')
+    if (el) nav.scrollTo({ left: el.offsetLeft - (nav.clientWidth - el.offsetWidth) / 2, behavior: 'smooth' })
+  }, [step])
+  let lastStage = null
+  return <nav className="stepper" ref={ref} aria-label="Các phần của bài học">
+    {steps.map((s, i) => {
+      const stage = s.stage !== lastStage ? (lastStage = s.stage) : null
+      return <React.Fragment key={s.id}>
+        {stage && i > 0 && <span className="stage-sep" aria-hidden="true" />}
+        <button title={`${s.stage}: ${s.label}`} className={`${i === step ? 'current' : ''} ${done.includes(s.id) ? 'done' : ''}`} onClick={() => onStep(s.id)} aria-current={i === step ? 'step' : undefined}>
+          <span className="dot">{done.includes(s.id) ? '✓' : i + 1}</span>
+          <span className="step-label">{stage && <small>{stage}</small>}{s.label}</span>
+        </button>
+      </React.Fragment>
+    })}
+  </nav>
 }
 
-function LessonContent({ activeTab, setActiveTab, card, index, setIndex, selected }) {
-  if (activeTab === 'learn') return <LearnPanel onComplete={() => setActiveTab('flashcard')} />
-  if (['choice', 'order', 'fill'].includes(activeTab)) return <Practice type={activeTab} />
-  if (activeTab === 'grammar') return <div className="content-panel info-panel"><span className="section-label">ÔN TẬP</span><h2>Ngữ pháp trọng tâm</h2><div className="grammar-row"><strong>1</strong><div><h3>Câu hỏi với 吗 (ma)</h3><p>Thêm 吗 vào cuối câu kể để biến câu thành câu hỏi Yes/No.</p><div className="formula">你好吗？ <span>Nǐ hǎo ma?</span> <em>Bạn khỏe không?</em></div></div></div><div className="grammar-row"><strong>2</strong><div><h3>Cấu trúc “A 是 B”</h3><p>Dùng 是 để giới thiệu hoặc xác nhận danh tính.</p><div className="formula">我是学生。 <span>Wǒ shì xuésheng.</span> <em>Tôi là học sinh.</em></div></div></div></div>
-  if (activeTab === 'vocab') return <div className="content-panel info-panel"><span className="section-label">ÔN TẬP</span><h2>Tổng hợp từ vựng bài {selected}</h2><div className="vocab-grid">{flashcards.map(item => <button key={item.han} onClick={() => setActiveTab('flashcard')}><strong>{item.han}</strong><span>{item.py}</span><small>{item.meaning}</small></button>)}</div></div>
-  if (activeTab === 'reading') return <div className="content-panel reading-panel"><span className="section-label">PHẦN THỰC HÀNH</span><h2>Bài khóa · 你好，你好！</h2><div className="reading-text"><p><strong>你好！</strong> 我叫安娜。你叫什么名字？</p><p><strong>我叫李月。</strong> 你是哪国人？</p><p>我是越南人。你呢？</p></div><button className="primary" onClick={() => window.speechSynthesis?.speak(Object.assign(new SpeechSynthesisUtterance('你好！我叫安娜。你叫什么名字？'), { lang: 'zh-CN' }))}>▶ Nghe bài khóa</button></div>
-  return <Flashcard card={card} index={index} setIndex={setIndex} />
+/* ================= Trang bài học ================= */
+
+function LessonView({ course, lessonId, stepId, go, progress, markDone, earn }) {
+  const [lesson, setLesson] = useState(null)
+  const [error, setError] = useState(null)
+  useEffect(() => {
+    let alive = true
+    setLesson(null)
+    setError(null)
+    loadLesson(course.id, lessonId).then(l => alive && setLesson(l)).catch(e => alive && setError(e))
+    return () => { alive = false }
+  }, [course.id, lessonId])
+  const top = useRef(null)
+  const key = `${course.id}-${lessonId}`
+  const done = progress[key] ?? []
+  const stepIndex = Math.max(0, steps.findIndex(s => s.id === stepId))
+  const current = steps[stepIndex]
+  const goStep = id => { go(`${course.id}/${lessonId}/${id}`); top.current?.scrollIntoView({ behavior: 'smooth', block: 'start' }) }
+  const finish = () => { markDone(key, current.id); if (stepIndex + 1 < steps.length) goStep(steps[stepIndex + 1].id) }
+
+  if (error) return <div className="lesson"><section className="step-card empty-state"><span className="big">⚠️</span><h2>Không tải được bài học</h2><p>Kiểm tra kết nối mạng rồi thử lại.</p><button className="btn btn-primary" onClick={() => window.location.reload()}>Tải lại</button></section></div>
+  if (!lesson) return <div className="lesson"><div className="loading">Đang tải bài học…</div></div>
+
+  const pct = Math.round((done.length / steps.length) * 100)
+  const body = {
+    lecture: <LectureStep course={course.id} lesson={lesson} onDone={finish} />,
+    flashcard: <FlashcardStep key={key} lesson={lesson} onDone={finish} />,
+    grammar: <GrammarStep lesson={lesson} />,
+    vocab: <VocabStep lesson={lesson} openCard={() => goStep('flashcard')} />,
+    reading: <ReadingStep lesson={lesson} />
+  }[current.id] ?? <PracticeStep key={`${key}-${current.id}`} type={current.id} lesson={lesson} earn={earn} onAllDone={() => markDone(key, current.id)} />
+  const isPractice = ['choice', 'order', 'fill'].includes(current.id)
+  const lessons = course.lessons
+  const pos = lessons.findIndex(l => l.id === lessonId)
+
+  return <div className="lesson">
+    <section className="lesson-head" ref={top}>
+      <div>
+        <span className="crumb">{course.label} · Bài {lesson.id}</span>
+        <h1><Sentence text={lesson.title} /></h1>
+        <p>{lesson.vi}</p>
+      </div>
+      <div className="lesson-meta">
+        <div className="meta-ring" style={{ '--p': pct / 100 }}><span>{pct}%</span></div>
+        <small>{done.length}/{steps.length} phần</small>
+      </div>
+    </section>
+    {lesson.goal && <p className="goal">🎯 {lesson.goal}</p>}
+    <Stepper step={stepIndex} onStep={goStep} done={done} />
+    <section className="step-card" key={current.id}>{body}</section>
+    <div className="step-nav">
+      <button className="btn btn-ghost" disabled={stepIndex === 0} onClick={() => goStep(steps[stepIndex - 1].id)}>← Trước</button>
+      <span className="step-count">{current.icon} {current.stage} · {stepIndex + 1}/{steps.length}</span>
+      {stepIndex + 1 < steps.length
+        ? <button className={`btn ${isPractice || current.id === 'flashcard' ? 'btn-ghost' : 'btn-primary'}`} onClick={isPractice || current.id === 'flashcard' ? () => goStep(steps[stepIndex + 1].id) : finish}>
+          {isPractice || current.id === 'flashcard' ? 'Phần tiếp →' : 'Xong, tiếp tục →'}</button>
+        : pos + 1 < lessons.length
+          ? <button className="btn btn-primary" onClick={() => go(`${course.id}/${lessons[pos + 1].id}/lecture`)}>Sang bài {lessons[pos + 1].id} →</button>
+          : <span />}
+    </div>
+  </div>
 }
+
+function ComingSoon({ course }) {
+  return <div className="lesson"><section className="step-card empty-state">
+    <span className="big">📚</span>
+    <h2>{course.label} đang được cập nhật</h2>
+    <p>Giáo viên đang soạn bài giảng, từ vựng và bài tập cho giáo trình {course.book}. Trong lúc chờ, bạn có thể học HSK 1.</p>
+    <a className="btn btn-primary" href="#/hsk1/1/lecture">Học HSK 1</a>
+  </section></div>
+}
+
+/* ================= App ================= */
 
 function App() {
-  const [level, setLevel] = useState(levels[0]); const [selected, setSelected] = useState(1); const [activeTab, setActiveTab] = useState('learn'); const [index, setIndex] = useState(0)
-  const lesson = useMemo(() => lessons.find(item => item.id === selected), [selected]); const completed = activeTab === 'learn' ? 0 : activeTab === 'flashcard' ? 2 : ['grammar', 'vocab'].includes(activeTab) ? 3 : 4
-  const goTab = tab => { setActiveTab(tab); window.scrollTo({ top: 0, behavior: 'smooth' }) }
-  return <div className="app-shell"><Sidebar level={level} setLevel={setLevel} selected={selected} setSelected={id => { setSelected(id); setActiveTab('learn'); setIndex(0) }} /><main className="main"><div className="mobile-top"><button>☰</button><strong>Tiếng Trung Giang Giang</strong><button>⌕</button></div><Hero lesson={lesson} selected={selected} setSelected={setSelected} /><nav className="tabs" aria-label="Nội dung bài học">{tabs.map(([id, icon, label]) => <button key={id} className={activeTab === id ? 'active' : ''} onClick={() => goTab(id)}><Icon>{icon}</Icon><span>{label}</span></button>)}</nav><div className="workspace"><LessonContent activeTab={activeTab} setActiveTab={goTab} card={flashcards[index]} index={index} setIndex={setIndex} selected={selected} /><ProgressCard activeTab={activeTab} setActiveTab={goTab} completed={completed} /></div></main><div className="toast"><span>✦</span><div><strong>Học 10 phút mỗi ngày</strong><small>Tiến bộ nhỏ, kết quả lớn.</small></div><button>×</button></div></div>
+  const [settings, setSettings] = usePersistent('gg-settings', defaultSettings)
+  const [progress, setProgress] = usePersistent('gg-progress-v3', {})
+  const [srs, setSrs] = usePersistent('gg-srs-v2', {})
+  const [log, setLog] = usePersistent('gg-xp-log', {})
+  const [courses, setCourses] = useState(null)
+  const [loadError, setLoadError] = useState(false)
+  const [parts, go] = useHashRoute()
+  const [menuOpen, setMenuOpen] = useState(false)
+  const [panel, setPanel] = useState(null)
+  const [popover, setPopover] = useState(null)
+  const [toast, setToast] = useState(null)
+  const [user, setUser] = useState(null)
+  const [syncState, setSyncState] = useState('idle')
+  const remoteReady = useRef(false)
+
+  const s = { ...defaultSettings, ...settings }
+  useEffect(() => {
+    document.documentElement.dataset.theme = s.dark ? 'dark' : 'light'
+    document.documentElement.dataset.size = s.size
+  }, [s.dark, s.size])
+
+  useEffect(() => {
+    Promise.all([loadIndex(), loadGlossary()])
+      .then(([index, glossary]) => { setGlossary(glossary); setCourses(index) })
+      .catch(() => setLoadError(true))
+  }, [])
+
+  /* ---- Đăng nhập & đồng bộ ---- */
+  useEffect(() => {
+    if (!syncEnabled) return
+    let stop = () => {}
+    watchUser(setUser).then(unsub => { stop = unsub })
+    return () => stop()
+  }, [])
+  useEffect(() => {
+    remoteReady.current = false
+    if (!user) return
+    let alive = true
+    setSyncState('loading')
+    fetchRemote(user.id)
+      .then(remote => {
+        if (!alive) return
+        const merged = mergeState({ progress, srs, log }, remote ?? {})
+        setProgress(merged.progress); setSrs(merged.srs); setLog(merged.log)
+        remoteReady.current = true
+        return pushRemote(user.id, merged).then(() => setSyncState('idle'))
+      })
+      .catch(() => alive && setSyncState('error'))
+    return () => { alive = false }
+  }, [user]) // eslint-disable-line react-hooks/exhaustive-deps
+  useEffect(() => {
+    if (!user || !remoteReady.current) return
+    setSyncState('saving')
+    const t = setTimeout(() => pushRemote(user.id, { progress, srs, log }).then(() => setSyncState('idle')).catch(() => setSyncState('error')), 1500)
+    return () => clearTimeout(t)
+  }, [user, progress, srs, log])
+
+  /* ---- Tiến độ, XP, ôn tập ---- */
+  const xp = log[dayKey()] ?? 0
+  const streak = streakOf(log)
+  const dueCount = useMemo(() => Object.values(srs).filter(e => e.card && isDue(e)).length, [srs])
+
+  const earn = useCallback(n => {
+    const before = log[dayKey()] ?? 0
+    if (before < s.goal && before + n >= s.goal) setToast('🎉 Bạn đã đạt mục tiêu hôm nay!')
+    setLog(l => ({ ...l, [dayKey()]: (l[dayKey()] ?? 0) + n }))
+  }, [log, setLog, s.goal])
+  useEffect(() => { if (!toast) return; const t = setTimeout(() => setToast(null), 3000); return () => clearTimeout(t) }, [toast])
+
+  const markDone = useCallback((key, stepId) => {
+    if ((progress[key] ?? []).includes(stepId)) return
+    earn(10)
+    setProgress(p => ({ ...p, [key]: [...new Set([...(p[key] ?? []), stepId])] }))
+  }, [progress, earn, setProgress])
+  const cardOf = ({ han, py, meaning, example }) => ({ han, py, meaning, example })
+  const rate = useCallback((card, g) => {
+    setSrs(m => ({ ...m, [card.han]: { ...schedule(m[card.han], g), t: Date.now(), card: cardOf(card) } }))
+    earn(1)
+  }, [setSrs, earn])
+  const addToDeck = word => {
+    setSrs(m => (m[word.han] ? m : { ...m, [word.han]: { ivl: 0, reps: 0, due: 0, t: Date.now(), card: cardOf({ ...word, example: word.han }) } }))
+    setToast(`Đã thêm ${word.han} vào bộ ôn tập`)
+  }
+  const openWord = useCallback((word, anchor) => setPopover({ word, anchor }), [])
+  const closeWord = useCallback(() => setPopover(null), [])
+
+  if (loadError) return <div className="boot">Không tải được nội dung. Kiểm tra kết nối mạng rồi tải lại trang.</div>
+  if (!courses) return <div className="boot">Đang tải…</div>
+
+  /* ---- Xác định trang hiện tại từ địa chỉ ---- */
+  const view = parts[0] === 'review' ? 'review' : 'lesson'
+  const lastCourse = localStorage.getItem('gg-last-course')
+  const course = courses.find(c => c.id === (view === 'review' ? lastCourse : parts[0])) ?? courses.find(c => c.id === lastCourse) ?? courses[0]
+  const lessonId = Number(parts[1]) || course.lessons[0]?.id
+  const stepId = steps.some(st => st.id === parts[2]) ? parts[2] : 'lecture'
+  if (view === 'lesson') localStorage.setItem('gg-last-course', course.id)
+  const validLesson = course.lessons.some(l => l.id === lessonId)
+
+  const ctx = { settings: s, setSettings, openWord, srs, rate, addToDeck }
+  const today = <TodayCard xp={xp} goal={s.goal} streak={streak} dueCount={dueCount} onReview={() => { go('review'); setMenuOpen(false) }} />
+
+  return <AppContext.Provider value={ctx}>
+    <div className="app">
+      <Header view={view} courses={courses} courseId={course.id} user={user} dueCount={dueCount}
+        onCourse={id => { const c = courses.find(x => x.id === id); go(c.lessons.length ? `${id}/${c.lessons[0].id}/lecture` : id) }}
+        onLesson={() => go(`${course.id}${validLesson ? `/${lessonId}/${stepId}` : ''}`)} onReview={() => go('review')}
+        onSettings={() => setPanel('settings')} onLogin={() => setPanel('login')} onMenu={() => setMenuOpen(true)} />
+      <div className="layout">
+        <Sidebar course={course} lessonId={view === 'lesson' ? lessonId : null} progress={progress} open={menuOpen} onClose={() => setMenuOpen(false)} today={today}
+          onPick={id => go(`${course.id}/${id}/lecture`)} />
+        <main className="main">
+          {view === 'review' ? <ReviewView onBack={() => go(course.id)} />
+            : !course.lessons.length ? <ComingSoon course={course} />
+              : <LessonView course={course} lessonId={validLesson ? lessonId : course.lessons[0].id} stepId={stepId} go={go} progress={progress} markDone={markDone} earn={earn} />}
+        </main>
+      </div>
+      <SettingsPanel open={panel === 'settings'} onClose={() => setPanel(null)} />
+      {syncEnabled && <LoginPanel open={panel === 'login'} onClose={() => setPanel(null)} user={user} syncState={syncState} />}
+      {popover && <WordPopover {...popover} onClose={closeWord} />}
+      {toast && <div className="toast" role="status">{toast}</div>}
+    </div>
+  </AppContext.Provider>
 }
 
 createRoot(document.getElementById('root')).render(<App />)

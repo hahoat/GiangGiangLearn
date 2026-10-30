@@ -1,0 +1,345 @@
+# Từ điển nền: tên riêng, hư từ, số đếm và từ thường gặp không nằm trong danh sách từ mới.
+# chữ Hán | pinyin tách âm tiết | nghĩa
+王一飞 | Wáng Yī fēi | Vương Nhất Phi (tên người)
+王一雪 | Wáng Yī xuě | Vương Nhất Tuyết (tên người)
+白家月 | Bái Jiā yuè | Bạch Gia Nguyệt (tên người)
+李文 | Lǐ Wén | Lý Văn (tên người)
+李月 | Lǐ Yuè | Lý Nguyệt (tên người)
+李心 | Lǐ Xīn | Lý Tâm (tên người)
+陈天中 | Chén Tiān zhōng | Trần Thiên Trung (tên người)
+安妮 | Ān nī | Annie (tên người)
+杨同乐 | Yáng Tóng lè | Dương Đồng Lạc (tên người)
+刘明 | Liú Míng | Lưu Minh (tên người)
+刘小明 | Liú Xiǎo míng | Lưu Tiểu Minh (tên người)
+刘小雪 | Liú Xiǎo xuě | Lưu Tiểu Tuyết (tên người)
+小雪 | Xiǎo xuě | Tiểu Tuyết (tên người)
+小明 | Xiǎo míng | Tiểu Minh (tên người)
+小胡 | Xiǎo Hú | Tiểu Hồ (cách gọi thân mật)
+胡 | Hú | Hồ (họ)
+大卫 | Dà wèi | David (tên người)
+张心华 | Zhāng Xīn huá | Trương Tâm Hoa (tên người)
+一飞 | Yī fēi | Nhất Phi (tên gọi)
+家月 | Jiā yuè | Gia Nguyệt (tên gọi)
+同乐 | Tóng lè | Đồng Lạc (tên gọi)
+明明 | Míng ming | Minh Minh (tên người)
+中国 | Zhōng guó | Trung Quốc
+越南 | Yuè nán | Việt Nam
+法国 | Fǎ guó | Pháp
+美国 | Měi guó | Mỹ
+日本 | Rì běn | Nhật Bản
+英国 | Yīng guó | Anh
+泰国 | Tài guó | Thái Lan
+北京 | Běi jīng | Bắc Kinh
+西安 | Xī ān | Tây An
+大兴 | Dà xīng | Đại Hưng
+汉语 | Hàn yǔ | tiếng Hán
+汉字 | Hàn zì | chữ Hán
+我 | wǒ | tôi
+你 | nǐ | bạn
+您 | nín | ngài, ông/bà (kính trọng)
+他 | tā | anh ấy
+她 | tā | cô ấy
+它 | tā | nó
+们 | men | (hậu tố số nhiều)
+我们 | wǒ men | chúng tôi
+你们 | nǐ men | các bạn
+他们 | tā men | họ
+她们 | tā men | họ (nữ)
+是 | shì | là
+不 | bù | không
+不是 | bú shì | không phải
+没 | méi | không, chưa
+的 | de | của, (trợ từ kết cấu)
+了 | le | rồi (trợ từ)
+吗 | ma | không? (trợ từ nghi vấn)
+呢 | ne | còn … thì sao?; (trợ từ)
+吧 | ba | nhé, đi (trợ từ)
+很 | hěn | rất
+也 | yě | cũng
+都 | dōu | đều
+和 | hé | và, với
+在 | zài | ở, tại; đang
+有 | yǒu | có
+没有 | méi yǒu | không có
+这 | zhè | này, đây
+那 | nà | kia, đó
+这儿 | zhèr | ở đây
+那儿 | nàr | ở đó
+这些 | zhè xiē | những … này
+那些 | nà xiē | những … kia
+哪 | nǎ | nào
+哪儿 | nǎr | ở đâu
+谁 | shéi | ai
+什么 | shén me | cái gì
+名字 | míng zi | tên
+叫 | jiào | gọi, tên là
+人 | rén | người
+国 | guó | nước
+好 | hǎo | tốt, khỏe, hay
+你好 | nǐ hǎo | xin chào
+您好 | nín hǎo | xin chào (kính trọng)
+谢谢 | xiè xie | cảm ơn
+不客气 | bú kè qi | đừng khách sáo
+再见 | zài jiàn | tạm biệt
+请问 | qǐng wèn | xin hỏi
+对不起 | duì bu qǐ | xin lỗi
+没关系 | méi guān xi | không sao
+老师 | lǎo shī | giáo viên
+学生 | xué sheng | học sinh
+同学 | tóng xué | bạn học
+一 | yī | một
+二 | èr | hai
+三 | sān | ba
+四 | sì | bốn
+五 | wǔ | năm
+六 | liù | sáu
+七 | qī | bảy
+八 | bā | tám
+九 | jiǔ | chín
+十 | shí | mười
+百 | bǎi | trăm
+零 | líng | không (số 0)
+两 | liǎng | hai (dùng với lượng từ)
+一个 | yí ge | một cái/người
+个 | ge | cái, chiếc (lượng từ)
+几 | jǐ | mấy
+岁 | suì | tuổi
+多大 | duō dà | bao nhiêu tuổi
+年 | nián | năm
+今年 | jīn nián | năm nay
+去年 | qù nián | năm ngoái
+明年 | míng nián | năm sau
+今天 | jīn tiān | hôm nay
+明天 | míng tiān | ngày mai
+昨天 | zuó tiān | hôm qua
+天 | tiān | ngày; trời
+上 | shàng | trên
+里 | lǐ | trong
+家里 | jiā li | trong nhà
+前 | qián | trước
+后边 | hòu bian | phía sau
+大家 | dà jiā | mọi người
+朋友们 | péng you men | các bạn
+孩子们 | hái zi men | các con
+同学们 | tóng xué men | các bạn học
+学生们 | xué sheng men | các học sinh
+老师们 | lǎo shī men | các thầy cô
+小朋友们 | xiǎo péng you men | các bạn nhỏ
+好的 | hǎo de | được, vâng
+是的 | shì de | đúng vậy
+不太 | bú tài | không … lắm
+一起 | yì qǐ | cùng nhau
+高兴 | gāo xìng | vui
+认识 | rèn shi | quen biết
+非常 | fēi cháng | rất, vô cùng
+说 | shuō | nói
+看 | kàn | xem, nhìn
+想 | xiǎng | muốn; nhớ
+去 | qù | đi
+来 | lái | đến
+吃 | chī | ăn
+喝 | hē | uống
+买 | mǎi | mua
+做 | zuò | làm
+会 | huì | biết, có thể
+能 | néng | có thể
+要 | yào | muốn, cần
+给 | gěi | cho
+点儿 | diǎnr | một chút
+多 | duō | nhiều
+少 | shǎo | ít
+大 | dà | to, lớn
+小 | xiǎo | nhỏ
+太 | tài | quá
+真 | zhēn | thật
+新 | xīn | mới
+书 | shū | sách
+本 | běn | quyển
+中文书 | Zhōng wén shū | sách tiếng Trung
+怎么样 | zěn me yàng | thế nào
+怎么 | zěn me | thế nào, làm sao
+为什么 | wèi shén me | tại sao
+时候 | shí hou | lúc
+现在 | xiàn zài | bây giờ
+点 | diǎn | giờ
+分 | fēn | phút
+半 | bàn | rưỡi
+早上 | zǎo shang | buổi sáng
+中午 | zhōng wǔ | buổi trưa
+晚上 | wǎn shang | buổi tối
+上午 | shàng wǔ | buổi sáng
+下午 | xià wǔ | buổi chiều
+号 | hào | ngày; số
+月 | yuè | tháng
+星期 | xīng qī | tuần, thứ
+块 | kuài | đồng (tiền)
+钱 | qián | tiền
+元 | yuán | đồng (tệ)
+斤 | jīn | cân (0,5 kg)
+杯 | bēi | cốc, ly
+件 | jiàn | cái, chiếc (áo)
+只 | zhī | con (lượng từ)
+家 | jiā | nhà, gia đình
+口 | kǒu | (lượng từ người trong nhà)
+女 | nǚ | nữ
+男 | nán | nam
+男孩子 | nán hái zi | bé trai
+女孩子 | nǚ hái zi | bé gái
+孩子 | hái zi | con, trẻ em
+儿子 | ér zi | con trai
+女儿 | nǚ ér | con gái
+爸爸 | bà ba | bố
+妈妈 | mā ma | mẹ
+哥哥 | gē ge | anh trai
+姐姐 | jiě jie | chị gái
+弟弟 | dì di | em trai
+妹妹 | mèi mei | em gái
+朋友 | péng you | bạn bè
+男朋友 | nán péng you | bạn trai
+女朋友 | nǚ péng you | bạn gái
+中国人 | Zhōng guó rén | người Trung Quốc
+越南人 | Yuè nán rén | người Việt Nam
+北京人 | Běi jīng rén | người Bắc Kinh
+法国人 | Fǎ guó rén | người Pháp
+美国人 | Měi guó rén | người Mỹ
+泰国人 | Tài guó rén | người Thái Lan
+日本人 | Rì běn rén | người Nhật
+中国菜 | Zhōng guó cài | món Trung Quốc
+中国茶 | Zhōng guó chá | trà Trung Quốc
+中国朋友 | Zhōng guó péng you | bạn người Trung Quốc
+好朋友 | hǎo péng you | bạn thân
+打电话 | dǎ diàn huà | gọi điện thoại
+打 | dǎ | đánh, gọi (điện)
+里边 | lǐ bian | bên trong
+前边 | qián bian | phía trước
+上边 | shàng bian | phía trên
+下边 | xià bian | phía dưới
+后 | hòu | sau
+外 | wài | ngoài
+下 | xià | dưới
+早饭 | zǎo fàn | bữa sáng
+午饭 | wǔ fàn | bữa trưa
+晚饭 | wǎn fàn | bữa tối
+饭 | fàn | cơm, bữa ăn
+做饭 | zuò fàn | nấu cơm
+菜 | cài | món ăn; rau
+水 | shuǐ | nước
+热水 | rè shuǐ | nước nóng
+茶 | chá | trà
+牛奶 | niú nǎi | sữa bò
+米饭 | mǐ fàn | cơm
+面条儿 | miàn tiáor | mì sợi
+包子 | bāo zi | bánh bao
+饺子 | jiǎo zi | sủi cảo
+苹果 | píng guǒ | táo
+水果 | shuǐ guǒ | trái cây
+面包 | miàn bāo | bánh mì
+鸡蛋 | jī dàn | trứng gà
+便宜 | pián yi | rẻ
+贵 | guì | đắt
+漂亮 | piào liang | đẹp
+好看 | hǎo kàn | đẹp, hay (xem)
+好吃 | hǎo chī | ngon
+好听 | hǎo tīng | hay (nghe)
+好玩儿 | hǎo wánr | vui, thú vị
+冷 | lěng | lạnh
+热 | rè | nóng
+忙 | máng | bận
+累 | lèi | mệt
+对 | duì | đúng
+上课 | shàng kè | vào học
+下课 | xià kè | tan học
+上班 | shàng bān | đi làm
+下班 | xià bān | tan làm
+学习 | xué xí | học tập
+工作 | gōng zuò | công việc; làm việc
+休息 | xiū xi | nghỉ ngơi
+睡觉 | shuì jiào | ngủ
+起床 | qǐ chuáng | thức dậy
+看书 | kàn shū | đọc sách
+看电视 | kàn diàn shì | xem ti vi
+看电影 | kàn diàn yǐng | xem phim
+商店 | shāng diàn | cửa hàng
+超市 | chāo shì | siêu thị
+饭店 | fàn diàn | nhà hàng
+医院 | yī yuàn | bệnh viện
+学校 | xué xiào | trường học
+书店 | shū diàn | hiệu sách
+电影院 | diàn yǐng yuàn | rạp chiếu phim
+公司 | gōng sī | công ty
+机场 | jī chǎng | sân bay
+家人 | jiā rén | người nhà
+小狗 | xiǎo gǒu | chó con
+小猫 | xiǎo māo | mèo con
+一些 | yì xiē | một số, một ít
+有些 | yǒu xiē | có một số
+一点儿 | yì diǎnr | một chút
+一下 | yí xià | một chút, thử
+一半 | yí bàn | một nửa
+第一 | dì yī | thứ nhất
+多少 | duō shao | bao nhiêu
+星期一 | xīng qī yī | thứ Hai
+星期二 | xīng qī èr | thứ Ba
+星期三 | xīng qī sān | thứ Tư
+星期四 | xīng qī sì | thứ Năm
+星期五 | xīng qī wǔ | thứ Sáu
+星期六 | xīng qī liù | thứ Bảy
+星期天 | xīng qī tiān | Chủ nhật
+星期日 | xīng qī rì | Chủ nhật
+点钟 | diǎn zhōng | giờ (đúng)
+喂 | wèi | a lô
+啊 | a | à, nhé (trợ từ)
+请 | qǐng | mời; xin
+坐 | zuò | ngồi; đi (xe)
+得 | de | (trợ từ bổ ngữ)
+还 | hái | còn, vẫn
+再 | zài | lại, nữa
+就 | jiù | thì, liền
+才 | cái | mới
+最 | zuì | nhất
+更 | gèng | hơn
+跟 | gēn | với
+从 | cóng | từ
+到 | dào | đến
+对我 | duì wǒ | với tôi
+问 | wèn | hỏi
+听 | tīng | nghe
+写 | xiě | viết
+读 | dú | đọc
+学 | xué | học
+找 | zhǎo | tìm
+住 | zhù | sống, ở
+接 | jiē | đón
+送 | sòng | tặng, đưa
+开 | kāi | mở; (xe) chạy
+上车 | shàng chē | lên xe
+下车 | xià chē | xuống xe
+车 | chē | xe
+出租车 | chū zū chē | taxi
+火车 | huǒ chē | tàu hỏa
+飞机 | fēi jī | máy bay
+学中文 | xué Zhōng wén | học tiếng Trung
+说汉语 | shuō Hàn yǔ | nói tiếng Hán
+写汉字 | xiě Hàn zì | viết chữ Hán
+哪国人 | nǎ guó rén | người nước nào
+王 | Wáng | Vương (họ)
+李 | Lǐ | Lý (họ)
+兄弟姐妹 | xiōng dì jiě mèi | anh chị em
+二十 | èr shí | hai mươi
+十二 | shí èr | mười hai
+唱歌 | chàng gē | hát
+那里 | nà lǐ | ở đó, chỗ đó
+角 | jiǎo | hào (1/10 tệ)
+下雪 | xià xuě | tuyết rơi
+看看 | kàn kan | xem thử
+一百 | yì bǎi | một trăm
+女孩子 | nǚ hái zi | bé gái, con gái
+男孩子 | nán hái zi | bé trai, con trai
+学医 | xué yī | học y
+小店 | xiǎo diàn | cửa hàng nhỏ
+四十 | sì shí | bốn mươi
+听不见 | tīng bu jiàn | không nghe thấy
+点儿 | diǎnr | một chút
+前几年 | qián jǐ nián | mấy năm trước
+四十五 | sì shí wǔ | bốn mươi lăm
+十三 | shí sān | mười ba

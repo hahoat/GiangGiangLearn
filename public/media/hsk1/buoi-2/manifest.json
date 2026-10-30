@@ -1,0 +1,64 @@
+{
+ "id": "buoi-2",
+ "title": "HSK 1 BUỔI 2",
+ "level": "hsk1",
+ "width": 1280,
+ "slides": [
+  {
+   "img": "001.webp",
+   "thumb": "thumbs/001.webp"
+  },
+  {
+   "img": "002.webp",
+   "thumb": "thumbs/002.webp"
+  },
+  {
+   "img": "003.webp",
+   "thumb": "thumbs/003.webp"
+  },
+  {
+   "img": "004.webp",
+   "thumb": "thumbs/004.webp"
+  },
+  {
+   "img": "005.webp",
+   "thumb": "thumbs/005.webp",
+   "hasVideo": true
+  },
+  {
+   "img": "006.webp",
+   "thumb": "thumbs/006.webp"
+  },
+  {
+   "img": "007.webp",
+   "thumb": "thumbs/007.webp"
+  },
+  {
+   "img": "008.webp",
+   "thumb": "thumbs/008.webp"
+  },
+  {
+   "img": "009.webp",
+   "thumb": "thumbs/009.webp"
+  },
+  {
+   "img": "010.webp",
+   "thumb": "thumbs/010.webp"
+  },
+  {
+   "img": "011.webp",
+   "thumb": "thumbs/011.webp"
+  },
+  {
+   "img": "012.webp",
+   "thumb": "thumbs/012.webp",
+   "hasVideo": true
+  }
+ ],
+ "audioAligned": true,
+ "videosNotExported": [
+  "media1.mp4",
+  "media2.mp4",
+  "media3.mp4"
+ ]
+}

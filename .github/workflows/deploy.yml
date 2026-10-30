@@ -27,12 +27,21 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22
           cache: pnpm
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
+      - name: Test
+        run: pnpm test
       - name: Build
         run: pnpm build
+        env:
+          # Đặt trong Settings → Secrets and variables → Actions → Variables (để trống thì tắt đăng nhập/đồng bộ)
+          VITE_SUPABASE_URL: ${{ vars.VITE_SUPABASE_URL }}
+          VITE_SUPABASE_ANON_KEY: ${{ vars.VITE_SUPABASE_ANON_KEY }}
+          VITE_SUPABASE_GOOGLE: ${{ vars.VITE_SUPABASE_GOOGLE }}
+          # Để trống = ảnh slide lấy từ chính trang web; đặt URL Cloudflare R2 khi chuyển media sang CDN
+          VITE_MEDIA_BASE: ${{ vars.VITE_MEDIA_BASE }}
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:

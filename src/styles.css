@@ -1,7 +1,438 @@
-@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=Noto+Serif+SC:wght@500;600;700&display=swap');
-:root{font-family:'Be Vietnam Pro',sans-serif;color:#28262d;background:#f7f3ee;font-synthesis:none;--red:#c94337;--coral:#ee664b;--ink:#28262d;--muted:#8b878e;--line:#ece7e2;--soft:#fffaf7}
-*{box-sizing:border-box}body{margin:0;min-width:320px;background:#f7f3ee}button,input{font:inherit}button{border:0;cursor:pointer;color:inherit;background:none}.app-shell{display:flex;min-height:100vh}.sidebar{width:274px;flex:0 0 274px;padding:27px 18px 18px;background:#fffdfb;border-right:1px solid #eee8e2;display:flex;flex-direction:column;min-height:100vh}.brand{display:flex;align-items:center;gap:11px;padding:0 10px 24px}.brand-mark{background:var(--red);color:white;width:37px;height:37px;border-radius:12px;display:grid;place-items:center;font-family:'Noto Serif SC';font-size:19px}.brand strong{font-size:19px;letter-spacing:-.5px}.brand strong span{color:var(--red)}.brand small{display:block;font-size:9px;letter-spacing:.2px;color:#a09ba1;margin-top:2px}.level-switcher{display:flex;gap:6px;background:#f8f4f0;border:1px solid #eee8e2;border-radius:12px;padding:4px;margin-bottom:23px}.level{padding:8px 8px;flex:1;border-radius:9px;text-align:left;color:#9a9490;font-size:11px;font-weight:700}.level small{display:block;font-size:8px;font-weight:500;margin-top:2px}.level.active{background:#fff;color:var(--red);box-shadow:0 2px 9px #d8c4ba55}.side-heading{display:flex;align-items:center;justify-content:space-between;padding:0 9px 10px;color:#9c9693;font-size:10px;text-transform:uppercase;font-weight:700;letter-spacing:.7px}.side-heading button{font-size:18px;color:var(--red)}.lesson-list{display:flex;flex-direction:column;gap:4px;overflow:auto}.lesson{display:flex;align-items:center;text-align:left;gap:10px;padding:10px 9px;border-radius:12px;position:relative}.lesson:hover{background:#fcf2ee}.lesson.active{background:#fbe7e1;color:var(--red)}.lesson-number{width:28px;height:28px;border-radius:50%;background:#f2efec;display:grid;place-items:center;font-size:12px;font-weight:700;color:#7d7774}.lesson.active .lesson-number{background:var(--red);color:#fff}.lesson-copy{min-width:0;flex:1}.lesson-copy strong,.lesson-copy small{display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.lesson-copy strong{font-size:12px}.lesson-copy small{color:#9c9693;font-size:9px;margin-top:3px}.lesson.active .lesson-copy small{color:#bd746c}.lesson-status{font-size:9px;color:#ada5a1}.sidebar-footer{margin-top:auto;border-top:1px solid var(--line);padding-top:12px}.sidebar-footer button{display:flex;align-items:center;width:100%;gap:9px;padding:10px;border-radius:10px;text-align:left}.sidebar-footer button:hover{background:#faf4f0}.sidebar-footer .icon{font-size:17px;color:var(--red)}.sidebar-footer span{flex:1}.sidebar-footer strong,.sidebar-footer small{display:block}.sidebar-footer strong{font-size:11px}.sidebar-footer small{font-size:9px;color:#a39d9a;margin-top:2px}.sidebar-footer b{color:#b5adaa;font-size:19px;font-weight:400}.main{flex:1;max-width:calc(100vw - 274px);padding:27px 35px 50px;position:relative}.hero{min-height:222px;position:relative;overflow:hidden;border-radius:22px;padding:31px 43px;color:#fff;background:linear-gradient(115deg,#b93e35,#e8644b 70%,#f47b5a);display:flex;justify-content:space-between;align-items:center;box-shadow:0 12px 30px #c94f3b26}.hero:after{content:'';position:absolute;width:480px;height:250px;right:-100px;top:-80px;border-radius:50%;border:1px solid #ffffff30;box-shadow:0 0 0 32px #ffffff0d,0 0 0 66px #ffffff08;transform:rotate(-15deg)}.hero-glow{position:absolute;width:340px;height:190px;right:80px;bottom:-140px;background:#ff9d78;border-radius:50%;filter:blur(40px);opacity:.5}.hero-content,.hero-actions{position:relative;z-index:1}.hero-kicker{font-size:14px;letter-spacing:.5px;opacity:.86;margin-bottom:13px}.hero-kicker span{opacity:.55;margin:0 7px}.hero h1{font-family:'Noto Serif SC',serif;font-size:48px;line-height:1;margin:0;letter-spacing:1px}.hero p{font-size:14px;margin:10px 0 17px;opacity:.9}.hero-meta{display:flex;gap:8px;flex-wrap:wrap}.hero-meta span{font-size:10px;background:#ffffff1f;border:1px solid #ffffff2e;border-radius:50px;padding:6px 10px}.hero-actions{display:flex;gap:10px;align-self:flex-end}.hero-actions button{background:#fff2;color:white;border:1px solid #fff6;width:43px;height:43px;border-radius:50%;font-size:31px;line-height:1}.hero-actions button:hover{background:#fff;color:var(--red)}.tabs{margin:13px 0 19px;display:flex;background:#fff;border:1px solid var(--line);border-radius:14px;padding:5px;gap:2px;overflow:auto;box-shadow:0 4px 15px #6f51400d}.tabs button{white-space:nowrap;display:flex;align-items:center;justify-content:center;gap:7px;padding:12px 12px;border-radius:10px;font-size:11px;color:#807b81;font-weight:600;flex:1}.tabs button.active{color:var(--red);background:#fff0eb}.tabs button:hover{background:#fbf5f2}.icon{font-size:16px;line-height:1;color:currentColor}.workspace{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:16px}.study-panel,.progress-card,.content-panel,.practice-panel{background:#fff;border:1px solid var(--line);border-radius:19px;box-shadow:0 8px 25px #5d3b2b0b}.study-panel{padding:27px 36px 31px}.panel-heading{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:19px}.panel-heading h2,.content-panel h2,.practice-title h2{font-size:23px;margin:0 0 4px;letter-spacing:-.7px}.panel-heading p,.practice-title p{color:#9a9499;font-size:12px;margin:0}.pager{display:flex;align-items:center;gap:8px}.pager>span{color:#6e6870;font-size:12px;margin-right:6px}.pager i{font-style:normal;color:#aaa4a7}.pager button{width:34px;height:34px;border-radius:50%;border:1px solid var(--line);font-size:23px;color:#777}.pager button.solid{background:var(--coral);color:white;border-color:var(--coral)}.flashcard{width:100%;min-height:310px;border:1px solid #eee7e2;border-radius:22px;background:linear-gradient(145deg,#fff,#fffcfb);box-shadow:inset 0 0 0 1px #fff,0 7px 20px #8b62560b;display:flex;flex-direction:column;align-items:center;justify-content:center;position:relative;transition:.2s;cursor:pointer}.flashcard:hover{transform:translateY(-2px);box-shadow:0 14px 28px #8b625618}.flashcard .star{position:absolute;top:18px;right:22px;color:#aea8aa;font-size:27px}.han{font-family:'Noto Serif SC',serif;font-size:76px;line-height:1;color:#202533;letter-spacing:4px}.han.small{font-family:'Be Vietnam Pro';font-size:33px;letter-spacing:0;color:var(--red)}.pronounce{font-size:22px;color:#68656f;margin-top:24px;display:flex;align-items:center;gap:10px}.pronounce button{width:30px;height:30px;border-radius:50%;background:#fff0eb;color:var(--red);transform:rotate(-45deg);font-size:17px}.pronounce button.speaking{animation:pulse .7s infinite alternate}.meaning{font-size:16px;color:#7c767e;border-top:1px solid var(--line);padding-top:15px;margin-top:15px}.example{color:#9a949a;font-size:13px;margin-top:20px}.study-actions{display:grid;grid-template-columns:1fr 1.35fr 1fr;gap:12px;margin-top:21px}.study-actions button,.practice-footer button{border:1px solid #eae4df;border-radius:11px;padding:12px 10px;color:#77717b;background:#fff;font-size:12px}.study-actions button:hover,.practice-footer .ghost:hover{border-color:#d98d80;background:#fff8f5}.study-actions .primary,.primary{background:var(--coral);border-color:var(--coral);color:#fff;box-shadow:0 7px 14px #e7634e2e}.study-actions .primary:hover,.primary:hover{background:#d95542}.study-actions .icon{margin-right:8px}.progress-card{padding:24px 20px;align-self:start}.progress-head{display:flex;justify-content:space-between;align-items:flex-end}.progress-head p{margin:0;color:#77717a;font-size:11px;font-weight:700}.progress-head strong{font-size:28px;color:var(--red);display:block;margin-top:6px}.progress-head strong small{font-size:13px}.progress-head>span{font-size:11px;color:#928b91;margin-bottom:6px}.progress-bar{height:8px;border-radius:50px;background:#f1ece9;margin:13px 0 17px;overflow:hidden}.progress-bar span{display:block;height:100%;background:linear-gradient(90deg,var(--red),#f17d5c);border-radius:50px}.progress-list button{display:flex;align-items:center;gap:9px;width:100%;text-align:left;padding:11px 8px;border-bottom:1px solid #f2eeeb;font-size:11px;color:#77717a;position:relative}.progress-list button:last-child{border-bottom:0}.progress-list button:hover{background:#fff9f6;border-radius:9px}.progress-list button.selected{background:#edf8ee;border-radius:10px;color:#3a5f43;font-weight:600}.step{border:1.5px solid #c9c3c2;border-radius:50%;width:26px;height:26px;display:grid;place-items:center;font-size:10px;flex:0 0 26px;color:#aaa}.complete .step,.selected .step{background:#36a664;border-color:#36a664;color:#fff}.progress-list .icon{color:#999;font-size:16px}.progress-list button.selected .icon{color:#308552}.progress-list button>span:nth-last-of-type(1){flex:1}.progress-list button small{font-size:9px;color:#aaa}.info-panel,.reading-panel{padding:31px 35px;min-height:500px}.section-label{font-size:10px;color:var(--red);letter-spacing:1.1px;font-weight:800}.info-panel h2,.reading-panel h2{margin:10px 0 24px}.grammar-row{display:flex;gap:17px;border-top:1px solid var(--line);padding:19px 0}.grammar-row>strong{background:#fff0eb;color:var(--red);width:31px;height:31px;border-radius:50%;display:grid;place-items:center}.grammar-row h3{font-size:15px;margin:2px 0 6px}.grammar-row p{font-size:12px;color:#8a848b;margin:0 0 13px}.formula{font-family:'Noto Serif SC';background:#fff8f5;border-radius:9px;padding:10px 12px;font-size:17px;color:#392d31}.formula span{font-family:'Be Vietnam Pro';font-size:12px;color:#a16c65;margin-left:10px}.formula em{font-family:'Be Vietnam Pro';font-size:11px;color:#999;font-style:normal;margin-left:8px}.vocab-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}.vocab-grid button{text-align:left;border:1px solid var(--line);border-radius:12px;padding:14px;background:#fff}.vocab-grid button:hover{border-color:#e6a192;background:#fff8f5}.vocab-grid strong,.vocab-grid span,.vocab-grid small{display:block}.vocab-grid strong{font-family:'Noto Serif SC';font-size:24px}.vocab-grid span{font-size:11px;color:var(--red);margin-top:7px}.vocab-grid small{font-size:10px;color:#989198;margin-top:5px}.reading-text{background:#fffaf7;border:1px solid #f3e7df;border-radius:14px;padding:24px;font-family:'Noto Serif SC';font-size:25px;line-height:1.9;margin-bottom:22px}.reading-text p{margin:0}.reading-text strong{color:var(--red)}.reading-panel .primary{padding:12px 18px;border-radius:10px;font-size:12px}.practice-panel{padding:28px 35px}.practice-title{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:22px}.question-count{color:#918a91;font-size:11px}.question-count small{color:#b4adb0}.question{padding:18px 0;border-top:1px solid var(--line)}.question-top{display:flex;gap:13px;align-items:center}.q-number{color:var(--red);font-size:11px;font-weight:800}.question-top strong{font-family:'Noto Serif SC';font-size:20px;font-weight:600}.options{display:grid;grid-template-columns:repeat(4,1fr);gap:9px;margin:15px 0 0 35px}.options button,.word-bank button{padding:11px;border-radius:9px;border:1px solid #e8e1dd;text-align:left;font-size:12px;color:#706a72;background:#fff}.options button:hover,.options button.picked{border-color:#df877a;background:#fff1ec;color:var(--red)}.options button.correct{border-color:#74bd88;background:#eef9ef;color:#32814a}.order-result{margin:14px 0 10px 35px;min-height:41px;border-bottom:1px dashed #d5ccc7;display:flex;gap:8px;align-items:center}.order-result span{background:#fff0eb;color:var(--red);padding:7px 10px;border-radius:7px;font-size:12px}.word-bank{display:flex;gap:8px;margin-left:35px;flex-wrap:wrap}.word-bank button{background:#faf8f6;cursor:pointer}.word-bank button:disabled{opacity:.35}.hint{font-size:11px;color:#979096;margin:13px 0 9px 35px}.question input{margin-left:35px;width:calc(100% - 35px);border:1px solid #e9e2de;border-radius:9px;padding:12px 13px;outline:none;color:#5c555c}.question input:focus{border-color:#e18475;box-shadow:0 0 0 3px #e1847520}.practice-footer{display:flex;gap:10px;align-items:center;border-top:1px solid var(--line);padding-top:18px}.practice-footer button{padding:11px 17px}.practice-footer .primary{margin-left:auto}.practice-footer .primary span{margin-left:13px}.score{font-size:11px;color:#389452}.toast{position:fixed;right:30px;bottom:25px;background:#25232a;color:#fff;display:flex;align-items:center;gap:11px;border-radius:14px;padding:12px 14px;box-shadow:0 12px 30px #33251f2b;z-index:3}.toast>span{background:#f17056;border-radius:10px;width:31px;height:31px;display:grid;place-items:center}.toast strong,.toast small{display:block}.toast strong{font-size:11px}.toast small{font-size:9px;color:#c8c1c4;margin-top:3px}.toast button{color:#aaa;font-size:16px;margin-left:8px}.mobile-top{display:none}@keyframes pulse{to{transform:rotate(-45deg) scale(1.14)}}
-@media (max-width:1100px){.sidebar{width:235px;flex-basis:235px}.main{max-width:calc(100vw - 235px);padding:20px}.workspace{grid-template-columns:minmax(0,1fr) 255px}.tabs button{padding:11px 8px}.tabs button span{font-size:10px}.hero h1{font-size:39px}.vocab-grid{grid-template-columns:repeat(2,1fr)}}
-@media (max-width:760px){.app-shell{display:block}.sidebar{display:none}.main{max-width:none;padding:0 13px 100px}.mobile-top{display:flex;height:58px;align-items:center;justify-content:space-between}.mobile-top button{font-size:20px;color:#827b7d}.mobile-top strong{font-size:16px}.hero{min-height:205px;border-radius:18px;padding:26px 23px}.hero h1{font-size:33px}.hero-meta{gap:5px}.hero-meta span{font-size:9px;padding:5px 7px}.hero-actions{display:none}.tabs{border-radius:12px;margin:11px 0;padding:3px}.tabs button{min-width:85px;padding:10px 6px;display:block}.tabs button .icon{display:block;margin-bottom:4px}.workspace{display:block}.progress-card{display:none}.study-panel,.content-panel,.practice-panel{border-radius:16px;padding:22px 16px}.panel-heading h2,.content-panel h2,.practice-title h2{font-size:20px}.panel-heading p,.practice-title p{font-size:11px}.pager button{width:30px;height:30px}.flashcard{min-height:285px}.han{font-size:65px}.study-actions{grid-template-columns:1fr 1fr}.study-actions button:last-child{display:none}.study-actions .primary{grid-column:span 2}.practice-title{display:block}.question-top strong{font-size:17px}.options{grid-template-columns:repeat(2,1fr);margin-left:24px}.order-result,.word-bank,.hint{margin-left:24px}.question input{margin-left:24px;width:calc(100% - 24px)}.toast{right:14px;bottom:14px;left:14px}.toast button{margin-left:auto}}
-.learn-panel{background:#fff;border:1px solid var(--line);border-radius:19px;box-shadow:0 8px 25px #5d3b2b0b;padding:28px 35px;min-height:500px}.learn-heading{display:flex;justify-content:space-between;gap:22px;align-items:flex-start}.learn-heading h2{margin:10px 0 4px;font-size:24px;letter-spacing:-.7px}.learn-heading p{margin:0;color:#918a91;font-size:12px}.listen-lesson{border-radius:10px;padding:12px 16px;font-size:11px;white-space:nowrap}.lesson-goal{display:flex;gap:12px;align-items:center;background:#fff8f5;border:1px solid #f4e5de;border-radius:12px;padding:13px 15px;margin:25px 0 22px;font-size:11px}.lesson-goal strong{color:var(--red);white-space:nowrap}.lesson-goal span{color:#7f787d}.learn-grid{display:grid;grid-template-columns:1fr 1fr;gap:15px}.learn-block{border:1px solid var(--line);border-radius:14px;padding:17px}.block-title{display:flex;gap:10px;align-items:center;margin-bottom:15px}.block-title>span{width:28px;height:28px;border-radius:50%;display:grid;place-items:center;background:#fff0eb;color:var(--red);font-size:10px;font-weight:800}.block-title h3{font-size:13px;margin:0 0 3px}.block-title small{font-size:9px;color:#a49da0}.mini-vocab{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.mini-vocab div{background:#fbf8f6;border-radius:9px;padding:10px 8px}.mini-vocab strong,.mini-vocab span,.mini-vocab small{display:block}.mini-vocab strong{font-family:'Noto Serif SC';font-size:21px}.mini-vocab span{font-size:10px;color:var(--red);margin-top:5px}.mini-vocab small{font-size:9px;color:#978f94;margin-top:3px}.dialogue-lines{display:flex;flex-direction:column;gap:6px}.dialogue-lines p{display:grid;grid-template-columns:22px 1fr;column-gap:8px;margin:0;padding:8px 9px;border-radius:8px}.dialogue-lines p:nth-child(odd){background:#fff8f5}.dialogue-lines b{grid-row:span 2;color:var(--red);font-size:10px}.dialogue-lines span{font-family:'Noto Serif SC';font-size:16px}.dialogue-lines em{font-style:normal;font-size:9px;color:#9a9296;margin-top:2px}.learn-bottom{display:flex;align-items:center;justify-content:space-between;gap:15px;border-top:1px solid var(--line);margin-top:18px;padding-top:18px}.learn-bottom strong,.learn-bottom span{display:block}.learn-bottom strong{font-size:11px}.learn-bottom span{font-size:10px;color:#948d92;margin-top:4px}.complete-button{background:#eef8ef;color:#32804b;border:1px solid #cfead3;border-radius:9px;padding:11px 14px;font-size:11px;font-weight:700}.complete-button:hover{background:#dff3e2}
-@media (max-width:760px){.learn-panel{padding:22px 16px;border-radius:16px}.learn-heading{display:block}.learn-heading h2{font-size:20px}.listen-lesson{margin-top:15px}.lesson-goal{display:block;line-height:1.55}.lesson-goal strong{display:block;margin-bottom:5px}.learn-grid{grid-template-columns:1fr}.mini-vocab{grid-template-columns:repeat(3,1fr)}.learn-bottom{display:block}.complete-button{width:100%;margin-top:13px}}
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;700&family=Noto+Sans:wght@500;600&display=swap');
+
+/* ============ Màu & kích thước: gọn, dịu mắt, chữ Hán là trung tâm ============ */
+:root {
+  --bg: #f6f5f2;
+  --surface: #ffffff;
+  --surface-2: #f1efea;
+  --ink: #1f1f22;
+  --muted: #6c6b70;
+  --line: #e6e3dc;
+  --brand: #d6453d;
+  --brand-ink: #b8352e;
+  --brand-soft: #fbeceb;
+  --ok: #1f9d55;
+  --ok-soft: #e5f5ec;
+  --bad: #d6453d;
+  --bad-soft: #fcebea;
+  --t1: #e03131;
+  --t2: #e07b00;
+  --t3: #2b9348;
+  --t4: #1c6fd1;
+  --t5: #8a8f98;
+  --radius: 16px;
+  --shadow: 0 1px 2px #0000000a, 0 4px 16px #0000000a;
+  --hs: 1;
+  --py: 'Noto Sans', 'Be Vietnam Pro', sans-serif;
+  --han: 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  font-family: 'Be Vietnam Pro', system-ui, sans-serif;
+  color: var(--ink);
+  background: var(--bg);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+[data-size='sm'] { --hs: .85 }
+[data-size='lg'] { --hs: 1.25 }
+[data-theme='dark'] {
+  --bg: #141416;
+  --surface: #1d1d20;
+  --surface-2: #26262a;
+  --ink: #ececef;
+  --muted: #a1a1a8;
+  --line: #333338;
+  --brand: #ef6a62;
+  --brand-ink: #ff8a83;
+  --brand-soft: #3a2220;
+  --ok: #4cc97f;
+  --ok-soft: #173325;
+  --bad: #ef6a62;
+  --bad-soft: #3a2220;
+  --t1: #ff6b6b;
+  --t2: #ffa94d;
+  --t3: #51cf66;
+  --t4: #4dabf7;
+  --t5: #9aa0a8;
+  --shadow: 0 1px 2px #0006, 0 4px 16px #0004;
+}
+
+* { box-sizing: border-box }
+body { margin: 0; min-width: 320px; background: var(--bg) }
+button, input, select { font: inherit; color: inherit }
+button { border: 0; background: none; cursor: pointer; padding: 0 }
+button:disabled { cursor: default }
+:focus-visible { outline: 2px solid var(--brand); outline-offset: 2px; border-radius: 6px }
+.cn, .han-text { font-family: var(--han) }
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0) }
+.muted { color: var(--muted) }
+
+/* Màu thanh điệu */
+.t1 { color: var(--t1) } .t2 { color: var(--t2) } .t3 { color: var(--t3) } .t4 { color: var(--t4) } .t5 { color: var(--t5) }
+
+/* Chữ Hán + pinyin dạng ruby */
+ruby { ruby-position: over; ruby-align: center }
+rt { ruby-align: center; font-family: var(--py); font-size: .42em; font-weight: 500; letter-spacing: 0; opacity: .9; text-align: center }
+rt:empty { display: none }
+rt > span { display: inline-block }
+.word { display: inline; padding: 0 1px; border-radius: 6px; border-bottom: 1.5px dotted transparent; transition: background .15s }
+.word:hover { background: var(--brand-soft); border-bottom-color: var(--brand) }
+
+/* ============ Nút ============ */
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 10px 18px; border-radius: 12px; font-size: 14px; font-weight: 600; white-space: nowrap; transition: background .15s, transform .1s, opacity .15s }
+.btn:active:not(:disabled) { transform: scale(.98) }
+.btn:disabled { opacity: .45 }
+.btn-primary { background: var(--brand); color: #fff }
+.btn-primary:hover:not(:disabled) { background: var(--brand-ink) }
+.btn-ghost { background: var(--surface); border: 1px solid var(--line) }
+.btn-ghost:hover:not(:disabled) { background: var(--surface-2) }
+.btn-soft { background: var(--brand-soft); color: var(--brand-ink) }
+.btn-soft:hover:not(:disabled) { filter: brightness(.97) }
+.btn-sm { padding: 7px 12px; font-size: 13px }
+.btn-block { width: 100% }
+.link { color: var(--brand-ink); font-weight: 600; font-size: 13px }
+.link:hover { text-decoration: underline }
+.icon-btn { min-width: 40px; height: 40px; padding: 0 10px; border-radius: 12px; display: inline-grid; place-items: center; font-weight: 700; font-size: 15px; border: 1px solid var(--line); background: var(--surface) }
+.icon-btn:hover { background: var(--surface-2) }
+.only-mobile { display: none }
+kbd { font-family: inherit; font-size: 11px; padding: 1px 6px; border-radius: 5px; border: 1px solid var(--line); background: var(--surface-2); color: var(--muted) }
+
+/* Nút nghe */
+.speak { display: inline-flex; gap: 6px; align-items: center }
+.speak button { width: 38px; height: 38px; border-radius: 50%; display: grid; place-items: center; background: var(--brand-soft); color: var(--brand-ink); font-size: 13px; transition: transform .1s }
+.speak button:hover { transform: scale(1.06) }
+.speak button.on { background: var(--brand); color: #fff }
+.speak .slow { background: var(--surface-2); font-size: 16px }
+.speak.small button { width: 30px; height: 30px; font-size: 11px }
+
+/* ============ Header ============ */
+.header { position: sticky; top: 0; z-index: 20; height: 64px; display: flex; align-items: center; gap: 16px; padding: 0 24px; background: color-mix(in srgb, var(--surface) 88%, transparent); backdrop-filter: blur(12px); border-bottom: 1px solid var(--line) }
+.logo { display: flex; align-items: center; gap: 10px; margin-right: auto }
+.logo-mark { width: 36px; height: 36px; border-radius: 10px; display: grid; place-items: center; background: var(--brand); color: #fff; font-family: var(--han); font-weight: 700; font-size: 19px }
+.logo b { display: block; font-size: 16px; line-height: 1.2 }
+.logo small { display: block; font-size: 12px; color: var(--muted) }
+.main-nav { display: flex; gap: 4px; padding: 4px; border-radius: 12px; background: var(--surface-2) }
+.main-nav button { position: relative; display: flex; align-items: center; gap: 6px; padding: 7px 14px; border-radius: 9px; font-size: 14px; font-weight: 600; color: var(--muted) }
+.main-nav button.active { background: var(--surface); color: var(--ink); box-shadow: var(--shadow) }
+.badge { font-style: normal; min-width: 20px; height: 20px; padding: 0 6px; border-radius: 99px; background: var(--brand); color: #fff; font-size: 11px; display: grid; place-items: center }
+.level-select select { height: 40px; padding: 0 12px; border-radius: 12px; border: 1px solid var(--line); background: var(--surface); font-weight: 600; font-size: 14px; cursor: pointer }
+
+/* ============ Bố cục ============ */
+.layout { display: grid; grid-template-columns: 300px minmax(0, 1fr); max-width: 1320px; margin: 0 auto }
+.main { padding: 24px 32px 120px; min-width: 0 }
+.sidebar { position: sticky; top: 64px; height: calc(100vh - 64px); overflow-y: auto; padding: 24px 12px 24px 24px; scrollbar-width: thin }
+.backdrop { display: none }
+
+/* Hôm nay */
+.today { display: flex; align-items: center; gap: 14px; padding: 16px; border-radius: var(--radius); background: var(--surface); border: 1px solid var(--line); box-shadow: var(--shadow); margin-bottom: 22px }
+.today-ring { flex: 0 0 76px; height: 76px; border-radius: 50%; display: grid; place-items: center; background: conic-gradient(var(--ok) calc(var(--p) * 360deg), var(--surface-2) 0) }
+.today-ring > div { width: 62px; height: 62px; border-radius: 50%; background: var(--surface); display: grid; place-content: center; text-align: center; line-height: 1.1 }
+.today-ring b { font-size: 20px }
+.today-ring small { font-size: 10px; color: var(--muted) }
+.today-copy { display: flex; flex-direction: column; gap: 3px; font-size: 13px; align-items: flex-start }
+.today-copy strong { font-size: 14px }
+
+.side-title { display: flex; justify-content: space-between; align-items: baseline; padding: 0 8px 8px; font-size: 13px; font-weight: 700 }
+.side-title small { font-weight: 400; color: var(--muted) }
+.lesson-list { list-style: none; margin: 0; padding: 0 }
+.lesson-list button { width: 100%; display: flex; gap: 12px; align-items: center; padding: 10px 8px; border-radius: 12px; text-align: left }
+.lesson-list button:hover { background: var(--surface-2) }
+.lesson-list button.active { background: var(--surface); box-shadow: var(--shadow) }
+.num { flex: 0 0 32px; height: 32px; border-radius: 10px; display: grid; place-items: center; font-size: 13px; font-weight: 700; background: var(--surface-2); color: var(--muted) }
+.lesson-list button.active .num { background: var(--brand); color: #fff }
+.num.done { background: var(--ok-soft); color: var(--ok) }
+.lesson-copy { flex: 1; min-width: 0 }
+.lesson-copy b { display: block; font-size: 16px; font-weight: 500; white-space: nowrap; overflow: hidden; text-overflow: ellipsis }
+.lesson-copy small { display: block; font-size: 12px; color: var(--muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis }
+.bar { display: block; height: 4px; border-radius: 9px; background: var(--surface-2); margin-top: 6px; overflow: hidden }
+.bar i { display: block; height: 100%; background: var(--ok); border-radius: 9px }
+
+/* ============ Bài học ============ */
+.lesson { max-width: 940px; margin: 0 auto }
+.lesson-head { display: flex; justify-content: space-between; align-items: center; gap: 20px; scroll-margin-top: 80px }
+.crumb { font-size: 13px; font-weight: 600; color: var(--brand-ink) }
+.lesson-head h1 { margin: 6px 0 2px; font-size: calc(40px * var(--hs)); font-weight: 700; line-height: 1.35 }
+.lesson-head h1.plain-title { font-family: inherit; font-size: 32px }
+.lesson-head p { margin: 0; color: var(--muted); font-size: 16px }
+.lesson-meta { display: flex; flex-direction: column; align-items: center; gap: 4px; font-size: 12px; color: var(--muted) }
+.meta-ring { width: 64px; height: 64px; border-radius: 50%; display: grid; place-items: center; background: conic-gradient(var(--ok) calc(var(--p) * 360deg), var(--surface-2) 0) }
+.meta-ring span { width: 52px; height: 52px; border-radius: 50%; background: var(--bg); display: grid; place-items: center; font-weight: 700; font-size: 14px; color: var(--ink) }
+.goal { margin: 16px 0; padding: 12px 16px; border-radius: 12px; background: var(--surface); border: 1px solid var(--line); font-size: 14px }
+
+/* Thanh bước */
+.stepper { display: flex; gap: 4px; overflow-x: auto; scrollbar-width: none; margin-bottom: 16px; padding: 2px }
+.stepper button { flex: 1 0 auto; display: flex; align-items: center; gap: 6px; padding: 6px 8px 6px 6px; border-radius: 12px; color: var(--muted); font-size: 13px; font-weight: 600; text-align: left }
+.stepper button:hover { background: var(--surface) }
+.stepper .dot { flex: 0 0 26px; height: 26px; border-radius: 50%; display: grid; place-items: center; font-size: 12px; border: 1.5px solid var(--line); background: var(--surface) }
+.stepper .step-label small { display: none }
+.stepper button.done .dot { background: var(--ok); border-color: var(--ok); color: #fff }
+.stepper button.current { background: var(--surface); color: var(--ink); box-shadow: var(--shadow) }
+.stepper button.current .dot { background: var(--brand); border-color: var(--brand); color: #fff }
+
+.step-card { background: var(--surface); border: 1px solid var(--line); border-radius: 20px; box-shadow: var(--shadow); padding: 28px; animation: fade .25s ease both }
+@keyframes fade { from { opacity: 0; transform: translateY(6px) } }
+.step-head { display: flex; justify-content: space-between; align-items: flex-start; gap: 16px; margin-bottom: 20px }
+.step-head h2 { margin: 0 0 4px; font-size: 22px }
+.step-head p { margin: 0; font-size: 14px; color: var(--muted); max-width: 560px }
+.step-tools { display: flex; gap: 8px; align-items: center }
+.counter { font-weight: 700; font-size: 14px; color: var(--muted) }
+.vi { display: block; font-size: 14px; color: var(--muted); margin-top: 2px }
+.hidden-vi { font-size: 12px; padding: 2px 10px; border-radius: 99px; border: 1px dashed var(--line); color: var(--muted); width: fit-content }
+.hidden-vi:hover { border-color: var(--brand); color: var(--brand-ink) }
+
+.step-nav { position: sticky; bottom: 16px; z-index: 5; display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-top: 16px; padding: 10px; border-radius: 16px; background: color-mix(in srgb, var(--surface) 92%, transparent); backdrop-filter: blur(10px); border: 1px solid var(--line); box-shadow: 0 8px 30px #00000014 }
+.step-count { font-size: 13px; font-weight: 600; color: var(--muted) }
+
+/* Từ mới */
+.vocab-list { display: flex; flex-direction: column }
+.vocab-row { display: flex; align-items: center; gap: 20px; padding: 14px 4px; border-top: 1px solid var(--line) }
+.vocab-row:first-child { border-top: 0 }
+.vocab-han { flex: 0 0 120px; font-size: calc(34px * var(--hs)); font-weight: 500; text-align: center; line-height: 1.4 }
+.vocab-info { flex: 1; min-width: 0 }
+.py-text { font-family: var(--py); font-weight: 600; font-size: 15px }
+.vocab-info .vi { font-size: 15px; color: var(--ink) }
+.vocab-ex { display: block; font-size: calc(15px * var(--hs)); color: var(--muted); margin-top: 2px }
+
+/* Thẻ nhớ */
+.progress-line { height: 6px; border-radius: 9px; background: var(--surface-2); overflow: hidden; margin-bottom: 18px }
+.progress-line i { display: block; height: 100%; background: var(--ok); border-radius: 9px; transition: width .3s }
+.flash { perspective: 1200px; cursor: pointer }
+.flash-inner { position: relative; height: 320px; transform-style: preserve-3d; transition: transform .45s ease }
+.flash.flipped .flash-inner { transform: rotateY(180deg) }
+.flash-face { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; padding: 24px; text-align: center; border-radius: 18px; border: 1px solid var(--line); background: var(--surface-2); backface-visibility: hidden; -webkit-backface-visibility: hidden }
+.flash-face.back { transform: rotateY(180deg); background: var(--surface) }
+.flash-han { font-size: calc(96px * var(--hs)); font-weight: 500; line-height: 1.2 }
+.flash-han.small { font-size: calc(56px * var(--hs)) }
+.flash-hint { position: absolute; bottom: 16px; font-size: 12px; color: var(--muted) }
+.flash .py-text { font-size: 20px }
+.flash-meaning { font-size: 20px; font-weight: 600 }
+.flash-ex { font-size: calc(18px * var(--hs)); color: var(--muted) }
+.grade-bar { margin-top: 16px }
+.grades { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px }
+.grade { position: relative; display: flex; flex-direction: column; align-items: center; padding: 10px 6px; border-radius: 12px; border: 1px solid var(--line); background: var(--surface); transition: transform .1s }
+.grade:hover { transform: translateY(-2px) }
+.grade b { font-size: 15px }
+.grade small { font-size: 12px; color: var(--muted) }
+.grade kbd { position: absolute; top: 6px; right: 6px; font-size: 10px; padding: 0 4px }
+.grade.again { background: var(--bad-soft); border-color: transparent; color: var(--bad) }
+.grade.hard { background: #fff4e0; border-color: transparent; color: #b26100 }
+.grade.good { background: var(--ok-soft); border-color: transparent; color: var(--ok) }
+.grade.easy { background: #e7f0fd; border-color: transparent; color: #1c5fb4 }
+[data-theme='dark'] .grade.hard { background: #3a2c14; color: #ffb454 }
+[data-theme='dark'] .grade.easy { background: #172a42; color: #74b9ff }
+.kbd-help { text-align: center; font-size: 12px; color: var(--muted); margin: 14px 0 0 }
+
+/* Hội thoại */
+.chat { display: flex; flex-direction: column; gap: 14px }
+.bubble-row { display: flex; gap: 10px; align-items: flex-end; max-width: 85% }
+.bubble-row.B { align-self: flex-end; flex-direction: row-reverse }
+.avatar { flex: 0 0 34px; height: 34px; border-radius: 50%; display: grid; place-items: center; font-weight: 700; font-size: 13px; background: var(--surface-2) }
+.B .avatar { background: var(--brand-soft); color: var(--brand-ink) }
+.bubble { position: relative; padding: 12px 48px 12px 16px; border-radius: 18px 18px 18px 6px; background: var(--surface-2) }
+.B .bubble { border-radius: 18px 18px 6px 18px; background: var(--brand-soft) }
+.bubble.playing { outline: 2px solid var(--brand) }
+.bubble-han { font-size: calc(24px * var(--hs)); line-height: 1.7 }
+.bubble-play { position: absolute; right: 10px; top: 50%; transform: translateY(-50%); width: 30px; height: 30px; border-radius: 50%; background: var(--surface); font-size: 11px; color: var(--brand-ink) }
+
+/* Ngữ pháp */
+.grammar-list { display: flex; flex-direction: column; gap: 16px }
+.grammar-card { padding: 20px; border-radius: 16px; border: 1px solid var(--line) }
+.grammar-card h3 { display: flex; align-items: center; gap: 10px; margin: 0 0 6px; font-size: 17px }
+.grammar-card h3 span { width: 26px; height: 26px; border-radius: 8px; display: grid; place-items: center; background: var(--brand-soft); color: var(--brand-ink); font-size: 13px }
+.grammar-card > p { margin: 0 0 14px; font-size: 14px; color: var(--muted) }
+.formula { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-bottom: 14px }
+.formula span { padding: 6px 14px; border-radius: 10px; background: var(--surface-2); font-weight: 600; font-size: 14px }
+.formula span.key { background: var(--brand); color: #fff; font-size: 18px }
+.formula i { font-style: normal; color: var(--muted) }
+.example { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 12px; padding: 12px 14px; border-radius: 12px; background: var(--surface-2) }
+.example .han-text { font-size: calc(24px * var(--hs)); line-height: 1.7 }
+.example .vi { flex-basis: 100%; margin: 0 }
+.note { margin: 12px 0 0; font-size: 13px; color: var(--muted) }
+
+/* Bài khóa */
+.reader { display: flex; flex-direction: column; gap: 4px }
+.reader-line { display: flex; gap: 14px; align-items: flex-start; padding: 12px; border-radius: 14px }
+.reader-line:hover { background: var(--surface-2) }
+.reader-line.playing { background: var(--brand-soft) }
+.line-play { flex: 0 0 32px; height: 32px; margin-top: 14px; border-radius: 50%; background: var(--brand-soft); color: var(--brand-ink); font-size: 11px }
+.reader-han { font-size: calc(28px * var(--hs)); line-height: 1.8 }
+
+/* Luyện tập */
+.score-pill { display: inline-flex; align-items: center; gap: 8px; float: right; font-size: 13px; color: var(--muted); padding: 6px 12px; border-radius: 99px; background: var(--surface-2) }
+.score-pill b { color: var(--ok) }
+.quiz { padding: 18px 0; border-top: 1px solid var(--line) }
+.quiz-q { display: flex; align-items: center; gap: 12px }
+.qn { flex: 0 0 28px; height: 28px; border-radius: 8px; display: grid; place-items: center; font-size: 13px; font-weight: 700; background: var(--surface-2); color: var(--muted) }
+.quiz-text { font-size: calc(26px * var(--hs)) }
+.choices { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin: 14px 0 0 40px }
+.choice { display: flex; align-items: center; gap: 10px; padding: 12px 14px; border-radius: 12px; border: 1.5px solid var(--line); background: var(--surface); font-size: calc(22px * var(--hs)); text-align: left; transition: border-color .15s, background .15s }
+.choice small { font-family: 'Be Vietnam Pro'; font-size: 11px; font-weight: 700; width: 22px; height: 22px; border-radius: 6px; display: grid; place-items: center; background: var(--surface-2); color: var(--muted) }
+.choice em { margin-left: auto; font-family: 'Be Vietnam Pro'; font-style: normal; font-size: 12px; color: var(--muted) }
+.choice:hover:not(:disabled) { border-color: var(--brand); background: var(--brand-soft) }
+.choice.right { border-color: var(--ok); background: var(--ok-soft) }
+.choice.wrong { border-color: var(--bad); background: var(--bad-soft) }
+.choice:disabled:not(.right):not(.wrong) { opacity: .5 }
+.slot { flex: 1; min-height: 52px; display: flex; flex-wrap: wrap; gap: 6px; align-items: center; padding: 6px 10px; border-radius: 12px; border: 1.5px dashed var(--line) }
+.slot.right { border: 1.5px solid var(--ok); background: var(--ok-soft) }
+.slot.wrong { border: 1.5px solid var(--bad); background: var(--bad-soft) }
+.placeholder { font-size: 13px; color: var(--muted) }
+.bank { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0 0 40px }
+.chip { display: inline-flex; flex-direction: column; align-items: center; padding: 6px 14px; border-radius: 10px; border: 1.5px solid var(--line); background: var(--surface); font-size: calc(20px * var(--hs)); line-height: 1.3; box-shadow: 0 2px 0 var(--line) }
+.chip em { font-family: 'Be Vietnam Pro'; font-style: normal; font-size: 11px; color: var(--muted) }
+.chip:hover:not(:disabled) { border-color: var(--brand) }
+.chip:disabled { opacity: .3; box-shadow: none }
+.slot .chip { background: var(--surface); box-shadow: none }
+.hint { margin: 8px 0 0 40px; font-size: 14px; color: var(--muted) }
+.fill-row { display: flex; gap: 8px; margin: 10px 0 0 40px }
+.fill-row input { width: 200px; padding: 10px 14px; border-radius: 12px; border: 1.5px solid var(--line); background: var(--surface); font-size: 20px; outline: none }
+.fill-row input:focus { border-color: var(--brand) }
+.feedback { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 14px; margin: 12px 0 0 40px; padding: 10px 14px; border-radius: 12px; font-size: 14px }
+.feedback.ok { background: var(--ok-soft); color: var(--ok) }
+.feedback.bad { background: var(--bad-soft); color: var(--bad) }
+.feedback > span { color: var(--ink) }
+.fb-sentence { display: inline-flex; align-items: center; gap: 8px; font-size: calc(20px * var(--hs)) }
+.quiz > .link { display: inline-block; margin: 8px 0 0 40px }
+
+/* Trạng thái trống */
+.empty-state { text-align: center; padding: 48px 28px }
+.empty-state .big { font-size: 48px }
+.empty-state h2 { margin: 10px 0 6px }
+.empty-state p { color: var(--muted); max-width: 440px; margin: 0 auto 20px }
+
+/* ============ Popup tra từ ============ */
+.popover { position: fixed; z-index: 50; width: 260px; padding: 16px; border-radius: 16px; background: var(--surface); border: 1px solid var(--line); box-shadow: 0 12px 40px #0000002a; animation: fade .15s ease both }
+.pop-head { display: flex; justify-content: space-between; align-items: center }
+.pop-han { font-size: 36px; font-weight: 500; line-height: 1.4 }
+.popover p { margin: 4px 0 12px; font-size: 15px }
+
+/* ============ Cài đặt ============ */
+.drawer { position: fixed; z-index: 45; top: 0; right: 0; width: min(380px, 92vw); height: 100vh; overflow-y: auto; padding: 20px 22px; background: var(--surface); border-left: 1px solid var(--line); box-shadow: -20px 0 50px #0002; transform: translateX(105%); transition: transform .25s ease; visibility: hidden }
+.drawer.open { transform: none; visibility: visible }
+.drawer-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px }
+.drawer-head h2 { margin: 0; font-size: 19px }
+.preview-box { padding: 14px; border-radius: 14px; background: var(--surface-2); font-size: calc(26px * var(--hs)); line-height: 1.7; text-align: center; margin-bottom: 8px }
+.toggle-row { display: flex; align-items: center; gap: 12px; padding: 14px 0; border-bottom: 1px solid var(--line); cursor: pointer }
+.toggle-row > span { flex: 1 }
+.toggle-row b { display: block; font-size: 14px }
+.toggle-row small { display: block; font-size: 12px; color: var(--muted) }
+.toggle-row input { position: absolute; opacity: 0; pointer-events: none }
+.toggle-row i { flex: 0 0 42px; height: 24px; border-radius: 99px; background: var(--line); position: relative; transition: background .2s }
+.toggle-row i::after { content: ''; position: absolute; top: 3px; left: 3px; width: 18px; height: 18px; border-radius: 50%; background: #fff; transition: transform .2s; box-shadow: 0 1px 3px #0003 }
+.toggle-row input:checked + i { background: var(--ok) }
+.toggle-row input:checked + i::after { transform: translateX(18px) }
+.toggle-row input:focus-visible + i { outline: 2px solid var(--brand); outline-offset: 2px }
+.tone-legend { display: flex; gap: 6px; padding: 10px 0 2px; font-weight: 700; font-size: 13px }
+.tone-legend span { flex: 1; text-align: center; padding: 4px; border-radius: 8px; background: var(--surface-2) }
+.choice-row { padding: 14px 0; border-bottom: 1px solid var(--line) }
+.choice-row b { display: block; font-size: 14px; margin-bottom: 8px }
+.segmented { display: flex; gap: 4px; padding: 4px; border-radius: 12px; background: var(--surface-2) }
+.segmented button { flex: 1; padding: 7px; border-radius: 9px; font-size: 13px; font-weight: 600; color: var(--muted) }
+.segmented button.on { background: var(--surface); color: var(--ink); box-shadow: var(--shadow) }
+
+.backdrop.show { display: block; position: fixed; inset: 0; z-index: 40; background: #0005 }
+
+/* ============ Toast ============ */
+.toast { position: fixed; z-index: 60; left: 50%; bottom: 96px; transform: translateX(-50%); padding: 12px 18px; border-radius: 12px; background: var(--ink); color: var(--bg); font-size: 14px; font-weight: 600; box-shadow: 0 10px 30px #0003; animation: fade .2s ease both }
+
+/* ============ Bổ sung: bài giảng, đăng nhập, trạng thái ============ */
+.boot, .loading { padding: 60px 20px; text-align: center; color: var(--muted) }
+a.logo { color: inherit; text-decoration: none }
+.empty-state.small { padding: 32px 16px }
+.side-empty { padding: 8px; font-size: 13px; color: var(--muted) }
+.muted.small, p.small { font-size: 13px }
+.stepper .step-label small { display: block; font-size: 10px; font-weight: 600; text-transform: uppercase; letter-spacing: .4px; opacity: .75; line-height: 1.1 }
+.stage-sep { flex: 0 0 1px; align-self: stretch; margin: 6px 2px; background: var(--line) }
+
+.deck-tabs { display: flex; gap: 6px; margin-bottom: 12px; flex-wrap: wrap }
+.deck-tabs button { padding: 7px 14px; border-radius: 10px; border: 1px solid var(--line); background: var(--surface); font-size: 13px; font-weight: 600 }
+.deck-tabs button small { margin-left: 6px; font-weight: 400; color: var(--muted) }
+.deck-tabs button.on { background: var(--ink); color: var(--bg); border-color: var(--ink) }
+.deck-tabs button.on small { color: inherit; opacity: .7 }
+.slides { display: flex; flex-direction: column; gap: 10px; background: var(--surface) }
+.slides:fullscreen { padding: 16px; justify-content: center; background: #111 }
+.slides:fullscreen .slide-stage { flex: 1; min-height: 0 }
+.slides:fullscreen .slide-stage img { max-height: calc(100vh - 170px) }
+.slide-stage { position: relative; border-radius: 14px; overflow: hidden; background: #000; cursor: pointer; aspect-ratio: 16 / 9; max-height: 54vh; display: grid; place-items: center }
+.slide-stage img { width: 100%; height: 100%; object-fit: contain; display: block; user-select: none }
+.slide-bar { display: flex; align-items: center; gap: 8px; flex-wrap: wrap }
+.slide-bar .btn.on { background: var(--brand); color: #fff }
+.slide-count { font-weight: 700; font-size: 14px; min-width: 64px; text-align: center }
+.slide-note { font-size: 12px; color: var(--muted) }
+.spacer { flex: 1 }
+.slide-strip { display: flex; gap: 6px; overflow-x: auto; padding: 2px 2px 6px; scrollbar-width: thin }
+.slide-strip button { position: relative; flex: 0 0 96px; border-radius: 8px; overflow: hidden; border: 2px solid transparent; opacity: .65; transition: opacity .15s }
+.slide-strip button:hover { opacity: 1 }
+.slide-strip button.on { border-color: var(--brand); opacity: 1 }
+.slide-strip img { display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: cover; background: var(--surface-2) }
+.slide-strip i { position: absolute; top: 3px; right: 3px; font-style: normal; font-size: 10px; background: var(--brand); color: #fff; border-radius: 6px; padding: 0 4px }
+
+.text-block + .text-block { margin-top: 26px; padding-top: 20px; border-top: 1px dashed var(--line) }
+.text-title { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 12px }
+.text-title h3 { margin: 0; font-size: 16px }
+.bubble .who { display: block; font-size: 11px; font-weight: 600; color: var(--muted) }
+.vocab-info .pos { margin-left: 8px; font-size: 12px; color: var(--muted) }
+.vocab-ex em { font-family: 'Be Vietnam Pro', sans-serif; font-style: normal; font-size: 13px; color: var(--muted) }
+.vocab-list + .link { display: inline-block; margin-top: 14px }
+.grammar-card > p { margin: 0 0 8px }
+.grammar-card .example + .example { margin-top: 8px }
+.quiz > .hint { margin-top: 6px }
+.end-punct { font-size: calc(20px * var(--hs)); color: var(--muted) }
+.quiz > .link.retry { display: inline-block; margin: 8px 0 0 40px }
+.result-box { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; margin-top: 18px; padding: 14px 16px; border-radius: 14px; background: var(--surface-2) }
+.result-box.good { background: var(--ok-soft); color: var(--ok) }
+.score-pill { float: none }
+
+.user-btn { font-weight: 700 }
+.user-btn.in { background: var(--brand); color: #fff; border-color: var(--brand); border-radius: 50% }
+.only-narrow { display: none }
+.login-form { display: flex; flex-direction: column; gap: 10px; margin: 14px 0 }
+.login-form input { padding: 11px 14px; border-radius: 12px; border: 1.5px solid var(--line); background: var(--surface); font-size: 15px; outline: none }
+.login-form input:focus { border-color: var(--brand) }
+.drawer .btn-block { margin-top: 6px }
+.account { margin: 6px 0 }
+.sync-state { padding: 10px 12px; border-radius: 10px; font-size: 13px; background: var(--surface-2) }
+.sync-state.idle { background: var(--ok-soft); color: var(--ok) }
+.sync-state.error { background: var(--bad-soft); color: var(--bad) }
+
+a.btn { text-decoration: none }
+.stepper button { font-size: 12.5px }
+
+/* ============ Responsive ============ */
+@media (max-width: 980px) {
+  .only-mobile { display: inline-grid }
+  .layout { grid-template-columns: minmax(0, 1fr) }
+  .sidebar { position: fixed; z-index: 45; top: 0; left: 0; height: 100vh; width: min(320px, 88vw); background: var(--bg); padding: 20px 14px; transform: translateX(-105%); transition: transform .25s ease; visibility: hidden }
+  .sidebar.open { transform: none; visibility: visible }
+  .main { padding: 20px 20px 120px }
+}
+
+@media (max-width: 640px) {
+  .header { gap: 8px; padding: 0 12px }
+  .logo small, .logo b { display: none }
+  .main-nav button { padding: 7px 10px }
+  .main-nav button span { display: none }
+  .level-select select { max-width: 92px; padding: 0 6px }
+  .main { padding: 14px 12px 110px }
+  .lesson-head h1 { font-size: calc(30px * var(--hs)) }
+  .meta-ring { width: 54px; height: 54px }
+  .meta-ring span { width: 44px; height: 44px; font-size: 12px }
+  .stepper .step-label { display: none }
+  .stepper button { padding: 6px }
+  .stepper button.current .step-label { display: block }
+  .step-card { padding: 18px 14px; border-radius: 16px }
+  .step-head { flex-direction: column }
+  .vocab-row { gap: 12px }
+  .vocab-han { flex-basis: 76px; font-size: calc(26px * var(--hs)) }
+  .flash-inner { height: 280px }
+  .flash-han { font-size: calc(76px * var(--hs)) }
+  .grades { grid-template-columns: repeat(2, 1fr) }
+  .bubble-row { max-width: 100% }
+  .choices { grid-template-columns: repeat(2, 1fr) }
+  .choices, .bank, .hint, .fill-row, .feedback, .quiz > .link { margin-left: 0 }
+  .fill-row input { flex: 1; width: auto }
+  .score-pill { margin-bottom: 8px }
+  .only-wide { display: none }
+  .only-narrow { display: inline }
+  .slide-strip button { flex-basis: 72px }
+  .quiz > .link.retry { margin-left: 0 }
+  .step-nav { bottom: 10px }
+  .step-count { display: none }
+}

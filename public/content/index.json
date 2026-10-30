@@ -1,0 +1,187 @@
+[
+ {
+  "id": "hsk1",
+  "label": "HSK 1",
+  "group": "HSK",
+  "book": "新HSK教程 1",
+  "color": "#d6453d",
+  "lessons": [
+   {
+    "id": 1,
+    "title": "你好",
+    "vi": "Xin chào",
+    "words": 18
+   },
+   {
+    "id": 2,
+    "title": "你叫什么名字？",
+    "vi": "Bạn tên là gì?",
+    "words": 17
+   },
+   {
+    "id": 3,
+    "title": "我是中国人",
+    "vi": "Tôi là người Trung Quốc",
+    "words": 18
+   },
+   {
+    "id": 4,
+    "title": "我有两个孩子",
+    "vi": "Tôi có hai đứa con",
+    "words": 22
+   },
+   {
+    "id": 5,
+    "title": "今天我休息",
+    "vi": "Hôm nay tôi nghỉ",
+    "words": 22
+   },
+   {
+    "id": 6,
+    "title": "你的手机号是多少？",
+    "vi": "Số điện thoại của bạn là bao nhiêu?",
+    "words": 22
+   },
+   {
+    "id": 7,
+    "title": "我晚上六点半下班",
+    "vi": "Tôi tan làm lúc 6 giờ rưỡi tối",
+    "words": 23
+   },
+   {
+    "id": 8,
+    "title": "我爸爸也在医院工作",
+    "vi": "Bố tôi cũng làm việc ở bệnh viện",
+    "words": 22
+   },
+   {
+    "id": 9,
+    "title": "我明天上午在学校学习",
+    "vi": "Sáng mai tôi học ở trường",
+    "words": 18
+   },
+   {
+    "id": 10,
+    "title": "这儿的苹果真便宜",
+    "vi": "Táo ở đây rẻ thật",
+    "words": 22
+   },
+   {
+    "id": 11,
+    "title": "我读大学呢",
+    "vi": "Tôi đang học đại học",
+    "words": 22
+   },
+   {
+    "id": 12,
+    "title": "昨天下雪了",
+    "vi": "Hôm qua tuyết rơi",
+    "words": 22
+   },
+   {
+    "id": 13,
+    "title": "请给我一杯茶",
+    "vi": "Cho tôi một cốc trà",
+    "words": 20
+   },
+   {
+    "id": 14,
+    "title": "我看了一个电影",
+    "vi": "Tôi đã xem một bộ phim",
+    "words": 22
+   },
+   {
+    "id": 15,
+    "title": "大兴机场见",
+    "vi": "Hẹn gặp ở sân bay Đại Hưng",
+    "words": 17
+   },
+   {
+    "id": 16,
+    "title": "复习课",
+    "vi": "Bài ôn tập",
+    "words": 18
+   }
+  ]
+ },
+ {
+  "id": "hsk2",
+  "label": "HSK 2",
+  "group": "HSK",
+  "book": "新HSK教程 2",
+  "color": "#e07b00",
+  "lessons": []
+ },
+ {
+  "id": "hsk3",
+  "label": "HSK 3",
+  "group": "HSK",
+  "book": "新HSK教程 3",
+  "color": "#2b9348",
+  "lessons": []
+ },
+ {
+  "id": "hsk4",
+  "label": "HSK 4",
+  "group": "HSK",
+  "book": "新HSK教程 4",
+  "color": "#1c6fd1",
+  "lessons": []
+ },
+ {
+  "id": "hsk5",
+  "label": "HSK 5",
+  "group": "HSK",
+  "book": "新HSK教程 5",
+  "color": "#7048e8",
+  "lessons": []
+ },
+ {
+  "id": "yct1",
+  "label": "YCT 1",
+  "group": "YCT",
+  "book": "YCT 1",
+  "color": "#e64980",
+  "lessons": []
+ },
+ {
+  "id": "yct2",
+  "label": "YCT 2",
+  "group": "YCT",
+  "book": "YCT 2",
+  "color": "#f08c00",
+  "lessons": []
+ },
+ {
+  "id": "yct3",
+  "label": "YCT 3",
+  "group": "YCT",
+  "book": "YCT 3",
+  "color": "#37b24d",
+  "lessons": []
+ },
+ {
+  "id": "yct4",
+  "label": "YCT 4",
+  "group": "YCT",
+  "book": "YCT 4",
+  "color": "#1098ad",
+  "lessons": []
+ },
+ {
+  "id": "yct5",
+  "label": "YCT 5",
+  "group": "YCT",
+  "book": "YCT 5",
+  "color": "#4263eb",
+  "lessons": []
+ },
+ {
+  "id": "yct6",
+  "label": "YCT 6",
+  "group": "YCT",
+  "book": "YCT 6",
+  "color": "#ae3ec9",
+  "lessons": []
+ }
+]

@@ -1,0 +1,104 @@
+id: 7
+title: 我晚上六点半下班
+py: Wǒ wǎn shang liù diǎn bàn xià bān
+vi: Tôi tan làm lúc 6 giờ rưỡi tối
+goal: Nói giờ giấc và các buổi trong ngày; đặt trạng ngữ thời gian đúng vị trí; rủ rê, đề nghị với 吧; dùng 呢 cuối câu trần thuật; nói vị trí với 在.
+slides: 07 我晚上六点半下班
+
+== vocab
+现在 | xiàn zài | danh từ | bây giờ | 现在几点？ | Bây giờ là mấy giờ?
+点 | diǎn | lượng từ | giờ | 现在八点。 | Bây giờ là 8 giờ.
+分 | fēn | lượng từ | phút | 九点十分 | 9 giờ 10 phút
+半 | bàn | số từ | rưỡi, một nửa | 两点半 | 2 giờ rưỡi
+早上 | zǎo shang | danh từ | buổi sáng sớm | 早上八点四十。 | 8 giờ 40 sáng.
+上午 | shàng wǔ | danh từ | buổi sáng (trước trưa) | 我上午有课。 | Buổi sáng tôi có tiết học.
+下午 | xià wǔ | danh từ | buổi chiều | 我们下午两点见吧。 | Chúng ta gặp lúc 2 giờ chiều nhé.
+晚上 | wǎn shang | danh từ | buổi tối | 我晚上六点半下班。 | Tôi tan làm lúc 6 giờ rưỡi tối.
+课 | kè | danh từ | tiết học, bài học | 我上午十点十分有课。 | Tôi có tiết học lúc 10 giờ 10 sáng.
+见 | jiàn | động từ | gặp | 明天见！ | Mai gặp lại!
+吧 | ba | trợ từ | nhé, đi (đề nghị) | 我们下午三点见吧。 | Chúng ta gặp lúc 3 giờ chiều nhé.
+电影院 | diàn yǐng yuàn | danh từ | rạp chiếu phim | 我想去电影院。 | Tôi muốn đi rạp chiếu phim.
+看 | kàn | động từ | xem, nhìn | 我们去看电影吧。 | Chúng ta đi xem phim đi.
+电影 | diàn yǐng | danh từ | phim | 你喜欢看电影吗？ | Bạn có thích xem phim không?
+事 | shì | danh từ | việc, chuyện | 下午我还有事。 | Chiều nay tôi còn có việc.
+上课 | shàng kè | động từ | vào học, lên lớp | 她上午十点半上课。 | Cô ấy vào học lúc 10 giờ rưỡi sáng.
+下课 | xià kè | động từ | tan học | 我四点半下课。 | Tôi tan học lúc 4 giờ rưỡi.
+在 | zài | động từ | ở, tại | 你在哪儿呢？ | Bạn đang ở đâu?
+医院 | yī yuàn | danh từ | bệnh viện | 我八点去医院上班。 | Tôi 8 giờ đến bệnh viện làm việc.
+上班 | shàng bān | động từ | đi làm | 你几点上班？ | Mấy giờ bạn đi làm?
+店 | diàn | danh từ | cửa hàng, tiệm | 你去店里买些菜吧。 | Anh ra cửa hàng mua ít rau nhé.
+分钟 | fēn zhōng | lượng từ | phút (khoảng thời gian) | 我十分钟后去。 | 10 phút nữa tôi đi.
+后 | hòu | danh từ | sau, sau khi | 下班后 | sau khi tan làm
+
+== grammar
+## Cách nói giờ
+Giờ: số + 点; phút: số + 分; 30 phút: 半. Buổi trong ngày đặt trước giờ.
+f: (Buổi) + … 点 + … 分 / 半
+ex: 下午两点半 | 2 giờ rưỡi chiều
+ex: 晚上九点十分 | 9 giờ 10 tối
+## Vị trí trạng ngữ thời gian
+Từ chỉ thời gian đặt sau chủ ngữ hoặc đầu câu, luôn đứng trước động từ (khác tiếng Việt thường để cuối câu).
+f: Chủ ngữ + Thời gian + Động từ · Thời gian + Chủ ngữ + Động từ
+ex: 她上午十点半上课。 | Cô ấy vào học lúc 10 giờ rưỡi sáng.
+ex: 下午我想去电影院。 | Chiều nay tôi muốn đi rạp chiếu phim.
+## Trợ từ 吧: đề nghị, rủ rê
+吧 ở cuối câu làm câu nhẹ nhàng, mang ý đề nghị, rủ rê: "… nhé", "… đi".
+f: Câu + 吧
+ex: 我们下午三点见吧。 | Chúng ta gặp lúc 3 giờ chiều nhé.
+ex: 你去超市买吧。 | Bạn đi siêu thị mua đi.
+## Trợ từ 呢 cuối câu trần thuật
+呢 cuối câu trần thuật nhấn mạnh tình trạng đang diễn ra hoặc nhắc nhở người nghe.
+f: Câu trần thuật + 呢
+ex: 我明天下午两点还上课呢。 | Chiều mai 2 giờ tôi vẫn còn học đấy.
+ex: 我在家里呢。 | Tôi đang ở nhà.
+
+== text Bài khóa 1
+白家月: 现在几点？ | Bây giờ mấy giờ rồi?
+安妮: 早上八点四十。我上午十点十分有课。 | 8 giờ 40 sáng. 10 giờ 10 sáng nay mình có tiết học.
+白家月: 好的，我们下午两点见吧。 | Được, chúng ta gặp nhau lúc 2 giờ chiều nhé.
+
+== text Bài khóa 2
+李文: 下午我想去电影院看电影，你去吗？ | Chiều nay mình muốn đi rạp xem phim, bạn đi không?
+白家月: 我不想去，下午还有事。 | Mình không muốn đi, chiều nay còn có việc.
+李文: 好的。明天呢？ | Được. Thế còn ngày mai?
+白家月: 我明天下午两点还上课呢，四点半下课。 | Chiều mai 2 giờ mình vẫn còn học, 4 giờ rưỡi mới tan.
+
+== text Bài khóa 3
+王一雪: 喂，你在哪儿呢？ | A lô, anh đang ở đâu?
+刘明: 我在家里呢。 | Anh đang ở nhà.
+王一雪: 我晚上六点半下班。 | Em 6 giờ rưỡi tối mới tan làm.
+刘明: 我八点去医院上班。 | 8 giờ anh đến bệnh viện làm.
+王一雪: 好的，你去店里买些菜吧。 | Được, anh ra cửa hàng mua ít rau nhé.
+刘明: 好，我十分钟后去。 | Ừ, 10 phút nữa anh đi.
+
+== sentences
+现在 几 点 ？ | Bây giờ là mấy giờ? | 点 | 课 事 后
+现在 早上 八 点 四十 。 | Bây giờ là 8 giờ 40 sáng. | 早上 | 电影 医院 事
+我 上午 十 点 十 分 有 课 。 | Tôi có tiết học lúc 10 giờ 10 sáng. | 课 | 半 后 吧
+我们 下午 两 点 见 吧 。 | Chúng ta gặp nhau lúc 2 giờ chiều nhé. | 吧 | 呢 的 也
+下午 我 想 去 电影院 看 电影 。 | Chiều nay tôi muốn đi rạp xem phim. | 电影院 | 电影 医院 事
+我 不 想 去 ， 下午 还 有 事 。 | Tôi không muốn đi, chiều nay còn có việc. | 事 | 点 分 后
+我 明天 下午 两 点 还 上课 呢 。 | Chiều mai 2 giờ tôi vẫn còn học. | 上课 | 电影 医院 后
+我 四 点 半 下课 。 | Tôi tan học lúc 4 giờ rưỡi. | 半 | 分 后 吧
+喂 ， 你 在 哪儿 呢 ？ | A lô, bạn đang ở đâu? | 在 | 是 有 见
+我 在 家里 呢 。 | Tôi đang ở nhà. | 家里 | 点 分 半
+我 晚上 六 点 半 下班 。 | Tôi tan làm lúc 6 giờ rưỡi tối. | 下班 | 电影 医院 事
+我 八 点 去 医院 上班 。 | 8 giờ tôi đến bệnh viện làm việc. | 医院 | 电影 课 分钟
+你 去 店 里 买 些 菜 吧 。 | Anh ra cửa hàng mua ít rau nhé. | 菜 | 课 事 点
+好 ， 我 十 分钟 后 去 。 | Được, 10 phút nữa tôi đi. | 后 | 半 点 吧
+我们 上午 十 点 见 。 | Chúng ta gặp nhau lúc 10 giờ sáng. | 见 | 看 课 事
+现在 下午 三 点 。 | Bây giờ là 3 giờ chiều. | 下午 | 上午 晚上 早上
+你 几 点 下课 ？ | Mấy giờ bạn tan học? | 下课 | 上课 下班 上班
+我们 去 看 电影 吧 。 | Chúng ta đi xem phim đi. | 电影 | 电影院 医院 事
+他 晚上 九 点 十 分 睡觉 。 | Anh ấy đi ngủ lúc 9 giờ 10 tối. | 分 | 课 半 后
+我 晚上 有 事 。 | Tối nay tôi có việc. | 事 | 课 点 半
+我 在 医院 工作 。 | Tôi làm việc ở bệnh viện. | 医院 | 电影院 店 家
+她 中午 十二 点 吃 午饭 。 | Cô ấy ăn trưa lúc 12 giờ trưa. | 中午 | 早上 晚上 下午
+我们 下午 两 点 半 见 吧 。 | Chúng ta gặp lúc 2 giờ rưỡi chiều nhé. | 半 | 分 后 课
+你 现在 在 哪儿 ？ | Bây giờ bạn đang ở đâu? | 现在 | 上午 下午 晚上
+我 早上 八 点 上班 。 | Tôi đi làm lúc 8 giờ sáng. | 上班 | 下班 上课 下课
+我 十 分钟 后 到 。 | 10 phút nữa tôi đến. | 分钟 | 点 半 课
+他 去 店 里 买 菜 。 | Anh ấy ra cửa hàng mua rau. | 店 | 课 事 点
+你 明天 上午 有 课 吗 ？ | Sáng mai bạn có tiết học không? | 课 | 事 点 半
+晚上 七 点 见 ！ | Hẹn gặp lúc 7 giờ tối! | 见 | 看 课 事
+我 在 家里 看 电视 。 | Tôi đang ở nhà xem ti vi. | 在 | 是 有 见

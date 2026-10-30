@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kiến trúc web học tiếng Trung Giang Giang</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600;700&display=swap">
+<style>
+  :root { --fg: #1f1f22; --muted: #6c6b70; --bg: #f6f5f2; --card: #fff; --line: #e2dfd8; --accent: #c23a2b; --accent-soft: #fbeceb }
+  @media (prefers-color-scheme: dark) { :root { --fg: #ececef; --muted: #a1a1a8; --bg: #141416; --card: #1d1d20; --line: #36363b; --accent: #ef6a62; --accent-soft: #3a2220 } }
+  * { box-sizing: border-box }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 15px/1.6 'Be Vietnam Pro', system-ui, sans-serif }
+  main { max-width: 1140px; margin: 0 auto; padding: 32px 20px 64px }
+  h1 { font-size: 26px; margin: 0 0 6px }
+  h2 { font-size: 19px; margin: 40px 0 12px }
+  .lead { color: var(--muted); margin: 0 0 8px }
+  .levels { display: flex; flex-wrap: wrap; gap: 6px; margin: 12px 0 0 }
+  .levels span { padding: 4px 12px; border-radius: 99px; border: 1px solid var(--line); background: var(--card); font-size: 13px; font-weight: 600 }
+  .levels span.y { border-style: dashed }
+  figure { margin: 0; padding: 20px; background: var(--card); border: 1px solid var(--line); border-radius: 16px }
+  svg { display: block; width: 100%; height: auto; color: var(--fg) }
+  figcaption { margin-top: 12px; font-size: 13px; color: var(--muted) }
+  table { width: 100%; border-collapse: collapse; background: var(--card); border: 1px solid var(--line); font-size: 14px }
+  th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--line); vertical-align: top }
+  th { background: var(--accent-soft) }
+  code { font-size: 13px; background: var(--accent-soft); padding: 1px 6px; border-radius: 6px }
+  ul, ol { padding-left: 20px; margin: 0 }
+  li { margin: 4px 0 }
+  .note { background: var(--card); border: 1px solid var(--line); border-left: 4px solid var(--accent); border-radius: 10px; padding: 12px 16px }
+</style>
+</head>
+<body>
+<main>
+  <h1>Kiến trúc web học tiếng Trung Giang Giang</h1>
+  <p class="lead">Bản dự định triển khai: dữ liệu lưu ở đâu, đồng bộ ra sao, và học viên thấy những tab nào. Gồm 11 cấp giáo trình:</p>
+  <div class="levels"><span>HSK 1</span><span>HSK 2</span><span>HSK 3</span><span>HSK 4</span><span>HSK 5</span><span class="y">YCT 1</span><span class="y">YCT 2</span><span class="y">YCT 3</span><span class="y">YCT 4</span><span class="y">YCT 5</span><span class="y">YCT 6</span></div>
+
+  <h2>1. Dữ liệu lưu ở đâu và đồng bộ ra sao</h2>
+  <figure>
+    <svg viewBox="0 0 1100 500" role="img" aria-label="Nội dung soạn trên máy bạn. Phần chữ (JSON) đẩy lên GitHub, tự build và phát hành qua GitHub Pages. Ảnh slide, âm thanh, video tải lên Cloudflare R2. Trình duyệt học viên tải trang và JSON từ GitHub Pages, media từ R2; tài khoản và tiến độ đồng bộ hai chiều với Supabase, localStorage giữ bản tạm để học khi mất mạng.">
+      <defs>
+        <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="currentColor"/></marker>
+        <marker id="r" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#c23a2b"/></marker>
+        <marker id="g" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#2b8a3e"/></marker>
+      </defs>
+      <g fill="none" stroke="currentColor" stroke-width="1.2" stroke-dasharray="6 5" opacity=".55">
+        <rect x="20" y="40" width="260" height="440" rx="16"/>
+        <rect x="330" y="40" width="280" height="440" rx="16"/>
+        <rect x="690" y="40" width="390" height="440" rx="16"/>
+      </g>
+      <g fill="currentColor" font-family="inherit" font-size="12" font-weight="700" letter-spacing=".5" opacity=".7">
+        <text x="36" y="64">MÁY CỦA BẠN · soạn nội dung</text>
+        <text x="346" y="64">INTERNET · lưu trữ &amp; đồng bộ</text>
+        <text x="706" y="64">TRÌNH DUYỆT CỦA HỌC VIÊN</text>
+      </g>
+
+      <g fill="none" stroke="currentColor" stroke-width="1.6">
+        <rect x="40" y="80" width="220" height="64" rx="10"/>
+        <rect x="40" y="210" width="220" height="64" rx="10"/>
+        <rect x="40" y="340" width="220" height="64" rx="10"/>
+        <rect x="355" y="80" width="230" height="60" rx="10"/>
+        <rect x="355" y="160" width="230" height="60" rx="10"/>
+        <rect x="355" y="240" width="230" height="60" rx="10"/>
+        <rect x="355" y="320" width="230" height="60" rx="10"/>
+        <rect x="355" y="400" width="230" height="60" rx="10" stroke="#2b8a3e" stroke-width="2.4"/>
+        <rect x="715" y="150" width="340" height="160" rx="12" stroke="#c23a2b" stroke-width="2.4"/>
+        <rect x="715" y="380" width="165" height="64" rx="10" stroke="#2b8a3e" stroke-width="2"/>
+        <rect x="890" y="380" width="165" height="64" rx="10"/>
+      </g>
+
+      <g fill="none" stroke="currentColor" stroke-width="1.5">
+        <path d="M150 144 V206" marker-end="url(#a)"/>
+        <path d="M150 274 V336" marker-end="url(#a)"/>
+        <path d="M260 372 H312 V110 H351" marker-end="url(#a)"/>
+        <path d="M260 254 H292 V350 H351" marker-end="url(#a)"/>
+        <path d="M470 140 V156" marker-end="url(#a)"/>
+        <path d="M470 220 V236" marker-end="url(#a)"/>
+        <path d="M797 310 V376" marker-start="url(#a)" marker-end="url(#a)"/>
+        <path d="M972 310 V376" marker-end="url(#a)"/>
+      </g>
+      <g fill="none" stroke="#c23a2b" stroke-width="2">
+        <path d="M585 270 H711" marker-end="url(#r)"/>
+        <path d="M585 350 H630 V296 H711" marker-end="url(#r)"/>
+      </g>
+      <path d="M589 430 H711" fill="none" stroke="#2b8a3e" stroke-width="2.4" marker-start="url(#g)" marker-end="url(#g)"/>
+
+      <g fill="currentColor" font-family="inherit">
+        <text x="56" y="106" font-size="14" font-weight="700">Tài liệu gốc</text>
+        <text x="56" y="126" font-size="12" opacity=".8">sources/ – PowerPoint 11 cấp</text>
+        <text x="56" y="236" font-size="14" font-weight="700">Scripts xử lý</text>
+        <text x="56" y="256" font-size="12" opacity=".8">nén · xuất slide · soạn câu hỏi</text>
+        <text x="56" y="366" font-size="14" font-weight="700">Nội dung bài (JSON)</text>
+        <text x="56" y="386" font-size="12" opacity=".8">content/&lt;cấp&gt;/&lt;bài&gt;.json</text>
+
+        <text x="369" y="105" font-size="14" font-weight="700">GitHub repo</text>
+        <text x="369" y="124" font-size="12" opacity=".8">code web + JSON nội dung</text>
+        <text x="369" y="185" font-size="14" font-weight="700">GitHub Actions</text>
+        <text x="369" y="204" font-size="12" opacity=".8">tự build khi có thay đổi</text>
+        <text x="369" y="265" font-size="14" font-weight="700">GitHub Pages</text>
+        <text x="369" y="284" font-size="12" opacity=".8">trang web + JSON bài học</text>
+        <text x="369" y="345" font-size="14" font-weight="700">Cloudflare R2</text>
+        <text x="369" y="364" font-size="12" opacity=".8">slide WebP · mp3 · video · pptx</text>
+        <text x="369" y="425" font-size="14" font-weight="700" fill="#2b8a3e">Supabase</text>
+        <text x="369" y="444" font-size="12" opacity=".8">tài khoản · tiến độ · lịch ôn · XP</text>
+
+        <text x="735" y="180" font-size="15" font-weight="700" fill="#c23a2b">Web app (React)</text>
+        <text x="735" y="204" font-size="12" opacity=".85">Giao diện, các tab học, chấm bài,</text>
+        <text x="735" y="222" font-size="12" opacity=".85">lịch ôn tập, tra từ khi chạm vào chữ</text>
+        <text x="735" y="246" font-size="12" opacity=".85">Đăng nhập: email hoặc Google</text>
+        <text x="735" y="290" font-size="12" opacity=".6">Chạy hoàn toàn trên máy học viên</text>
+        <text x="731" y="406" font-size="14" font-weight="700" fill="#2b8a3e">localStorage</text>
+        <text x="731" y="426" font-size="11" opacity=".8">bản tạm khi mất mạng</text>
+        <text x="906" y="406" font-size="14" font-weight="700">Giọng đọc</text>
+        <text x="906" y="426" font-size="11" opacity=".8">Web Speech API</text>
+
+        <g font-size="11" opacity=".85">
+          <text x="158" y="180">đọc</text>
+          <text x="158" y="310">sinh nháp → bạn duyệt</text>
+          <text x="318" y="98" transform="rotate(-90 318 98)" text-anchor="end">git push</text>
+          <text x="298" y="300" transform="rotate(-90 298 300)" text-anchor="middle">tải media lên</text>
+          <text x="478" y="152">khi push</text>
+          <text x="478" y="232">deploy</text>
+          <text x="805" y="348">đọc / ghi</text>
+          <text x="980" y="348">phát âm</text>
+        </g>
+        <g font-size="11" font-weight="700" fill="#c23a2b">
+          <text x="650" y="262" text-anchor="middle">trang + JSON</text>
+          <text x="637" y="320">slide ·</text>
+          <text x="637" y="334">âm thanh</text>
+        </g>
+        <g font-size="11" font-weight="700" fill="#2b8a3e">
+          <text x="650" y="422" text-anchor="middle">đồng bộ tiến độ</text>
+          <text x="650" y="448" text-anchor="middle">đăng nhập</text>
+        </g>
+      </g>
+    </svg>
+    <figcaption>Đường đỏ: học viên tải trang và nội dung (chỉ đọc) từ GitHub Pages và Cloudflare R2. Đường xanh: tài khoản và tiến độ học đồng bộ hai chiều với Supabase. localStorage giữ bản tạm để vẫn học được khi mất mạng; có mạng lại thì tự đẩy lên. Học trên điện thoại rồi chuyển sang máy tính vẫn thấy đúng tiến độ.</figcaption>
+  </figure>
+
+  <h2>2. Các tab và cách chuyển giữa chúng</h2>
+  <figure>
+    <svg viewBox="0 0 1100 430" role="img" aria-label="Thanh trên cùng có Chọn giáo trình, Bài học, Ôn tập và Cài đặt. Trang Bài học gồm cột trái (mục tiêu hôm nay, danh sách bài) và nội dung bài: Bài giảng, nhóm Ôn tập (Flashcard, Ngữ pháp, Từ vựng), nhóm Thực hành (Bài khóa, Chọn đáp án, Sắp xếp câu, Điền đáp án, mỗi dạng 15 câu). Thẻ đã học được đưa vào trang Ôn tập.">
+      <defs>
+        <marker id="b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="currentColor"/></marker>
+      </defs>
+      <g fill="none" stroke="currentColor" stroke-width="1.6">
+        <rect x="20" y="20" width="1060" height="48" rx="12"/>
+        <rect x="36" y="28" width="330" height="32" rx="8"/>
+        <rect x="560" y="28" width="140" height="32" rx="8" stroke="#c23a2b" stroke-width="2.2"/>
+        <rect x="716" y="28" width="140" height="32" rx="8"/>
+        <rect x="872" y="28" width="90" height="32" rx="8"/>
+        <rect x="972" y="28" width="96" height="32" rx="8" stroke="#2b8a3e" stroke-width="2"/>
+
+        <rect x="20" y="110" width="250" height="290" rx="12"/>
+        <rect x="36" y="150" width="218" height="60" rx="8"/>
+        <rect x="36" y="222" width="218" height="160" rx="8"/>
+
+        <rect x="300" y="110" width="510" height="290" rx="12" stroke="#c23a2b" stroke-width="2.2"/>
+        <rect x="320" y="150" width="470" height="36" rx="8"/>
+        <rect x="320" y="218" width="148" height="38" rx="8"/>
+        <rect x="481" y="218" width="148" height="38" rx="8"/>
+        <rect x="642" y="218" width="148" height="38" rx="8"/>
+        <rect x="320" y="288" width="108" height="50" rx="8"/>
+        <rect x="441" y="288" width="108" height="50" rx="8"/>
+        <rect x="562" y="288" width="108" height="50" rx="8"/>
+        <rect x="683" y="288" width="107" height="50" rx="8"/>
+        <rect x="320" y="352" width="470" height="32" rx="8" stroke-dasharray="5 4"/>
+
+        <rect x="840" y="110" width="240" height="120" rx="12"/>
+        <rect x="840" y="260" width="240" height="140" rx="12"/>
+      </g>
+      <g fill="none" stroke="currentColor" stroke-width="1.5">
+        <path d="M200 60 V106" marker-end="url(#b)"/>
+        <path d="M630 60 V106" marker-end="url(#b)"/>
+        <path d="M786 60 V90 H960 V106" marker-end="url(#b)"/>
+        <path d="M917 60 V76 H1090 V244 H1060 V256" marker-end="url(#b)"/>
+        <path d="M254 300 H296" marker-end="url(#b)"/>
+        <path d="M790 237 H812 V170 H836" marker-end="url(#b)"/>
+      </g>
+      <g fill="currentColor" font-family="inherit">
+        <text x="50" y="49" font-size="13" font-weight="700">Chọn giáo trình ▾  HSK 1–5 · YCT 1–6</text>
+        <text x="630" y="49" font-size="13" font-weight="700" text-anchor="middle" fill="#c23a2b">Bài học</text>
+        <text x="786" y="49" font-size="13" font-weight="700" text-anchor="middle">Ôn tập (số thẻ)</text>
+        <text x="917" y="49" font-size="13" font-weight="700" text-anchor="middle">Aa Cài đặt</text>
+        <text x="1020" y="49" font-size="13" font-weight="700" text-anchor="middle" fill="#2b8a3e">Đăng nhập</text>
+
+        <text x="36" y="136" font-size="13" font-weight="700">Cột trái</text>
+        <text x="48" y="175" font-size="13" font-weight="700">Mục tiêu hôm nay</text>
+        <text x="48" y="195" font-size="11" opacity=".8">vòng XP · chuỗi ngày · thẻ đến hạn</text>
+        <text x="48" y="246" font-size="13" font-weight="700">Danh sách bài</text>
+        <text x="48" y="266" font-size="11" opacity=".8">của cấp đang chọn</text>
+        <text x="48" y="292" font-size="11" opacity=".8">Bài 1 ▬▬▬▬ 100%</text>
+        <text x="48" y="312" font-size="11" opacity=".8">Bài 2 ▬▬░░ 50%</text>
+        <text x="48" y="332" font-size="11" opacity=".8">Bài 3 ░░░░ 0%</text>
+        <text x="48" y="352" font-size="11" opacity=".8">…</text>
+        <text x="275" y="292" font-size="11" text-anchor="middle" opacity=".8">chọn bài</text>
+
+        <text x="320" y="136" font-size="13" font-weight="700" fill="#c23a2b">Trang bài học · ví dụ HSK 1 · Bài 3</text>
+        <text x="555" y="173" font-size="13" font-weight="700" text-anchor="middle">Bài giảng – xem slide, nghe âm thanh của bài</text>
+        <text x="320" y="210" font-size="11" font-weight="700" letter-spacing=".5" opacity=".7">PHẦN ÔN TẬP</text>
+        <text x="394" y="242" font-size="13" font-weight="700" text-anchor="middle">1. Flashcard</text>
+        <text x="555" y="242" font-size="13" font-weight="700" text-anchor="middle">2. Ngữ pháp</text>
+        <text x="716" y="242" font-size="13" font-weight="700" text-anchor="middle">3. Từ vựng</text>
+        <text x="320" y="280" font-size="11" font-weight="700" letter-spacing=".5" opacity=".7">PHẦN THỰC HÀNH</text>
+        <text x="374" y="310" font-size="13" font-weight="700" text-anchor="middle">1. Bài khóa</text>
+        <text x="374" y="327" font-size="11" text-anchor="middle" opacity=".8">cách đọc</text>
+        <text x="495" y="310" font-size="13" font-weight="700" text-anchor="middle">2. Chọn đáp án</text>
+        <text x="495" y="327" font-size="11" text-anchor="middle" fill="#c23a2b" font-weight="700">15 câu</text>
+        <text x="616" y="310" font-size="13" font-weight="700" text-anchor="middle">3. Sắp xếp câu</text>
+        <text x="616" y="327" font-size="11" text-anchor="middle" fill="#c23a2b" font-weight="700">15 câu</text>
+        <text x="736" y="310" font-size="13" font-weight="700" text-anchor="middle">4. Điền đáp án</text>
+        <text x="736" y="327" font-size="11" text-anchor="middle" fill="#c23a2b" font-weight="700">15 câu</text>
+        <text x="555" y="373" font-size="12" text-anchor="middle" opacity=".8">← Trước  ·  Bước x/8  ·  Xong, tiếp tục →</text>
+
+        <text x="856" y="136" font-size="13" font-weight="700">Trang Ôn tập</text>
+        <text x="856" y="160" font-size="11" opacity=".8">Thẻ đến hạn của mọi bài đã học</text>
+        <text x="856" y="178" font-size="11" opacity=".8">Tự chấm: Quên · Khó · Nhớ · Dễ</text>
+        <text x="856" y="196" font-size="11" opacity=".8">→ hệ thống hẹn ngày ôn lại</text>
+        <text x="827" y="205" font-size="11" text-anchor="middle" opacity=".8" transform="rotate(-90 827 205)">vào lịch ôn</text>
+
+        <text x="856" y="286" font-size="13" font-weight="700">Bảng Cài đặt (trượt ra)</text>
+        <text x="856" y="310" font-size="11" opacity=".8">Bật/tắt pinyin, màu thanh điệu</text>
+        <text x="856" y="328" font-size="11" opacity=".8">Bật/tắt bản dịch</text>
+        <text x="856" y="346" font-size="11" opacity=".8">Cỡ chữ Hán, tốc độ đọc</text>
+        <text x="856" y="364" font-size="11" opacity=".8">Mục tiêu XP mỗi ngày</text>
+        <text x="856" y="382" font-size="11" opacity=".8">Chế độ tối</text>
+      </g>
+    </svg>
+    <figcaption>Học viên đi theo thứ tự: Bài giảng → Ôn tập (1–3) → Thực hành (1–4). Có thể nhảy thẳng tới bất kỳ tab nào. Từ đã học ở Flashcard tự vào lịch của trang Ôn tập. Mỗi tab có địa chỉ riêng, ví dụ <code>/#/hsk1/bai-3/flashcard</code>, để gửi link hoặc lưu lại.</figcaption>
+  </figure>
+
+  <h2>3. Bảng tóm tắt: dữ liệu nằm ở đâu</h2>
+  <table>
+    <tr><th>Dữ liệu</th><th>Nơi lưu</th><th>Ai thấy / ghi chú</th></tr>
+    <tr><td>Code giao diện web</td><td>GitHub repo → GitHub Pages</td><td>Công khai</td></tr>
+    <tr><td>Nội dung chữ từng bài: từ vựng, ngữ pháp, bài khóa, 45 câu hỏi</td><td><code>content/&lt;cấp&gt;/&lt;bài&gt;.json</code> trong repo</td><td>Công khai cùng trang. Sửa bằng git, nên xem được lịch sử thay đổi</td></tr>
+    <tr><td>Ảnh slide, âm thanh mp3, video, file pptx để tải</td><td>Cloudflare R2</td><td>Ai có link đều tải được</td></tr>
+    <tr><td>Tài liệu gốc PowerPoint</td><td>Máy bạn: <code>sources/</code></td><td>Không đưa lên mạng</td></tr>
+    <tr><td>Tài khoản học viên</td><td>Supabase Auth (đăng nhập email hoặc Google)</td><td>Bạn quản lý danh sách học viên trên trang quản trị Supabase</td></tr>
+    <tr><td>Tiến độ, lịch ôn, XP, cài đặt của học viên</td><td>Supabase (bản chính) + localStorage (bản tạm)</td><td>Mỗi học viên chỉ đọc/ghi được dữ liệu của chính mình (khóa theo tài khoản). <b>Đồng bộ giữa các máy</b>; học được khi mất mạng</td></tr>
+    <tr><td>Phát âm</td><td>Giọng đọc có sẵn của trình duyệt; âm thanh thật lấy từ slide khi có</td><td>Chất lượng giọng đọc tùy thiết bị</td></tr>
+  </table>
+
+  <h2>4. Thứ tự triển khai</h2>
+  <ol>
+    <li>Sắp lại tab theo sơ đồ 2. Chuyển nội dung bài sang <code>content/&lt;cấp&gt;/&lt;bài&gt;.json</code>, thêm danh sách 11 cấp.</li>
+    <li>Soạn nội dung HSK 1 từ slide: từ vựng, ngữ pháp, bài khóa, 15 + 15 + 15 câu mỗi bài. Bạn duyệt.</li>
+    <li>Viết script xuất slide và âm thanh, tạo Cloudflare R2, thêm tab Bài giảng.</li>
+    <li>Khởi tạo git và đẩy lên GitHub để tự phát hành qua GitHub Pages.</li>
+    <li>Tạo dự án Supabase, thêm nút Đăng nhập và đồng bộ tiến độ.</li>
+    <li>Lặp lại bước 2–3 cho HSK 2–5 và YCT 1–6 khi có tài liệu.</li>
+  </ol>
+
+  <h2>Lưu ý trước khi làm</h2>
+  <div class="note">
+    <ul>
+      <li><b>Cách đồng bộ:</b> mỗi lần học viên làm bài hoặc chấm thẻ, web ghi vào localStorage ngay, rồi gửi lên Supabase khi có mạng. Mở web trên máy khác thì tải tiến độ về. Nếu hai máy cùng sửa một mục, giữ bản mới hơn.</li>
+      <li><b>Có thể học không cần đăng nhập</b>, nhưng khi đó tiến độ chỉ nằm trên máy đang dùng. Đăng nhập sau thì tiến độ trên máy được gộp lên tài khoản.</li>
+      <li><b>Nội dung bài và slide vẫn công khai.</b> Đăng nhập hiện chỉ dùng để đồng bộ. Nếu muốn chỉ học viên đã đăng nhập mới xem được (vì giáo trình có bản quyền), có thể chuyển slide sang kho riêng tư của Supabase và giới hạn quyền xem. Việc này làm thêm sau được.</li>
+      <li>Supabase có gói miễn phí đủ cho giai đoạn đầu. Hạn mức có thể thay đổi, nên kiểm tra lại trang giá trước khi dùng. Có thể thay bằng Firebase nếu bạn quen hơn.</li>
+      <li>Hiện chỉ có slide HSK 1 (bài 3–16 và 6 buổi phát âm). Các cấp khác sẽ hiển thị "đang cập nhật" cho tới khi có tài liệu.</li>
+    </ul>
+  </div>
+</main>
+</body>
+</html>

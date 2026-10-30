@@ -1,0 +1,104 @@
+id: 3
+title: 我是中国人
+py: Wǒ shì Zhōng guó rén
+vi: Tôi là người Trung Quốc
+goal: Giới thiệu quốc tịch, người thân, công việc; hỏi "ai", "nước nào"; dùng 的, 也, 还, 不太.
+slides: 03 我是中国人
+
+== vocab
+中文 | Zhōng wén | danh từ | tiếng Trung | 王一飞是我的中文老师。 | Vương Nhất Phi là giáo viên tiếng Trung của tôi.
+的 | de | trợ từ | của (biểu thị sở hữu) | 这是我的书。 | Đây là sách của tôi.
+也 | yě | phó từ | cũng | 我的中文老师也是中国人。 | Giáo viên tiếng Trung của tôi cũng là người Trung Quốc.
+法国 | Fǎ guó | danh từ riêng | nước Pháp | 我是法国人。 | Tôi là người Pháp.
+这 | zhè | đại từ | này, đây | 这是我的中文老师。 | Đây là giáo viên tiếng Trung của tôi.
+那 | nà | đại từ | kia, đó | 那是学生。 | Đó là học sinh.
+谁 | shéi | đại từ | ai | 他是谁？ | Anh ấy là ai?
+女朋友 | nǚ péng you | danh từ | bạn gái | 她是我的女朋友。 | Cô ấy là bạn gái của tôi.
+泰国 | Tài guó | danh từ riêng | Thái Lan | 她也是泰国人。 | Cô ấy cũng là người Thái Lan.
+喂 | wèi | thán từ | a lô; này | 喂，您好！ | A lô, xin chào!
+姐姐 | jiě jie | danh từ | chị gái | 她是我姐姐。 | Cô ấy là chị gái tôi.
+工作 | gōng zuò | danh từ | công việc | 我的工作是老师。 | Công việc của tôi là giáo viên.
+还 | hái | phó từ | vẫn, còn | 你工作还忙吗？ | Công việc của bạn vẫn bận chứ?
+忙 | máng | tính từ | bận | 王老师工作很忙。 | Thầy Vương công việc rất bận.
+对 | duì | tính từ | đúng | 对，还很忙。 | Đúng vậy, vẫn rất bận.
+太 | tài | phó từ | quá, lắm | 我工作不太忙。 | Công việc của tôi không bận lắm.
+我们 | wǒ men | đại từ | chúng tôi, chúng ta | 我们很想你。 | Chúng tôi rất nhớ bạn.
+想 | xiǎng | động từ | nhớ | 我很想我姐姐。 | Tôi rất nhớ chị gái tôi.
+
+== grammar
+## Trợ từ kết cấu 的
+的 nối định ngữ với danh từ, biểu thị sở hữu: "B của A". Khi nói về người thân hoặc quan hệ gần gũi (bố mẹ, bạn bè, thầy cô), có thể bỏ 的.
+f: A + 的 + B
+ex: 王一飞是我的中文老师。 | Vương Nhất Phi là giáo viên tiếng Trung của tôi.
+ex: 我老师 = 我的老师 | giáo viên của tôi
+## Phó từ 也
+也 đứng sau chủ ngữ, trước động từ, nghĩa là "cũng".
+f: Chủ ngữ + 也 + Động từ
+ex: 我的中文老师也是中国人。 | Giáo viên tiếng Trung của tôi cũng là người Trung Quốc.
+ex: 她也是泰国人。 | Cô ấy cũng là người Thái Lan.
+## Đại từ nghi vấn 谁 và 哪
+谁 hỏi về người ("ai"). 哪 + (lượng từ) + danh từ hỏi "… nào".
+f: … 是谁？ · 哪 + (lượng từ) + Danh từ
+ex: 这是谁？ | Đây là ai?
+ex: 你是哪国人？ | Bạn là người nước nào?
+## 这 / 那 + 是
+这 chỉ người, vật ở gần; 那 chỉ người, vật ở xa.
+f: 这 / 那 + 是 + Danh từ
+ex: 这是我女朋友。 | Đây là bạn gái tôi.
+ex: 那是学生。 | Kia là học sinh.
+## 还 và 不太
+还 + tính từ: "vẫn …". 不太 + tính từ: "không … lắm", nhẹ nhàng hơn 不.
+f: 还 + Tính từ · 不太 + Tính từ
+ex: 工作还很忙。 | Công việc vẫn rất bận.
+ex: 我不太忙。 | Tôi không bận lắm.
+
+== text Bài khóa 1
+白家月: 我是中国人。 | Tôi là người Trung Quốc.
+李文: 我是法国人。我的中文老师也是中国人。 | Tôi là người Pháp. Giáo viên tiếng Trung của tôi cũng là người Trung Quốc.
+白家月: 请问，你的中文老师叫什么名字？ | Xin hỏi, giáo viên tiếng Trung của bạn tên là gì?
+李文: 我的中文老师叫王一飞。 | Giáo viên tiếng Trung của tôi tên là Vương Nhất Phi.
+
+== text Bài khóa 2
+安妮: 这是谁？ | Đây là ai?
+陈天中: 这是我女朋友。 | Đây là bạn gái tôi.
+安妮: 你女朋友是哪国人？ | Bạn gái của bạn là người nước nào?
+陈天中: 她也是泰国人。 | Cô ấy cũng là người Thái Lan.
+
+== text Bài khóa 3
+王一雪: 喂，一飞！ | A lô, Nhất Phi!
+王一飞: 姐姐！你工作还忙吗？ | Chị ơi! Công việc của chị vẫn bận chứ?
+王一雪: 对，还很忙。你也很忙吗？ | Ừ, vẫn rất bận. Em cũng bận lắm à?
+王一飞: 我不太忙。我们很想你。 | Em không bận lắm. Cả nhà rất nhớ chị.
+王一雪: 我也想你们。 | Chị cũng nhớ mọi người.
+
+== sentences
+我 的 中文 老师 是 中国 人 。 | Giáo viên tiếng Trung của tôi là người Trung Quốc. | 的 | 吗 也 很
+她 也 是 法国 人 。 | Cô ấy cũng là người Pháp. | 也 | 的 吗 谁
+这 是 谁 ？ | Đây là ai? | 谁 | 也 的 很
+你 是 哪 国 人 ？ | Bạn là người nước nào? | 哪 | 谁 的 也
+那 是 我 的 女朋友 。 | Đó là bạn gái của tôi. | 女朋友 | 中文 忙 太
+喂 ， 您 好 ！ | A lô, xin chào! | 喂 | 对 也 太
+你 工作 还 忙 吗 ？ | Công việc của bạn vẫn bận chứ? | 还 | 的 谁 哪
+我 工作 不 太 忙 。 | Công việc của tôi không bận lắm. | 太 | 也 的 谁
+对 ， 还 很 忙 。 | Đúng vậy, vẫn rất bận. | 对 | 谁 哪 的
+我们 很 想 你 。 | Chúng tôi rất nhớ bạn. | 想 | 忙 太 对
+她 是 我 姐姐 。 | Cô ấy là chị gái tôi. | 姐姐 | 工作 中文 忙
+我 的 工作 是 老师 。 | Công việc của tôi là giáo viên. | 工作 | 忙 太 想
+王 老师 工作 很 忙 。 | Thầy Vương công việc rất bận. | 忙 | 想 对 喂
+他 是 谁 ？ | Anh ấy là ai? | 是 | 也 的 太
+这 是 我 的 中文 书 。 | Đây là sách tiếng Trung của tôi. | 中文 | 谁 哪 太
+我 的 中文 老师 也 是 中国 人 。 | Giáo viên tiếng Trung của tôi cũng là người Trung Quốc. | 也 | 的 吗 很
+那 是 谁 ？ | Kia là ai? | 谁 | 也 的 很
+他 是 我 的 中国 朋友 。 | Anh ấy là bạn người Trung Quốc của tôi. | 的 | 吗 也 很
+你 女朋友 是 哪 国 人 ？ | Bạn gái của bạn là người nước nào? | 哪 | 谁 的 也
+我 是 法国 人 。 | Tôi là người Pháp. | 法国 | 中文 工作 姐姐
+喂 ， 一飞 ！ | A lô, Nhất Phi! | 喂 | 对 也 太
+你 工作 忙 不 忙 ？ | Công việc của bạn có bận không? | 工作 | 姐姐 中文 想
+她 不 太 忙 。 | Cô ấy không bận lắm. | 太 | 也 的 谁
+我 也 想 你们 。 | Tôi cũng nhớ các bạn. | 想 | 忙 太 对
+对 ， 我 是 学生 。 | Đúng, tôi là học sinh. | 对 | 谁 哪 的
+这 是 我 女朋友 。 | Đây là bạn gái tôi. | 女朋友 | 中文 忙 太
+王一雪 是 王一飞 的 姐姐 。 | Vương Nhất Tuyết là chị gái của Vương Nhất Phi. | 姐姐 | 工作 中文 忙
+你 的 好朋友 是 谁 ？ | Bạn thân của bạn là ai? | 好朋友 | 中文 工作 忙
+工作 还 很 忙 。 | Công việc vẫn rất bận. | 还 | 的 谁 哪
+这 是 我 的 中文 老师 。 | Đây là giáo viên tiếng Trung của tôi. | 这 | 谁 哪 太

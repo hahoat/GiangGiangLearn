@@ -1,0 +1,103 @@
+id: 6
+title: 你的手机号是多少？
+py: Nǐ de shǒu jī hào shì duō shao
+vi: Số điện thoại của bạn là bao nhiêu?
+goal: Hỏi và đọc số điện thoại; nói muốn đi đâu, làm gì với 想; câu liên động (đi đâu làm gì, đi bằng gì); hỏi cách thức với 怎么.
+slides: 06 你的手机号是多少
+
+== vocab
+手机 | shǒu jī | danh từ | điện thoại di động | 你有手机吗？ | Bạn có điện thoại di động không?
+电话 | diàn huà | danh từ | điện thoại; cuộc gọi | 你有一个电话。 | Bạn có một cuộc gọi.
+号 | hào | danh từ | số (điện thoại, phòng…) | 你的手机号是多少？ | Số điện thoại của bạn là bao nhiêu?
+去 | qù | động từ | đi, đến | 我去中国。 | Tôi đi Trung Quốc.
+哪儿 | nǎr | đại từ | ở đâu, chỗ nào | 你去哪儿？ | Bạn đi đâu?
+想 | xiǎng | động từ năng nguyện | muốn | 我想休息。 | Tôi muốn nghỉ ngơi.
+超市 | chāo shì | danh từ | siêu thị | 他们去超市。 | Họ đi siêu thị.
+买 | mǎi | động từ | mua | 你想买什么？ | Bạn muốn mua gì?
+东西 | dōng xi | danh từ | đồ, đồ vật | 我想去超市买东西。 | Tôi muốn đi siêu thị mua đồ.
+些 | xiē | lượng từ | một vài, một ít | 我想买些牛奶。 | Tôi muốn mua ít sữa.
+牛奶 | niú nǎi | danh từ | sữa bò | 我去超市买牛奶。 | Tôi đi siêu thị mua sữa.
+吃 | chī | động từ | ăn | 你喜欢吃什么？ | Bạn thích ăn gì?
+晚饭 | wǎn fàn | danh từ | bữa tối | 你想去哪儿吃晚饭？ | Bạn muốn đi đâu ăn tối?
+那边 | nà biān | đại từ | bên kia, đằng kia | 那边有一个超市。 | Đằng kia có một siêu thị.
+包子 | bāo zi | danh từ | bánh bao | 我想吃包子。 | Tôi muốn ăn bánh bao.
+非常 | fēi cháng | phó từ | rất, vô cùng | 我非常喜欢去超市。 | Tôi rất thích đi siêu thị.
+好吃 | hǎo chī | tính từ | ngon | 中国菜很好吃。 | Món Trung Quốc rất ngon.
+米饭 | mǐ fàn | danh từ | cơm | 你喜欢吃米饭吗？ | Bạn có thích ăn cơm không?
+怎么 | zěn me | đại từ | thế nào, bằng cách nào | 我们怎么去？ | Chúng ta đi bằng gì?
+坐 | zuò | động từ | đi (xe, tàu…); ngồi | 他们坐出租车去超市。 | Họ đi taxi đến siêu thị.
+出租车 | chū zū chē | danh từ | taxi | 我们坐出租车去。 | Chúng ta đi taxi.
+饭店 | fàn diàn | danh từ | nhà hàng | 我们去西安饭店吃晚饭。 | Chúng ta đến nhà hàng Tây An ăn tối.
+
+== grammar
+## Hỏi và đọc số điện thoại
+Hỏi: …的手机号是多少？ Khi đọc số điện thoại, đọc từng chữ số; số 1 thường đọc là yāo để khỏi nhầm với 7.
+f: 你的手机号是多少？ → 我的手机号是 + số
+ex: 你的手机号是多少？ | Số điện thoại của bạn là bao nhiêu?
+ex: 我的手机号是13126975002。 | Số điện thoại của tôi là 13126975002.
+## Động từ năng nguyện 想 (muốn)
+想 + động từ: muốn làm gì. Phủ định: 不想. (想 + người: nhớ ai đó – bài 3.)
+f: Chủ ngữ + 想 / 不想 + Động từ
+ex: 我想去中国。 | Tôi muốn đi Trung Quốc.
+ex: 他不想工作。 | Anh ấy không muốn làm việc.
+## Câu liên động (1): đi đâu để làm gì
+Động từ thứ hai nói mục đích của hành động thứ nhất.
+f: Chủ ngữ + 去 + Nơi chốn + Động từ (+ Tân ngữ)
+ex: 我想去超市买东西。 | Tôi muốn đi siêu thị mua đồ.
+ex: 我们去西安饭店吃晚饭。 | Chúng ta đến nhà hàng Tây An ăn tối.
+## Câu liên động (2): đi bằng gì – 怎么
+Động từ thứ nhất nói cách thức (phương tiện) của hành động thứ hai. Hỏi cách thức: 怎么 + động từ.
+f: Chủ ngữ + 坐 + Phương tiện + 去 + Nơi chốn · 怎么 + Động từ
+ex: 他们坐出租车去超市。 | Họ đi taxi đến siêu thị.
+ex: 我们怎么去？ | Chúng ta đi bằng gì?
+
+== text Bài khóa 1
+李文: 你的手机号是多少？ | Số điện thoại của bạn là bao nhiêu?
+白家月: 我的手机号是13126975002。你呢？ | Số của mình là 13126975002. Còn bạn?
+李文: 我的手机号是15389435681。 | Số của mình là 15389435681.
+
+== text Bài khóa 2
+陈天中: 家月，明天你去哪儿？ | Gia Nguyệt, ngày mai bạn đi đâu?
+白家月: 我想去超市买东西。 | Mình muốn đi siêu thị mua đồ.
+陈天中: 你去超市买什么？ | Bạn đi siêu thị mua gì?
+白家月: 我想买些牛奶。 | Mình muốn mua ít sữa.
+
+== text Bài khóa 3
+刘明: 星期天我们去哪儿吃晚饭？ | Chủ nhật nhà mình đi đâu ăn tối?
+王一雪: 我还想去西安饭店。那边的包子非常好吃，我想吃包子。 | Em vẫn muốn đến nhà hàng Tây An. Bánh bao ở đó rất ngon, em muốn ăn bánh bao.
+刘小明: 妈妈，我想吃米饭，不想吃包子。 | Mẹ ơi, con muốn ăn cơm, không muốn ăn bánh bao.
+王一雪: 好的。 | Được.
+刘小雪: 我们怎么去？ | Chúng ta đi bằng gì ạ?
+刘明: 坐出租车去。 | Đi taxi.
+
+== sentences
+你 的 手机 号 是 多少 ？ | Số điện thoại di động của bạn là bao nhiêu? | 多少 | 几 哪儿 怎么
+明天 你 去 哪儿 ？ | Ngày mai bạn đi đâu? | 哪儿 | 多少 怎么 非常
+我 想 去 超市 买 东西 。 | Tôi muốn đi siêu thị mua đồ. | 超市 | 牛奶 包子 米饭
+你 去 超市 买 什么 ？ | Bạn đi siêu thị mua gì? | 买 | 坐 非常 那边
+我 想 买 些 牛奶 。 | Tôi muốn mua ít sữa. | 牛奶 | 超市 出租车 饭店
+那边 的 包子 非常 好吃 。 | Bánh bao ở đằng kia rất ngon. | 非常 | 怎么 哪儿 多少
+我 想 吃 米饭 ， 不 想 吃 包子 。 | Con muốn ăn cơm, không muốn ăn bánh bao. | 米饭 | 超市 出租车 手机
+我们 怎么 去 ？ | Chúng ta đi bằng gì? | 怎么 | 多少 那边 非常
+坐 出租车 去 。 | Đi taxi. | 坐 | 吃 买 想
+晚饭 你 想 吃 什么 ？ | Bữa tối bạn muốn ăn gì? | 晚饭 | 超市 手机 出租车
+我们 去 西安 饭店 吃 晚饭 。 | Chúng ta đến nhà hàng Tây An ăn tối. | 饭店 | 手机 牛奶 电话
+他们 坐 出租车 去 超市 。 | Họ đi taxi đến siêu thị. | 出租车 | 牛奶 包子 手机
+你 有 手机 吗 ？ | Bạn có điện thoại di động không? | 手机 | 那边 怎么 非常
+中国 菜 很 好吃 。 | Món ăn Trung Quốc rất ngon. | 好吃 | 那边 怎么 哪儿
+我 想 去 中国 。 | Tôi muốn đi Trung Quốc. | 去 | 坐 买 吃
+我 的 手机 号 是 13126975002 。 | Số điện thoại di động của tôi là 13126975002. | 手机 | 电话 牛奶 包子
+你 想 去 哪儿 ？ | Bạn muốn đi đâu? | 想 | 坐 买 吃
+我 去 超市 买 牛奶 。 | Tôi đi siêu thị mua sữa. | 买 | 坐 吃 去
+你 想 买 什么 东西 ？ | Bạn muốn mua đồ gì? | 东西 | 牛奶 包子 米饭
+面条儿 非常 好吃 。 | Mì rất ngon. | 好吃 | 非常 怎么 哪儿
+你 喜欢 吃 米饭 吗 ？ | Bạn có thích ăn cơm không? | 吃 | 买 坐 去
+请问 ， 哪儿 有 超市 ？ | Xin hỏi, ở đâu có siêu thị? | 哪儿 | 多少 怎么 那边
+那边 有 一 个 超市 。 | Đằng kia có một siêu thị. | 那边 | 哪儿 怎么 多少
+包子 怎么 做 ？ | Bánh bao làm thế nào? | 怎么 | 多少 哪儿 那边
+我们 坐 出租车 去 饭店 。 | Chúng tôi đi taxi đến nhà hàng. | 出租车 | 牛奶 包子 手机
+我 想 吃 包子 。 | Tôi muốn ăn bánh bao. | 包子 | 牛奶 米饭 手机
+你 去 中国 做 什么 ？ | Bạn đến Trung Quốc làm gì? | 做 | 坐 买 吃
+晚饭 我 想 吃 面条儿 。 | Bữa tối tôi muốn ăn mì. | 晚饭 | 超市 手机 出租车
+他 想 休息 ， 不 想 工作 。 | Anh ấy muốn nghỉ, không muốn làm việc. | 休息 | 超市 手机 牛奶
+我 很 喜欢 去 饭店 。 | Tôi rất thích đi nhà hàng. | 饭店 | 手机 牛奶 电话

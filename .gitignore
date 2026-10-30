@@ -147,3 +147,18 @@ vite.config.ts.timestamp-*
 
 # Turbo Repo
 .turbo
+
+# ===== Giang Giang =====
+node_modules/
+dist/
+# Tài liệu gốc/đã nén rất nặng — lưu ở kho riêng, không đưa vào git
+*.pptx
+*.zip
+*.mov
+*.mp4
+HSK*/
+YCT*/
+backup_giao_dien_*/
+xem_truoc_giao_dien/
+.env.local
+.env

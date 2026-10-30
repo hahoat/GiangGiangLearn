@@ -1,0 +1,98 @@
+id: 15
+title: 大兴机场见
+py: Dà xīng jī chǎng jiàn
+vi: Hẹn gặp ở sân bay Đại Hưng
+goal: Nói sở thích với 爱; hỏi lựa chọn với 哪个; câu ghép "…，还 / 也 …"; nói thời gian di chuyển với 要 + thời lượng; đặt kế hoạch gặp mặt.
+slides: 15 大兴机场见
+
+== vocab
+爱 | ài | động từ | yêu, thích | 我爱吃中国菜。 | Tôi thích ăn món Trung Quốc.
+哪个 | nǎ ge | đại từ | cái nào | 你们爱吃哪个菜？ | Các bạn thích ăn món nào?
+男朋友 | nán péng you | danh từ | bạn trai | 去年我和男朋友去了西安。 | Năm ngoái tôi cùng bạn trai đi Tây An.
+几 | jǐ | số từ | vài, mấy | 前几年我去了西安。 | Mấy năm trước tôi đã đi Tây An.
+年 | nián | danh từ | năm | 今年我想去北京。 | Năm nay tôi muốn đi Bắc Kinh.
+好玩儿 | hǎo wánr | tính từ | vui, thú vị | 西安非常好玩儿。 | Tây An rất thú vị.
+北京 | Běi jīng | danh từ riêng | Bắc Kinh | 北京非常漂亮。 | Bắc Kinh rất đẹp.
+西安 | Xī ān | danh từ riêng | Tây An | 我去了西安。 | Tôi đã đi Tây An.
+飞机 | fēi jī | danh từ | máy bay | 你们的飞机几点到？ | Máy bay của các bạn mấy giờ đến?
+要 | yào | động từ | mất, cần (thời gian) | 到北京要九个小时。 | Đến Bắc Kinh mất 9 tiếng.
+小时 | xiǎo shí | danh từ | giờ, tiếng đồng hồ | 九个小时 | 9 tiếng đồng hồ
+家人 | jiā rén | danh từ | người nhà | 我家人都在北京。 | Người nhà tôi đều ở Bắc Kinh.
+时间 | shí jiān | danh từ | thời gian | 星期天我姐姐也有时间。 | Chủ nhật chị tôi cũng có thời gian.
+机场 | jī chǎng | danh từ | sân bay | 她可以去机场接你们。 | Chị ấy có thể ra sân bay đón các bạn.
+接 | jiē | động từ | đón | 我去机场接妈妈。 | Tôi ra sân bay đón mẹ.
+住 | zhù | động từ | ở, sống | 你们也可以住我家。 | Các bạn cũng có thể ở nhà tôi.
+那 | nà | liên từ | vậy thì | 那我们在大兴机场见！ | Vậy chúng ta gặp ở sân bay Đại Hưng!
+
+== grammar
+## Câu ghép đẳng lập: …，还 / 也 …
+Nối hai vế có quan hệ bổ sung: "…, còn / cũng …". 还 nhấn mạnh thêm một điều nữa.
+f: Vế 1，(Chủ ngữ) + 还 / 也 + Vế 2
+ex: 我喜欢喝中国茶，还喜欢吃中国菜。 | Tôi thích uống trà Trung Quốc, còn thích ăn món Trung Quốc.
+ex: 这些菜都好吃，还很好看。 | Những món này đều ngon, lại còn đẹp mắt.
+## Hỏi lựa chọn với 哪个
+哪个 + danh từ: cái nào, người nào (chọn trong số nhiều).
+f: 哪个 + Danh từ
+ex: 你们爱吃哪个菜？ | Các bạn thích ăn món nào?
+ex: 你喜欢哪个？ | Bạn thích cái nào?
+## 要 + thời lượng: mất bao lâu
+要 đứng trước khoảng thời gian, nghĩa là "mất, cần".
+f: (Làm gì) + 要 + Thời lượng
+ex: 你们的飞机到北京要几个小时？ | Máy bay của các bạn đến Bắc Kinh mất mấy tiếng?
+ex: 坐飞机要两个小时。 | Đi máy bay mất hai tiếng.
+## Liên từ 那: vậy thì
+那 đầu câu nối tiếp ý của người nói trước, đưa ra kết luận hoặc đề nghị.
+f: 那 + Câu
+ex: 那我们在大兴机场见！ | Vậy chúng ta gặp ở sân bay Đại Hưng!
+
+== text Bài khóa 1
+李文: 我爱吃中国菜，也喜欢做。大家多吃点儿。 | Tôi thích ăn món Trung Quốc, cũng thích nấu. Mọi người ăn nhiều vào nhé.
+陈天中: 谢谢！ | Cảm ơn!
+李文: 你们爱吃哪个菜？ | Các bạn thích món nào?
+白家月: 这些菜都好吃，还很好看。 | Những món này đều ngon, lại còn đẹp mắt.
+
+== text Bài khóa 2
+李文: 你们都想去哪儿？ | Các bạn đều muốn đi đâu?
+安妮: 去年我和男朋友去了西安，今年我想去北京。 | Năm ngoái mình cùng bạn trai đi Tây An, năm nay mình muốn đi Bắc Kinh.
+陈天中: 前几年我去了西安，非常好玩儿。今年我也想去北京。 | Mấy năm trước mình đã đi Tây An, rất thú vị. Năm nay mình cũng muốn đi Bắc Kinh.
+李文: 我和王老师都是北京人，北京非常漂亮。 | Mình và thầy Vương đều là người Bắc Kinh, Bắc Kinh rất đẹp.
+
+== text Bài khóa 3
+王一飞: 你们的飞机到北京要几个小时？ | Máy bay của các em đến Bắc Kinh mất mấy tiếng?
+陈天中: 九个小时。 | Chín tiếng ạ.
+王一飞: 我家人都在北京。星期天我姐姐也有时间，她可以去机场接你们，你们也可以住我家。 | Người nhà thầy đều ở Bắc Kinh. Chủ nhật chị gái thầy cũng rảnh, chị ấy có thể ra sân bay đón các em, các em cũng có thể ở nhà thầy.
+安妮: 我们星期日早上八点到大兴机场，早不早？ | Chúng em đến sân bay Đại Hưng lúc 8 giờ sáng Chủ nhật, có sớm quá không ạ?
+王一飞: 不早。 | Không sớm đâu.
+安妮: 谢谢老师！那我们和您姐姐在大兴机场见！ | Cảm ơn thầy! Vậy chúng em gặp chị của thầy ở sân bay Đại Hưng nhé!
+
+== sentences
+你们 爱 吃 哪个 菜 ？ | Các bạn thích ăn món nào? | 哪个 | 那 几 多
+我 爱 吃 中国 菜 ， 也 喜欢 做 。 | Tôi thích ăn món Trung Quốc, cũng thích nấu. | 爱 | 接 住 小时
+这些 菜 都 好吃 ， 还 很 好看 。 | Những món này đều ngon, lại còn đẹp mắt. | 还 | 那 几 接
+大家 多 吃 点儿 。 | Mọi người ăn nhiều vào nhé. | 多 | 几 那 接
+去年 我 和 男朋友 去 了 西安 。 | Năm ngoái tôi cùng bạn trai đi Tây An. | 男朋友 | 小时 时间 机场
+前 几 年 我 去 了 西安 。 | Mấy năm trước tôi đã đi Tây An. | 年 | 小时 时间 点
+西安 非常 好玩儿 。 | Tây An rất thú vị. | 好玩儿 | 小时 机场 时间
+我 和 王 老师 都 是 北京 人 。 | Tôi và thầy Vương đều là người Bắc Kinh. | 都 | 那 几 接
+你们 的 飞机 到 北京 要 几 个 小时 ？ | Máy bay của các bạn đến Bắc Kinh mất mấy tiếng? | 小时 | 时间 年 机场
+我 家人 都 在 北京 。 | Người nhà tôi đều ở Bắc Kinh. | 家人 | 机场 小时 时间
+星期天 我 姐姐 也 有 时间 。 | Chủ nhật chị tôi cũng có thời gian. | 时间 | 小时 机场 家人
+她 可以 去 机场 接 你们 。 | Chị ấy có thể ra sân bay đón các bạn. | 接 | 住 爱 哪个
+你们 也 可以 住 我 家 。 | Các bạn cũng có thể ở nhà tôi. | 住 | 爱 小时 哪个
+那 我们 在 大兴 机场 见 ！ | Vậy chúng ta gặp nhau ở sân bay Đại Hưng! | 机场 | 小时 时间 家人
+我 喜欢 喝 中国 茶 ， 还 喜欢 吃 中国 菜 。 | Tôi thích uống trà Trung Quốc, còn thích ăn món Trung Quốc. | 还 | 那 几 接
+我 喜欢 这 个 ， 也 喜欢 那 个 。 | Tôi thích cái này, cũng thích cái kia. | 也 | 还 都 再
+你 爱 喝 什么 ？ | Bạn thích uống gì? | 爱 | 接 住 要
+你 喜欢 哪个 ？ | Bạn thích cái nào? | 哪个 | 那个 这个 几个
+北京 非常 漂亮 。 | Bắc Kinh rất đẹp. | 北京 | 西安 中国 大兴
+坐 飞机 要 两 个 小时 。 | Đi máy bay mất hai tiếng. | 飞机 | 火车 出租车 车
+我 去 机场 接 我 妈妈 。 | Tôi ra sân bay đón mẹ. | 接 | 住 爱 找
+你 住 哪儿 ？ | Bạn sống ở đâu? | 住 | 接 在 去
+我 今天 没有 时间 。 | Hôm nay tôi không có thời gian. | 时间 | 小时 家人 机场
+她 的 男朋友 是 北京 人 。 | Bạn trai của cô ấy là người Bắc Kinh. | 男朋友 | 女朋友 朋友 家人
+我 今年 想 去 北京 。 | Năm nay tôi muốn đi Bắc Kinh. | 今年 | 去年 明年 时间
+飞机 早上 八 点 到 。 | Máy bay đến lúc 8 giờ sáng. | 早上 | 晚上 中午 下午
+我 的 家人 都 很 好 。 | Người nhà tôi đều khỏe. | 家人 | 机场 小时 时间
+那 我们 明天 见 吧 ！ | Vậy mai chúng ta gặp nhé! | 那 | 这 哪 都
+前 几 年 他 去 了 中国 。 | Mấy năm trước anh ấy đã đi Trung Quốc. | 几 | 多 两 些
+这 个 电影 很 好玩儿 。 | Bộ phim này rất thú vị. | 好玩儿 | 好吃 好听 好看
