@@ -9,11 +9,14 @@ const listeners = new Set()
 const emit = user => listeners.forEach(fn => fn(user))
 
 async function call(path, method = 'GET', body) {
+  const payload = body === undefined ? undefined : JSON.stringify(body)
   const res = await fetch(API + path, {
     method,
     credentials: 'same-origin',
+    // keepalive: vẫn gửi được khi trang đang đóng – trình duyệt chỉ cho phép khi dữ liệu dưới 64 KB
+    keepalive: !payload || new TextEncoder().encode(payload).length < 60000,
     headers: body === undefined ? undefined : { 'content-type': 'application/json' },
-    body: body === undefined ? undefined : JSON.stringify(body),
+    body: payload,
   })
   const data = await res.json().catch(() => ({}))
   if (!res.ok) {

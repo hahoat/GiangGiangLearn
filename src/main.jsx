@@ -335,9 +335,25 @@ function App() {
   }, [user]) // eslint-disable-line react-hooks/exhaustive-deps
   useEffect(() => {
     if (!user || !remoteReady.current) return
+    // Gom các thay đổi, 10 giây sau mới lưu một lần (giảm số lần ghi vào D1, gói miễn phí 100.000 lần/ngày).
+    // Học viên chuyển ứng dụng / đóng trang thì lưu ngay. Lỡ không kịp lưu thì tiến độ vẫn còn trên máy
+    // và được gộp vào tài khoản ở lần mở web sau.
     setSyncState('saving')
-    const t = setTimeout(() => pushRemote(user.id, { progress, srs, log }).then(() => setSyncState('idle')).catch(() => setSyncState('error')), 1500)
-    return () => clearTimeout(t)
+    let pending = true
+    const save = () => {
+      if (!pending) return
+      pending = false
+      pushRemote(user.id, { progress, srs, log }).then(() => setSyncState('idle')).catch(() => setSyncState('error'))
+    }
+    const t = setTimeout(save, 10000)
+    const onHide = () => { if (document.visibilityState === 'hidden') save() }
+    document.addEventListener('visibilitychange', onHide)
+    window.addEventListener('pagehide', save)
+    return () => {
+      clearTimeout(t)
+      document.removeEventListener('visibilitychange', onHide)
+      window.removeEventListener('pagehide', save)
+    }
   }, [user, progress, srs, log])
 
   /* ---- Tiến độ, XP, ôn tập ---- */
