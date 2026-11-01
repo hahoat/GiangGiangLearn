@@ -10,6 +10,10 @@ Dùng:
     python3 scripts/tao_tai_khoan.py --dat-lai 0912345678 ...   đặt lại mật khẩu về 12345678 (quên mật khẩu)
     python3 scripts/tao_tai_khoan.py --xoa 0912345678 ...       xóa tài khoản và tiến độ học
     python3 scripts/tao_tai_khoan.py --danh-sach                xem danh sách tài khoản
+    python3 scripts/tao_tai_khoan.py --quan-tri 0912345678      cấp quyền quản trị (tạo tài khoản ngay trên web)
+
+Thường chỉ cần dùng script này một lần với --quan-tri cho giáo viên; sau đó quản trị viên đăng nhập web,
+vào mục "👥 Học viên" để tạo / đặt lại mật khẩu / xóa tài khoản mà không cần Terminal.
 
 Cần: Account ID (Cloudflare → R2 / Workers, cột bên phải) và một API token có quyền D1 → Edit
 (Cloudflare → My Profile → API Tokens → Create Token → Custom token → Permissions: Account · D1 · Edit).
@@ -33,7 +37,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SCHEMA = [   # giống SCHEMA trong worker/index.js – để script chạy được cả trước lần mở web đầu tiên
     """CREATE TABLE IF NOT EXISTS users (
          id INTEGER PRIMARY KEY AUTOINCREMENT, phone TEXT NOT NULL UNIQUE, name TEXT NOT NULL DEFAULT '',
-         password TEXT NOT NULL, fails INTEGER NOT NULL DEFAULT 0, locked_until INTEGER NOT NULL DEFAULT 0,
+         password TEXT NOT NULL, role TEXT NOT NULL DEFAULT 'student', fails INTEGER NOT NULL DEFAULT 0, locked_until INTEGER NOT NULL DEFAULT 0,
          created_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP)""",
     """CREATE TABLE IF NOT EXISTS progress (
          user_id INTEGER PRIMARY KEY REFERENCES users(id) ON DELETE CASCADE, data TEXT NOT NULL,
@@ -107,7 +111,7 @@ def main():
     if not args or args[0] in ('-h', '--help'):
         sys.exit(__doc__)
     mode = args[0] if args[0].startswith('--') else 'tao'
-    if mode not in ('tao', '--dat-lai', '--xoa', '--danh-sach'):
+    if mode not in ('tao', '--dat-lai', '--xoa', '--danh-sach', '--quan-tri'):
         sys.exit(__doc__)
     if mode == 'tao':
         people = read_list(args[0])
@@ -126,11 +130,14 @@ def main():
     db = D1(account, db_id, token)
     for sql in SCHEMA:
         db.query(sql)
+    if not any(c['name'] == 'role' for c in db.query('PRAGMA table_info(users)')['results']):
+        db.query("ALTER TABLE users ADD COLUMN role TEXT NOT NULL DEFAULT 'student'")
 
     if mode == '--danh-sach':
-        rows = db.query('SELECT phone, name, created_at FROM users ORDER BY created_at')['results']
+        rows = db.query('SELECT phone, name, role, created_at FROM users ORDER BY created_at')['results']
         for r in rows:
-            print(f"{r['phone']}  {r['name']:<30} tạo {r['created_at']}")
+            role = ' [quản trị]' if r['role'] == 'admin' else ''
+            print(f"{r['phone']}  {r['name'] + role:<40} tạo {r['created_at']}")
         print(f'Tổng: {len(rows)} tài khoản')
         return
 
@@ -139,6 +146,11 @@ def main():
         if mode == 'tao':
             changes = db.query('INSERT INTO users (phone, name, password) VALUES (?, ?, ?) ON CONFLICT (phone) DO NOTHING',
                                phone, name, hash_password(DEFAULT_PASSWORD))['meta']['changes']
+        elif mode == '--quan-tri':
+            # Chưa có tài khoản thì tạo luôn (mật khẩu mặc định), rồi cấp quyền quản trị
+            db.query('INSERT INTO users (phone, name, password) VALUES (?, ?, ?) ON CONFLICT (phone) DO NOTHING',
+                     phone, name, hash_password(DEFAULT_PASSWORD))
+            changes = db.query("UPDATE users SET role = 'admin' WHERE phone = ?", phone)['meta']['changes']
         elif mode == '--dat-lai':
             changes = db.query('UPDATE users SET password = ?, fails = 0, locked_until = 0 WHERE phone = ?',
                                hash_password(DEFAULT_PASSWORD), phone)['meta']['changes']
@@ -150,7 +162,7 @@ def main():
         else:
             print(f'– {phone}: ' + ('đã có tài khoản, bỏ qua' if mode == 'tao' else 'chưa có tài khoản')); skipped += 1
 
-    label = {'tao': f'Tạo mới (mật khẩu {DEFAULT_PASSWORD})', '--dat-lai': f'Đặt lại mật khẩu về {DEFAULT_PASSWORD}', '--xoa': 'Đã xóa'}[mode]
+    label = {'tao': f'Tạo mới (mật khẩu {DEFAULT_PASSWORD})', '--quan-tri': 'Đã cấp quyền quản trị', '--dat-lai': f'Đặt lại mật khẩu về {DEFAULT_PASSWORD}', '--xoa': 'Đã xóa'}[mode]
     print(f'\n{label}: {ok} · Bỏ qua: {skipped}')
 
 

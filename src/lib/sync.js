@@ -50,3 +50,13 @@ export async function watchUser(onUser) {
 
 export const fetchRemote = async () => (await call('progress')).data ?? null
 export const pushRemote = (_userId, state) => call('progress', 'PUT', state)
+
+// Quản trị viên (role = 'admin'): quản lý tài khoản học viên
+export const isAdmin = user => user?.role === 'admin'
+export const adminApi = {
+  list: () => call('admin/users'),
+  create: people => call('admin/users', 'POST', { people }),
+  reset: id => call(`admin/users/${id}/reset`, 'POST', {}),
+  setRole: (id, role) => call(`admin/users/${id}/role`, 'POST', { role }),
+  remove: id => call(`admin/users/${id}`, 'DELETE'),
+}

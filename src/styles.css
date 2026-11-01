@@ -460,3 +460,24 @@ a.btn { text-decoration: none }
 .login-card label { display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 600 }
 .login-brand { display: flex; align-items: center; gap: 10px }
 .drawer h3 { margin: 22px 0 0; font-size: 16px }
+
+/* ---- Quản lý học viên (quản trị viên) ---- */
+.admin { max-width: 980px; margin: 0 auto; display: flex; flex-direction: column; gap: 18px }
+.admin h1 { margin: 0; font-size: 24px }
+.admin h2 { margin: 0; font-size: 17px }
+.admin-card { display: flex; flex-direction: column; gap: 12px; padding: 18px 20px; border-radius: 16px; background: var(--surface); border: 1px solid var(--line) }
+.admin-card textarea, .admin-search { width: 100%; padding: 10px 12px; border-radius: 12px; border: 1.5px solid var(--line); background: var(--surface); color: inherit; font: inherit; font-size: 14px; outline: none }
+.admin-card textarea:focus, .admin-search:focus { border-color: var(--brand) }
+.admin-search { max-width: 280px }
+.admin-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap }
+.admin-report { padding: 10px 14px; border-radius: 12px; background: var(--surface-2); font-size: 14px }
+.admin-report p { margin: 0 }
+.admin-report ul { margin: 6px 0 0; padding-left: 18px }
+.admin-table-wrap { overflow-x: auto }
+.admin-table { width: 100%; border-collapse: collapse; font-size: 14px }
+.admin-table th { text-align: left; font-weight: 600; color: var(--muted); padding: 8px; border-bottom: 1px solid var(--line) }
+.admin-table td { padding: 8px; border-bottom: 1px solid var(--line); vertical-align: middle }
+.admin-actions { display: flex; gap: 6px; justify-content: flex-end; flex-wrap: wrap }
+.admin-actions .btn { padding: 6px 10px; font-size: 13px }
+.admin-actions .danger { color: var(--bad) }
+.admin-badge { margin-left: 8px; padding: 2px 8px; border-radius: 999px; background: var(--brand-soft); color: var(--brand-ink); font-size: 11px; font-style: normal; font-weight: 600 }

@@ -40,18 +40,23 @@ Web chạy trên **Cloudflare Workers** (`wrangler.jsonc`) thì bắt buộc đ�
 3. Kiểm tra `bucket_name` trong `wrangler.jsonc` trùng tên bucket R2 (mặc định `giang-giang-media`).
 4. Worker (**Workers & Pages → gianggianglearn**) tự build lại sau khi push. Mở web sẽ thấy màn hình đăng nhập.
 
-**Tạo API token cho script quản lý tài khoản** (một lần): Cloudflare → ảnh đại diện → **My Profile → API Tokens → Create Token → Custom token** → Permissions: `Account` · `D1` · `Edit` → **Create Token**. Chép token, cất ở chỗ an toàn (chỉ hiện một lần).
+**Tạo quản trị viên đầu tiên** (một lần) – chọn một trong hai cách:
+- **Trên trang Cloudflare:** D1 → `giang-giang` → **Console**, dán lệnh dưới (thay số điện thoại, tên) → **Execute**. Chuỗi `pbkdf2$…` là mật khẩu `12345678` đã mã hóa, dùng lại được cho mọi tài khoản:
+  ```sql
+  INSERT INTO users (phone, name, password, role)
+  VALUES ('0912345678', 'Tên giáo viên', 'pbkdf2$100000$EMGro94MrColvcEM7+Q8gg==$UhvwKzNq81JR6rn3yTtvduaBIjcvgqQ/GFTOD+8QL0U=', 'admin');
+  ```
+  (Cần mở web ít nhất một lần sau khi deploy để web tự tạo bảng.) Bỏ `role` và `'admin'` là tạo tài khoản học viên thường.
+- **Bằng script:** `python3 scripts/tao_tai_khoan.py --quan-tri 0912345678` (cần API token D1, xem dưới).
 
-**Tạo tài khoản học viên**
-1. Tạo file `hoc_vien.txt` trong thư mục dự án (git đã bỏ qua file này), mỗi dòng một học viên:
-   ```
-   0912345678 | Nguyễn Văn An
-   0987654321 | Trần Thị Bình
-   ```
-2. Chạy `python3 scripts/tao_tai_khoan.py hoc_vien.txt`, nhập Account ID và API token khi được hỏi.
-   Thêm học viên: ghi thêm vào file rồi chạy lại – người đã có tài khoản được bỏ qua.
-3. Quên mật khẩu: `python3 scripts/tao_tai_khoan.py --dat-lai 0912345678` → mật khẩu về 12345678.
-4. Xóa học viên: `python3 scripts/tao_tai_khoan.py --xoa 0912345678`. Xem danh sách: `--danh-sach`.
+**Tạo tài khoản học viên trên web:** quản trị viên đăng nhập → mục **👥 Học viên** trên thanh trên cùng:
+- Dán danh sách (mỗi dòng `0912345678 | Nguyễn Văn An`, hoặc dán thẳng 2 cột họ tên + số điện thoại từ Excel) → **Tạo tài khoản**. Mật khẩu mặc định 12345678, người đã có được bỏ qua.
+- Trong danh sách: **Đặt lại MK** (về 12345678), **Cấp / Bỏ quản trị**, **Xóa**.
+
+**Hoặc dùng script trên máy** (cần API token: Cloudflare → ảnh đại diện → **My Profile → API Tokens → Create Token → Custom token** → Permissions: `Account` · `D1` · `Edit`):
+1. Tạo file `hoc_vien.txt` (git đã bỏ qua file này), mỗi dòng `0912345678 | Nguyễn Văn An`.
+2. `python3 scripts/tao_tai_khoan.py hoc_vien.txt`, nhập Account ID và API token khi được hỏi.
+3. Khác: `--dat-lai <số>` (mật khẩu về 12345678), `--xoa <số>`, `--danh-sach`, `--quan-tri <số>`.
 
 Học viên tự đổi mật khẩu ở nút 👤 góc phải web. Nên nhắc học viên đổi, vì ai biết số điện thoại cũng thử được mật khẩu 12345678. Nhập sai mật khẩu 10 lần liên tiếp thì tài khoản bị khóa 15 phút.
 

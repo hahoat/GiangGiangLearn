@@ -1,12 +1,15 @@
 // Cloudflare Worker của web Giang Giang.
 //   /api/*   đăng nhập bằng số điện thoại + mật khẩu, đổi mật khẩu, lưu tiến độ (cơ sở dữ liệu D1, binding DB)
+//   /api/admin/*  quản trị viên (role = 'admin') tạo / đặt lại mật khẩu / xóa tài khoản học viên
 //   /data/*  bài học + slide + âm thanh trong bucket R2 (binding MEDIA) – chỉ gửi cho người đã đăng nhập
 //   còn lại  file tĩnh của web trong dist/ (binding ASSETS)
-// Bảng trong D1 được tự tạo ở lần chạy đầu (xem SCHEMA). Tài khoản do giáo viên tạo bằng scripts/tao_tai_khoan.py.
+// Bảng trong D1 được tự tạo ở lần chạy đầu (xem SCHEMA). Tài khoản do quản trị viên tạo trên web (trang Quản lý
+// học viên) hoặc bằng scripts/tao_tai_khoan.py.
 
 const COOKIE = 'gg_session'
 const SESSION_DAYS = 30
 const PBKDF2_ITER = 100000          // phải giống scripts/tao_tai_khoan.py
+const DEFAULT_PASSWORD = '12345678'
 const MAX_FAILS = 10                // sai mật khẩu 10 lần liên tiếp → khóa 15 phút
 const LOCK_MS = 15 * 60 * 1000
 
@@ -16,6 +19,7 @@ const SCHEMA = [
      phone TEXT NOT NULL UNIQUE,
      name TEXT NOT NULL DEFAULT '',
      password TEXT NOT NULL,
+     role TEXT NOT NULL DEFAULT 'student',
      fails INTEGER NOT NULL DEFAULT 0,
      locked_until INTEGER NOT NULL DEFAULT 0,
      created_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP)`,
@@ -48,6 +52,8 @@ let ready = null
 function setup(env) {
   ready ??= (async () => {
     await env.DB.batch(SCHEMA.map(sql => env.DB.prepare(sql)))
+    // Bảng users tạo từ bản cũ chưa có cột role → thêm vào (đã có thì bỏ qua lỗi)
+    await env.DB.prepare(`ALTER TABLE users ADD COLUMN role TEXT NOT NULL DEFAULT 'student'`).run().catch(() => {})
     await env.DB.prepare(`INSERT OR IGNORE INTO config (key, value) VALUES ('session_secret', ?)`)
       .bind(b64(crypto.getRandomValues(new Uint8Array(32)))).run()
     const { value } = await env.DB.prepare(`SELECT value FROM config WHERE key = 'session_secret'`).first()
@@ -95,14 +101,14 @@ async function readSession(request, key) {
 }
 
 const clearCookie = `${COOKIE}=; Path=/; HttpOnly; Secure; SameSite=Lax; Max-Age=0`
-const publicUser = u => ({ id: u.id, phone: u.phone, name: u.name })
+const publicUser = u => ({ id: u.id, phone: u.phone, name: u.name, role: u.role })
 
 /* ---------- API ---------- */
 
 async function api(request, env, path) {
   const key = await setup(env)
   const method = request.method
-  const body = method === 'POST' || method === 'PUT' ? await request.json().catch(() => ({})) : null
+  const body = method === 'POST' || method === 'PUT' ? (await request.json().catch(() => null)) ?? {} : {}
 
   if (path === 'login' && method === 'POST') {
     const phone = normalizePhone(body.phone)
@@ -123,7 +129,7 @@ async function api(request, env, path) {
   if (path === 'logout' && method === 'POST') return json({ ok: true }, 200, { 'set-cookie': clearCookie })
 
   const userId = await readSession(request, key)
-  const user = userId && await env.DB.prepare('SELECT id, phone, name FROM users WHERE id = ?').bind(userId).first()
+  const user = userId && await env.DB.prepare('SELECT id, phone, name, role FROM users WHERE id = ?').bind(userId).first()
   if (!user) return fail('Chưa đăng nhập.', 401)
 
   if (path === 'me' && method === 'GET') return json(publicUser(user))
@@ -147,6 +153,64 @@ async function api(request, env, path) {
     return json({ ok: true })
   }
 
+  if (path.startsWith('admin/')) {
+    if (user.role !== 'admin') return fail('Chỉ quản trị viên mới làm được việc này.', 403)
+    return admin(env, user, method, path.slice(6), body)
+  }
+
+  return fail('Không tìm thấy.', 404)
+}
+
+/* ---------- Quản trị viên: quản lý tài khoản học viên ---------- */
+
+async function admin(env, me, method, path, body) {
+  if (path === 'users' && method === 'GET') {
+    const { results } = await env.DB.prepare(`SELECT u.id, u.phone, u.name, u.role, u.created_at, p.updated_at AS last_sync
+      FROM users u LEFT JOIN progress p ON p.user_id = u.id ORDER BY u.created_at DESC, u.id DESC`).all()
+    return json({ users: results })
+  }
+
+  // Tạo nhiều tài khoản: { people: [{ phone, name }] } → mật khẩu mặc định, người đã có thì bỏ qua
+  if (path === 'users' && method === 'POST') {
+    const people = Array.isArray(body.people) ? body.people.slice(0, 1000) : []
+    const hash = await hashPassword(DEFAULT_PASSWORD)   // cùng một mật khẩu mặc định → băm một lần
+    const results = []
+    for (const p of people) {
+      const phone = normalizePhone(p.phone)
+      const name = String(p.name ?? '').trim().slice(0, 100)
+      if (!phone) { results.push({ phone: String(p.phone ?? ''), name, status: 'invalid' }); continue }
+      const { meta } = await env.DB.prepare('INSERT INTO users (phone, name, password) VALUES (?, ?, ?) ON CONFLICT (phone) DO NOTHING')
+        .bind(phone, name, hash).run()
+      results.push({ phone, name, status: meta.changes ? 'created' : 'exists' })
+    }
+    return json({ results, password: DEFAULT_PASSWORD })
+  }
+
+  const m = path.match(/^users\/(\d+)(?:\/(reset|role))?$/)
+  if (!m) return fail('Không tìm thấy.', 404)
+  const id = Number(m[1])
+  const target = await env.DB.prepare('SELECT id, phone, role FROM users WHERE id = ?').bind(id).first()
+  if (!target) return fail('Không có tài khoản này.', 404)
+
+  if (m[2] === 'reset' && method === 'POST') {
+    await env.DB.prepare('UPDATE users SET password = ?, fails = 0, locked_until = 0 WHERE id = ?')
+      .bind(await hashPassword(DEFAULT_PASSWORD), id).run()
+    return json({ ok: true, password: DEFAULT_PASSWORD })
+  }
+  if (m[2] === 'role' && method === 'POST') {
+    if (id === me.id) return fail('Không thể tự bỏ quyền quản trị của chính mình.', 400)
+    const role = body.role === 'admin' ? 'admin' : 'student'
+    await env.DB.prepare('UPDATE users SET role = ? WHERE id = ?').bind(role, id).run()
+    return json({ ok: true, role })
+  }
+  if (!m[2] && method === 'DELETE') {
+    if (id === me.id) return fail('Không thể tự xóa tài khoản của chính mình.', 400)
+    await env.DB.batch([
+      env.DB.prepare('DELETE FROM progress WHERE user_id = ?').bind(id),
+      env.DB.prepare('DELETE FROM users WHERE id = ?').bind(id),
+    ])
+    return json({ ok: true })
+  }
   return fail('Không tìm thấy.', 404)
 }
 

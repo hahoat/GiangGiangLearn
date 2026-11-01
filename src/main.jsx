@@ -3,7 +3,8 @@ import { createRoot } from 'react-dom/client'
 import { dayKey, isDue, schedule, setGlossary, streakOf } from './lib/chinese.js'
 import { loadGlossary, loadIndex, loadLesson } from './lib/content.js'
 import { mergeState } from './lib/merge.js'
-import { changePassword, fetchRemote, normalizePhone, phoneOf, pushRemote, signInWithPhone, signOut, syncEnabled, watchUser } from './lib/sync.js'
+import { changePassword, fetchRemote, isAdmin, normalizePhone, phoneOf, pushRemote, signInWithPhone, signOut, syncEnabled, watchUser } from './lib/sync.js'
+import { AdminView } from './admin.jsx'
 import { AppContext, Sentence, WordPopover, useApp } from './ui.jsx'
 import { FlashcardStep, GrammarStep, LectureStep, PracticeStep, ReadingStep, ReviewView, VocabStep, steps } from './steps.jsx'
 import './styles.css'
@@ -36,13 +37,14 @@ function useHashRoute() {
 
 /* ================= Khung trang ================= */
 
-function Header({ view, dueCount, onReview, onLesson, onSettings, onMenu, onLogin, user }) {
+function Header({ view, dueCount, onReview, onLesson, onSettings, onMenu, onLogin, onAdmin, user }) {
   return <header className="header">
     <button className="icon-btn only-mobile" onClick={onMenu} aria-label="Danh sách bài">☰</button>
     <a className="logo" href="#/"><span className="logo-mark">江</span><span><b>Tiếng Trung Giang Giang</b><small>Học tiếng Trung mỗi ngày</small></span></a>
     <nav className="main-nav">
       <button className={view === 'lesson' ? 'active' : ''} onClick={onLesson}>📖 <span>Bài học</span></button>
       <button className={view === 'review' ? 'active' : ''} onClick={onReview}>🔁 <span>Ôn tập</span>{dueCount > 0 && <i className="badge">{dueCount}</i>}</button>
+      {isAdmin(user) && <button className={view === 'admin' ? 'active' : ''} onClick={onAdmin}>👥 <span>Học viên</span></button>}
     </nav>
     <button className="icon-btn" onClick={onSettings} aria-label="Cài đặt hiển thị" title="Cài đặt hiển thị">Aa</button>
     {syncEnabled && user && <button className="icon-btn user-btn in" onClick={onLogin} title={`Tài khoản ${phoneOf(user)}`} aria-label="Tài khoản">👤</button>}
@@ -373,9 +375,9 @@ function App() {
   if (!courses) return <div className="boot">Đang tải…</div>
 
   /* ---- Xác định trang hiện tại từ địa chỉ ---- */
-  const view = parts[0] === 'review' ? 'review' : 'lesson'
+  const view = parts[0] === 'review' ? 'review' : parts[0] === 'admin' && isAdmin(user) ? 'admin' : 'lesson'
   const lastCourse = localStorage.getItem('gg-last-course')
-  const course = courses.find(c => c.id === (view === 'review' ? lastCourse : parts[0])) ?? courses.find(c => c.id === lastCourse) ?? courses[0]
+  const course = courses.find(c => c.id === (view === 'lesson' ? parts[0] : lastCourse)) ?? courses.find(c => c.id === lastCourse) ?? courses[0]
   const lessonId = Number(parts[1]) || course.lessons[0]?.id
   const stepId = steps.some(st => st.id === parts[2]) ? parts[2] : 'lecture'
   if (view === 'lesson') localStorage.setItem('gg-last-course', course.id)
@@ -388,13 +390,14 @@ function App() {
     <div className="app">
       <Header view={view} user={user} dueCount={dueCount}
         onLesson={() => go(`${course.id}${validLesson ? `/${lessonId}/${stepId}` : ''}`)} onReview={() => go('review')}
-        onSettings={() => setPanel('settings')} onLogin={() => setPanel('login')} onMenu={() => setMenuOpen(true)} />
+        onSettings={() => setPanel('settings')} onLogin={() => setPanel('login')} onAdmin={() => go('admin')} onMenu={() => setMenuOpen(true)} />
       <div className="layout">
         <Sidebar course={course} lessonId={view === 'lesson' ? lessonId : null} progress={progress} open={menuOpen} onClose={() => setMenuOpen(false)} today={today}
           levels={<LevelSelect courses={courses} courseId={course.id} onCourse={id => { const c = courses.find(x => x.id === id); go(c.lessons.length ? `${id}/${c.lessons[0].id}/lecture` : id) }} />}
           onPick={id => go(`${course.id}/${id}/lecture`)} />
         <main className="main">
-          {view === 'review' ? <ReviewView onBack={() => go(course.id)} />
+          {view === 'admin' ? <AdminView me={user} />
+            : view === 'review' ? <ReviewView onBack={() => go(course.id)} />
             : !course.lessons.length ? <ComingSoon course={course} />
               : <LessonView course={course} lessonId={validLesson ? lessonId : course.lessons[0].id} stepId={stepId} go={go} progress={progress} markDone={markDone} earn={earn} />}
         </main>

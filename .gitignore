@@ -173,3 +173,4 @@ PPT*/
 # Slide/âm thanh các cấp mới chỉ đưa lên R2, không đưa vào git (HSK1 giữ lại như cũ)
 public/media/*
 !public/media/hsk1/
+.~lock.*#
