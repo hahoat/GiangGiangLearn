@@ -15,6 +15,22 @@
 
 Chưa cấu hình Supabase thì web vẫn chạy đầy đủ; tiến độ lưu trong trình duyệt của từng học viên.
 
+## 1b. Đưa web lên Cloudflare Pages
+
+1. Vào https://dash.cloudflare.com → **Workers & Pages** → **Create** → tab **Pages** → **Connect to Git**.
+2. Cho phép Cloudflare truy cập GitHub, chọn repo **GiangGiangLearn** → **Begin setup**.
+3. Cấu hình build:
+   - Production branch: `main`
+   - Framework preset: `Vite` (hoặc None)
+   - Build command: `pnpm build`
+   - Build output directory: `dist`
+   - Environment variables: `NODE_VERSION` = `22` (thêm các biến `VITE_SUPABASE_*`, `VITE_MEDIA_BASE` nếu có, giống GitHub)
+4. **Save and Deploy**. Web có địa chỉ `https://<tên-dự-án>.pages.dev/`. Mỗi lần `git push` Cloudflare tự build lại.
+5. (Tùy chọn) **Custom domains** để gắn tên miền riêng.
+
+Không cần sửa `base`: khi build trên Cloudflare (có biến `CF_PAGES`), web tự chạy ở gốc tên miền.
+Nếu bật Supabase, nhớ thêm địa chỉ Cloudflare vào **Redirect URLs** của Supabase.
+
 ## 2. Bật đăng nhập + đồng bộ tiến độ (Supabase, tùy chọn)
 
 1. Tạo dự án miễn phí tại https://supabase.com.
