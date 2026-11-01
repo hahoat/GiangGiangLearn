@@ -1,55 +1,52 @@
-// Đăng nhập + đồng bộ tiến độ qua Supabase. Chỉ bật khi có VITE_SUPABASE_URL và VITE_SUPABASE_ANON_KEY;
-// nếu không, web vẫn chạy bình thường và lưu tiến độ trong trình duyệt.
-const SUPABASE_URL = import.meta.env.VITE_SUPABASE_URL
-const SUPABASE_KEY = import.meta.env.VITE_SUPABASE_ANON_KEY
-export const syncEnabled = Boolean(SUPABASE_URL && SUPABASE_KEY)
-export const googleEnabled = syncEnabled && import.meta.env.VITE_SUPABASE_GOOGLE === '1'
+// Đăng nhập (bắt buộc) + đồng bộ tiến độ qua Worker của web (worker/index.js, dữ liệu trong Cloudflare D1).
+// Bật khi build trên Cloudflare Workers (xem __LOGIN__ trong vite.config.js); chạy thử bằng pnpm dev
+// hoặc trên GitHub Pages thì không có Worker → web mở thẳng, tiến độ lưu trong trình duyệt.
+/* global __LOGIN__ */
+export const syncEnabled = __LOGIN__
 
-let clientPromise = null
+const API = `${import.meta.env.BASE_URL}api/`
+const listeners = new Set()
+const emit = user => listeners.forEach(fn => fn(user))
 
-export function getClient() {
-  if (!syncEnabled) return null
-  clientPromise ??= import('@supabase/supabase-js').then(({ createClient }) =>
-    createClient(SUPABASE_URL, SUPABASE_KEY, { auth: { flowType: 'pkce', detectSessionInUrl: true, persistSession: true } }))
-  return clientPromise
+async function call(path, method = 'GET', body) {
+  const res = await fetch(API + path, {
+    method,
+    credentials: 'same-origin',
+    headers: body === undefined ? undefined : { 'content-type': 'application/json' },
+    body: body === undefined ? undefined : JSON.stringify(body),
+  })
+  const data = await res.json().catch(() => ({}))
+  if (!res.ok) {
+    if (res.status === 401 && path !== 'login') emit(null)   // hết phiên đăng nhập → về màn hình đăng nhập
+    throw new Error(data.error ?? `Lỗi máy chủ (${res.status})`)
+  }
+  return data
 }
 
-const redirectTo = () => window.location.origin + window.location.pathname
-
-export async function signInWithEmail(email) {
-  const sb = await getClient()
-  const { error } = await sb.auth.signInWithOtp({ email, options: { emailRedirectTo: redirectTo() } })
-  if (error) throw error
+export function normalizePhone(raw) {
+  let d = String(raw).replace(/\D/g, '')
+  if (d.startsWith('84') && d.length >= 11) d = '0' + d.slice(2)
+  return /^0\d{9,10}$/.test(d) ? d : null
 }
 
-export async function signInWithGoogle() {
-  const sb = await getClient()
-  const { error } = await sb.auth.signInWithOAuth({ provider: 'google', options: { redirectTo: redirectTo() } })
-  if (error) throw error
+export const phoneOf = user => user?.phone ?? ''
+
+export async function signInWithPhone(phone, password) {
+  emit(await call('login', 'POST', { phone, password }))
 }
+
+export const changePassword = password => call('password', 'POST', { password })
 
 export async function signOut() {
-  const sb = await getClient()
-  await sb.auth.signOut()
+  await call('logout', 'POST').catch(() => {})
+  emit(null)
 }
 
 export async function watchUser(onUser) {
-  const sb = await getClient()
-  const { data } = await sb.auth.getSession()
-  onUser(data.session?.user ?? null)
-  const { data: sub } = sb.auth.onAuthStateChange((_event, session) => onUser(session?.user ?? null))
-  return () => sub.subscription.unsubscribe()
+  listeners.add(onUser)
+  try { onUser(await call('me')) } catch { onUser(null) }
+  return () => listeners.delete(onUser)
 }
 
-export async function fetchRemote(userId) {
-  const sb = await getClient()
-  const { data, error } = await sb.from('progress').select('data').eq('user_id', userId).maybeSingle()
-  if (error) throw error
-  return data?.data ?? null
-}
-
-export async function pushRemote(userId, state) {
-  const sb = await getClient()
-  const { error } = await sb.from('progress').upsert({ user_id: userId, data: state, updated_at: new Date().toISOString() })
-  if (error) throw error
-}
+export const fetchRemote = async () => (await call('progress')).data ?? null
+export const pushRemote = (_userId, state) => call('progress', 'PUT', state)

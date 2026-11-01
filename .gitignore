@@ -162,3 +162,14 @@ backup_giao_dien_*/
 xem_truoc_giao_dien/
 .env.local
 .env
+
+# Danh sách học viên (số điện thoại) cho scripts/tao_tai_khoan.py
+hoc_vien*.txt
+# Danh sách lớp (có số điện thoại học viên) và tài liệu gốc
+*.xlsx
+*.xls
+*.csv
+PPT*/
+# Slide/âm thanh các cấp mới chỉ đưa lên R2, không đưa vào git (HSK1 giữ lại như cũ)
+public/media/*
+!public/media/hsk1/

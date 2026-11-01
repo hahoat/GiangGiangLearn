@@ -1,7 +1,21 @@
-// Cấu hình Cloudflare Workers: chỉ phục vụ file tĩnh trong dist/ (sau khi chạy pnpm build).
-// "name" phải trùng tên project trên Cloudflare.
+// Cấu hình Cloudflare Workers. "name" phải trùng tên project trên Cloudflare.
+//   - File tĩnh của web: dist/ (sau khi chạy pnpm build)
+//   - worker/index.js chỉ chạy cho /api/* (đăng nhập, tiến độ) và /data/* (bài học, slide từ R2)
 {
   "name": "gianggianglearn",
+  "main": "worker/index.js",
   "compatibility_date": "2025-09-01",
-  "assets": { "directory": "./dist" }
+  "assets": {
+    "directory": "./dist",
+    "binding": "ASSETS",
+    "run_worker_first": ["/api/*", "/data/*"]
+  },
+  // Cơ sở dữ liệu tài khoản + tiến độ. database_id: Cloudflare → Storage & databases → D1 → giang-giang
+  "d1_databases": [
+    { "binding": "DB", "database_name": "giang-giang", "database_id": "d9f02b02-c765-494b-a376-7741a56c8962" }
+  ],
+  // Bucket chứa content/ và media/ (tải lên bằng scripts/tai_len_r2.sh)
+  "r2_buckets": [
+    { "binding": "MEDIA", "bucket_name": "giang-giang-media" }
+  ]
 }

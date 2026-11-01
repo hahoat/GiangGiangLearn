@@ -36,10 +36,6 @@ jobs:
       - name: Build
         run: pnpm build
         env:
-          # Đặt trong Settings → Secrets and variables → Actions → Variables (để trống thì tắt đăng nhập/đồng bộ)
-          VITE_SUPABASE_URL: ${{ vars.VITE_SUPABASE_URL }}
-          VITE_SUPABASE_ANON_KEY: ${{ vars.VITE_SUPABASE_ANON_KEY }}
-          VITE_SUPABASE_GOOGLE: ${{ vars.VITE_SUPABASE_GOOGLE }}
           # Để trống = nội dung + slide lấy từ chính trang web; đặt địa chỉ công khai của bucket R2 để đọc từ R2
           VITE_DATA_BASE: ${{ vars.VITE_DATA_BASE }}
           VITE_MEDIA_BASE: ${{ vars.VITE_MEDIA_BASE }}

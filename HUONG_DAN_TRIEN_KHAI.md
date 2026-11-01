@@ -13,7 +13,7 @@
 4. Mỗi lần `git push`, GitHub tự chạy test, build và phát hành. Web có địa chỉ:
    `https://<tài-khoản>.github.io/GiangGiangLearn/`
 
-Chưa cấu hình Supabase thì web vẫn chạy đầy đủ; tiến độ lưu trong trình duyệt của từng học viên.
+Bản trên GitHub Pages không có đăng nhập (mở thẳng, tiến độ lưu trong trình duyệt). Đăng nhập chỉ có khi chạy trên Cloudflare Workers (mục 2).
 
 ## 1b. Đưa web lên Cloudflare Pages
 
@@ -24,28 +24,38 @@ Chưa cấu hình Supabase thì web vẫn chạy đầy đủ; tiến độ lưu
    - Framework preset: `Vite` (hoặc None)
    - Build command: `pnpm build`
    - Build output directory: `dist`
-   - Environment variables: `NODE_VERSION` = `22` (thêm các biến `VITE_SUPABASE_*`, `VITE_MEDIA_BASE` nếu có, giống GitHub)
+   - Environment variables: `NODE_VERSION` = `22` (thêm `VITE_DATA_BASE` nếu có, giống GitHub)
 4. **Save and Deploy**. Web có địa chỉ `https://<tên-dự-án>.pages.dev/`. Mỗi lần `git push` Cloudflare tự build lại.
 5. (Tùy chọn) **Custom domains** để gắn tên miền riêng.
 
 Không cần sửa `base`: khi build trên Cloudflare (có biến `CF_PAGES`), web tự chạy ở gốc tên miền.
-Nếu bật Supabase, nhớ thêm địa chỉ Cloudflare vào **Redirect URLs** của Supabase.
 
-## 2. Bật đăng nhập + đồng bộ tiến độ (Supabase, tùy chọn)
+## 2. Đăng nhập bằng số điện thoại (Cloudflare Workers + D1)
 
-1. Tạo dự án miễn phí tại https://supabase.com.
-2. **SQL Editor** → dán nội dung `supabase/schema.sql` → Run.
-3. **Authentication → URL Configuration**:
-   - Site URL: `https://<tài-khoản>.github.io/GiangGiangLearn/`
-   - Redirect URLs: thêm cùng địa chỉ đó (và `http://localhost:5173/GiangGiangLearn/` nếu chạy thử trên máy).
-4. **Project Settings → API**: chép *Project URL* và khóa *anon public*.
-5. Trên GitHub: **Settings → Secrets and variables → Actions → Variables** → thêm:
-   - `VITE_SUPABASE_URL` = Project URL
-   - `VITE_SUPABASE_ANON_KEY` = khóa anon public (khóa này được phép công khai; dữ liệu đã được bảo vệ bằng chính sách ở bước 2)
-   - (tùy chọn) `VITE_SUPABASE_GOOGLE` = `1` nếu đã bật đăng nhập Google trong Authentication → Providers.
-6. Chạy lại workflow (Actions → Deploy to GitHub Pages → Run workflow). Nút **Đăng nhập** sẽ xuất hiện.
+Web chạy trên **Cloudflare Workers** (`wrangler.jsonc`) thì bắt buộc đăng nhập: tài khoản = **số điện thoại** học viên, mật khẩu mặc định **12345678**, do giáo viên tạo; học viên không tự đăng ký được. Tài khoản và tiến độ học lưu trong cơ sở dữ liệu **D1**. Bài học, slide, âm thanh trên R2 chỉ được gửi cho người đã đăng nhập.
 
-Chạy thử trên máy: tạo file `.env.local` (đã bị git bỏ qua) với hai dòng `VITE_SUPABASE_URL=…` và `VITE_SUPABASE_ANON_KEY=…`, rồi `pnpm dev`.
+**Cài một lần**
+1. Cloudflare → **Storage & databases → D1 SQL Database → Create** → tên `giang-giang` → **Create**. Không cần tạo bảng: web tự tạo ở lần chạy đầu.
+2. Chép **Database ID** (ở trang của database vừa tạo), dán vào `wrangler.jsonc` thay cho `DIEN_DATABASE_ID_VAO_DAY`, rồi `git push`.
+3. Kiểm tra `bucket_name` trong `wrangler.jsonc` trùng tên bucket R2 (mặc định `giang-giang-media`).
+4. Worker (**Workers & Pages → gianggianglearn**) tự build lại sau khi push. Mở web sẽ thấy màn hình đăng nhập.
+
+**Tạo API token cho script quản lý tài khoản** (một lần): Cloudflare → ảnh đại diện → **My Profile → API Tokens → Create Token → Custom token** → Permissions: `Account` · `D1` · `Edit` → **Create Token**. Chép token, cất ở chỗ an toàn (chỉ hiện một lần).
+
+**Tạo tài khoản học viên**
+1. Tạo file `hoc_vien.txt` trong thư mục dự án (git đã bỏ qua file này), mỗi dòng một học viên:
+   ```
+   0912345678 | Nguyễn Văn An
+   0987654321 | Trần Thị Bình
+   ```
+2. Chạy `python3 scripts/tao_tai_khoan.py hoc_vien.txt`, nhập Account ID và API token khi được hỏi.
+   Thêm học viên: ghi thêm vào file rồi chạy lại – người đã có tài khoản được bỏ qua.
+3. Quên mật khẩu: `python3 scripts/tao_tai_khoan.py --dat-lai 0912345678` → mật khẩu về 12345678.
+4. Xóa học viên: `python3 scripts/tao_tai_khoan.py --xoa 0912345678`. Xem danh sách: `--danh-sach`.
+
+Học viên tự đổi mật khẩu ở nút 👤 góc phải web. Nên nhắc học viên đổi, vì ai biết số điện thoại cũng thử được mật khẩu 12345678. Nhập sai mật khẩu 10 lần liên tiếp thì tài khoản bị khóa 15 phút.
+
+Chạy thử trên máy bằng `pnpm dev` thì không có đăng nhập (web mở thẳng). Muốn thử cả đăng nhập: `pnpm build` rồi `npx wrangler dev` (dùng D1 và R2 giả lập trên máy).
 
 ## 3. Thêm nội dung bài học (HSK 2–5, YCT 1–6)
 
@@ -59,24 +69,18 @@ Danh sách 11 cấp nằm trong `content-src/courses.json`; cấp chưa có bài
 
 ## 4. Dữ liệu học tập trên Cloudflare R2
 
-Web đọc nội dung bài học (`content/`) và slide, âm thanh (`media/`) từ R2 khi build có biến `VITE_DATA_BASE`.
+Bài học (`content/`) và slide, âm thanh (`media/`) nằm trong bucket R2. Trên Cloudflare Workers, Worker đọc bucket trực tiếp (binding `MEDIA` trong `wrangler.jsonc`) và chỉ gửi cho người đã đăng nhập – **không cần** bật địa chỉ công khai, CORS hay biến `VITE_DATA_BASE`.
 
-1. **R2 → Create bucket** (ví dụ `giang-giang-media`).
-2. Bucket → **Settings → Public access**: bật *R2.dev subdomain* (hoặc gắn *Custom domain*, nên dùng cho web thật). Chép địa chỉ công khai.
-3. Bucket → **Settings → CORS policy → Add**, dán:
-   ```json
-   [{"AllowedOrigins":["*"],"AllowedMethods":["GET","HEAD"],"AllowedHeaders":["*"],"MaxAgeSeconds":3600}]
-   ```
-4. **R2 → Manage API tokens → Create API token**, quyền *Object Read & Write* cho bucket này. Chép Access Key ID, Secret Access Key.
-5. Tải dữ liệu lên: `bash scripts/tai_len_r2.sh` (cần `sudo apt install rclone`).
-6. Thêm biến `VITE_DATA_BASE` = địa chỉ công khai của bucket:
-   - Cloudflare Worker: **Settings → Build → Variables and secrets**
-   - GitHub: **Settings → Secrets and variables → Actions → Variables**
-   rồi build lại (push code hoặc bấm deploy lại).
+1. **R2 → Create bucket** (ví dụ `giang-giang-media`; tên phải trùng `bucket_name` trong `wrangler.jsonc`).
+2. **R2 → Manage API tokens → Create API token**, quyền *Object Read & Write* cho bucket này. Chép Access Key ID, Secret Access Key.
+3. Tải dữ liệu lên: `bash scripts/tai_len_r2.sh` (cần `sudo apt install rclone`).
+4. Nếu trước đây đã bật **Settings → Public Development URL** cho bucket thì **tắt** đi, để người chưa đăng nhập không mở được file bằng link trực tiếp.
 
 Sửa dữ liệu: sửa `content-src/…` → `python3 scripts/build_content.py` → `bash scripts/tai_len_r2.sh content`.
 Không cần build lại web. Nội dung bài đổi ngay khi tải lại trang, ảnh/âm thanh đổi sau tối đa 10 phút.
 Nếu thay file trực tiếp trên trang R2, lần chạy script sau sẽ ghi đè bằng bản trên máy, nên sửa ở máy rồi tải lên là chắc chắn nhất.
+
+(Bản GitHub Pages không có Worker: muốn nó đọc từ R2 thì phải bật Public Development URL, thêm CORS `[{"AllowedOrigins":["*"],"AllowedMethods":["GET","HEAD"],"AllowedHeaders":["*"],"MaxAgeSeconds":3600}]` và đặt biến `VITE_DATA_BASE` = địa chỉ công khai của bucket – khi đó dữ liệu là công khai.)
 
 ## 5. Video trong bài giảng
 

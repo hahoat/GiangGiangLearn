@@ -13,13 +13,13 @@ Cần Node.js ≥ 20.19 và pnpm 9. Mở địa chỉ Vite hiển thị trong te
 
 - Nội dung bài học: `content-src/` → `python3 scripts/build_content.py` → `public/content/`
 - Bài giảng (ảnh slide, âm thanh): `public/media/`
-- Triển khai, Supabase, thêm cấp mới: xem `HUONG_DAN_TRIEN_KHAI.md`
+- Triển khai, đăng nhập (Cloudflare D1), thêm cấp mới: xem `HUONG_DAN_TRIEN_KHAI.md`
 
 ## Tính năng
 
 - 11 cấp giáo trình: HSK 1–5, YCT 1–6 (HSK 1 đã đủ 16 bài; các cấp khác đang cập nhật).
 - Mỗi bài: Bài giảng (slide + âm thanh) → Ôn tập (Flashcard, Ngữ pháp, Từ vựng) → Thực hành (Bài khóa, 15 câu Chọn đáp án, 15 câu Sắp xếp, 15 câu Điền đáp án).
-- Đăng nhập bằng email và đồng bộ tiến độ giữa các thiết bị (Supabase, tùy chọn).
+- Bắt buộc đăng nhập bằng số điện thoại (tài khoản do giáo viên cấp), đồng bộ tiến độ giữa các thiết bị (Cloudflare Workers + D1).
 
 - Pinyin hiển thị phía trên chữ Hán, tô màu theo thanh điệu (bật/tắt được).
 - Chạm vào bất kỳ từ nào trong hội thoại, bài khóa, ví dụ để xem nghĩa, nghe phát âm, thêm vào bộ ôn tập.

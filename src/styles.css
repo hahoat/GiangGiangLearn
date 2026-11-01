@@ -452,3 +452,11 @@ a.btn { text-decoration: none }
   .step-nav { bottom: 10px }
   .step-count { display: none }
 }
+
+/* ---- Màn hình đăng nhập (bắt buộc khi bật Supabase) ---- */
+.login-screen { min-height: 100vh; display: grid; place-items: center; padding: 20px; background: var(--bg) }
+.login-card { width: min(380px, 100%); padding: 28px 24px; border-radius: 20px; background: var(--surface); border: 1px solid var(--line); box-shadow: 0 20px 50px #0001 }
+.login-card h1 { margin: 4px 0 6px; font-size: 22px }
+.login-card label { display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 600 }
+.login-brand { display: flex; align-items: center; gap: 10px }
+.drawer h3 { margin: 22px 0 0; font-size: 16px }

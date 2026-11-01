@@ -1,11 +1,12 @@
-// Nạp nội dung bài học (JSON) và bài giảng (ảnh slide, âm thanh).
-// Mặc định lấy từ chính trang web; đặt VITE_DATA_BASE = địa chỉ công khai của bucket R2
-// (trong bucket có 2 thư mục content/ và media/) để web đọc thẳng từ R2.
+// Nạp nội dung bài học (JSON) và bài giảng (ảnh slide, âm thanh). Trong bucket R2 có 2 thư mục content/ và media/.
+//   - Bật đăng nhập (build trên Cloudflare Workers): lấy qua /data/ – Worker chỉ gửi cho người đã đăng nhập.
+//   - Không đăng nhập: lấy từ chính trang web, hoặc thẳng từ R2 nếu đặt VITE_DATA_BASE = địa chỉ công khai của bucket.
+/* global __LOGIN__ */
 const slash = url => url.replace(/\/?$/, '/')
 const BASE = import.meta.env.BASE_URL
-const DATA_BASE = import.meta.env.VITE_DATA_BASE ? slash(import.meta.env.VITE_DATA_BASE) : BASE
+const DATA_BASE = __LOGIN__ ? `${BASE}data/` : import.meta.env.VITE_DATA_BASE ? slash(import.meta.env.VITE_DATA_BASE) : BASE
 const CONTENT_BASE = `${DATA_BASE}content/`
-export const MEDIA_BASE = slash(import.meta.env.VITE_MEDIA_BASE || `${DATA_BASE}media/`)
+export const MEDIA_BASE = __LOGIN__ ? `${DATA_BASE}media/` : slash(import.meta.env.VITE_MEDIA_BASE || `${DATA_BASE}media/`)
 
 const cache = new Map()
 

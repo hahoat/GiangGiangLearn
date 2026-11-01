@@ -3,7 +3,7 @@ import { createRoot } from 'react-dom/client'
 import { dayKey, isDue, schedule, setGlossary, streakOf } from './lib/chinese.js'
 import { loadGlossary, loadIndex, loadLesson } from './lib/content.js'
 import { mergeState } from './lib/merge.js'
-import { fetchRemote, googleEnabled, pushRemote, signInWithEmail, signInWithGoogle, signOut, syncEnabled, watchUser } from './lib/sync.js'
+import { changePassword, fetchRemote, normalizePhone, phoneOf, pushRemote, signInWithPhone, signOut, syncEnabled, watchUser } from './lib/sync.js'
 import { AppContext, Sentence, WordPopover, useApp } from './ui.jsx'
 import { FlashcardStep, GrammarStep, LectureStep, PracticeStep, ReadingStep, ReviewView, VocabStep, steps } from './steps.jsx'
 import './styles.css'
@@ -45,9 +45,7 @@ function Header({ view, dueCount, onReview, onLesson, onSettings, onMenu, onLogi
       <button className={view === 'review' ? 'active' : ''} onClick={onReview}>🔁 <span>Ôn tập</span>{dueCount > 0 && <i className="badge">{dueCount}</i>}</button>
     </nav>
     <button className="icon-btn" onClick={onSettings} aria-label="Cài đặt hiển thị" title="Cài đặt hiển thị">Aa</button>
-    {syncEnabled && <button className={`icon-btn user-btn ${user ? 'in' : ''}`} onClick={onLogin} title={user ? user.email : 'Đăng nhập để đồng bộ tiến độ'}>
-      {user ? (user.email?.[0] ?? '✓').toUpperCase() : <><span className="only-wide">Đăng nhập</span><span className="only-narrow">👤</span></>}
-    </button>}
+    {syncEnabled && user && <button className="icon-btn user-btn in" onClick={onLogin} title={`Tài khoản ${phoneOf(user)}`} aria-label="Tài khoản">👤</button>}
   </header>
 }
 
@@ -122,34 +120,61 @@ function SettingsPanel({ open, onClose }) {
   </>
 }
 
-function LoginPanel({ open, onClose, user, syncState }) {
-  const [email, setEmail] = useState('')
+function LoginScreen() {
+  const [phone, setPhone] = useState('')
+  const [password, setPassword] = useState('')
   const [status, setStatus] = useState(null)
-  const send = async e => {
+  const submit = async e => {
     e.preventDefault()
+    const p = normalizePhone(phone)
+    if (!p) { setStatus('error:Số điện thoại chưa đúng (ví dụ 0912345678).'); return }
     setStatus('sending')
-    try { await signInWithEmail(email.trim()); setStatus('sent') } catch (err) { setStatus(`error:${err.message}`) }
+    try { await signInWithPhone(p, password) } catch (err) { setStatus(`error:${err.message}`) }
+  }
+  return <div className="login-screen">
+    <form className="login-card login-form" onSubmit={submit}>
+      <div className="login-brand"><span className="logo-mark">江</span><b>Tiếng Trung Giang Giang</b></div>
+      <h1>Đăng nhập</h1>
+      <label>Số điện thoại
+        <input type="tel" inputMode="tel" required value={phone} onChange={e => setPhone(e.target.value)} placeholder="0912345678" autoComplete="username" autoFocus />
+      </label>
+      <label>Mật khẩu
+        <input type="password" required value={password} onChange={e => setPassword(e.target.value)} placeholder="Mật khẩu" autoComplete="current-password" />
+      </label>
+      <button className="btn btn-primary" disabled={status === 'sending'}>{status === 'sending' ? 'Đang đăng nhập…' : 'Đăng nhập'}</button>
+      {status?.startsWith('error:') && <p className="sync-state error">⚠ {status.slice(6)}</p>}
+      <p className="muted small">Tài khoản do giáo viên cấp. Quên mật khẩu hoặc chưa có tài khoản, hãy liên hệ giáo viên.</p>
+    </form>
+  </div>
+}
+
+function AccountPanel({ open, onClose, user, syncState }) {
+  const [pw, setPw] = useState('')
+  const [pw2, setPw2] = useState('')
+  const [status, setStatus] = useState(null)
+  const submit = async e => {
+    e.preventDefault()
+    if (pw.length < 6) { setStatus('error:Mật khẩu mới cần ít nhất 6 ký tự.'); return }
+    if (pw !== pw2) { setStatus('error:Hai lần nhập mật khẩu chưa giống nhau.'); return }
+    setStatus('saving')
+    try { await changePassword(pw); setPw(''); setPw2(''); setStatus('done') } catch (err) { setStatus(`error:${err.message}`) }
   }
   return <>
     <div className={`backdrop ${open ? 'show' : ''}`} onClick={onClose} />
     <aside className={`drawer ${open ? 'open' : ''}`} aria-hidden={!open}>
-      <div className="drawer-head"><h2>{user ? 'Tài khoản' : 'Đăng nhập'}</h2><button className="icon-btn" onClick={onClose} aria-label="Đóng">×</button></div>
-      {user ? <>
-        <p className="account">Đang đăng nhập: <b>{user.email}</b></p>
-        <p className={`sync-state ${syncState}`}>{{ idle: '✓ Tiến độ đã được đồng bộ', saving: '… Đang lưu lên tài khoản', error: '⚠ Chưa đồng bộ được – sẽ thử lại khi có mạng', loading: '… Đang tải tiến độ từ tài khoản' }[syncState]}</p>
-        <p className="muted small">Tiến độ học, lịch ôn tập và XP được lưu vào tài khoản. Đăng nhập cùng email trên máy khác để học tiếp.</p>
-        <button className="btn btn-ghost" onClick={() => { signOut(); onClose() }}>Đăng xuất</button>
-      </> : <>
-        <p className="muted small">Đăng nhập để lưu tiến độ vào tài khoản và học tiếp trên điện thoại, máy tính khác. Không cần mật khẩu: web sẽ gửi đường link đăng nhập vào email của bạn.</p>
-        {status === 'sent' ? <p className="sync-state idle">📧 Đã gửi link đăng nhập tới <b>{email}</b>. Mở email trên máy này và bấm vào link.</p>
-          : <form className="login-form" onSubmit={send}>
-            <input type="email" required value={email} onChange={e => setEmail(e.target.value)} placeholder="email@cua-ban.com" autoComplete="email" />
-            <button className="btn btn-primary" disabled={status === 'sending'}>{status === 'sending' ? 'Đang gửi…' : 'Gửi link đăng nhập'}</button>
-          </form>}
-        {status?.startsWith('error:') && <p className="sync-state error">⚠ {status.slice(6)}</p>}
-        {googleEnabled && <button className="btn btn-ghost btn-block" onClick={() => signInWithGoogle()}>Đăng nhập bằng Google</button>}
-        <p className="muted small">Chưa đăng nhập vẫn học bình thường; tiến độ được lưu trên máy này và sẽ được gộp vào tài khoản khi bạn đăng nhập.</p>
-      </>}
+      <div className="drawer-head"><h2>Tài khoản</h2><button className="icon-btn" onClick={onClose} aria-label="Đóng">×</button></div>
+      <p className="account">Số điện thoại: <b>{phoneOf(user)}</b></p>
+      <p className={`sync-state ${syncState}`}>{{ idle: '✓ Tiến độ đã được đồng bộ', saving: '… Đang lưu lên tài khoản', error: '⚠ Chưa đồng bộ được – sẽ thử lại khi có mạng', loading: '… Đang tải tiến độ từ tài khoản' }[syncState]}</p>
+      <p className="muted small">Tiến độ học, lịch ôn tập và XP được lưu vào tài khoản. Đăng nhập trên máy khác để học tiếp.</p>
+      <h3>Đổi mật khẩu</h3>
+      <form className="login-form" onSubmit={submit}>
+        <input type="password" value={pw} onChange={e => { setPw(e.target.value); setStatus(null) }} placeholder="Mật khẩu mới" autoComplete="new-password" />
+        <input type="password" value={pw2} onChange={e => { setPw2(e.target.value); setStatus(null) }} placeholder="Nhập lại mật khẩu mới" autoComplete="new-password" />
+        <button className="btn btn-ghost" disabled={status === 'saving' || !pw}>{status === 'saving' ? 'Đang lưu…' : 'Đổi mật khẩu'}</button>
+      </form>
+      {status === 'done' && <p className="sync-state idle">✓ Đã đổi mật khẩu.</p>}
+      {status?.startsWith('error:') && <p className="sync-state error">⚠ {status.slice(6)}</p>}
+      <button className="btn btn-ghost btn-block" onClick={() => { signOut(); onClose() }}>Đăng xuất</button>
     </aside>
   </>
 }
@@ -262,6 +287,7 @@ function App() {
   const [popover, setPopover] = useState(null)
   const [toast, setToast] = useState(null)
   const [user, setUser] = useState(null)
+  const [authChecked, setAuthChecked] = useState(!syncEnabled)
   const [syncState, setSyncState] = useState('idle')
   const remoteReady = useRef(false)
 
@@ -272,16 +298,17 @@ function App() {
   }, [s.dark, s.size])
 
   useEffect(() => {
+    if (syncEnabled && !user) return   // bài học chỉ tải được sau khi đăng nhập
     Promise.all([loadIndex(), loadGlossary()])
-      .then(([index, glossary]) => { setGlossary(glossary); setCourses(index) })
+      .then(([index, glossary]) => { setGlossary(glossary); setCourses(index); setLoadError(false) })
       .catch(() => setLoadError(true))
-  }, [])
+  }, [user])
 
   /* ---- Đăng nhập & đồng bộ ---- */
   useEffect(() => {
     if (!syncEnabled) return
     let stop = () => {}
-    watchUser(setUser).then(unsub => { stop = unsub })
+    watchUser(u => { setUser(u); setAuthChecked(true) }).then(unsub => { stop = unsub })
     return () => stop()
   }, [])
   useEffect(() => {
@@ -289,10 +316,14 @@ function App() {
     if (!user) return
     let alive = true
     setSyncState('loading')
-    fetchRemote(user.id)
+    fetchRemote()
       .then(remote => {
         if (!alive) return
-        const merged = mergeState({ progress, srs, log }, remote ?? {})
+        // Máy dùng chung: tiến độ đang lưu trên máy là của người khác thì bỏ, không gộp vào tài khoản này.
+        const owner = localStorage.getItem('gg-owner')
+        const local = owner && owner !== user.id ? {} : { progress, srs, log }
+        localStorage.setItem('gg-owner', user.id)
+        const merged = mergeState(local, remote ?? {})
         setProgress(merged.progress); setSrs(merged.srs); setLog(merged.log)
         remoteReady.current = true
         return pushRemote(user.id, merged).then(() => setSyncState('idle'))
@@ -336,6 +367,8 @@ function App() {
   const openWord = useCallback((word, anchor) => setPopover({ word, anchor }), [])
   const closeWord = useCallback(() => setPopover(null), [])
 
+  if (!authChecked) return <div className="boot">Đang tải…</div>
+  if (syncEnabled && !user) return <LoginScreen />
   if (loadError) return <div className="boot">Không tải được nội dung. Kiểm tra kết nối mạng rồi tải lại trang.</div>
   if (!courses) return <div className="boot">Đang tải…</div>
 
@@ -367,7 +400,7 @@ function App() {
         </main>
       </div>
       <SettingsPanel open={panel === 'settings'} onClose={() => setPanel(null)} />
-      {syncEnabled && <LoginPanel open={panel === 'login'} onClose={() => setPanel(null)} user={user} syncState={syncState} />}
+      {syncEnabled && user && <AccountPanel open={panel === 'login'} onClose={() => setPanel(null)} user={user} syncState={syncState} />}
       {popover && <WordPopover {...popover} onClose={closeWord} />}
       {toast && <div className="toast" role="status">{toast}</div>}
     </div>
