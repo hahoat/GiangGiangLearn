@@ -57,12 +57,26 @@ Chạy thử trên máy: tạo file `.env.local` (đã bị git bỏ qua) với 
 
 Danh sách 11 cấp nằm trong `content-src/courses.json`; cấp chưa có bài sẽ hiện "đang cập nhật".
 
-## 4. Khi dung lượng ảnh/âm thanh lớn dần
+## 4. Dữ liệu học tập trên Cloudflare R2
 
-Hiện ảnh slide nằm ngay trong repo (`public/media`, HSK 1 ≈ 58 MB). Khi repo gần 1 GB:
-1. Tạo bucket Cloudflare R2 (hoặc CDN khác), bật truy cập công khai.
-2. Tải thư mục `public/media/` lên bucket, giữ nguyên cấu trúc.
-3. Thêm biến GitHub `VITE_MEDIA_BASE` = địa chỉ công khai của bucket (ví dụ `https://media.giang-giang.vn/`), rồi xóa `public/media` khỏi repo.
+Web đọc nội dung bài học (`content/`) và slide, âm thanh (`media/`) từ R2 khi build có biến `VITE_DATA_BASE`.
+
+1. **R2 → Create bucket** (ví dụ `giang-giang-media`).
+2. Bucket → **Settings → Public access**: bật *R2.dev subdomain* (hoặc gắn *Custom domain*, nên dùng cho web thật). Chép địa chỉ công khai.
+3. Bucket → **Settings → CORS policy → Add**, dán:
+   ```json
+   [{"AllowedOrigins":["*"],"AllowedMethods":["GET","HEAD"],"AllowedHeaders":["*"],"MaxAgeSeconds":3600}]
+   ```
+4. **R2 → Manage API tokens → Create API token**, quyền *Object Read & Write* cho bucket này. Chép Access Key ID, Secret Access Key.
+5. Tải dữ liệu lên: `bash scripts/tai_len_r2.sh` (cần `sudo apt install rclone`).
+6. Thêm biến `VITE_DATA_BASE` = địa chỉ công khai của bucket:
+   - Cloudflare Worker: **Settings → Build → Variables and secrets**
+   - GitHub: **Settings → Secrets and variables → Actions → Variables**
+   rồi build lại (push code hoặc bấm deploy lại).
+
+Sửa dữ liệu: sửa `content-src/…` → `python3 scripts/build_content.py` → `bash scripts/tai_len_r2.sh content`.
+Không cần build lại web. Nội dung bài đổi ngay khi tải lại trang, ảnh/âm thanh đổi sau tối đa 10 phút.
+Nếu thay file trực tiếp trên trang R2, lần chạy script sau sẽ ghi đè bằng bản trên máy, nên sửa ở máy rồi tải lên là chắc chắn nhất.
 
 ## 5. Video trong bài giảng
 
