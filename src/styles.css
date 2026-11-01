@@ -481,3 +481,10 @@ a.btn { text-decoration: none }
 .admin-actions .btn { padding: 6px 10px; font-size: 13px }
 .admin-actions .danger { color: var(--bad) }
 .admin-badge { margin-left: 8px; padding: 2px 8px; border-radius: 999px; background: var(--brand-soft); color: var(--brand-ink); font-size: 11px; font-style: normal; font-weight: 600 }
+
+/* Xác nhận sau khi tự chấm thẻ */
+.grade-note { margin: 0 0 8px; min-height: 20px; text-align: center; font-size: 13px; font-weight: 600; color: var(--muted); animation: grade-note-in .25s ease }
+.grade-note.good { color: var(--ok) }
+.grade-note.hard { color: #b7791f }
+.grade-note.again { color: var(--bad) }
+@keyframes grade-note-in { from { opacity: 0; transform: translateY(-4px) } }

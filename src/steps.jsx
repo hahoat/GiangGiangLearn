@@ -202,6 +202,11 @@ function GradeBar({ entry, flipped, setFlipped, grade, skip }) {
   </div>
 }
 
+// Dòng xác nhận sau khi chấm: thẻ mới hiện ngay ở mặt trước nên cần cho người học biết lượt chấm đã được ghi nhận
+const GradeNote = ({ last }) => last
+  ? <p className={`grade-note ${last.id}`} key={last.n} role="status">✓ {last.han} – {grades.find(g => g.id === last.id).label} · +1 XP</p>
+  : <p className="grade-note" aria-hidden="true">&nbsp;</p>
+
 const keyHelp = <p className="kbd-help">Phím tắt: <kbd>Space</kbd> lật thẻ · <kbd>1</kbd>–<kbd>3</kbd> tự chấm · <kbd>→</kbd> từ khác</p>
 
 export function FlashcardStep({ lesson, onDone }) {
@@ -209,9 +214,11 @@ export function FlashcardStep({ lesson, onDone }) {
   const cards = lesson.vocab
   const [i, setI] = useState(0)
   const [flipped, setFlipped] = useState(false)
+  const [last, setLast] = useState(null)
   const card = cards[i]
   const grade = useCallback(g => {
     rate(card, g)
+    setLast(l => ({ han: card.han, id: g, n: (l?.n ?? 0) + 1 }))
     setFlipped(false)
     if (i + 1 < cards.length) setI(i + 1); else onDone()
   }, [card, cards.length, i, onDone, rate])
@@ -220,7 +227,9 @@ export function FlashcardStep({ lesson, onDone }) {
   return <>
     <StepHead title="Flashcard" desc="Mặt trước là chữ Hán. Tự nhớ cách đọc và nghĩa, lật thẻ để xem pinyin + nghĩa, nghe cách đọc rồi tự chấm. Từ chấm “Chưa nhớ/Không chắc” sẽ quay lại sớm trong trang Ôn tập."><span className="counter">{i + 1}/{cards.length}</span></StepHead>
     <div className="progress-line"><i style={{ width: `${(i / cards.length) * 100}%` }} /></div>
-    <CardView card={card} flipped={flipped} setFlipped={setFlipped} />
+    <GradeNote last={last} />
+    {/* key: mỗi thẻ là một thẻ mới, hiện thẳng mặt trước – không xoay ngược từ mặt sau của thẻ trước */}
+    <CardView key={i} card={card} flipped={flipped} setFlipped={setFlipped} />
     <GradeBar entry={srs[card.han]} flipped={flipped} setFlipped={setFlipped} grade={grade} skip={cards.length > 1 ? skip : null} />
     {keyHelp}
   </>
@@ -406,16 +415,20 @@ export function ReviewView({ onBack }) {
   const [queue, setQueue] = useState(() => Object.entries(srs).filter(([, e]) => e.card && isDue(e)).map(([han]) => han))
   const [flipped, setFlipped] = useState(false)
   const [reviewed, setReviewed] = useState(0)
+  const [last, setLast] = useState(null)
+  const [turn, setTurn] = useState(0)
   const entry = srs[queue[0]]
   const card = entry?.card
   const grade = useCallback(g => {
     if (!card) return
     rate(card, g)
+    setLast(l => ({ han: card.han, id: g, n: (l?.n ?? 0) + 1 }))
+    setTurn(n => n + 1)
     setReviewed(n => n + 1)
     setFlipped(false)
     setQueue(q => (g === 'again' ? [...q.slice(1), q[0]] : q.slice(1)))
   }, [card, rate])
-  const skip = useCallback(() => { setFlipped(false); setQueue(q => [...q.slice(1), q[0]]) }, [])
+  const skip = useCallback(() => { setFlipped(false); setTurn(n => n + 1); setQueue(q => [...q.slice(1), q[0]]) }, [])
   useCardKeys(flipped, setFlipped, grade, skip)
   const learned = Object.values(srs).filter(e => e.card).length
   if (!card) return <div className="lesson"><section className="step-card empty-state">
@@ -428,7 +441,8 @@ export function ReviewView({ onBack }) {
     <section className="lesson-head"><div><span className="crumb">Lặp lại ngắt quãng</span><h1 className="plain-title">Ôn tập hôm nay</h1><p>Còn {queue.length} thẻ · đã ôn {reviewed}</p></div></section>
     <section className="step-card">
       <div className="progress-line"><i style={{ width: `${(reviewed / (reviewed + queue.length)) * 100}%` }} /></div>
-      <CardView card={card} flipped={flipped} setFlipped={setFlipped} />
+      <GradeNote last={last} />
+      <CardView key={turn} card={card} flipped={flipped} setFlipped={setFlipped} />
       <GradeBar entry={entry} flipped={flipped} setFlipped={setFlipped} grade={grade} skip={queue.length > 1 ? skip : null} />
       {keyHelp}
     </section>
