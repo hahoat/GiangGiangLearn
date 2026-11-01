@@ -1,0 +1,102 @@
+id: 7
+title: 我的爱好是运动
+py: Wǒ de ài hào shì yùn dòng
+vi: Sở thích của tôi là thể thao
+goal: Nói về sở thích và các môn thể thao; dùng câu 一……就…… và bổ ngữ trạng thái với 得.
+slides: 07
+
+== vocab
+从 | cóng | giới từ | từ | 从家到公司要三十分钟。 | Từ nhà đến công ty mất ba mươi phút.
+往 | wǎng | giới từ | về phía, hướng về | 往前走，学校就在前面。 | Đi thẳng về phía trước, trường ở ngay phía trước.
+跑 | pǎo | động từ | chạy | 他跑出去了。 | Anh ấy chạy ra ngoài rồi.
+打 | dǎ | động từ | chơi, đánh | 你会打篮球吗？ | Bạn biết chơi bóng rổ không?
+篮球 | lán qiú | danh từ | bóng rổ | 下课后我们去打篮球。 | Tan học chúng tôi đi chơi bóng rổ.
+运动 | yùn dòng | động từ / danh từ | vận động; thể thao | 你喜欢什么运动？ | Bạn thích môn thể thao nào?
+踢 | tī | động từ | đá | 他踢得不错。 | Anh ấy đá khá tốt.
+足球 | zú qiú | danh từ | bóng đá | 星期天我跟朋友踢足球。 | Chủ nhật tôi đá bóng với bạn.
+球 | qiú | danh từ | quả bóng | 我们一起去踢球吧。 | Chúng ta cùng đi đá bóng đi.
+得 | de | trợ từ | (nối động từ với bổ ngữ trạng thái) | 他们跑得很快。 | Họ chạy rất nhanh.
+跑步 | pǎo bù | động từ | chạy bộ | 我很喜欢跑步。 | Tôi rất thích chạy bộ.
+游泳 | yóu yǒng | động từ | bơi lội | 他游泳游了一个下午。 | Anh ấy bơi cả một buổi chiều.
+游 | yóu | động từ | bơi | 小明游得很快。 | Tiểu Minh bơi rất nhanh.
+爱好 | ài hào | danh từ / động từ | sở thích; yêu thích | 你有什么爱好？ | Bạn có sở thích gì?
+开始 | kāi shǐ | động từ | bắt đầu | 电影几点开始？ | Phim mấy giờ bắt đầu?
+
+== grammar
+## Câu 一……就……
+一……就…… biểu thị hành động sau xảy ra ngay sau hành động trước (vừa … đã …), hoặc hễ có điều kiện trước là có kết quả sau (hễ … là …). Cùng chủ ngữ: chủ ngữ đứng trước 一. Khác chủ ngữ: chủ ngữ 1 trước 一, chủ ngữ 2 trước 就.
+f: Chủ ngữ + 一 + Động từ 1，(Chủ ngữ 2) + 就 + Động từ 2
+ex: 你怎么一下课就往外跑？ | Sao bạn vừa tan học đã chạy ra ngoài?
+ex: 我一到家，妈妈就打来电话了。 | Tôi vừa về đến nhà thì mẹ gọi điện đến.
+ex: 一到星期六，陈天中就跟同学去打篮球。 | Cứ đến thứ bảy là Trần Thiên Trung đi chơi bóng rổ với bạn.
+## Bổ ngữ trạng thái với 得
+Bổ ngữ trạng thái đứng sau 得 để nhận xét, đánh giá hành động. Phủ định: thêm 不 trước tính từ. Hỏi: thêm 吗, dùng dạng "tính từ 不 tính từ", hoặc 怎么样.
+f: Động từ + 得 + (很) + Tính từ · Động từ + 得 + 不 + Tính từ
+ex: 他们玩得很高兴。 | Họ chơi rất vui.
+ex: 你来得早不早？ | Bạn đến có sớm không?
+ex: 你踢得怎么样？ | Bạn đá thế nào?
+## Bổ ngữ trạng thái khi có tân ngữ
+Khi động từ có tân ngữ (hoặc là động từ li hợp), phải lặp lại động từ, hoặc đưa tân ngữ lên trước động từ.
+f: (Động từ) + Tân ngữ + Động từ + 得 + Tính từ
+ex: 他说中文说得很好。 | Anh ấy nói tiếng Trung rất giỏi.
+ex: 他中文说得很好。 | Tiếng Trung anh ấy nói rất giỏi.
+ex: 她睡觉睡得很早。 | Cô ấy ngủ rất sớm.
+
+== text Bài khóa 1
+安妮: 天中，你怎么一下课就往外跑？ | Thiên Trung, sao bạn vừa tan học đã chạy ra ngoài?
+陈天中: 安妮，你是什么时候从北京回来的？ | Annie, bạn từ Bắc Kinh về lúc nào vậy?
+安妮: 昨天下午。 | Chiều hôm qua.
+陈天中: 我跟同学说好了，一起去打篮球。 | Mình hẹn với bạn cùng lớp rồi, cùng đi chơi bóng rổ.
+安妮: 我也想跟你们一起玩。 | Mình cũng muốn chơi cùng các bạn.
+陈天中: 没问题，走吧。 | Không vấn đề gì, đi thôi.
+
+== text Bài khóa 2
+安妮: 天中，你是不是很喜欢打篮球？ | Thiên Trung, có phải bạn rất thích chơi bóng rổ không?
+陈天中: 没错。 | Đúng vậy.
+安妮: 你还喜欢什么运动？ | Bạn còn thích môn thể thao nào nữa?
+陈天中: 我还喜欢踢足球，一到星期天就跟朋友们去踢球。 | Mình còn thích đá bóng, cứ đến chủ nhật là đi đá bóng với các bạn.
+安妮: 你踢得怎么样？ | Bạn đá thế nào?
+陈天中: 我踢得还可以。 | Mình đá cũng tạm được.
+
+== text Bài khóa 3
+陈天中: 你篮球打得怎么样？ | Bạn chơi bóng rổ thế nào?
+安妮: 打得还可以。 | Cũng tạm được.
+陈天中: 跑步呢？你跑得快不快？ | Còn chạy bộ thì sao? Bạn chạy có nhanh không?
+安妮: 我跑得不快，也不太喜欢跑步。 | Mình chạy không nhanh, cũng không thích chạy bộ lắm.
+陈天中: 那你喜欢游泳吗？ | Vậy bạn có thích bơi không?
+安妮: 喜欢，但我游泳游得不太快。 | Thích, nhưng mình bơi không nhanh lắm.
+
+== text Bài khóa 4
+我的爱好是运动。从上小学开始，我每天都跟爸爸去运动。现在我篮球打得很好，足球踢得不错，游泳游得也很快。我一有时间就去运动。 | Sở thích của tôi là thể thao. Từ khi học tiểu học, ngày nào tôi cũng cùng bố đi tập thể thao. Bây giờ tôi chơi bóng rổ rất giỏi, đá bóng khá tốt, bơi cũng rất nhanh. Hễ có thời gian là tôi đi tập thể thao.
+
+== sentences
+从 家 到 公司 要 三十 分钟 。 | Từ nhà đến công ty mất ba mươi phút. | 从 | 往 离 跟
+往 前 走 ， 学校 就 在 前面 。 | Đi thẳng về phía trước, trường ở ngay phía trước. | 往 | 从 离 跟
+他 跑 出去 了 。 | Anh ấy chạy ra ngoài rồi. | 跑 | 踢 游 打
+你 会 打 篮球 吗 ？ | Bạn biết chơi bóng rổ không? | 打 | 踢 游 跑
+下课 后 我们 去 打 篮球 。 | Tan học chúng tôi đi chơi bóng rổ. | 篮球 | 足球 游泳 跑步
+你 喜欢 什么 运动 ？ | Bạn thích môn thể thao nào? | 运动 | 爱好 颜色 礼物
+他 踢 得 不错 。 | Anh ấy đá khá tốt. | 踢 | 打 游 跑
+星期天 我 跟 朋友 踢 足球 。 | Chủ nhật tôi đá bóng với bạn. | 足球 | 篮球 游泳 跑步
+他们 跑 得 很 快 。 | Họ chạy rất nhanh. | 得 | 地 的 了
+我 很 喜欢 跑步 。 | Tôi rất thích chạy bộ. | 跑步 | 篮球 足球 爱好
+他 游泳 游 了 一 个 下午 。 | Anh ấy bơi cả một buổi chiều. | 游泳 | 跑步 足球 篮球
+小明 游 得 很 快 。 | Tiểu Minh bơi rất nhanh. | 游 | 踢 打 跑
+你 有 什么 爱好 ？ | Bạn có sở thích gì? | 爱好 | 运动 颜色 礼物
+电影 几 点 开始 ？ | Phim mấy giờ bắt đầu? | 开始 | 准备 打开 回来
+你 怎么 一 下课 就 往 外 跑 ？ | Sao bạn vừa tan học đã chạy ra ngoài? | 就 | 也 都 还
+我 一 到 家 ， 妈妈 就 打来 电话 了 。 | Tôi vừa về đến nhà thì mẹ gọi điện đến. | 到 | 从 往 离
+他们 玩 得 很 高兴 。 | Họ chơi rất vui. | 高兴 | 舒服 快乐 不错
+你 来 得 早 吗 ？ | Bạn đến có sớm không? | 早 | 快 长 远
+他 说 中文 说 得 很 好 。 | Anh ấy nói tiếng Trung rất giỏi. | 好 | 快 长 远
+你 踢 得 怎么样 ？ | Bạn đá thế nào? | 怎么样 | 为什么 什么 哪儿
+我 还 喜欢 踢 足球 。 | Tôi còn thích đá bóng. | 足球 | 篮球 游泳 跑步
+我们 出去 运动 运动 吧 。 | Chúng ta ra ngoài vận động một chút đi. | 出去 | 进去 回去 过去
+你 是 什么 时候 从 北京 回来 的 ？ | Bạn từ Bắc Kinh về lúc nào? | 从 | 往 离 跟
+我 跑 得 不 快 ， 也 不 太 喜欢 跑步 。 | Tôi chạy không nhanh, cũng không thích chạy bộ lắm. | 跑步 | 篮球 足球 爱好
+我 游泳 游 得 不 太 快 。 | Tôi bơi không nhanh lắm. | 快 | 长 远 累
+我 的 爱好 是 运动 。 | Sở thích của tôi là thể thao. | 爱好 | 颜色 礼物 生日
+他 从 八 岁 就 开始 学 中文 了 。 | Anh ấy bắt đầu học tiếng Trung từ năm tám tuổi. | 开始 | 准备 打开 回来
+我 一 有 时间 就 去 运动 。 | Hễ có thời gian là tôi đi tập thể thao. | 运动 | 爱好 礼物 生日
+我 跟 同学 说好 了 ， 一起 去 打 篮球 。 | Tôi hẹn với bạn cùng lớp rồi, cùng đi chơi bóng rổ. | 一起 | 自己 每 已经
+她 睡觉 睡 得 很 早 。 | Cô ấy ngủ rất sớm. | 睡觉 | 跑步 游泳 运动

@@ -1,0 +1,99 @@
+id: 14
+title: 一个人过年多没意思啊
+py: Yí ge rén guò nián duō méi yì si a
+vi: Một mình đón Tết thật buồn biết bao
+goal: Miêu tả người, giới thiệu bạn bè, nói về nhà ở; dùng câu tồn hiện với 着, phó từ 多 trong câu cảm thán và bổ ngữ xu hướng kép.
+slides: 14
+
+== vocab
+站 | zhàn | động từ | đứng | 你家楼下站着一个人。 | Dưới nhà bạn có một người đang đứng.
+包 | bāo | danh từ | túi, cặp | 他手里拿着一个黑色的包。 | Tay anh ấy cầm một cái túi màu đen.
+过年 | guò nián | động từ | đón Tết, ăn Tết | 你们过年过得怎么样？ | Các bạn đón Tết thế nào?
+没意思 | méi yì si | tính từ | nhạt nhẽo, chán | 这个电影真没意思。 | Bộ phim này chán thật.
+位 | wèi | lượng từ | vị (lượng từ chỉ người, kính trọng) | 这位是我的汉语老师。 | Vị này là giáo viên tiếng Hán của tôi.
+前面 | qián miàn | danh từ | phía trước | 我家就在前面那个楼。 | Nhà tôi ở tòa nhà phía trước kia.
+房子 | fáng zi | danh từ | nhà, căn nhà | 你住的房子真不错。 | Căn nhà bạn ở đẹp thật.
+小孩儿 | xiǎo háir | danh từ | trẻ con, con nhỏ | 他们家的小孩儿很可爱。 | Con nhà họ rất đáng yêu.
+女孩儿 | nǚ háir | danh từ | bé gái, cô gái | 他们家有个女孩儿，她也学中文。 | Nhà họ có một bé gái, cô bé cũng học tiếng Trung.
+姓 | xìng | động từ | họ là, mang họ | 那位先生姓王。 | Ông kia họ Vương.
+眼睛 | yǎn jing | danh từ | mắt | 她的眼睛很漂亮。 | Đôi mắt cô ấy rất đẹp.
+跳舞 | tiào wǔ | động từ | nhảy, múa | 她从小就学跳舞。 | Cô ấy học múa từ nhỏ.
+
+== grammar
+## Câu tồn hiện với 着
+Câu tồn hiện cho biết ở đâu có người / vật gì đang tồn tại theo một trạng thái. Đầu câu là từ chỉ địa điểm, sau động từ + 着 là người hoặc vật không xác định.
+f: Địa điểm + Động từ + 着 + Số lượng + Người / Vật
+ex: 你家楼下站着一个人。 | Dưới nhà cô có một người đang đứng.
+ex: 爸爸手里拿着一杯咖啡。 | Tay bố cầm một cốc cà phê.
+ex: 那间教室里坐着不少学生。 | Trong phòng học kia có khá nhiều học sinh đang ngồi.
+## Phó từ 多 trong câu cảm thán
+多 dùng trong câu cảm thán, biểu thị mức độ rất cao, thường đi với 啊 ở cuối câu.
+f: 多 + Tính từ + 啊！
+ex: 你一个人在这儿多没意思啊！ | Em ở đây một mình thật buồn biết bao!
+ex: 我们一起去多好啊！ | Chúng ta cùng đi thì hay biết mấy!
+ex: 多好看啊！买这件吧。 | Đẹp quá! Mua cái này đi.
+## Bổ ngữ xu hướng kép
+上, 下, 进, 出, 回, 过 kết hợp với 来 / 去 (hoặc 起来) đặt sau động từ, chỉ hướng của hành động. Tân ngữ chỉ địa điểm đặt trước 来 / 去; tân ngữ chỉ vật có thể đặt trước hoặc sau 来 / 去.
+f: Động từ + 上 / 下 / 进 / 出 / 回 / 过 / 起 + 来 / 去
+ex: 她经常跑上来找我玩。 | Cô bé thường chạy lên tìm tôi chơi.
+ex: 楼不高，我们走上去吧。 | Tòa nhà không cao, chúng ta đi bộ lên đi.
+ex: 同学们都走出教室去了。 | Các bạn đều đi ra khỏi lớp rồi.
+
+== text Bài khóa 1
+李文: 王老师，你家楼下站着一个人。 | Cô Vương ơi, dưới nhà cô có một người đang đứng.
+王一飞: 我家楼下？我看看。 | Dưới nhà cô à? Để cô xem.
+李文: 那个人穿着黑色的裤子，手里还拿着一个黑色的包。 | Người đó mặc quần màu đen, tay còn cầm một cái túi màu đen.
+王一飞: 我看见那个人了，他是我的男朋友。我们快过去吧。 | Cô thấy người đó rồi, anh ấy là bạn trai cô. Chúng ta mau qua đó đi.
+
+== text Bài khóa 2
+王一飞: 同乐，真是你啊！上次打电话，你说有时间过来看我，没想到这么快就来了！ | Đồng Lạc, đúng là anh rồi! Lần trước gọi điện, anh nói có thời gian sẽ qua thăm em, không ngờ đến nhanh thế!
+杨同乐: 就要过年了，你一个人在这儿多没意思啊，所以我就早早过来了。 | Sắp Tết rồi, em ở đây một mình buồn biết bao, nên anh đến sớm.
+王一飞: 你能来，我太高兴了！ | Anh đến được, em vui lắm!
+杨同乐: 一飞，你旁边这位是？ | Nhất Phi, vị bên cạnh em là?
+王一飞: 同乐，这是李文，他在我们学校学医。李文，这是我男朋友杨同乐。 | Đồng Lạc, đây là Lý Văn, cậu ấy học y ở trường em. Lý Văn, đây là bạn trai cô, Dương Đồng Lạc.
+杨同乐: 李文，很高兴认识你！ | Lý Văn, rất vui được làm quen với em!
+李文: 认识你我也很高兴！我家就在前面那个楼，有时间来玩。 | Em cũng rất vui được làm quen với anh! Nhà em ở tòa nhà phía trước kia, có thời gian đến chơi nhé.
+
+== text Bài khóa 3
+杨同乐: 一飞，你住的房子真不错，很大，离学校也不远。 | Nhất Phi, căn nhà em ở đẹp thật, rộng, lại không xa trường.
+王一飞: 是啊！我楼下还住着一家中国人，他们人很好。 | Đúng vậy! Dưới nhà em còn có một gia đình người Trung Quốc, họ rất tốt.
+杨同乐: 这样你有事情就可以找他们帮忙。 | Như vậy em có việc gì có thể nhờ họ giúp.
+王一飞: 对，我也帮他们家的小孩儿学中文。 | Đúng, em cũng giúp con nhà họ học tiếng Trung.
+杨同乐: 我记得你跟我说过，是个女孩儿，学得也很好。 | Anh nhớ em từng nói với anh, là một bé gái, học cũng rất giỏi.
+王一飞: 没错，她经常跑上来找我玩。 | Đúng vậy, cô bé thường chạy lên tìm em chơi.
+杨同乐: 你问问他们什么时候有时间，我请他们吃个饭。 | Em hỏi xem khi nào họ có thời gian, anh mời họ một bữa cơm.
+
+== text Bài khóa 4
+我男朋友姓杨，叫杨同乐。他高个子、大眼睛，唱歌唱得很好，跳舞跳得也不错。他和我姐姐一起工作，是姐姐介绍我们认识的。他告诉我，从见到我的第一天开始，他就喜欢上我了。 | Bạn trai tôi họ Dương, tên là Dương Đồng Lạc. Anh ấy dáng cao, mắt to, hát rất hay, nhảy cũng khá giỏi. Anh ấy làm việc cùng chị gái tôi, là chị giới thiệu chúng tôi quen nhau. Anh ấy nói với tôi, từ ngày đầu tiên gặp tôi, anh ấy đã thích tôi rồi.
+
+== sentences
+你 家 楼 下 站 着 一 个 人 。 | Dưới nhà bạn có một người đang đứng. | 站 | 坐 走 跑
+他 手 里 拿 着 一 个 黑色 的 包 。 | Tay anh ấy cầm một cái túi màu đen. | 包 | 笔 药 花
+你们 过年 过 得 怎么样 ？ | Các bạn đón Tết thế nào? | 过年 | 跳舞 跑步 游泳
+这 个 电影 真 没意思 。 | Bộ phim này chán thật. | 没意思 | 有意思 不好意思 舒服
+这 位 是 我 的 汉语 老师 。 | Vị này là giáo viên tiếng Hán của tôi. | 位 | 张 本 条
+我 家 就 在 前面 那 个 楼 。 | Nhà tôi ở tòa nhà phía trước kia. | 前面 | 里面 上面 外面
+你 住 的 房子 真 不错 。 | Căn nhà bạn ở đẹp thật. | 房子 | 眼睛 小孩儿 包
+他们 家 的 小孩儿 很 可爱 。 | Con nhà họ rất đáng yêu. | 小孩儿 | 房子 眼睛 包
+他们 家 有 个 女孩儿 。 | Nhà họ có một bé gái. | 女孩儿 | 男孩儿 房子 眼睛
+那 位 先生 姓 王 。 | Ông kia họ Vương. | 姓 | 叫 是 有
+她 的 眼睛 很 漂亮 。 | Đôi mắt cô ấy rất đẹp. | 眼睛 | 房子 小孩儿 包
+她 从小 就 学 跳舞 。 | Cô ấy học múa từ nhỏ. | 跳舞 | 过年 跑步 上网
+爸爸 手 里 拿 着 一 杯 咖啡 。 | Tay bố cầm một cốc cà phê. | 着 | 过 了 得
+你 一 个 人 在 这儿 多 没意思 啊 ！ | Bạn ở đây một mình buồn biết bao! | 多 | 最 更 正
+她 经常 跑 上来 找 我 玩 。 | Cô bé thường chạy lên tìm tôi chơi. | 上来 | 下去 出去 回去
+那 间 教室 里 坐 着 不少 学生 。 | Trong phòng học kia có khá nhiều học sinh đang ngồi. | 坐 | 站 走 跑
+就要 过年 了 ， 所以 我 早早 过来 了 。 | Sắp Tết rồi, nên tôi đến sớm. | 过年 | 跳舞 跑步 游泳
+你 旁边 这 位 是 谁 ？ | Vị bên cạnh bạn là ai? | 位 | 张 本 条
+我 楼 下 还 住 着 一 家 中国人 。 | Dưới nhà tôi còn có một gia đình người Trung Quốc. | 住 | 站 跑 走
+我们 一起 去 多 好 啊 ！ | Chúng ta cùng đi thì hay biết mấy! | 多 | 最 更 正
+楼 不 高 ， 我们 走 上去 吧 。 | Tòa nhà không cao, chúng ta đi bộ lên đi. | 上去 | 下来 出来 回来
+同学们 都 走 出 教室 去 了 。 | Các bạn đều đi ra khỏi lớp rồi. | 教室 | 房子 楼 包
+他 一 听到 老师 叫 他 ， 就 站 起来 了 。 | Vừa nghe cô giáo gọi, cậu ấy liền đứng dậy. | 起来 | 上去 进去 回去
+我 男朋友 姓 杨 。 | Bạn trai tôi họ Dương. | 姓 | 叫 是 有
+他 高 个子 、 大 眼睛 。 | Anh ấy dáng cao, mắt to. | 眼睛 | 房子 小孩儿 包
+我 妹妹 跳舞 跳 得 很 漂亮 。 | Em gái tôi múa rất đẹp. | 漂亮 | 快 慢 远
+你 看 那 个 穿 着 红色 裤子 的 女孩儿 ！ | Bạn nhìn cô bé mặc quần đỏ kia kìa! | 女孩儿 | 男孩儿 房子 眼睛
+是 姐姐 介绍 我们 认识 的 。 | Là chị gái giới thiệu chúng tôi quen nhau. | 介绍 | 告诉 希望 准备
+这 个 包 里面 有 我 的 钱包 。 | Trong cái túi này có ví của tôi. | 里面 | 前面 上面 外面
+请问 ， 您 贵 姓 ？ | Xin hỏi, quý danh của ông là gì? | 姓 | 叫 是 有

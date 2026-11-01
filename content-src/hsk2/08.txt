@@ -1,0 +1,102 @@
+id: 8
+title: 虽然你忘了，但是我记得
+py: Suī rán nǐ wàng le, dàn shì wǒ jì de
+vi: Tuy em quên rồi, nhưng anh vẫn nhớ
+goal: Chọn quà, chọn phim, gọi món; so sánh với 比 / 没有 / 一样, câu chuyển ngoặt 虽然……但是…….
+slides: 08
+
+== vocab
+手表 | shǒu biǎo | danh từ | đồng hồ đeo tay | 他送我的生日礼物是一块手表。 | Quà sinh nhật anh ấy tặng tôi là một chiếc đồng hồ.
+左边 | zuǒ bian | danh từ | bên trái | 左边的书是你的吧？ | Quyển sách bên trái là của bạn nhỉ?
+比 | bǐ | giới từ | so với, hơn | 他比我大五岁。 | Anh ấy hơn tôi năm tuổi.
+右边 | yòu bian | danh từ | bên phải | 饭馆右边就是一家奶茶店。 | Bên phải nhà hàng là một quán trà sữa.
+记得 | jì de | động từ | nhớ | 你记得我们第一次见面在哪儿吗？ | Bạn có nhớ lần đầu chúng ta gặp nhau ở đâu không?
+爱情片 | ài qíng piàn | danh từ | phim tình cảm | 今天我不想看爱情片。 | Hôm nay tôi không muốn xem phim tình cảm.
+有意思 | yǒu yì si | tính từ | thú vị, hay | 这个电影很有意思。 | Bộ phim này rất hay.
+点 | diǎn | động từ | gọi (món) | 你想吃什么就点吧。 | Bạn muốn ăn gì thì cứ gọi đi.
+虽然 | suī rán | liên từ | tuy, mặc dù | 虽然你忘了，但是我记得。 | Tuy em quên rồi, nhưng anh vẫn nhớ.
+但是 | dàn shì | liên từ | nhưng | 外边下雪了，但是不太冷。 | Bên ngoài tuyết rơi, nhưng không lạnh lắm.
+花 | huā | động từ | tiêu, tốn (tiền, thời gian) | 今天花了不少钱吧？ | Hôm nay tiêu không ít tiền nhỉ?
+妻子 | qī zi | danh từ | vợ | 他妻子非常漂亮。 | Vợ anh ấy rất xinh đẹp.
+丈夫 | zhàng fu | danh từ | chồng | 我丈夫来接我了。 | Chồng tôi đến đón tôi rồi.
+饭馆 | fàn guǎn | danh từ | nhà hàng, quán ăn | 他在一家饭馆工作。 | Anh ấy làm việc ở một nhà hàng.
+
+== grammar
+## Câu so sánh với 比
+A 比 B + tính từ: A hơn B. Muốn nói hơn ít / nhiều thêm 一点儿, 一些, 得多, 多了 sau tính từ. Không dùng 很, 非常 trước tính từ; muốn nhấn mạnh dùng 还 hoặc 更.
+f: A + 比 + B + (还 / 更) + Tính từ + (一点儿 / 得多 / 多了)
+ex: 我也觉得右边的比左边的好看。 | Anh cũng thấy cái bên phải đẹp hơn cái bên trái.
+ex: 你比我高多了。 | Bạn cao hơn tôi nhiều.
+ex: 今天比昨天更热。 | Hôm nay còn nóng hơn hôm qua.
+## So sánh kém và so sánh bằng
+A 没有 B + tính từ: A không bằng B. A 跟 / 和 B 一样 + tính từ: A giống B, bằng B.
+f: A + 没有 + B + Tính từ · A + 跟 / 和 + B + 一样 + Tính từ
+ex: 我没有你高。 | Tôi không cao bằng bạn.
+ex: 汉语没有英语难。 | Tiếng Hán không khó bằng tiếng Anh.
+ex: 我跟你一样高。 | Tôi cao bằng bạn.
+## Câu chuyển ngoặt 虽然……，但是……
+虽然 (tuy, mặc dù) và 但是 (nhưng) nối hai vế có ý trái ngược. Có thể dùng cả cặp hoặc chỉ một từ.
+f: 虽然 + Vế 1，但是 + Vế 2
+ex: 虽然你忘了，但是我记得。 | Tuy em quên rồi, nhưng anh vẫn nhớ.
+ex: 他虽然还小，但是会说中文、英文和日文。 | Tuy em ấy còn nhỏ nhưng biết nói tiếng Trung, tiếng Anh và tiếng Nhật.
+ex: 外边下雪了，但是不太冷。 | Bên ngoài tuyết rơi, nhưng không lạnh lắm.
+
+== text Bài khóa 1
+王一雪: 你看，这两块手表怎么样？ | Anh xem, hai chiếc đồng hồ này thế nào?
+刘明: 都不错！ | Đều đẹp cả!
+王一雪: 我喜欢左边这个。 | Em thích cái bên trái này.
+刘明: 我也觉得左边的比右边的好看。 | Anh cũng thấy cái bên trái đẹp hơn cái bên phải.
+王一雪: 你看看要多少钱！ | Anh xem giá bao nhiêu kìa!
+刘明: 真不便宜！八千八！ | Không rẻ chút nào! Tám nghìn tám!
+
+== text Bài khóa 2
+刘明: 今天有不少电影，我们看个电影吧。 | Hôm nay có khá nhiều phim, chúng ta đi xem phim đi.
+王一雪: 好啊！我们看哪个？ | Được thôi! Chúng ta xem phim nào?
+刘明: 我记得你喜欢看爱情片，我们看那个爱情片，怎么样？ | Anh nhớ em thích xem phim tình cảm, chúng ta xem phim tình cảm kia nhé?
+王一雪: 还是看这个吧，我看网上说这个电影比那个爱情片更有意思。 | Thôi xem phim này đi, em thấy trên mạng nói phim này hay hơn phim tình cảm kia.
+刘明: 好。我去买票。 | Được. Anh đi mua vé.
+王一雪: 到网上买吧，网上买比在这里买便宜。 | Mua trên mạng đi, mua trên mạng rẻ hơn mua ở đây.
+
+== text Bài khóa 3
+刘明: 您好，就要这几个菜吧，谢谢！ | Chào chị, lấy mấy món này thôi, cảm ơn!
+王一雪: 怎么点这么多菜？ | Sao gọi nhiều món thế?
+刘明: 你想想，今天是几月几号？ | Em nghĩ xem, hôm nay là ngày mấy tháng mấy?
+王一雪: 八月二十七号。啊！我的生日！ | Ngày hai mươi bảy tháng tám. A! Sinh nhật em!
+刘明: 生日快乐！虽然你忘了，但是我记得。看看是什么？ | Chúc mừng sinh nhật! Tuy em quên rồi, nhưng anh vẫn nhớ. Xem xem là gì nào?
+王一雪: 手表！吃饭、看电影、买手表，今天花了不少钱吧？ | Đồng hồ! Ăn cơm, xem phim, mua đồng hồ, hôm nay tốn không ít tiền nhỉ?
+刘明: 虽然花了一些钱，但是我们过了一个快乐的生日。 | Tuy tốn một ít tiền, nhưng chúng ta đã có một sinh nhật vui vẻ.
+
+== text Bài khóa 4
+虽然妻子忘了今天是自己的生日，但是丈夫记得。丈夫请妻子去饭馆吃饭、去电影院看电影，还给妻子买了一块非常漂亮的手表。妻子觉得今天很快乐。 | Tuy người vợ quên hôm nay là sinh nhật mình, nhưng người chồng vẫn nhớ. Người chồng mời vợ đi nhà hàng ăn cơm, đi rạp xem phim, còn mua cho vợ một chiếc đồng hồ rất đẹp. Người vợ thấy hôm nay rất vui.
+
+== sentences
+他 送 我 一 块 手表 。 | Anh ấy tặng tôi một chiếc đồng hồ. | 手表 | 礼物 蛋糕 书包
+左边 的 书 是 你 的 吧 ？ | Quyển sách bên trái là của bạn nhỉ? | 左边 | 下面 外面 网上
+他 比 我 大 五 岁 。 | Anh ấy hơn tôi năm tuổi. | 比 | 跟 从 往
+饭馆 右边 就 是 一 家 奶茶 店 。 | Bên phải nhà hàng là một quán trà sữa. | 右边 | 下面 外面 网上
+你 记得 我们 第一 次 见面 在 哪儿 吗 ？ | Bạn có nhớ lần đầu chúng ta gặp nhau ở đâu không? | 记得 | 觉得 认识 知道
+今天 我 不 想 看 爱情片 。 | Hôm nay tôi không muốn xem phim tình cảm. | 爱情片 | 手表 饭馆 礼物
+这 个 电影 很 有意思 。 | Bộ phim này rất hay. | 有意思 | 不好意思 舒服 快乐
+你 想 吃 什么 就 点 吧 。 | Bạn muốn ăn gì thì cứ gọi đi. | 点 | 花 比 跑
+虽然 你 忘 了 ， 但是 我 记得 。 | Tuy em quên rồi, nhưng anh vẫn nhớ. | 虽然 | 因为 所以 还是
+外边 下雪 了 ， 但是 不 太 冷 。 | Bên ngoài tuyết rơi, nhưng không lạnh lắm. | 但是 | 因为 虽然 所以
+今天 花 了 不少 钱 吧 ？ | Hôm nay tiêu không ít tiền nhỉ? | 花 | 点 比 跑
+他 妻子 非常 漂亮 。 | Vợ anh ấy rất xinh đẹp. | 妻子 | 丈夫 爷爷 奶奶
+我 丈夫 来 接 我 了 。 | Chồng tôi đến đón tôi rồi. | 丈夫 | 妻子 爷爷 奶奶
+他 在 一 家 饭馆 工作 。 | Anh ấy làm việc ở một nhà hàng. | 饭馆 | 手表 爱情片 礼物
+今天 比 昨天 冷 。 | Hôm nay lạnh hơn hôm qua. | 冷 | 长 快 累
+你 比 我 高 多 了 。 | Bạn cao hơn tôi nhiều. | 比 | 跟 从 往
+我 没有 你 高 。 | Tôi không cao bằng bạn. | 没有 | 比 跟 和
+我 跟 你 一样 高 。 | Tôi cao bằng bạn. | 一样 | 一起 一会儿 一点儿
+今天 比 昨天 更 热 。 | Hôm nay còn nóng hơn hôm qua. | 更 | 很 非常 太
+网上 买 比 在 这里 买 便宜 。 | Mua trên mạng rẻ hơn mua ở đây. | 便宜 | 长 快 累
+我 也 觉得 左边 的 比 右边 的 好看 。 | Tôi cũng thấy cái bên trái đẹp hơn cái bên phải. | 右边 | 下面 外面 网上
+今天 是 她 的 生日 ， 但是 我 不 记得 。 | Hôm nay là sinh nhật cô ấy, nhưng tôi không nhớ. | 记得 | 觉得 认识 知道
+我 记得 你 喜欢 看 爱情片 。 | Anh nhớ em thích xem phim tình cảm. | 爱情片 | 手表 饭馆 礼物
+你 点 这么 多 菜 ， 能 吃完 吗 ？ | Bạn gọi nhiều món thế, ăn hết được không? | 点 | 花 比 跑
+他 虽然 还 小 ， 但是 会 说 中文 。 | Tuy em ấy còn nhỏ nhưng biết nói tiếng Trung. | 虽然 | 因为 所以 还是
+虽然 花 了 一些 钱 ， 但是 我们 很 快乐 。 | Tuy tốn một ít tiền nhưng chúng ta rất vui. | 但是 | 因为 虽然 所以
+我 每 天 都 花 一 个 小时 学习 汉语 。 | Mỗi ngày tôi đều dành một tiếng học tiếng Hán. | 花 | 点 比 跑
+丈夫 请 妻子 去 饭馆 吃饭 。 | Người chồng mời vợ đi nhà hàng ăn cơm. | 妻子 | 丈夫 爷爷 奶奶
+这 家 饭馆 几 点 开门 ？ | Nhà hàng này mấy giờ mở cửa? | 饭馆 | 手表 爱情片 礼物
+汉语 没有 英语 难 。 | Tiếng Hán không khó bằng tiếng Anh. | 没有 | 比 跟 和

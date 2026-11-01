@@ -110,7 +110,98 @@
   "group": "HSK",
   "book": "新HSK教程 2",
   "color": "#e07b00",
-  "lessons": []
+  "lessons": [
+   {
+    "id": 1,
+    "title": "她请我们吃了北京烤鸭",
+    "vi": "Cô ấy đã mời chúng tôi ăn vịt quay Bắc Kinh",
+    "words": 15
+   },
+   {
+    "id": 2,
+    "title": "还是打车去北大吧",
+    "vi": "Hay là bắt taxi đến Đại học Bắc Kinh đi",
+    "words": 17
+   },
+   {
+    "id": 3,
+    "title": "我想去西安旅游",
+    "vi": "Tôi muốn đi Tây An du lịch",
+    "words": 15
+   },
+   {
+    "id": 4,
+    "title": "你穿红色的很好看",
+    "vi": "Bạn mặc màu đỏ rất đẹp",
+    "words": 16
+   },
+   {
+    "id": 5,
+    "title": "第一次去中国朋友家",
+    "vi": "Lần đầu đến nhà bạn người Trung Quốc",
+    "words": 17
+   },
+   {
+    "id": 6,
+    "title": "小雪，生日快乐",
+    "vi": "Tiểu Tuyết, chúc mừng sinh nhật",
+    "words": 14
+   },
+   {
+    "id": 7,
+    "title": "我的爱好是运动",
+    "vi": "Sở thích của tôi là thể thao",
+    "words": 15
+   },
+   {
+    "id": 8,
+    "title": "虽然你忘了，但是我记得",
+    "vi": "Tuy em quên rồi, nhưng anh vẫn nhớ",
+    "words": 14
+   },
+   {
+    "id": 9,
+    "title": "这里离家很近",
+    "vi": "Ở đây cách nhà rất gần",
+    "words": 13
+   },
+   {
+    "id": 10,
+    "title": "是我们上学还是你们上学",
+    "vi": "Là chúng con đi học hay bố mẹ đi học?",
+    "words": 14
+   },
+   {
+    "id": 11,
+    "title": "我头有点儿疼",
+    "vi": "Tôi hơi đau đầu",
+    "words": 13
+   },
+   {
+    "id": 12,
+    "title": "我这里比北京冷多了",
+    "vi": "Chỗ tôi lạnh hơn Bắc Kinh nhiều",
+    "words": 11
+   },
+   {
+    "id": 13,
+    "title": "我们爱上中文课",
+    "vi": "Chúng tôi thích học tiếng Trung",
+    "words": 13
+   },
+   {
+    "id": 14,
+    "title": "一个人过年多没意思啊",
+    "vi": "Một mình đón Tết thật buồn biết bao",
+    "words": 12
+   },
+   {
+    "id": 15,
+    "title": "我想再去一次中国",
+    "vi": "Tôi muốn đi Trung Quốc thêm một lần nữa",
+    "words": 12
+   }
+  ]
  },
  {
   "id": "hsk3",

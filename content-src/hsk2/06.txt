@@ -1,0 +1,102 @@
+id: 6
+title: 小雪，生日快乐
+py: Xiǎo xuě, shēng rì kuài lè
+vi: Tiểu Tuyết, chúc mừng sinh nhật
+goal: Chuẩn bị và tổ chức sinh nhật, tặng quà; dùng tính từ lặp lại, cụm 什么的 và trợ từ kết cấu 地.
+slides: 06
+
+== vocab
+生日 | shēng rì | danh từ | sinh nhật | 明天是弟弟的生日。 | Ngày mai là sinh nhật em trai.
+忘 | wàng | động từ | quên | 你忘了今天是我的生日吗？ | Bạn quên hôm nay là sinh nhật tôi à?
+画 | huà | động từ / danh từ | vẽ; bức tranh | 他在画画。 | Anh ấy đang vẽ tranh.
+画笔 | huà bǐ | danh từ | bút vẽ, cọ vẽ | 我买了很多画笔。 | Tôi đã mua rất nhiều bút vẽ.
+蛋糕 | dàn gāo | danh từ | bánh ngọt, bánh kem | 奶奶做的蛋糕很好吃。 | Bánh bà làm rất ngon.
+快乐 | kuài lè | tính từ | vui vẻ, hạnh phúc | 生日快乐！ | Chúc mừng sinh nhật!
+打开 | dǎ kāi | động từ | mở | 这是送你的礼物，你打开看看吧。 | Đây là quà tặng bạn, bạn mở ra xem đi.
+长 | cháng | tính từ | dài | 这条裤子太长了。 | Cái quần này dài quá.
+鱼 | yú | danh từ | cá | 你喜欢吃鱼吗？ | Bạn có thích ăn cá không?
+肉 | ròu | danh từ | thịt | 妈妈去超市买回来很多肉。 | Mẹ đi siêu thị mua về rất nhiều thịt.
+过 | guò | động từ | đón, trải qua (ngày lễ) | 我跟朋友一起过生日。 | Tôi đón sinh nhật cùng bạn bè.
+地 | de | trợ từ | (nối tính từ với động từ) | 孩子们高高兴兴地回家了。 | Bọn trẻ vui vẻ về nhà.
+床 | chuáng | danh từ | giường | 他坐在床上看书。 | Anh ấy ngồi trên giường đọc sách.
+舒服 | shū fu | tính từ | thoải mái, dễ chịu | 今天天气很舒服。 | Hôm nay thời tiết rất dễ chịu.
+
+== grammar
+## Tính từ lặp lại
+Lặp lại tính từ để nhấn mạnh mức độ hoặc thể hiện tình cảm yêu thích của người nói. Tính từ một âm tiết A → AA(的); hai âm tiết AB → AABB(的).
+f: A → AA的 · AB → AABB的
+ex: 我再给她买个大大的生日蛋糕。 | Anh mua thêm cho con bé một cái bánh sinh nhật thật to.
+ex: 这只猫小小的，真让人喜欢。 | Con mèo này nhỏ xíu, thật đáng yêu.
+ex: 一雪的女儿每天都漂漂亮亮的。 | Con gái Nhất Tuyết ngày nào cũng xinh xắn.
+## Cụm từ cố định 什么的
+什么的 đặt sau một hoặc vài sự vật được liệt kê, nghĩa là "… vân vân, các thứ".
+f: A、B、C + 什么的
+ex: 桌子上有电脑、杯子、书和画笔什么的。 | Trên bàn có máy tính, cốc, sách, bút vẽ các thứ.
+ex: 他拿来了一些水、面包和苹果什么的。 | Anh ấy mang đến ít nước, bánh mì, táo các thứ.
+## Trợ từ kết cấu 地
+地 đặt giữa tính từ (thường là tính từ lặp lại hoặc có phó từ) và động từ, biểu thị trạng thái, cách thức của hành động.
+f: Tính từ + 地 + Động từ
+ex: 过生日就要高高兴兴地玩。 | Sinh nhật thì phải chơi thật vui vẻ.
+ex: 老师早早地到了教室。 | Cô giáo đến lớp từ rất sớm.
+ex: 爸爸很快地吃完早饭，就去上班了。 | Bố ăn sáng thật nhanh rồi đi làm.
+
+== text Bài khóa 1
+王一雪: 明天就是女儿的生日了。 | Ngày mai là sinh nhật con gái rồi.
+刘明: 你不说我还真忘了。我们给她准备个什么礼物呢？ | Em không nói thì anh quên mất. Chúng ta chuẩn bị quà gì cho con bé nhỉ?
+王一雪: 她喜欢画画，你觉得画笔怎么样？ | Con bé thích vẽ, anh thấy bút vẽ thế nào?
+刘明: 就送画笔吧！ | Tặng bút vẽ đi!
+王一雪: 那我明天上午就去买。 | Vậy sáng mai em đi mua.
+刘明: 好的！我再给她买个大大的生日蛋糕。 | Được! Anh mua thêm cho con bé một cái bánh sinh nhật thật to.
+
+== text Bài khóa 2
+王一雪: 小雪，生日快乐！ | Tiểu Tuyết, chúc mừng sinh nhật con!
+刘小明: 姐姐，生日快乐！ | Chị ơi, chúc mừng sinh nhật!
+刘明: 小雪，这是爸爸、妈妈送你的礼物。你打开看看喜欢不喜欢。 | Tiểu Tuyết, đây là quà bố mẹ tặng con. Con mở ra xem có thích không.
+刘小雪: 画笔！我很喜欢！ | Bút vẽ! Con thích lắm!
+王一雪: 那你想画点儿什么？ | Vậy con muốn vẽ gì?
+刘小雪: 画我们的家！有爸爸、妈妈、弟弟，还有黑色的狗、白色的猫什么的。 | Vẽ nhà mình ạ! Có bố, mẹ, em trai, còn có chó đen, mèo trắng các thứ.
+刘小明: 那我要画一个穿白色衣服的姐姐。 | Vậy em sẽ vẽ một chị gái mặc áo trắng.
+
+== text Bài khóa 3
+刘明: 小雪，看看今天有什么好吃的。 | Tiểu Tuyết, xem hôm nay có món gì ngon nào.
+刘小雪: 长长的面条儿，大大的蛋糕。 | Mì sợi thật dài, bánh kem thật to.
+刘明: 你看，还有鱼啊肉啊什么的，都是你喜欢吃的。 | Con xem, còn có cá, thịt các thứ, đều là món con thích ăn.
+刘小雪: 谢谢爸爸、妈妈！ | Con cảm ơn bố mẹ!
+王一雪: 快去叫弟弟过来吃饭吧，吃完饭我们还要出去玩呢。 | Mau đi gọi em qua ăn cơm đi, ăn xong chúng ta còn phải ra ngoài chơi đấy.
+刘小雪: 过生日真好啊！ | Sinh nhật thích thật!
+王一雪: 是的，过生日就要吃好吃的，还要高高兴兴地玩。 | Đúng vậy, sinh nhật thì phải ăn món ngon, còn phải chơi thật vui vẻ.
+
+== text Bài khóa 4
+今天是女儿的生日。我们买了蛋糕，做了面条儿，还做了鱼啊肉啊什么的。吃完晚饭，一家人去看了个电影。回家后，孩子们早早地就上床了。明天不上学，他们说要舒舒服服地睡一觉，让我们晚点儿叫他们起床。这是很忙、很累，但很快乐的一天。 | Hôm nay là sinh nhật con gái. Chúng tôi mua bánh kem, nấu mì, còn làm cá, thịt các thứ. Ăn tối xong, cả nhà đi xem phim. Về nhà, bọn trẻ lên giường từ sớm. Ngày mai không phải đi học, chúng nói muốn ngủ một giấc thật thoải mái, bảo chúng tôi gọi chúng dậy muộn một chút. Đây là một ngày rất bận, rất mệt nhưng rất vui.
+
+== sentences
+明天 是 弟弟 的 生日 。 | Ngày mai là sinh nhật em trai. | 生日 | 蛋糕 礼物 画笔
+你 忘 了 今天 是 我 的 生日 吗 ？ | Bạn quên hôm nay là sinh nhật tôi à? | 忘 | 画 过 等
+他 在 画画 。 | Anh ấy đang vẽ tranh. | 画画 | 打开 准备 洗洗
+我 买 了 很 多 画笔 。 | Tôi đã mua rất nhiều bút vẽ. | 画笔 | 蛋糕 鱼 肉
+奶奶 做 的 蛋糕 很 好吃 。 | Bánh bà làm rất ngon. | 蛋糕 | 画笔 床 礼物
+生日 快乐 ！ | Chúc mừng sinh nhật! | 快乐 | 舒服 不错 漂亮
+这 是 送 你 的 礼物 ， 你 打开 看看 吧 。 | Đây là quà tặng bạn, bạn mở ra xem đi. | 打开 | 准备 忘 画
+这 条 裤子 太 长 了 。 | Cái quần này dài quá. | 长 | 快 远 累
+你 喜欢 吃 鱼 吗 ？ | Bạn có thích ăn cá không? | 鱼 | 床 画 票
+妈妈 买 回来 很 多 肉 。 | Mẹ mua về rất nhiều thịt. | 肉 | 床 画 票
+我 跟 朋友 一起 过 生日 。 | Tôi đón sinh nhật cùng bạn bè. | 过 | 忘 画 等
+孩子们 高高兴兴 地 回家 了 。 | Bọn trẻ vui vẻ về nhà. | 地 | 的 得 了
+他 坐 在 床 上 看 书 。 | Anh ấy ngồi trên giường đọc sách. | 床 | 鱼 肉 画
+今天 天气 很 舒服 。 | Hôm nay thời tiết rất dễ chịu. | 舒服 | 快乐 长 快
+我 再 给 她 买 个 大大 的 生日 蛋糕 。 | Tôi mua thêm cho cô ấy một cái bánh sinh nhật thật to. | 大大 | 长长 小小 高高
+桌子 上 有 电脑 、 杯子 和 书 什么的 。 | Trên bàn có máy tính, cốc, sách các thứ. | 什么的 | 什么 怎么 为什么
+别 忘 了 明天 去 接 姐姐 。 | Đừng quên ngày mai đi đón chị gái. | 忘 | 画 过 等
+这 幅 画 真 漂亮 。 | Bức tranh này đẹp thật. | 画 | 鱼 肉 床
+我 去 买 生日 蛋糕 。 | Tôi đi mua bánh sinh nhật. | 蛋糕 | 画笔 床 礼物
+新年 快乐 ！ | Chúc mừng năm mới! | 快乐 | 舒服 不错 漂亮
+过来 帮 我 打开 一下 门 。 | Lại đây giúp tôi mở cửa một chút. | 打开 | 准备 忘 画
+长长 的 面条儿 ， 大大 的 蛋糕 。 | Mì sợi thật dài, bánh kem thật to. | 面条儿 | 画笔 礼物 奶茶
+今天 的 午饭 有 鱼 。 | Bữa trưa hôm nay có cá. | 鱼 | 床 画 票
+还 有 鱼 啊 肉 啊 什么的 。 | Còn có cá, thịt các thứ. | 肉 | 床 画 票
+老师 早早 地 到 了 教室 。 | Cô giáo đến lớp từ rất sớm. | 地 | 的 得 了
+我 家 的 床 很 大 。 | Giường nhà tôi rất to. | 床 | 鱼 肉 画
+你 哪里 不 舒服 ？ | Bạn khó chịu ở đâu? | 舒服 | 快乐 长 快
+她 喜欢 画画 ， 我 送 她 画笔 。 | Cô ấy thích vẽ, tôi tặng cô ấy bút vẽ. | 画笔 | 蛋糕 鱼 肉
+这 只 猫 小小 的 ， 真 让 人 喜欢 。 | Con mèo này nhỏ xíu, thật đáng yêu. | 小小 | 大大 长长 高高
+这 是 很 忙 、 很 累 ， 但 很 快乐 的 一 天 。 | Đây là một ngày rất bận, rất mệt nhưng rất vui. | 快乐 | 舒服 不错 漂亮

@@ -1,0 +1,100 @@
+id: 12
+title: 我这里比北京冷多了
+py: Wǒ zhè lǐ bǐ Běi jīng lěng duō le
+vi: Chỗ tôi lạnh hơn Bắc Kinh nhiều
+goal: Gọi điện hỏi thăm, nói về thời tiết, rủ nhau chạy bộ; so sánh với 比 + 多了 / 得多 và 比 trong câu có bổ ngữ trạng thái.
+slides: 12
+
+== vocab
+事情 | shì qing | danh từ | việc, chuyện | 你找我有什么事情吗？ | Bạn tìm tôi có việc gì không?
+晴 | qíng | tính từ | (trời) nắng, quang | 天晴了，我们出去玩吧。 | Trời nắng rồi, chúng ta ra ngoài chơi đi.
+正 | zhèng | phó từ | đang | 我正给他打电话呢。 | Tôi đang gọi điện cho anh ấy.
+外面 | wài miàn | danh từ | bên ngoài | 孩子们在外面玩得很高兴。 | Bọn trẻ chơi ở ngoài rất vui.
+阴 | yīn | tính từ | (trời) âm u, nhiều mây | 今天是阴天，我不想出去。 | Hôm nay trời âm u, tôi không muốn ra ngoài.
+从小 | cóng xiǎo | phó từ | từ nhỏ | 她从小就喜欢游泳。 | Cô ấy thích bơi từ nhỏ.
+地铁 | dì tiě | danh từ | tàu điện ngầm | 我坐地铁去上班。 | Tôi đi tàu điện ngầm đi làm.
+楼 | lóu | danh từ | tòa nhà, tầng | 我们一会儿楼下见。 | Lát nữa chúng ta gặp nhau ở dưới tòa nhà.
+站 | zhàn | danh từ | trạm, ga, bến | 楼下就是个地铁站。 | Dưới tòa nhà là một ga tàu điện ngầm.
+小时候 | xiǎo shí hou | danh từ | lúc nhỏ | 小时候我很喜欢跑步。 | Lúc nhỏ tôi rất thích chạy bộ.
+好 | hǎo | phó từ | rất, thật | 天气好热，我不想出去。 | Trời nóng quá, tôi không muốn ra ngoài.
+
+== grammar
+## Câu so sánh 比 + 多了 / 得多
+多了 hoặc 得多 đặt sau tính từ trong câu so sánh với 比, nhấn mạnh mức chênh lệch rất lớn.
+f: A + 比 + B + Tính từ + 多了 / 得多
+ex: 我这里比北京冷多了。 | Chỗ em lạnh hơn Bắc Kinh nhiều.
+ex: 坐飞机比坐火车快得多。 | Đi máy bay nhanh hơn đi tàu hỏa nhiều.
+ex: 他觉得红茶比绿茶好喝多了。 | Anh ấy thấy hồng trà ngon hơn trà xanh nhiều.
+## 比 trong câu có bổ ngữ trạng thái
+Khi động từ có bổ ngữ trạng thái, 比 B có thể đặt trước động từ hoặc sau 得.
+f: A + 比 + B + Động từ + 得 + Tính từ · A + Động từ + 得 + 比 + B + Tính từ
+ex: 昨天比今天下得大。 | Hôm qua tuyết rơi to hơn hôm nay.
+ex: 妈妈比我睡得晚。 | Mẹ ngủ muộn hơn tôi.
+ex: 李文跑得比白家月快。 | Lý Văn chạy nhanh hơn Bạch Gia Nguyệt.
+## 比 khi động từ có cả tân ngữ và bổ ngữ trạng thái
+Đưa tân ngữ lên trước động từ, hoặc lặp lại động từ.
+f: A + (Động từ) + Tân ngữ + Động từ + 得 + 比 + B + Tính từ
+ex: 你跑步跑得比我快。 | Bạn chạy bộ nhanh hơn tôi.
+ex: 白家月汉字写得比陈天中好。 | Bạch Gia Nguyệt viết chữ Hán đẹp hơn Trần Thiên Trung.
+ex: 他踢足球比我踢得好。 | Anh ấy đá bóng giỏi hơn tôi.
+
+== text Bài khóa 1
+王一雪: 喂，家月，是你啊！有什么事情吗？ | A lô, Gia Nguyệt, là em à! Có việc gì không?
+白家月: 没什么事，就想跟您说说话。 | Không có việc gì ạ, em chỉ muốn nói chuyện với chị.
+王一雪: 好啊。你今天没课吗？ | Được thôi. Hôm nay em không có tiết à?
+白家月: 下午有课。您那里天气怎么样？ | Buổi chiều có ạ. Chỗ chị thời tiết thế nào?
+王一雪: 北京这几天虽然是晴天，但是有点儿冷。 | Bắc Kinh mấy hôm nay tuy trời nắng nhưng hơi lạnh.
+白家月: 我这里比北京冷多了，外边还正下着雪呢！ | Chỗ em lạnh hơn Bắc Kinh nhiều, bên ngoài còn đang có tuyết rơi!
+
+== text Bài khóa 2
+王一雪: 喂，一飞，听家月说你那边下雪了，下得大不大？ | A lô, Nhất Phi, nghe Gia Nguyệt nói chỗ em có tuyết, tuyết có to không?
+王一飞: 今天不大，昨天比今天下得大。 | Hôm nay không to, hôm qua rơi to hơn hôm nay.
+王一雪: 天气不好，你去外面的时候多穿点儿衣服。 | Thời tiết không tốt, lúc ra ngoài em mặc thêm áo vào.
+王一飞: 这几天我在网上上课，没出去过。 | Mấy hôm nay em dạy trên mạng, không ra ngoài lần nào.
+王一雪: 那就好，有事记得给我打电话。 | Vậy thì tốt, có việc gì nhớ gọi điện cho chị.
+王一飞: 好的。现在不下雪了，我出去买点儿吃的。 | Vâng. Bây giờ hết tuyết rồi, em ra ngoài mua ít đồ ăn.
+王一雪: 一次多买点儿，阴天下雪什么的就少出去吧。 | Mua nhiều một lần vào, trời âm u hay có tuyết thì ít ra ngoài thôi.
+
+== text Bài khóa 3
+李文: 喂，家月，今天天气不错，我们去跑步吧！ | A lô, Gia Nguyệt, hôm nay trời đẹp, chúng ta đi chạy bộ đi!
+白家月: 你跑步跑得比我快，我们能一起跑吗？ | Bạn chạy nhanh hơn mình, chúng ta chạy cùng được không?
+李文: 可以的，我慢慢跑，等着你。 | Được chứ, mình chạy chậm thôi, đợi bạn.
+白家月: 好吧。你真爱跑步啊！ | Thôi được. Bạn đúng là mê chạy bộ!
+李文: 我从小就经常跟爸爸跑步，跑步能让人快乐！ | Từ nhỏ mình đã thường xuyên chạy bộ với bố, chạy bộ làm người ta vui vẻ!
+白家月: 好，那我准备一下。 | Được, vậy mình chuẩn bị một chút.
+李文: 我现在坐地铁去找你，一会儿楼下见。 | Bây giờ mình đi tàu điện ngầm đến tìm bạn, lát nữa gặp ở dưới tòa nhà.
+
+== text Bài khóa 4
+前几天天气不好，我没走路，每天坐两站地铁去学校。今天是个大晴天，李文让我跟他去外面跑步。他小时候经常跑步，跑得比我快，但是他会等我。跟李文一起跑步，我好高兴啊！ | Mấy hôm trước thời tiết không tốt, tôi không đi bộ, ngày nào cũng đi hai bến tàu điện ngầm đến trường. Hôm nay trời nắng đẹp, Lý Văn rủ tôi ra ngoài chạy bộ. Lúc nhỏ cậu ấy thường xuyên chạy bộ, chạy nhanh hơn tôi, nhưng cậu ấy sẽ đợi tôi. Chạy bộ cùng Lý Văn, tôi vui quá!
+
+== sentences
+你 找 我 有 什么 事情 吗 ？ | Bạn tìm tôi có việc gì không? | 事情 | 身体 地铁 小时候
+天 晴 了 ， 我们 出去 玩 吧 。 | Trời nắng rồi, chúng ta ra ngoài chơi đi. | 晴 | 阴 慢 疼
+我 正 给 他 打 电话 呢 。 | Tôi đang gọi điện cho anh ấy. | 正 | 最 更 好
+孩子们 在 外面 玩 得 很 高兴 。 | Bọn trẻ chơi ở ngoài rất vui. | 外面 | 路上 网上 门口
+今天 是 阴 天 ， 我 不 想 出去 。 | Hôm nay trời âm u, tôi không muốn ra ngoài. | 阴 | 晴 慢 疼
+她 从小 就 喜欢 游泳 。 | Cô ấy thích bơi từ nhỏ. | 从小 | 经常 已经 快要
+我 坐 地铁 去 上班 。 | Tôi đi tàu điện ngầm đi làm. | 地铁 | 楼 站 事情
+我们 一会儿 楼 下 见 。 | Lát nữa chúng ta gặp nhau ở dưới tòa nhà. | 楼 | 站 门 头
+楼 下 就 是 个 地铁 站 。 | Dưới tòa nhà là một ga tàu điện ngầm. | 站 | 门 头 路
+小时候 我 很 喜欢 跑步 。 | Lúc nhỏ tôi rất thích chạy bộ. | 小时候 | 从小 经常 事情
+天气 好 热 ， 我 不 想 出去 。 | Trời nóng quá, tôi không muốn ra ngoài. | 好 | 正 最 更
+我 这里 比 北京 冷 多 了 。 | Chỗ tôi lạnh hơn Bắc Kinh nhiều. | 冷 | 慢 疼 晴
+坐 飞机 比 坐 火车 快 得 多 。 | Đi máy bay nhanh hơn đi tàu hỏa nhiều. | 快 | 慢 疼 晴
+昨天 比 今天 下 得 大 。 | Hôm qua tuyết rơi to hơn hôm nay. | 比 | 跟 从 离
+妈妈 比 我 睡 得 晚 。 | Mẹ ngủ muộn hơn tôi. | 晚 | 慢 疼 晴
+李文 跑 得 比 白家月 快 。 | Lý Văn chạy nhanh hơn Bạch Gia Nguyệt. | 比 | 跟 从 离
+外边 还 正 下 着 雪 呢 ！ | Bên ngoài còn đang có tuyết rơi! | 正 | 最 更 好
+北京 这 几 天 虽然 是 晴 天 ， 但是 有点儿 冷 。 | Bắc Kinh mấy hôm nay tuy trời nắng nhưng hơi lạnh. | 晴 | 阴 慢 疼
+你 去 外面 的 时候 多 穿 点儿 衣服 。 | Lúc ra ngoài bạn mặc thêm áo vào. | 外面 | 路上 网上 门口
+阴 天 下雪 就 少 出去 吧 。 | Trời âm u có tuyết thì ít ra ngoài thôi. | 阴 | 晴 慢 疼
+我 从小 就 经常 跟 爸爸 跑步 。 | Từ nhỏ tôi đã thường xuyên chạy bộ với bố. | 从小 | 已经 一起 快要
+这儿 离 地铁 站 不 太 远 。 | Ở đây cách ga tàu điện ngầm không xa lắm. | 地铁 | 楼 事情 身体
+我 到 车站 了 ， 你 看见 我 了 吗 ？ | Tôi đến bến xe rồi, bạn thấy tôi chưa? | 车站 | 地铁 外面 事情
+小时候 的 事情 她 都 忘 了 。 | Chuyện lúc nhỏ cô ấy đều quên hết rồi. | 事情 | 身体 地铁 楼
+这 个 好 可爱 ， 买 一 个 吧 。 | Cái này đáng yêu quá, mua một cái đi. | 好 | 正 最 更
+你 跑步 跑 得 比 我 快 。 | Bạn chạy bộ nhanh hơn tôi. | 快 | 慢 疼 晴
+我 慢慢 跑 ， 等 着 你 。 | Tôi chạy chậm thôi, đợi bạn. | 等 | 跑 走 送
+每 天 坐 两 站 地铁 去 学校 。 | Mỗi ngày đi hai bến tàu điện ngầm đến trường. | 站 | 门 头 路
+跟 李文 一起 跑步 ， 我 好 高兴 啊 ！ | Chạy bộ cùng Lý Văn, tôi vui quá! | 好 | 正 最 更
+这 件 事情 我 不 能 说 。 | Việc này tôi không thể nói. | 事情 | 身体 地铁 楼

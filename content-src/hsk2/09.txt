@@ -1,0 +1,101 @@
+id: 9
+title: 这里离家很近
+py: Zhè lǐ lí jiā hěn jìn
+vi: Ở đây cách nhà rất gần
+goal: Mua sắm, đi uống cà phê, chọn cách về nhà; so sánh với 没有 / 有, nói khoảng cách với 离 và bổ ngữ thời lượng.
+slides: 09
+
+== vocab
+坏 | huài | tính từ | hỏng; xấu | 苹果都坏了，别吃了。 | Táo hỏng hết rồi, đừng ăn nữa.
+旁边 | páng biān | danh từ | bên cạnh | 旁边的咖啡馆是新开的吗？ | Quán cà phê bên cạnh mới mở à?
+男孩儿 | nán háir | danh từ | cậu bé, con trai | 这个男孩儿喜欢踢足球。 | Cậu bé này thích đá bóng.
+这样 | zhè yàng | đại từ | như thế này | 我不想做这样的工作。 | Tôi không muốn làm công việc như thế này.
+个子 | gè zi | danh từ | vóc dáng, chiều cao | 他个子很高，打篮球打得很好。 | Anh ấy cao, chơi bóng rổ rất giỏi.
+那么 | nà me | đại từ | như thế, như vậy | 这个菜没有我做的那么好吃。 | Món này không ngon bằng món tôi nấu.
+高 | gāo | tính từ | cao | 爸爸比我高很多。 | Bố cao hơn tôi nhiều.
+门口 | mén kǒu | danh từ | cửa ra vào, trước cửa | 我们在门口见面吧。 | Chúng ta gặp nhau ở cửa nhé.
+咖啡 | kā fēi | danh từ | cà phê | 我想喝咖啡。 | Tôi muốn uống cà phê.
+离 | lí | động từ | cách | 你家离学校有多远？ | Nhà bạn cách trường bao xa?
+近 | jìn | tính từ | gần | 公司离我家很近。 | Công ty cách nhà tôi rất gần.
+走路 | zǒu lù | động từ | đi bộ | 我每天都走路去上班。 | Ngày nào tôi cũng đi bộ đi làm.
+周 | zhōu | danh từ | tuần | 这周我工作不太忙。 | Tuần này công việc của tôi không bận lắm.
+
+== grammar
+## So sánh với 没有 và 有
+A 没有 B + tính từ: A không bằng B; có thể thêm 这么 / 那么 trước tính từ để nhấn mạnh B ở mức cao. Hỏi so sánh: A 有 B + tính từ + 吗？
+f: A + 没有 + B + (这么 / 那么) + Tính từ · A + 有 + B + Tính từ + 吗？
+ex: 儿子的个子没有他那么高。 | Con trai không cao bằng cậu bé đó.
+ex: 昨天没有今天这么冷。 | Hôm qua không lạnh bằng hôm nay.
+ex: 妹妹有姐姐高吗？ | Em gái có cao bằng chị gái không?
+## Động từ 离
+离 chỉ khoảng cách về không gian hoặc thời gian giữa A và B.
+f: A + 离 + B + 远 / 近 / còn bao lâu
+ex: 咖啡店离这儿有点儿远。 | Quán cà phê cách đây hơi xa.
+ex: 学校离医院不远。 | Trường học cách bệnh viện không xa.
+ex: 现在离我的生日还有三天。 | Bây giờ còn ba ngày nữa là đến sinh nhật tôi.
+## Bổ ngữ thời lượng
+Từ chỉ khoảng thời gian đặt sau động từ cho biết hành động kéo dài bao lâu. Tân ngữ chỉ vật đặt sau bổ ngữ; tân ngữ chỉ người / đại từ đặt trước bổ ngữ; hoặc lặp lại động từ. Có 了 ở cả sau động từ và cuối câu: hành động vẫn đang tiếp diễn.
+f: Động từ + (了) + Thời lượng · Động từ + Tân ngữ + Động từ + 了 + Thời lượng
+ex: 走半个多小时就到了。 | Đi bộ hơn nửa tiếng là đến.
+ex: 李文等了她一个小时。 | Lý Văn đã đợi cô ấy một tiếng.
+ex: 他们学中文学了两年。 | Họ học tiếng Trung được hai năm.
+ex: 他写了半个小时汉字了。 | Anh ấy viết chữ Hán được nửa tiếng rồi (vẫn đang viết).
+
+== text Bài khóa 1
+王一雪: 儿子的裤子坏了，我们给他买条新的吧。 | Quần của con trai hỏng rồi, chúng ta mua cho con một cái mới đi.
+刘明: 好啊。你看这条黑色的怎么样？ | Được. Em xem cái màu đen này thế nào?
+王一雪: 没有你上次买的那条好看。 | Không đẹp bằng cái lần trước anh mua.
+刘明: 旁边的男孩儿就穿了这样的裤子，我觉得很好看啊！ | Cậu bé bên cạnh mặc cái quần như thế này, anh thấy đẹp mà!
+王一雪: 儿子的个子没有他那么高，穿上就不会太好看。 | Con trai không cao bằng cậu bé đó, mặc vào sẽ không đẹp lắm.
+刘明: 好吧，我们再去那边看看。 | Thôi được, chúng ta qua bên kia xem tiếp.
+
+== text Bài khóa 2
+刘明: 门口有家奶茶店。你想喝杯奶茶吗？ | Ở cửa có một quán trà sữa. Em muốn uống trà sữa không?
+王一雪: 我想喝咖啡，还是去咖啡店吧。 | Em muốn uống cà phê, mình đi quán cà phê đi.
+刘明: 咖啡店离这儿有点儿远。 | Quán cà phê cách đây hơi xa.
+王一雪: 没关系，那家店的咖啡很好喝。 | Không sao, cà phê quán đó rất ngon.
+刘明: 那你等一下，我去买杯奶茶。 | Vậy em đợi một chút, anh đi mua cốc trà sữa.
+王一雪: 你不想喝咖啡吗？ | Anh không muốn uống cà phê à?
+刘明: 喝了咖啡，晚上就别想睡觉了。 | Uống cà phê thì tối đừng mong ngủ được.
+
+== text Bài khóa 3
+刘明: 我们打车回去吧。 | Chúng ta bắt taxi về đi.
+王一雪: 这里离家很近，还是走路吧。 | Ở đây cách nhà rất gần, đi bộ đi.
+刘明: 要走多长时间？ | Phải đi bao lâu?
+王一雪: 走半个多小时就到了。 | Đi hơn nửa tiếng là đến.
+刘明: 好的。每天上下班都坐车，今天运动运动吧。 | Được. Ngày nào đi làm cũng ngồi xe, hôm nay vận động một chút vậy.
+
+== text Bài khóa 4
+这周刘明休息，我下班后跟他去了一家商店。商店里边的衣服没有大商场里的好看。我们没有买到喜欢的衣服，从商店出来就到咖啡店坐了坐。因为想运动运动，所以喝完东西，我们就走回家了。 | Tuần này Lưu Minh được nghỉ, tan làm tôi cùng anh ấy đến một cửa hàng. Quần áo trong cửa hàng không đẹp bằng ở trung tâm thương mại lớn. Chúng tôi không mua được bộ nào ưng ý, ra khỏi cửa hàng thì vào quán cà phê ngồi một lúc. Vì muốn vận động một chút nên uống xong chúng tôi đi bộ về nhà.
+
+== sentences
+苹果 都 坏 了 ， 别 吃 了 。 | Táo hỏng hết rồi, đừng ăn nữa. | 坏 | 高 近 远
+旁边 的 咖啡馆 是 新 开 的 吗 ？ | Quán cà phê bên cạnh mới mở à? | 旁边 | 门口 左边 下面
+这 个 男孩儿 喜欢 踢 足球 。 | Cậu bé này thích đá bóng. | 男孩儿 | 个子 门口 咖啡
+我 不 想 做 这样 的 工作 。 | Tôi không muốn làm công việc như thế này. | 这样 | 那么 这么 怎么
+他 个子 很 高 。 | Anh ấy dáng người cao. | 个子 | 男孩儿 门口 咖啡
+这 个 菜 没有 我 做 的 那么 好吃 。 | Món này không ngon bằng món tôi nấu. | 那么 | 这样 怎么 什么
+爸爸 比 我 高 很 多 。 | Bố cao hơn tôi nhiều. | 高 | 坏 近 远
+我们 在 门口 见面 吧 。 | Chúng ta gặp nhau ở cửa nhé. | 门口 | 旁边 左边 网上
+我 想 喝 咖啡 。 | Tôi muốn uống cà phê. | 咖啡 | 门口 个子 周
+你 家 离 学校 有 多 远 ？ | Nhà bạn cách trường bao xa? | 离 | 从 往 比
+公司 离 我 家 很 近 。 | Công ty cách nhà tôi rất gần. | 近 | 坏 高 长
+我 每 天 都 走路 去 上班 。 | Ngày nào tôi cũng đi bộ đi làm. | 走路 | 跑步 游泳 打车
+这 周 我 工作 不 太 忙 。 | Tuần này công việc của tôi không bận lắm. | 周 | 次 名 间
+昨天 没有 今天 这么 冷 。 | Hôm qua không lạnh bằng hôm nay. | 没有 | 比 跟 有
+妹妹 有 姐姐 高 吗 ？ | Em gái có cao bằng chị gái không? | 有 | 比 跟 没
+咖啡店 离 这儿 有点儿 远 。 | Quán cà phê cách đây hơi xa. | 离 | 从 往 比
+现在 离 我 的 生日 还 有 三 天 。 | Bây giờ còn ba ngày nữa là đến sinh nhật tôi. | 离 | 从 往 比
+走 半 个 多 小时 就 到 了 。 | Đi bộ hơn nửa tiếng là đến. | 小时 | 周 分钟 点
+李文 等 了 她 一 个 小时 。 | Lý Văn đã đợi cô ấy một tiếng. | 等 | 花 送 拿
+他们 学 中文 学 了 两 年 。 | Họ học tiếng Trung được hai năm. | 年 | 周 点 次
+儿子 的 裤子 坏 了 。 | Quần của con trai hỏng rồi. | 坏 | 高 近 远
+旁边 的 男孩儿 就 穿 了 这样 的 裤子 。 | Cậu bé bên cạnh mặc cái quần như thế này. | 这样 | 那么 这么 怎么
+儿子 的 个子 没有 他 那么 高 。 | Con trai không cao bằng cậu bé đó. | 个子 | 男孩儿 门口 咖啡
+门口 有 家 奶茶 店 。 | Ở cửa có một quán trà sữa. | 门口 | 旁边 左边 网上
+喝 了 咖啡 ， 晚上 就 别 想 睡觉 了 。 | Uống cà phê thì tối đừng mong ngủ được. | 咖啡 | 门口 个子 周
+这里 离 家 很 近 ， 还是 走路 吧 。 | Ở đây cách nhà rất gần, đi bộ đi. | 近 | 坏 高 长
+我们 走路 去 吧 ， 这样 可以 运动 运动 。 | Chúng ta đi bộ đi, như vậy có thể vận động. | 走路 | 跑步 游泳 打车
+他 写 了 半 个 小时 汉字 了 。 | Anh ấy viết chữ Hán được nửa tiếng rồi. | 汉字 | 咖啡 门口 个子
+我们 去 北京 两 周 。 | Chúng tôi đi Bắc Kinh hai tuần. | 周 | 次 名 间
+你 喜欢 ， 那么 就 买 吧 。 | Bạn thích thì mua đi. | 那么 | 这样 怎么 什么

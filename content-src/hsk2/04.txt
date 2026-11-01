@@ -1,0 +1,103 @@
+id: 4
+title: 你穿红色的很好看
+py: Nǐ chuān hóng sè de hěn hǎo kàn
+vi: Bạn mặc màu đỏ rất đẹp
+goal: Đi mua sắm, chọn màu sắc, quần áo; dùng trợ từ 过, câu 因为……所以…… và cụm từ có 的.
+slides: 04
+
+== vocab
+过 | guo | trợ từ | (đã từng) | 他去过中国。 | Anh ấy đã từng đến Trung Quốc.
+商场 | shāng chǎng | danh từ | trung tâm thương mại | 妈妈去商场买东西。 | Mẹ đi trung tâm thương mại mua đồ.
+进去 | jìn qu | động từ | đi vào (trong đó) | 外面太冷了，我们进去吧。 | Bên ngoài lạnh quá, chúng ta vào trong đi.
+条 | tiáo | lượng từ | (lượng từ cho vật dài, hẹp) | 我不喜欢这条裤子。 | Tôi không thích cái quần này.
+裤子 | kù zi | danh từ | quần | 我买了两条裤子。 | Tôi đã mua hai cái quần.
+白色 | bái sè | danh từ | màu trắng | 我有很多白色的衣服。 | Tôi có rất nhiều quần áo màu trắng.
+因为 | yīn wèi | liên từ | bởi vì | 因为下雨，所以我们打车去商场。 | Vì trời mưa nên chúng tôi bắt taxi đến trung tâm thương mại.
+试 | shì | động từ | thử | 这条裤子很好看，我可以试试吗？ | Cái quần này đẹp quá, tôi có thể thử không?
+红色 | hóng sè | danh từ | màu đỏ | 你试试这条红色的吧。 | Bạn thử cái màu đỏ này đi.
+所以 | suǒ yǐ | liên từ | cho nên, vì thế | 工作非常忙，所以我不能去旅游。 | Công việc rất bận, cho nên tôi không thể đi du lịch.
+书包 | shū bāo | danh từ | cặp sách | 我想买个新书包。 | Tôi muốn mua một cái cặp sách mới.
+过去 | guò qu | động từ | đi qua (đó) | 那边有很多人，我们过去看看吧。 | Bên kia có nhiều người, chúng ta qua đó xem đi.
+绿色 | lǜ sè | danh từ | màu xanh lá | 我觉得绿色的更好看。 | Tôi thấy cái màu xanh lá đẹp hơn.
+黑色 | hēi sè | danh từ | màu đen | 你已经有一条黑色的裤子了。 | Bạn đã có một cái quần màu đen rồi.
+更 | gèng | phó từ | càng, hơn | 我更喜欢吃中国菜。 | Tôi thích ăn món Trung Quốc hơn.
+颜色 | yán sè | danh từ | màu sắc | 你喜欢什么颜色？ | Bạn thích màu gì?
+
+== grammar
+## Trợ từ động thái 过
+过 đứng sau động từ, biểu thị một việc đã từng xảy ra trong quá khứ (kinh nghiệm), không kéo dài đến hiện tại. Phủ định: 没(有) + Động từ + 过.
+f: Chủ ngữ + Động từ + 过 + Tân ngữ · Chủ ngữ + 没(有) + Động từ + 过 + Tân ngữ
+ex: 我吃过饺子，很好吃。 | Tôi đã từng ăn sủi cảo, rất ngon.
+ex: 他没去过中国。 | Anh ấy chưa từng đến Trung Quốc.
+ex: 你看没看过那个电影？ | Bạn đã xem bộ phim đó chưa?
+## Câu 因为……，所以……
+因为……所以…… (bởi vì … cho nên …) tạo câu phức chỉ quan hệ nhân quả. Có thể dùng cả hai từ hoặc chỉ một trong hai.
+f: 因为 + Nguyên nhân，所以 + Kết quả
+ex: 就是因为没穿过，所以要试试啊！ | Chính vì chưa mặc bao giờ nên mới phải thử chứ!
+ex: 因为我生病了，今天没去上班。 | Vì tôi bị ốm nên hôm nay không đi làm.
+ex: 我没去过他家，所以让他来车站接我。 | Tôi chưa đến nhà anh ấy bao giờ, nên bảo anh ấy ra bến xe đón tôi.
+## Cụm từ có 的
+的 đặt sau danh từ, đại từ, động từ, tính từ… tạo thành cụm từ có 的, dùng như một danh từ (danh từ trung tâm được lược đi vì đã rõ).
+f: Danh từ / Đại từ / Động từ / Tính từ + 的
+ex: 红色的、绿色的、黑色的，你想买哪个？ | Cái màu đỏ, cái màu xanh, cái màu đen, bạn muốn mua cái nào?
+ex: 这个面包是爸爸买的，妈妈买的在那儿。 | Cái bánh mì này là bố mua, cái mẹ mua ở đằng kia.
+ex: 这件衣服太贵了，还是买那件便宜的吧。 | Cái áo này đắt quá, hay là mua cái rẻ kia đi.
+
+== text Bài khóa 1
+刘小雪: 妈妈，我们来过这家商场吗？ | Mẹ ơi, chúng ta đã đến trung tâm thương mại này chưa?
+王一雪: 没来过，这是新开的。 | Chưa đến bao giờ, đây là chỗ mới mở.
+刘小雪: 我们进去看看吧。 | Chúng ta vào xem đi.
+王一雪: 好啊！你想买点儿什么？ | Được! Con muốn mua gì?
+刘小雪: 我想买条裤子。 | Con muốn mua một cái quần.
+王一雪: 没问题。 | Không vấn đề gì.
+
+== text Bài khóa 2
+刘小雪: 妈妈，我想买这条白色的裤子。 | Mẹ ơi, con muốn mua cái quần trắng này.
+王一雪: 你有很多白色的衣服，为什么还买白色的？ | Con có nhiều quần áo trắng rồi, sao còn mua màu trắng?
+刘小雪: 因为我喜欢白色啊！ | Vì con thích màu trắng mà!
+王一雪: 我觉得这条白色的不太好看，你试试那条红色的吧。 | Mẹ thấy cái màu trắng này không đẹp lắm, con thử cái màu đỏ kia đi.
+刘小雪: 我没穿过红色的，红色的好看吗？ | Con chưa mặc màu đỏ bao giờ, màu đỏ có đẹp không?
+王一雪: 就是因为没穿过，所以要试试啊！ | Chính vì chưa mặc bao giờ nên mới phải thử chứ!
+
+== text Bài khóa 3
+刘小雪: 妈妈，我想买个新书包。 | Mẹ ơi, con muốn mua một cái cặp sách mới.
+王一雪: 好，那边卖书包，我们过去看看吧。 | Được, bên kia bán cặp sách, chúng ta qua đó xem đi.
+刘小雪: 这么多漂亮的书包！ | Nhiều cặp sách đẹp quá!
+王一雪: 红色的、绿色的、黑色的，你想买哪个？ | Màu đỏ, màu xanh lá, màu đen, con muốn mua cái nào?
+刘小雪: 绿色的吧！ | Cái màu xanh lá đi ạ!
+王一雪: 不错，我也觉得绿色的更好看。 | Được đấy, mẹ cũng thấy cái màu xanh lá đẹp hơn.
+
+== text Bài khóa 4
+我和妈妈去了一家商场。因为是新开的，所以这几天东西很便宜。商场里的衣服颜色很多。我没穿过红色的裤子，妈妈让我试了试，我觉得我穿红色的也很好看。 | Tôi và mẹ đã đến một trung tâm thương mại. Vì mới mở nên mấy hôm nay đồ rất rẻ. Quần áo trong trung tâm có rất nhiều màu. Tôi chưa mặc quần màu đỏ bao giờ, mẹ bảo tôi thử, tôi thấy mình mặc màu đỏ cũng rất đẹp.
+
+== sentences
+他 去 过 中国 。 | Anh ấy đã từng đến Trung Quốc. | 过 | 了 的 着
+妈妈 去 商场 买 东西 。 | Mẹ đi trung tâm thương mại mua đồ. | 商场 | 书包 颜色 裤子
+外面 太 冷 了 ， 我们 进去 吧 。 | Bên ngoài lạnh quá, chúng ta vào trong đi. | 进去 | 过去 回来 出去
+我 不 喜欢 这 条 裤子 。 | Tôi không thích cái quần này. | 条 | 件 本 张
+我 和 妈妈 买 了 两 条 裤子 。 | Tôi và mẹ đã mua hai cái quần. | 裤子 | 书包 商场 颜色
+我 有 很 多 白色 的 衣服 。 | Tôi có rất nhiều quần áo màu trắng. | 白色 | 颜色 书包 商场
+因为 下雨 ， 我们 打车 去 商场 。 | Vì trời mưa nên chúng tôi bắt taxi đến trung tâm thương mại. | 因为 | 所以 但 还是
+这 条 裤子 很 好看 ， 我 可以 试试 吗 ？ | Cái quần này đẹp quá, tôi có thể thử không? | 试试 | 洗洗 拿拿 送送
+你 试试 这 条 红色 的 吧 。 | Bạn thử cái màu đỏ này đi. | 红色 | 颜色 商场 书包
+工作 非常 忙 ， 所以 我 不 能 去 旅游 。 | Công việc rất bận, cho nên tôi không thể đi du lịch. | 所以 | 因为 但 还是
+我 想 买 个 新 书包 。 | Tôi muốn mua một cái cặp sách mới. | 书包 | 裤子 商场 颜色
+那边 有 很 多 人 ， 我们 过去 看看 吧 。 | Bên kia có nhiều người, chúng ta qua đó xem đi. | 过去 | 进去 回来 出去
+我 觉得 绿色 的 更 好看 。 | Tôi thấy cái màu xanh lá đẹp hơn. | 更 | 太 真 也
+你 已经 有 一 条 黑色 的 裤子 了 。 | Bạn đã có một cái quần màu đen rồi. | 黑色 | 颜色 商场 书包
+你 喜欢 什么 颜色 ？ | Bạn thích màu gì? | 颜色 | 商场 书包 裤子
+我们 来 过 这 家 商场 吗 ？ | Chúng ta đã đến trung tâm thương mại này chưa? | 商场 | 书包 颜色 裤子
+我 没 穿 过 红色 的 裤子 。 | Tôi chưa từng mặc quần màu đỏ. | 过 | 了 的 着
+他 走 进去 了 。 | Anh ấy đi vào trong rồi. | 进去 | 过去 回来 出去
+就是 因为 没 穿 过 ， 所以 要 试试 啊 ！ | Chính vì chưa mặc bao giờ nên mới phải thử chứ! | 所以 | 因为 但 还是
+因为 我 生病 了 ， 今天 没 去 上班 。 | Vì tôi bị ốm nên hôm nay không đi làm. | 因为 | 所以 但 还是
+那 辆 白色 的 车 是 你 的 吗 ？ | Chiếc xe màu trắng kia là của bạn à? | 白色 | 颜色 书包 商场
+我 更 喜欢 吃 中国 菜 。 | Tôi thích ăn món Trung Quốc hơn. | 更 | 太 真 也
+那 个 红色 的 多少 钱 ？ | Cái màu đỏ kia bao nhiêu tiền? | 红色 | 颜色 商场 书包
+他 叫 你 过去 。 | Anh ấy gọi bạn qua đó. | 过去 | 进去 回来 出去
+红色 的 、 绿色 的 、 黑色 的 ， 你 想 买 哪个 ？ | Màu đỏ, màu xanh lá, màu đen, bạn muốn mua cái nào? | 哪个 | 什么 怎么 为什么
+这 件 衣服 太 贵 了 ， 还是 买 便宜 的 吧 。 | Cái áo này đắt quá, hay là mua cái rẻ đi. | 便宜 | 漂亮 远 累
+这 是 新 开 的 商场 ， 东西 很 便宜 。 | Đây là trung tâm thương mại mới mở, đồ rất rẻ. | 新 | 好 大 远
+商场 里 的 衣服 颜色 很 多 。 | Quần áo trong trung tâm có rất nhiều màu. | 颜色 | 商场 书包 裤子
+妈妈 让 我 试 了 试 。 | Mẹ bảo tôi thử. | 让 | 给 接 送
+你 看 过 那 个 电影 吗 ？ | Bạn đã từng xem bộ phim đó chưa? | 电影 | 商场 书包 颜色

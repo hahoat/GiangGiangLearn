@@ -1,0 +1,104 @@
+id: 2
+title: 还是打车去北大吧
+py: Hái shi dǎ chē qù Běi dà ba
+vi: Hay là bắt taxi đến Đại học Bắc Kinh đi
+goal: Hỏi đường, chọn phương tiện; dùng 还是……吧 để khuyên chọn cách tốt hơn, 多 chỉ số ước lượng, động từ / cụm động từ làm định ngữ.
+slides: 02
+
+== vocab
+公交车 | gōng jiāo chē | danh từ | xe buýt | 我们坐公交车上班。 | Chúng tôi đi xe buýt đi làm.
+但 | dàn | liên từ | nhưng | 今天下雨了，但不太冷。 | Hôm nay trời mưa, nhưng không lạnh lắm.
+车站 | chē zhàn | danh từ | bến xe, trạm xe | 我在车站等公交车。 | Tôi đợi xe buýt ở trạm xe.
+远 | yuǎn | tính từ | xa | 公司离机场不太远。 | Công ty cách sân bay không xa lắm.
+打车 | dǎ chē | động từ | bắt taxi | 这儿不容易打车。 | Ở đây không dễ bắt taxi.
+还是 | hái shi | phó từ | hay là, tốt hơn là | 我们还是打车去吧。 | Hay là chúng ta bắt taxi đi.
+北京大学 | Běi jīng Dà xué | danh từ riêng | Đại học Bắc Kinh | 他们在北京大学学习。 | Họ học ở Đại học Bắc Kinh.
+啊 | a | trợ từ | (cuối câu, biểu thị cảm thán, đồng ý) | 北京大学真大啊！ | Đại học Bắc Kinh rộng thật đấy!
+万 | wàn | số từ | vạn, mười nghìn | 我们大学有两万多个学生。 | Trường đại học của chúng tôi có hơn hai vạn sinh viên.
+名 | míng | lượng từ | (lượng từ chỉ người); tên | 他是一名很好的医生。 | Anh ấy là một bác sĩ rất giỏi.
+网上 | wǎng shàng | danh từ | trên mạng | 你们在网上买东西吗？ | Các bạn có mua đồ trên mạng không?
+外国 | wài guó | danh từ | nước ngoài | 我喜欢去外国旅游。 | Tôi thích đi du lịch nước ngoài.
+间 | jiān | lượng từ | (lượng từ cho phòng) | 这间教室里有三个人。 | Trong phòng học này có ba người.
+教室 | jiào shì | danh từ | phòng học, lớp học | 今天在哪个教室上课？ | Hôm nay học ở phòng nào?
+票 | piào | danh từ | vé | 我在网上买了一张电影票。 | Tôi đã mua một vé xem phim trên mạng.
+别 | bié | phó từ | đừng | 没钱了，别买了。 | Hết tiền rồi, đừng mua nữa.
+过来 | guò lai | động từ | qua đây, lại đây | 你们都过来吃饭吧。 | Các bạn đều qua đây ăn cơm đi.
+
+== grammar
+## Cấu trúc 还是……吧
+还是……吧 thể hiện sự lựa chọn sau khi đã cân nhắc, nghĩa là "làm như thế này thì tốt hơn".
+f: (Chủ ngữ) + 还是 + Động từ + 吧
+ex: 我们还是打车去吧。 | Hay là chúng ta bắt taxi đi.
+ex: 那件衣服很好看，还是买那件吧。 | Cái áo kia rất đẹp, hay là mua cái kia đi.
+ex: 你第一次去北京，还是找个人接你吧。 | Bạn lần đầu đi Bắc Kinh, tốt hơn là tìm người đón bạn.
+## 多 biểu thị số ước lượng
+多 đặt sau số để chỉ "hơn …". Số tròn chục trở lên: 多 đứng trước lượng từ. Số nhỏ hơn 10: 多 đứng sau lượng từ.
+f: Số tròn chục + 多 + Lượng từ + Danh từ · Số (1–9) + Lượng từ + 多 + Danh từ
+ex: 北京大学有四万多名学生。 | Đại học Bắc Kinh có hơn bốn vạn sinh viên.
+ex: 教室里有二十多个学生。 | Trong phòng học có hơn hai mươi học sinh.
+ex: 这两个苹果五块多钱。 | Hai quả táo này hơn năm đồng.
+## Động từ / cụm động từ làm định ngữ
+Động từ, cụm động từ hoặc cụm chủ – vị đặt trước danh từ, nối bằng 的, để nói rõ đặc điểm của danh từ đó.
+f: Động từ / Cụm động từ / Cụm chủ – vị + 的 + Danh từ
+ex: 他们卖的电影票也很便宜。 | Vé xem phim họ bán cũng rất rẻ.
+ex: 现在学中文的学生很多。 | Bây giờ học sinh học tiếng Trung rất nhiều.
+ex: 这是朋友给我的书。 | Đây là quyển sách bạn tặng tôi.
+
+== text Bài khóa 1
+白家月: 请问，这儿有到北京大学的公交车吗？ | Xin hỏi, ở đây có xe buýt đến Đại học Bắc Kinh không?
+服务员: 有，但车站有点儿远。 | Có, nhưng bến xe hơi xa.
+白家月: 这儿好打车吗？ | Ở đây có dễ bắt taxi không?
+服务员: 好打车。 | Dễ bắt taxi lắm.
+白家月: 谢谢。安妮，我们还是打车去吧。 | Cảm ơn. Annie, hay là chúng ta bắt taxi đi.
+安妮: 好，没问题。 | Được, không vấn đề gì.
+
+== text Bài khóa 2
+白家月: 学校里人真多啊！ | Trong trường đông người thật!
+安妮: 是啊，北京大学有四万多名学生呢！ | Đúng vậy, Đại học Bắc Kinh có hơn bốn vạn sinh viên đấy!
+白家月: 你是怎么知道的？ | Sao bạn biết?
+安妮: 是网上说的，网上还说北京大学有三千多名外国学生。 | Trên mạng nói vậy, trên mạng còn nói Đại học Bắc Kinh có hơn ba nghìn sinh viên nước ngoài.
+白家月: 我也想来这儿学习。 | Mình cũng muốn đến đây học.
+安妮: 那边就有一间教室，我们去看一下吧。 | Bên kia có một phòng học, chúng ta đi xem một chút đi.
+
+== text Bài khóa 3
+安妮: 家月，你看，学校里有家电影院！ | Gia Nguyệt, bạn xem, trong trường có một rạp chiếu phim!
+白家月: 是啊，电影院还不小。 | Đúng thế, rạp chiếu phim cũng không nhỏ.
+安妮: 他们卖的电影票也很便宜。 | Vé xem phim họ bán cũng rất rẻ.
+白家月: 天啊！有的还不到二十块钱。 | Trời ơi! Có vé còn chưa đến hai mươi đồng.
+安妮: 那你想不想去看个电影？ | Vậy bạn có muốn đi xem phim không?
+白家月: 还是别看电影了，北京大学就很好看！ | Thôi đừng xem phim nữa, Đại học Bắc Kinh đã rất đẹp rồi!
+
+== text Bài khóa 4
+北京大学很大，有四万多名学生。学校很漂亮，里边还有家电影院，电影票也不贵，我们有时间还想再过来看个电影。 | Đại học Bắc Kinh rất rộng, có hơn bốn vạn sinh viên. Trường rất đẹp, bên trong còn có một rạp chiếu phim, vé xem phim cũng không đắt, khi có thời gian chúng tôi còn muốn quay lại xem phim.
+
+== sentences
+我们 坐 公交车 上班 。 | Chúng tôi đi xe buýt đi làm. | 公交车 | 车站 教室 电影票
+今天 下雨 了 ， 但 不 太 冷 。 | Hôm nay trời mưa, nhưng không lạnh lắm. | 但 | 别 还是 啊
+我 在 车站 等 公交车 。 | Tôi đợi xe buýt ở trạm xe. | 车站 | 教室 网上 外国
+公司 离 机场 不 太 远 。 | Công ty cách sân bay không xa lắm. | 远 | 多 大 冷
+这儿 不 容易 打车 。 | Ở đây không dễ bắt taxi. | 打车 | 过来 旅游 帮忙
+我们 还是 打车 去 吧 。 | Hay là chúng ta bắt taxi đi. | 还是 | 已经 有时 但
+北京大学 真 大 啊 ！ | Đại học Bắc Kinh rộng thật đấy! | 啊 | 吗 呢 吧
+北京大学 有 四 万 多 名 学生 。 | Đại học Bắc Kinh có hơn bốn vạn sinh viên. | 万 | 间 张 次
+他 是 一 名 很 好 的 医生 。 | Anh ấy là một bác sĩ rất giỏi. | 名 | 间 张 本
+你们 在 网上 买 东西 吗 ？ | Các bạn có mua đồ trên mạng không? | 网上 | 车站 教室 外国
+我 喜欢 去 外国 旅游 。 | Tôi thích đi du lịch nước ngoài. | 外国 | 网上 车站 教室
+这 间 教室 里 有 三 个 人 。 | Trong phòng học này có ba người. | 间 | 名 张 本
+今天 在 哪个 教室 上课 ？ | Hôm nay học ở phòng học nào? | 教室 | 车站 网上 电影票
+没 钱 了 ， 别 买 了 。 | Hết tiền rồi, đừng mua nữa. | 别 | 但 啊 还是
+你们 都 过来 吃饭 吧 。 | Các bạn đều qua đây ăn cơm đi. | 过来 | 打车 介绍 旅游
+这儿 有 到 北京大学 的 公交车 吗 ？ | Ở đây có xe buýt đến Đại học Bắc Kinh không? | 公交车 | 车站 教室 电影票
+我 会 说 汉语 ， 但 说 得 不 太 好 。 | Tôi biết nói tiếng Hán, nhưng nói không tốt lắm. | 但 | 别 还是 啊
+公交车 站 不 是 在 学校 后面 吗 ？ | Trạm xe buýt chẳng phải ở phía sau trường sao? | 后面 | 网上 外国 教室
+从 这儿 到 车站 有 多 远 ？ | Từ đây đến bến xe bao xa? | 远 | 多 大 冷
+我们 还是 别 看 电影 了 。 | Thôi chúng ta đừng xem phim nữa. | 别 | 但 啊 都
+这 件 衣服 很 好看 ， 还是 买 这 件 吧 。 | Cái áo này rất đẹp, hay là mua cái này đi. | 还是 | 已经 有时 但
+是 啊 ， 这 是 我们 第一 次 来 这儿 。 | Đúng vậy, đây là lần đầu chúng tôi đến đây. | 啊 | 吗 呢 吧
+教室 里 有 二十 多 个 学生 。 | Trong phòng học có hơn hai mươi học sinh. | 多 | 万 名 间
+他 现在 还是 一 名 学生 。 | Bây giờ anh ấy vẫn là một học sinh. | 名 | 间 张 本
+有了 电脑 ， 我 可以 在 网上 学 中文 。 | Có máy tính rồi, tôi có thể học tiếng Trung trên mạng. | 网上 | 车站 教室 外国
+北京大学 有 三千 多 名 外国 学生 。 | Đại học Bắc Kinh có hơn ba nghìn sinh viên nước ngoài. | 外国 | 网上 车站 教室
+这 间 房间 很 小 。 | Căn phòng này rất nhỏ. | 间 | 名 张 本
+我 在 网上 买 了 一 张 电影票 。 | Tôi đã mua một vé xem phim trên mạng. | 电影票 | 公交车 教室 车站
+他们 卖 的 电影票 也 很 便宜 。 | Vé xem phim họ bán cũng rất rẻ. | 便宜 | 远 大 冷
+过来 一下 ， 我 有 话 跟 你 说 。 | Lại đây một chút, tôi có chuyện muốn nói với bạn. | 过来 | 打车 介绍 旅游

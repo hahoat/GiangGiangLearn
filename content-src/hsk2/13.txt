@@ -1,0 +1,103 @@
+id: 13
+title: 我们爱上中文课
+py: Wǒ men ài shàng Zhōng wén kè
+vi: Chúng tôi thích học tiếng Trung
+goal: Chuẩn bị quà năm mới, học viết chữ Hán; dùng câu hai tân ngữ với 拿给 / 送给 / 卖给, so sánh có số lượng và 一点儿 / 一些.
+slides: 13
+
+== vocab
+新年 | xīn nián | danh từ | năm mới | 新年快乐！ | Chúc mừng năm mới!
+教 | jiāo | động từ | dạy | 她教我英语。 | Cô ấy dạy tôi tiếng Anh.
+花 | huā | danh từ | hoa | 她喜欢花，送给她花吧。 | Cô ấy thích hoa, tặng cô ấy hoa đi.
+希望 | xī wàng | động từ | hi vọng | 希望花店还有漂亮的花。 | Hi vọng tiệm hoa vẫn còn hoa đẹp.
+上面 | shàng miàn | danh từ | phía trên, bên trên | 桌子上面是什么？ | Trên bàn là gì vậy?
+洗手间 | xǐ shǒu jiān | danh từ | nhà vệ sinh | 他去洗手间了。 | Anh ấy đi vệ sinh rồi.
+里面 | lǐ miàn | danh từ | bên trong | 你们都在里面吗？ | Các bạn đều ở bên trong à?
+笔 | bǐ | lượng từ | nét (chữ) | “日”有四笔。 | Chữ "日" có bốn nét.
+可能 | kě néng | động từ năng nguyện | có lẽ, có thể | 下午可能下雨。 | Buổi chiều có thể mưa.
+上网 | shàng wǎng | động từ | lên mạng | 我常上网看电影。 | Tôi thường lên mạng xem phim.
+那样 | nà yàng | đại từ | như vậy, thế thì | 吃药吧，那样会舒服点儿。 | Uống thuốc đi, như vậy sẽ dễ chịu hơn.
+告诉 | gào su | động từ | nói cho biết | 他告诉我你明天回国。 | Anh ấy nói với tôi ngày mai bạn về nước.
+班 | bān | danh từ | lớp | 她是我们班的学生。 | Cô ấy là học sinh lớp chúng tôi.
+
+== grammar
+## Câu hai tân ngữ với 拿给 / 送给 / 卖给
+Một động từ mang hai tân ngữ: tân ngữ trước chỉ người, tân ngữ sau chỉ vật. Các động từ 拿, 送, 卖 kết hợp với 给 để tạo câu hai tân ngữ.
+f: Chủ ngữ + 拿 / 送 / 卖 + 给 + Người + Vật
+ex: 王老师喜欢花，就送给她花吧。 | Cô Vương thích hoa, vậy tặng cô hoa đi.
+ex: 她拿给我一杯水。 | Cô ấy lấy cho tôi một cốc nước.
+ex: 他卖给我一本中文书。 | Anh ấy bán cho tôi một quyển sách tiếng Trung.
+## So sánh với 比 có số lượng cụ thể
+Cụm số lượng đặt sau tính từ để nói rõ mức chênh lệch.
+f: A + 比 + B + Tính từ + Số lượng
+ex: 今天的词比昨天多了十个。 | Từ mới hôm nay nhiều hơn hôm qua mười từ.
+ex: 姐姐比我大三岁。 | Chị gái hơn tôi ba tuổi.
+ex: “日”比“口”多一笔。 | Chữ "日" nhiều hơn chữ "口" một nét.
+## So sánh với 比 + 一点儿 / 一些
+Muốn nói chênh lệch ít, đặt 一点儿 hoặc 一些 sau tính từ.
+f: A + 比 + B + Tính từ + 一点儿 / 一些
+ex: 这个本子比那个贵一点儿。 | Quyển vở này đắt hơn quyển kia một chút.
+ex: 姐姐比我高一点儿。 | Chị gái cao hơn tôi một chút.
+ex: 那间教室比这间大一些。 | Phòng học kia rộng hơn phòng này một chút.
+
+== text Bài khóa 1
+白家月: 时间过得真快啊！新年就要到了。 | Thời gian trôi nhanh thật! Năm mới sắp đến rồi.
+陈天中: 这一年王老师教我们中文，每天工作都很累。 | Năm nay cô Vương dạy chúng ta tiếng Trung, ngày nào cũng làm việc rất mệt.
+白家月: 是啊，她教得很好。因为她，我们都非常爱上中文课。 | Đúng vậy, cô dạy rất hay. Nhờ cô mà chúng ta đều rất thích học tiếng Trung.
+陈天中: 我们给她准备个新年礼物吧。你觉得送给她什么好呢？ | Chúng ta chuẩn bị quà năm mới cho cô đi. Bạn thấy tặng cô cái gì thì hay?
+白家月: 王老师喜欢花，就送给她花吧。 | Cô Vương thích hoa, vậy tặng cô hoa đi.
+陈天中: 那我们去花店看看，现在买花的人多，希望花店还有漂亮的花。 | Vậy chúng ta đến tiệm hoa xem, bây giờ người mua hoa đông, hi vọng tiệm vẫn còn hoa đẹp.
+
+== text Bài khóa 2
+白家月: 王老师，今天的词比昨天多了十个。 | Thưa cô, từ mới hôm nay nhiều hơn hôm qua mười từ.
+王老师: 是啊！你们都学会了吗？ | Đúng vậy! Các em học thuộc hết chưa?
+安妮: 学会了，没有问题。 | Học thuộc rồi ạ, không có vấn đề gì.
+王老师: 好。现在我来说，你们在本子上面写。 | Tốt. Bây giờ cô đọc, các em viết vào vở.
+王老师: 同学们，“洗手间”的“间”字写错了，它的里面是“日”，不是“口”。 | Các em, chữ "间" trong "洗手间" viết sai rồi, bên trong là "日", không phải "口".
+白家月: “日”比“口”多一笔，写“口”就是“问题”的“问”了。 | Chữ "日" nhiều hơn chữ "口" một nét, viết "口" thì thành chữ "问" trong "问题" rồi.
+王老师: 没错，你说得很对。 | Đúng vậy, em nói rất đúng.
+
+== text Bài khóa 3
+安妮: 家月，你觉得这个本子怎么样？ | Gia Nguyệt, bạn thấy quyển vở này thế nào?
+白家月: 很漂亮，多少钱一个？ | Đẹp lắm, bao nhiêu tiền một quyển?
+安妮: 比我们一起买的那个本子贵一点儿。 | Đắt hơn quyển vở chúng ta cùng mua một chút.
+白家月: 这么漂亮的本子，不可能只贵一点儿吧？ | Quyển vở đẹp thế này, không thể chỉ đắt hơn một chút chứ?
+安妮: 我是上网买的，真没那么贵。我买了两个，送你一个。 | Mình mua trên mạng, thật sự không đắt thế đâu. Mình mua hai quyển, tặng bạn một quyển.
+白家月: 谢谢！那我送给你什么呢？ | Cảm ơn! Vậy mình tặng bạn cái gì nhỉ?
+安妮: 咖啡杯吧，我最喜欢喝咖啡了。 | Cốc cà phê đi, mình thích uống cà phê nhất.
+白家月: 好，那样我们就都有新年礼物了。 | Được, như vậy chúng ta đều có quà năm mới rồi.
+
+== text Bài khóa 4
+新年就要到了，安妮送给我一个新本子。她告诉我是在网上买的，比我的本子贵一点儿。我们班同学也送了王老师漂亮的花，希望她高高兴兴地过个新年。 | Năm mới sắp đến, Annie tặng tôi một quyển vở mới. Cô ấy nói với tôi là mua trên mạng, đắt hơn vở của tôi một chút. Các bạn lớp tôi cũng tặng cô Vương hoa đẹp, hi vọng cô đón một năm mới thật vui vẻ.
+
+== sentences
+新年 就要 到 了 。 | Năm mới sắp đến rồi. | 新年 | 生日 考试 小时候
+她 教 我 英语 。 | Cô ấy dạy tôi tiếng Anh. | 教 | 送 拿 卖
+她 喜欢 花 ， 送给 她 花 吧 。 | Cô ấy thích hoa, tặng cô ấy hoa đi. | 送给 | 拿给 卖给 告诉
+希望 花店 还 有 漂亮 的 花 。 | Hi vọng tiệm hoa vẫn còn hoa đẹp. | 希望 | 可能 告诉 上网
+桌子 上面 是 什么 ？ | Trên bàn là gì vậy? | 上面 | 里面 外面 后面
+他 去 洗手间 了 。 | Anh ấy đi vệ sinh rồi. | 洗手间 | 药店 饭馆 教室
+你们 都 在 里面 吗 ？ | Các bạn đều ở bên trong à? | 里面 | 上面 外面 后面
+“ 日 ” 有 四 笔 。 | Chữ "日" có bốn nét. | 笔 | 个 本 张
+下午 可能 下雨 。 | Buổi chiều có thể mưa. | 可能 | 希望 告诉 上网
+我 常 上网 看 电影 。 | Tôi thường lên mạng xem phim. | 上网 | 希望 可能 告诉
+吃 药 吧 ， 那样 会 舒服 点儿 。 | Uống thuốc đi, như vậy sẽ dễ chịu hơn. | 那样 | 这么 怎么 什么
+他 告诉 我 你 明天 回国 。 | Anh ấy nói với tôi ngày mai bạn về nước. | 告诉 | 希望 可能 上网
+她 是 我们 班 的 学生 。 | Cô ấy là học sinh lớp chúng tôi. | 班 | 楼 站 门
+她 拿给 我 一 杯 水 。 | Cô ấy lấy cho tôi một cốc nước. | 拿给 | 送给 卖给 告诉
+他 卖给 我 一 本 中文 书 。 | Anh ấy bán cho tôi một quyển sách tiếng Trung. | 卖给 | 拿给 送给 教
+今天 的 词 比 昨天 多 了 十 个 。 | Từ mới hôm nay nhiều hơn hôm qua mười từ. | 多 | 少 大 高
+姐姐 比 我 大 三 岁 。 | Chị gái hơn tôi ba tuổi. | 岁 | 个 本 笔
+这 个 本子 比 那 个 贵 一点儿 。 | Quyển vở này đắt hơn quyển kia một chút. | 一点儿 | 一会儿 一起 一样
+那 间 教室 比 这 间 大 一些 。 | Phòng học kia rộng hơn phòng này một chút. | 一些 | 一起 一样 一会儿
+时间 过 得 真 快 啊 ！ | Thời gian trôi nhanh thật! | 过 | 走 跑 送
+王老师 教 得 很 好 。 | Cô Vương dạy rất hay. | 教 | 送 拿 卖
+我们 都 非常 爱 上 中文 课 。 | Chúng tôi đều rất thích học tiếng Trung. | 爱 | 教 送 卖
+现在 我 来 说 ， 你们 在 本子 上面 写 。 | Bây giờ cô đọc, các em viết vào vở. | 上面 | 里面 外面 后面
+它 的 里面 是 “ 日 ” ， 不 是 “ 口 ” 。 | Bên trong là "日", không phải "口". | 里面 | 上面 外面 后面
+我 是 上网 买 的 ， 真 没 那么 贵 。 | Tôi mua trên mạng, thật sự không đắt thế đâu. | 上网 | 希望 可能 告诉
+好 ， 那样 我们 就 都 有 新年 礼物 了 。 | Được, như vậy chúng ta đều có quà năm mới rồi. | 那样 | 这么 怎么 什么
+我 头疼 ， 可能 生病 了 。 | Tôi đau đầu, có lẽ bị ốm rồi. | 可能 | 希望 告诉 上网
+别 告诉 他 这 件 事 。 | Đừng nói với anh ấy chuyện này. | 告诉 | 希望 可能 上网
+你 在 哪个 班 学习 ？ | Bạn học ở lớp nào? | 班 | 楼 站 门
+我 希望 全家 都 健健康康 。 | Tôi hi vọng cả nhà đều khỏe mạnh. | 希望 | 可能 告诉 上网

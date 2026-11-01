@@ -1,0 +1,103 @@
+id: 15
+title: 我想再去一次中国
+py: Wǒ xiǎng zài qù yí cì Zhōng guó
+vi: Tôi muốn đi Trung Quốc thêm một lần nữa
+goal: Nói về kế hoạch đi du lịch, mua vé, ra sân bay; dùng bổ ngữ động lượng với 次 và câu 有 + số lượng.
+slides: 15
+
+== vocab
+姓名 | xìng míng | danh từ | họ tên | 请大家写上姓名。 | Mời mọi người viết họ tên.
+出国 | chū guó | động từ | ra nước ngoài | 他明年要出国。 | Năm sau anh ấy sẽ ra nước ngoài.
+门票 | mén piào | danh từ | vé vào cửa | 我买了两张门票。 | Tôi đã mua hai vé vào cửa.
+高中 | gāo zhōng | danh từ | trung học phổ thông (cấp 3) | 我的高中同学在医院工作。 | Bạn cấp 3 của tôi làm việc ở bệnh viện.
+出门 | chū mén | động từ | ra khỏi nhà, ra ngoài | 我每天早上七点出门上学。 | Mỗi sáng tôi ra khỏi nhà đi học lúc bảy giờ.
+路 | lù | danh từ | đường | 从这儿到学校，走路要十分钟。 | Từ đây đến trường đi bộ mất mười phút.
+颐和园 | Yí hé yuán | danh từ riêng | Di Hòa Viên (Bắc Kinh) | 颐和园很漂亮。 | Di Hòa Viên rất đẹp.
+机场 | jī chǎng | danh từ | sân bay | 明天我去机场送你。 | Ngày mai tôi ra sân bay tiễn bạn.
+机票 | jī piào | danh từ | vé máy bay | 我买了一张去上海的机票。 | Tôi đã mua một vé máy bay đi Thượng Hải.
+飞 | fēi | động từ | bay | 小鸟在天上飞。 | Chim nhỏ bay trên trời.
+好像 | hǎo xiàng | phó từ | hình như, dường như | 今天好像要下雨。 | Hôm nay hình như sắp mưa.
+鸟 | niǎo | danh từ | chim | 天上有一只鸟。 | Trên trời có một con chim.
+
+== grammar
+## Bổ ngữ động lượng với 次
+Số + 次 đặt sau động từ cho biết hành động xảy ra mấy lần.
+f: Chủ ngữ + Động từ + (了 / 过) + Số + 次
+ex: 我虽然去过一次，但是很想再去一次。 | Tuy tôi đã đi một lần, nhưng rất muốn đi thêm lần nữa.
+ex: 安妮去过一次北京。 | Annie đã đến Bắc Kinh một lần.
+ex: 李文见了杨同乐两次。 | Lý Văn đã gặp Dương Đồng Lạc hai lần.
+## Vị trí tân ngữ với bổ ngữ động lượng
+Tân ngữ chỉ vật đặt sau bổ ngữ động lượng; tân ngữ chỉ người (đại từ) đặt trước; tân ngữ chỉ nơi chốn đặt trước hoặc sau đều được.
+f: Động từ + Số + 次 + Vật · Động từ + Người + Số + 次 · Động từ + (Nơi chốn) + Số + 次 + (Nơi chốn)
+ex: 我想再吃一次烤鸭。 | Tôi muốn ăn vịt quay thêm một lần nữa.
+ex: 我想找他一次。 | Tôi muốn tìm anh ấy một lần.
+ex: 安妮来过这儿两次。 | Annie đã đến đây hai lần.
+## Câu 有 + số lượng
+有 đặt trước cụm số lượng, nhấn mạnh số lượng (thời gian, tuổi, giá cả…) đạt đến một mức nhất định.
+f: Chủ ngữ + 有 + Số lượng + (了)
+ex: 你有一年没回去了吧？ | Bạn có đến một năm chưa về rồi nhỉ?
+ex: 你女儿今年有十岁了吗？ | Con gái bạn năm nay được mười tuổi chưa?
+ex: 我有一个月没给家里打电话了。 | Tôi đã một tháng không gọi điện về nhà rồi.
+
+== text Bài khóa 1
+王一飞: 考试就要开始了，请大家写上姓名，写好后就可以做题了。 | Kỳ thi sắp bắt đầu, mời các em viết họ tên, viết xong thì có thể làm bài.
+白家月: 老师，我做完了。 | Thưa cô, em làm xong rồi.
+陈天中: 老师，我也做完了。 | Thưa cô, em cũng làm xong rồi.
+王一飞: 对了，你们考完试想做什么？ | À phải rồi, thi xong các em muốn làm gì?
+白家月: 我很想去中国，虽然去过一次，但是很想再去一次。 | Em rất muốn đi Trung Quốc, tuy đã đi một lần nhưng rất muốn đi thêm lần nữa.
+王一飞: 不错，到中国后你就可以经常说中文了。 | Hay đấy, đến Trung Quốc rồi em có thể thường xuyên nói tiếng Trung.
+
+== text Bài khóa 2
+白家月: 考完试了，我现在可以出国旅游了。 | Thi xong rồi, bây giờ mình có thể đi du lịch nước ngoài.
+李文: 你要去哪儿？ | Bạn định đi đâu?
+白家月: 我要再去一次北京。 | Mình muốn đi Bắc Kinh thêm lần nữa.
+李文: 为什么还去北京？ | Sao lại đi Bắc Kinh nữa?
+白家月: 因为我想再吃一次烤鸭，再喝一次奶茶，再去北京大学看一次电影。 | Vì mình muốn ăn vịt quay thêm lần nữa, uống trà sữa thêm lần nữa, đến Đại học Bắc Kinh xem phim thêm lần nữa.
+李文: 你想做的事情很多啊！ | Việc bạn muốn làm nhiều thật đấy!
+白家月: 是啊，你看，我还在网上买好颐和园的门票了呢。 | Đúng vậy, bạn xem, mình còn mua sẵn vé vào Di Hòa Viên trên mạng rồi.
+李文: 我的高中同学就在颐和园上班，可以让他给你好好介绍介绍。 | Bạn cấp 3 của mình làm việc ở Di Hòa Viên, có thể nhờ cậu ấy giới thiệu kỹ cho bạn.
+白家月: 太好了！出门旅游，多个朋友多条路。 | Tốt quá! Đi du lịch xa, thêm một người bạn là thêm một con đường.
+
+== text Bài khóa 3
+白家月: 李文，你有一年没回去了吧？ | Lý Văn, bạn có đến một năm chưa về rồi nhỉ?
+李文: 不到一年。我六月的时候回去了一次。 | Chưa đến một năm. Tháng sáu mình có về một lần.
+白家月: 我怎么忘了？还是我送你去机场的呢。 | Sao mình lại quên nhỉ? Chính mình còn tiễn bạn ra sân bay mà.
+李文: 是啊！ | Đúng thế!
+白家月: 我记得你那次的机票很便宜。 | Mình nhớ lần đó vé máy bay của bạn rất rẻ.
+李文: 没错，可能因为那个时候去北京的人不多吧。 | Đúng vậy, có lẽ vì lúc đó người đi Bắc Kinh không nhiều.
+白家月: 这次的机票虽然有点儿贵，但想到就要飞北京了，我还是很高兴的。 | Vé máy bay lần này tuy hơi đắt, nhưng nghĩ đến sắp bay đi Bắc Kinh, mình vẫn rất vui.
+
+== text Bài khóa 4
+我六月的时候回过一次北京，现在又半年多没回去了，我有点儿想家。就要过年了，我要回家过年。家月这次也要去北京，我们都是星期五的飞机。家月说我们好像小鸟，一起飞到北京，再一起飞回这里。 | Tháng sáu tôi đã về Bắc Kinh một lần, giờ lại hơn nửa năm chưa về, tôi hơi nhớ nhà. Sắp Tết rồi, tôi phải về nhà ăn Tết. Lần này Gia Nguyệt cũng đi Bắc Kinh, chúng tôi đều đi chuyến bay thứ sáu. Gia Nguyệt nói chúng tôi giống như những chú chim nhỏ, cùng bay đến Bắc Kinh, rồi lại cùng bay về đây.
+
+== sentences
+请 大家 写 上 姓名 。 | Mời mọi người viết họ tên. | 姓名 | 门票 机票 高中
+他 明年 要 出国 。 | Năm sau anh ấy sẽ ra nước ngoài. | 出国 | 出门 上网 过年
+我 买 了 两 张 门票 。 | Tôi đã mua hai vé vào cửa. | 门票 | 姓名 高中 机场
+我 的 高中 同学 在 医院 工作 。 | Bạn cấp 3 của tôi làm việc ở bệnh viện. | 高中 | 姓名 门票 机票
+我 每 天 早上 七 点 出门 。 | Mỗi sáng tôi ra khỏi nhà lúc bảy giờ. | 出门 | 出国 上网 过年
+从 这儿 到 学校 ， 走路 要 十 分钟 。 | Từ đây đến trường đi bộ mất mười phút. | 走路 | 出门 出国 跳舞
+颐和园 很 漂亮 。 | Di Hòa Viên rất đẹp. | 颐和园 | 机场 高中 门票
+明天 我 去 机场 送 你 。 | Ngày mai tôi ra sân bay tiễn bạn. | 机场 | 机票 门票 高中
+我 买 了 一 张 去 上海 的 机票 。 | Tôi đã mua một vé máy bay đi Thượng Hải. | 机票 | 机场 姓名 高中
+小鸟 在 天 上 飞 。 | Chim nhỏ bay trên trời. | 飞 | 跑 走 站
+今天 好像 要 下雨 。 | Hôm nay hình như sắp mưa. | 好像 | 希望 可能 告诉
+天 上 有 一 只 鸟 。 | Trên trời có một con chim. | 鸟 | 路 花 包
+安妮 去 过 一 次 北京 。 | Annie đã đến Bắc Kinh một lần. | 次 | 本 张 位
+我 想 再 吃 一 次 烤鸭 。 | Tôi muốn ăn vịt quay thêm một lần nữa. | 再 | 又 还 也
+你 有 一 年 没 回去 了 吧 ？ | Bạn có đến một năm chưa về rồi nhỉ? | 有 | 是 在 比
+李文 见 了 杨同乐 两 次 。 | Lý Văn đã gặp Dương Đồng Lạc hai lần. | 次 | 本 张 位
+考试 就要 开始 了 。 | Kỳ thi sắp bắt đầu rồi. | 开始 | 准备 告诉 希望
+到 中国 后 你 就 可以 经常 说 中文 了 。 | Đến Trung Quốc rồi bạn có thể thường xuyên nói tiếng Trung. | 经常 | 已经 好像 从小
+考完 试 了 ， 我 现在 可以 出国 旅游 了 。 | Thi xong rồi, bây giờ tôi có thể đi du lịch nước ngoài. | 出国 | 出门 上网 过年
+我 还 在 网上 买好 颐和园 的 门票 了 。 | Tôi còn mua sẵn vé vào Di Hòa Viên trên mạng rồi. | 门票 | 姓名 高中 机场
+出门 旅游 ， 多 个 朋友 多 条 路 。 | Đi du lịch xa, thêm một người bạn là thêm một con đường. | 朋友 | 姓名 门票 机场
+我 六月 的 时候 回去 了 一 次 。 | Tháng sáu tôi đã về một lần. | 次 | 本 张 位
+我 记得 你 那 次 的 机票 很 便宜 。 | Tôi nhớ lần đó vé máy bay của bạn rất rẻ. | 机票 | 机场 姓名 高中
+想到 就要 飞 北京 了 ， 我 很 高兴 。 | Nghĩ đến sắp bay đi Bắc Kinh, tôi rất vui. | 飞 | 跑 走 站
+我 有点儿 想家 。 | Tôi hơi nhớ nhà. | 想家 | 出门 出国 过年
+我 要 回家 过年 。 | Tôi phải về nhà ăn Tết. | 过年 | 出门 出国 上网
+她 好像 生病 了 。 | Hình như cô ấy bị ốm rồi. | 好像 | 希望 可能 告诉
+我 喜欢 小鸟 。 | Tôi thích chim nhỏ. | 小鸟 | 门票 机票 姓名
+我 有 一 个 月 没 给 家 里 打 电话 了 。 | Tôi đã một tháng không gọi điện về nhà rồi. | 月 | 次 本 张
+我 家 后面 有 一 条 路 。 | Phía sau nhà tôi có một con đường. | 路 | 鸟 花 包

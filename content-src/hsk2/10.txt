@@ -1,0 +1,105 @@
+id: 10
+title: 是我们上学还是你们上学
+py: Shì wǒ men shàng xué hái shi nǐ men shàng xué
+vi: Là chúng con đi học hay bố mẹ đi học?
+goal: Chuẩn bị khai giảng, ôn thi; dùng câu chủ – vị làm vị ngữ, câu hỏi lựa chọn với 还是 và cấu trúc 快要……了.
+slides: 10
+
+== vocab
+开学 | kāi xué | động từ | khai giảng | 孩子明天开学。 | Ngày mai con khai giảng.
+门 | mén | danh từ | cửa | 让我来开门吧！ | Để tôi mở cửa cho!
+后面 | hòu miàn | danh từ | phía sau | 你的书包在门后面。 | Cặp sách của con ở sau cửa.
+笔 | bǐ | danh từ | bút | 你的笔在桌子上面。 | Bút của bạn ở trên bàn.
+帮 | bāng | động từ | giúp | 你能帮我拿一下书包吗？ | Bạn có thể cầm giúp tôi cái cặp không?
+考试 | kǎo shì | danh từ / động từ | kỳ thi; thi | 明天要考试，你今天早点儿休息吧。 | Mai phải thi, hôm nay con nghỉ sớm đi.
+词 | cí | danh từ | từ | 这个词有什么意思？ | Từ này có nghĩa là gì?
+本子 | běn zi | danh từ | quyển vở | 你看见我的本子了吗？ | Bạn có thấy quyển vở của tôi không?
+错 | cuò | tính từ | sai | 我错了，对不起。 | Tôi sai rồi, xin lỗi.
+题 | tí | danh từ | đề, câu hỏi (bài tập) | 这道题我不会做。 | Câu này tôi không biết làm.
+还是 | hái shi | liên từ | hay là (câu hỏi lựa chọn) | 你喝茶还是喝咖啡？ | Bạn uống trà hay cà phê?
+考 | kǎo | động từ | thi | 这次考试我考得不好。 | Kỳ thi lần này tôi thi không tốt.
+快要 | kuài yào | phó từ | sắp | 快要考试了，你复习好了吗？ | Sắp thi rồi, bạn ôn xong chưa?
+笑 | xiào | động từ | cười | 听完她说的话，大家都笑了。 | Nghe cô ấy nói xong, mọi người đều cười.
+
+== grammar
+## Câu chủ – vị làm vị ngữ
+Vị ngữ của câu là một cụm chủ – vị, dùng để miêu tả, giải thích cho chủ ngữ lớn. Chủ ngữ nhỏ thường là một bộ phận hoặc có liên quan tới chủ ngữ lớn.
+f: Chủ ngữ lớn + (Chủ ngữ nhỏ + Vị ngữ)
+ex: 我的书包你看见了吗？ | Cặp sách của con bố có thấy không?
+ex: 弟弟手很小。 | Em trai tay rất nhỏ.
+ex: 这件事他知道。 | Việc này anh ấy biết.
+## Câu hỏi lựa chọn với 还是
+还是 dùng trong câu hỏi, nối các phương án để người nghe chọn một.
+f: A + 还是 + B？
+ex: 是您准备考试还是我准备考试？ | Là mẹ chuẩn bị thi hay con chuẩn bị thi?
+ex: 你更喜欢打篮球、踢足球还是游泳？ | Bạn thích chơi bóng rổ, đá bóng hay bơi hơn?
+ex: 往左边走还是往右边走？ | Đi về bên trái hay bên phải?
+## Cấu trúc 要 / 快 / 快要 / 就要……了
+Diễn tả một việc sắp xảy ra. Khi trong câu có trạng ngữ chỉ thời gian cụ thể (明天, 下星期…) thì dùng 就要……了, không dùng 快要……了.
+f: (Thời gian) + 就要 + Động từ + 了 · 快(要) + Động từ + 了
+ex: 饭菜快要做好了。 | Cơm nước sắp nấu xong rồi.
+ex: 火车快开了。 | Tàu sắp chạy rồi.
+ex: 我们下星期就要考试了。 | Tuần sau chúng tôi thi rồi.
+
+== text Bài khóa 1
+刘明: 小明，你们明天开学，你准备好了吗？ | Tiểu Minh, ngày mai các con khai giảng, con chuẩn bị xong chưa?
+刘小明: 明天就开学吗？爸爸，我的书包你看见了吗？ | Mai đã khai giảng rồi ạ? Bố ơi, bố có thấy cặp sách của con không?
+刘明: 书包在门后面。 | Cặp sách ở sau cửa.
+刘小明: 书在哪儿呢？笔呢？ | Sách đâu ạ? Còn bút?
+刘明: 书在床上，笔在桌子上。 | Sách ở trên giường, bút ở trên bàn.
+刘小明: 太好了！现在都准备好了。 | Tốt quá! Giờ chuẩn bị xong hết rồi.
+刘明: 这次爸爸帮你，下次你自己准备，好不好？ | Lần này bố giúp con, lần sau con tự chuẩn bị nhé, được không?
+刘小明: 好！ | Vâng ạ!
+
+== text Bài khóa 2
+王一雪: 小雪，你在做什么呢？ | Tiểu Tuyết, con đang làm gì đấy?
+刘小雪: 明天考试，我在看书呢。 | Mai thi rồi, con đang đọc sách ạ.
+王一雪: 这些词要好好看看。 | Những từ này phải xem kỹ đấy.
+刘小雪: 我看过了，意思也都懂了。 | Con xem rồi, nghĩa cũng hiểu hết rồi ạ.
+王一雪: 你的本子呢？本子上做错的题也要看一看。 | Vở của con đâu? Những câu làm sai trong vở cũng phải xem lại.
+刘小雪: 妈妈，是您准备考试还是我准备考试？ | Mẹ ơi, là mẹ chuẩn bị thi hay con chuẩn bị thi ạ?
+
+== text Bài khóa 3
+刘小雪: 妈妈，我回来了！ | Mẹ ơi, con về rồi!
+王一雪: 我买了奶茶，就在桌子上，自己去拿吧。 | Mẹ mua trà sữa rồi, ở trên bàn ấy, con tự đi lấy nhé.
+刘小雪: 谢谢妈妈！ | Con cảm ơn mẹ!
+王一雪: 今天考试考得怎么样？ | Hôm nay thi thế nào?
+刘小雪: 我觉得比上次好。 | Con thấy tốt hơn lần trước ạ.
+王一雪: 真不错！饭菜快要做好了，你叫弟弟一起去洗手吧。 | Giỏi quá! Cơm sắp nấu xong rồi, con gọi em cùng đi rửa tay đi.
+刘小明: 妈妈，我是第一名，姐姐还没洗完呢。 | Mẹ ơi, con là người đầu tiên, chị vẫn chưa rửa xong ạ.
+王一雪: 你洗得真快啊！ | Con rửa nhanh thật đấy!
+
+== text Bài khóa 4
+快要开学了，爸爸帮弟弟准备书包、本子和笔。我就要考试了，妈妈让我看书、看做错的题。我们上学，爸爸、妈妈比我们还忙。我问他们：“是我和弟弟上学还是你们上学？”我问完，他们都笑了。 | Sắp khai giảng rồi, bố giúp em trai chuẩn bị cặp sách, vở và bút. Tôi sắp thi rồi, mẹ bảo tôi đọc sách, xem lại những câu làm sai. Chúng tôi đi học mà bố mẹ còn bận hơn chúng tôi. Tôi hỏi bố mẹ: "Là con với em đi học hay bố mẹ đi học ạ?" Tôi hỏi xong, bố mẹ đều cười.
+
+== sentences
+孩子 明天 开学 。 | Ngày mai con khai giảng. | 开学 | 考试 上班 下课
+让 我 来 开 门 吧 ！ | Để tôi mở cửa cho! | 门 | 笔 题 词
+你 的 书包 在 门 后面 。 | Cặp sách của bạn ở sau cửa. | 后面 | 旁边 门口 左边
+你 的 笔 在 桌子 上面 。 | Bút của bạn ở trên bàn. | 笔 | 门 题 词
+你 能 帮 我 拿 一下 书包 吗 ？ | Bạn có thể cầm giúp tôi cái cặp không? | 帮 | 让 给 跟
+明天 要 考试 ， 你 早 点儿 休息 吧 。 | Mai phải thi, bạn nghỉ sớm đi. | 考试 | 开学 运动 旅游
+这 个 词 有 什么 意思 ？ | Từ này có nghĩa là gì? | 词 | 笔 门 题
+你 看见 我 的 本子 了 吗 ？ | Bạn có thấy quyển vở của tôi không? | 本子 | 书包 手表 礼物
+我 错 了 ， 对不起 。 | Tôi sai rồi, xin lỗi. | 错 | 坏 近 累
+这 道 题 我 不 会 做 。 | Câu này tôi không biết làm. | 题 | 词 笔 门
+你 喝 茶 还是 喝 咖啡 ？ | Bạn uống trà hay cà phê? | 还是 | 但是 虽然 所以
+这 次 考试 我 考 得 不 好 。 | Kỳ thi lần này tôi thi không tốt. | 考 | 笑 帮 点
+快要 考试 了 ， 你 复习 好 了 吗 ？ | Sắp thi rồi, bạn ôn xong chưa? | 快要 | 已经 一起 有时
+大家 都 笑 了 。 | Mọi người đều cười. | 笑 | 考 帮 点
+弟弟 手 很 小 。 | Em trai tay rất nhỏ. | 手 | 门 笔 题
+我 的 书包 你 看见 了 吗 ？ | Cặp sách của tôi bạn có thấy không? | 书包 | 本子 手表 礼物
+这 件 事 他 知道 。 | Việc này anh ấy biết. | 知道 | 记得 觉得 认识
+往 左边 走 还是 往 右边 走 ？ | Đi về bên trái hay bên phải? | 还是 | 但是 虽然 所以
+饭菜 快要 做好 了 。 | Cơm nước sắp nấu xong rồi. | 快要 | 已经 一起 有时
+我们 下 星期 就要 考试 了 。 | Tuần sau chúng tôi thi rồi. | 就要 | 快要 已经 还要
+这些 词 要 好好 看看 。 | Những từ này phải xem kỹ. | 词 | 笔 门 题
+本子 上 做错 的 题 也 要 看一看 。 | Những câu làm sai trong vở cũng phải xem lại. | 题 | 词 笔 门
+今天 考试 考 得 怎么样 ？ | Hôm nay thi thế nào? | 怎么样 | 为什么 什么 哪儿
+我 觉得 比 上 次 好 。 | Tôi thấy tốt hơn lần trước. | 比 | 跟 从 往
+你 洗 得 真 快 啊 ！ | Bạn rửa nhanh thật đấy! | 快 | 坏 错 近
+这次 爸爸 帮 你 ， 下次 你 自己 准备 。 | Lần này bố giúp con, lần sau con tự chuẩn bị. | 自己 | 一起 每 这样
+书 在 床 上 ， 笔 在 桌子 上 。 | Sách ở trên giường, bút ở trên bàn. | 床 | 门 题 词
+这些 都 是 你 做错 的 题 。 | Đây đều là những câu bạn làm sai. | 做错 | 做完 做好 洗完
+他 考上 了 北京大学 。 | Anh ấy đã thi đỗ Đại học Bắc Kinh. | 考上 | 笑了 帮忙 开学
+我 问 完 ， 他们 都 笑 了 。 | Tôi hỏi xong, họ đều cười. | 笑 | 考 帮 点

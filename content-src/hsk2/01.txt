@@ -1,0 +1,102 @@
+id: 1
+title: 她请我们吃了北京烤鸭
+py: Tā qǐng wǒ men chī le Běi jīng kǎo yā
+vi: Cô ấy đã mời chúng tôi ăn vịt quay Bắc Kinh
+goal: Đón khách, hỏi mục đích chuyến đi; dùng 吧 để phỏng đoán, câu 是……的 và câu kiêm ngữ với 请/让/叫.
+slides: 01
+
+== vocab
+就 | jiù | phó từ | chính (là) | 你们就是他的学生吗？ | Các bạn chính là học sinh của anh ấy à?
+给 | gěi | giới từ | cho | 妈妈给我打电话。 | Mẹ gọi điện cho tôi.
+让 | ràng | động từ | bảo, để (ai làm gì) | 老板让我去叫你。 | Ông chủ bảo tôi đi gọi bạn.
+接 | jiē | động từ | đón | 我去接女儿。 | Tôi đi đón con gái.
+次 | cì | lượng từ | lần | 我们见过一次。 | Chúng ta đã gặp nhau một lần.
+旅游 | lǚ yóu | động từ | du lịch | 我们想去北京旅游。 | Chúng tôi muốn đi Bắc Kinh du lịch.
+帮忙 | bāng máng | động từ | giúp, giúp đỡ | 你有事就找他，他会帮忙的。 | Bạn có việc thì tìm anh ấy, anh ấy sẽ giúp.
+不好意思 | bù hǎo yì si | cụm từ | thật ngại quá, xin lỗi | 不好意思，我今天没时间。 | Thật ngại quá, hôm nay tôi không có thời gian.
+已经 | yǐ jīng | phó từ | đã | 他已经睡觉了。 | Anh ấy đã đi ngủ rồi.
+那 | nà | liên từ | thế thì, vậy thì | 那我们明天去吧。 | Vậy thì ngày mai chúng ta đi nhé.
+介绍 | jiè shào | động từ | giới thiệu | 我来介绍一下，这是安妮。 | Để tôi giới thiệu một chút, đây là Annie.
+有时 | yǒu shí | phó từ | có lúc, thỉnh thoảng | 有时我觉得中文很难。 | Có lúc tôi thấy tiếng Trung rất khó.
+懂 | dǒng | động từ | hiểu | 他说的话我们都听不懂。 | Lời anh ấy nói chúng tôi đều nghe không hiểu.
+意思 | yì si | danh từ | ý, nghĩa | 这个汉字是什么意思？ | Chữ Hán này có nghĩa là gì?
+北京烤鸭 | Běi jīng kǎo yā | danh từ | vịt quay Bắc Kinh | 这是我第一次吃北京烤鸭。 | Đây là lần đầu tôi ăn vịt quay Bắc Kinh.
+
+== grammar
+## Trợ từ ngữ khí 吧 (phỏng đoán)
+吧 đặt ở cuối câu hỏi để biểu thị sự phỏng đoán, ước lượng: người hỏi gần như đã biết câu trả lời và muốn xác nhận lại.
+f: Câu trần thuật + 吧？
+ex: 你们就是她的学生吧？ | Các bạn chính là học sinh của cô ấy phải không?
+ex: 他唱歌很好听吧？ | Anh ấy hát hay lắm nhỉ?
+ex: 陈天中是泰国人吧？ | Trần Thiên Trung là người Thái Lan phải không?
+## Câu 是……的
+是……的 dùng để nhấn mạnh thời gian, địa điểm, cách thức, người thực hiện hoặc mục đích của một việc đã xảy ra. 是 có thể lược bỏ trong câu khẳng định và câu hỏi, nhưng không được bỏ trong câu phủ định.
+f: Chủ ngữ + (是) + thời gian / địa điểm / cách thức / mục đích + Động từ + 的
+ex: 我们是来旅游的。 | Chúng tôi đến để du lịch.
+ex: 你是什么时候到的？ | Bạn đến lúc nào?
+ex: 我们不是坐出租车来的。 | Chúng tôi không phải đi taxi đến.
+## Câu kiêm ngữ với 请 / 让 / 叫
+Vị ngữ gồm hai cụm động từ; tân ngữ của động từ thứ nhất đồng thời là chủ ngữ của động từ thứ hai. Khi động từ thứ nhất là 请, 让, 叫, câu biểu thị việc bảo / mời ai đó làm gì.
+f: Chủ ngữ + 请 / 让 / 叫 + Người + Động từ (+ Tân ngữ)
+ex: 我想请你帮个忙。 | Tôi muốn nhờ bạn giúp một việc.
+ex: 王老师让我们说中文。 | Cô Vương bảo chúng tôi nói tiếng Trung.
+ex: 妈妈叫孩子们回家。 | Mẹ gọi bọn trẻ về nhà.
+
+== text Bài khóa 1
+白家月: 请问，您是王一飞老师的姐姐吗？ | Xin hỏi, chị có phải là chị gái của thầy Vương Nhất Phi không?
+王一雪: 是的，你们就是她的学生吧？ | Đúng vậy, các em chính là học sinh của cậu ấy nhỉ?
+白家月: 对。我是白家月，她是安妮。 | Vâng. Em là Bạch Gia Nguyệt, bạn ấy là Annie.
+王一雪: 你们好，我叫王一雪。一飞给我打电话了，让我来接你们。 | Chào các em, chị tên là Vương Nhất Tuyết. Nhất Phi đã gọi điện cho chị, bảo chị đến đón các em.
+安妮: 谢谢您。 | Cảm ơn chị.
+王一雪: 不客气。 | Không có gì.
+
+== text Bài khóa 2
+王一雪: 你们是第一次来北京吗？ | Các em đến Bắc Kinh lần đầu à?
+白家月: 是的，我们都是第一次来。 | Vâng, chúng em đều đến lần đầu.
+王一雪: 你们是来学中文的吗？ | Các em đến để học tiếng Trung à?
+安妮: 不是，我们是来旅游的。 | Không ạ, chúng em đến để du lịch.
+王一雪: 我这几天都不忙，你们有事就找我。 | Mấy hôm nay chị đều không bận, các em có việc gì thì cứ tìm chị.
+白家月: 好的，谢谢您。 | Vâng, cảm ơn chị.
+
+== text Bài khóa 3
+陈天中: 喂，家月，你明天有时间吗？我想请你帮个忙。 | A lô, Gia Nguyệt, ngày mai bạn có thời gian không? Mình muốn nhờ bạn giúp một việc.
+白家月: 不好意思，天中，我已经到北京了。 | Thật ngại quá, Thiên Trung, mình đã đến Bắc Kinh rồi.
+陈天中: 你是什么时候到的？ | Bạn đến lúc nào vậy?
+白家月: 我是今天早上到的。你有事可以叫李文帮忙，他还在学校呢。 | Mình đến sáng nay. Bạn có việc có thể nhờ Lý Văn giúp, cậu ấy vẫn còn ở trường.
+陈天中: 好的，那我给他打个电话。 | Được, vậy mình gọi điện cho cậu ấy.
+白家月: 好，再见！ | Ừ, tạm biệt!
+
+== text Bài khóa 4
+王老师，我们已经到北京了，是您姐姐来接的我们。她请我们吃了北京烤鸭，还给我们介绍了很多东西。我们的中文不太好，有时不太懂她的意思。 | Thầy Vương ơi, chúng em đã đến Bắc Kinh rồi, là chị gái thầy đến đón chúng em. Chị ấy đã mời chúng em ăn vịt quay Bắc Kinh, còn giới thiệu cho chúng em rất nhiều thứ. Tiếng Trung của chúng em không tốt lắm, có lúc không hiểu lắm ý của chị ấy.
+
+== sentences
+你们 就 是 她 的 学生 吧 ？ | Các bạn chính là học sinh của cô ấy phải không? | 就 | 也 还 都
+一飞 给 我 打 电话 了 。 | Nhất Phi đã gọi điện cho tôi. | 给 | 让 在 跟
+王老师 让 我们 说 中文 。 | Cô Vương bảo chúng tôi nói tiếng Trung. | 让 | 给 接 想
+我 去 机场 接 朋友 。 | Tôi ra sân bay đón bạn. | 接 | 帮 让 懂
+这 是 我 第一 次 来 北京 。 | Đây là lần đầu tiên tôi đến Bắc Kinh. | 次 | 个 本 名
+我们 是 来 旅游 的 。 | Chúng tôi đến để du lịch. | 旅游 | 介绍 帮忙 意思
+我 想 请 你 帮 个 忙 。 | Tôi muốn nhờ bạn giúp một việc. | 请 | 给 就 接
+他 已经 睡觉 了 。 | Anh ấy đã đi ngủ rồi. | 已经 | 有时 不好意思 意思
+我 来 介绍 一下 ， 这 是 安妮 。 | Để tôi giới thiệu một chút, đây là Annie. | 介绍 | 旅游 帮忙 接
+有时 我 觉得 中文 很 难 。 | Có lúc tôi thấy tiếng Trung rất khó. | 有时 | 已经 那 就
+他 说 的 话 我 不 懂 。 | Lời anh ấy nói tôi không hiểu. | 懂 | 接 让 给
+这 个 汉字 是 什么 意思 ？ | Chữ Hán này có nghĩa là gì? | 意思 | 介绍 旅游 次
+她 请 我们 吃 了 北京烤鸭 。 | Cô ấy đã mời chúng tôi ăn vịt quay Bắc Kinh. | 北京烤鸭 | 意思 旅游 车票
+你 是 什么 时候 到 的 ？ | Bạn đến lúc nào? | 的 | 了 吗 呢
+不好意思 ， 我 今天 没 时间 。 | Thật ngại quá, hôm nay tôi không có thời gian. | 不好意思 | 不客气 没关系 对不起
+你们 有 事 就 找 我 。 | Các bạn có việc thì cứ tìm tôi. | 就 | 也 都 还
+妈妈 给 我 买 了 一 本 书 。 | Mẹ đã mua cho tôi một quyển sách. | 给 | 让 在 跟
+老板 让 我 去 叫 你 。 | Ông chủ bảo tôi đi gọi bạn. | 让 | 给 接 想
+你 去 哪儿 接 她 ？ | Bạn đi đâu để đón cô ấy? | 接 | 帮 让 懂
+我们 见 过 一 次 。 | Chúng ta đã gặp nhau một lần. | 次 | 个 本 名
+我 喜欢 去 外地 旅游 。 | Tôi thích đi du lịch nơi khác. | 旅游 | 介绍 帮忙 意思
+你 有 事 可以 叫 李文 帮忙 。 | Bạn có việc có thể nhờ Lý Văn giúp. | 帮忙 | 旅游 介绍 意思
+我 已经 到 北京 了 。 | Tôi đã đến Bắc Kinh rồi. | 已经 | 有时 不好意思 意思
+她 给 我们 介绍 了 很 多 东西 。 | Cô ấy đã giới thiệu cho chúng tôi rất nhiều thứ. | 介绍 | 旅游 帮忙 接
+我 有时 看 手机 ， 有时 看 电视 。 | Tôi lúc thì xem điện thoại, lúc thì xem tivi. | 手机 | 老师 学生 汉字
+我们 有时 不 太 懂 她 的 意思 。 | Có lúc chúng tôi không hiểu lắm ý của cô ấy. | 懂 | 接 让 给
+你 的 意思 是 要 我 去 吗 ？ | Ý của bạn là muốn tôi đi à? | 意思 | 介绍 旅游 次
+那 我 给 他 打 个 电话 。 | Vậy tôi gọi điện cho anh ấy. | 那 | 就 也 还
+我 是 今天 早上 到 的 。 | Tôi đến vào sáng nay. | 早上 | 时候 时间 已经
+妈妈 叫 孩子们 回家 。 | Mẹ gọi bọn trẻ về nhà. | 叫 | 给 接 懂

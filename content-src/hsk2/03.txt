@@ -1,0 +1,101 @@
+id: 3
+title: 我想去西安旅游
+py: Wǒ xiǎng qù Xī ān lǚ yóu
+vi: Tôi muốn đi Tây An du lịch
+goal: Nói về việc đã làm xong, rủ nhau đi chơi, lên kế hoạch du lịch; dùng bổ ngữ kết quả và động từ lặp lại.
+slides: 03
+
+== vocab
+回来 | huí lai | động từ | trở về, quay lại | 你今天几点回来？ | Hôm nay mấy giờ bạn về?
+这么 | zhè me | đại từ | như thế này, thế này | 今天回来这么晚啊！ | Hôm nay về muộn thế!
+完 | wán | động từ | xong, hết | 工作太多了，下班的时候还没做完。 | Công việc nhiều quá, lúc tan làm vẫn chưa làm xong.
+一起 | yì qǐ | phó từ | cùng nhau | 明天你跟我一起去超市吧。 | Ngày mai bạn đi siêu thị cùng tôi nhé.
+出去 | chū qu | động từ | ra ngoài | 他们出去玩了。 | Họ ra ngoài chơi rồi.
+洗 | xǐ | động từ | rửa, giặt | 去洗洗这个苹果吧。 | Đi rửa quả táo này đi.
+自己 | zì jǐ | đại từ | tự mình, bản thân | 这本书是我自己买的。 | Quyển sách này là tôi tự mua.
+拿 | ná | động từ | cầm, lấy | 杯子在桌子上，你自己去拿吧。 | Cái cốc ở trên bàn, bạn tự đi lấy nhé.
+手 | shǒu | danh từ | tay | 弟弟的手很小。 | Tay của em trai rất nhỏ.
+为什么 | wèi shén me | đại từ | tại sao | 你为什么今天没上班？ | Tại sao hôm nay bạn không đi làm?
+不错 | bú cuò | tính từ | không tệ, khá tốt | 你的中文很不错。 | Tiếng Trung của bạn khá tốt.
+送 | sòng | động từ | đưa (ai đi đâu); tặng | 妈妈每天都送我去学校。 | Ngày nào mẹ cũng đưa tôi đến trường.
+回去 | huí qu | động từ | trở về (nơi cũ) | 很晚了，你怎么还不回去？ | Muộn rồi, sao bạn vẫn chưa về?
+每 | měi | đại từ | mỗi | 每个人都有自己喜欢的东西。 | Mỗi người đều có thứ mình thích.
+累 | lèi | tính từ | mệt | 今天工作太累了。 | Hôm nay làm việc mệt quá.
+
+== grammar
+## Bổ ngữ kết quả
+Một số động từ hoặc tính từ (好, 完, 到, 晚, 见, 懂…) đứng ngay sau động từ để chỉ kết quả của hành động. Phủ định dùng 没, bỏ 了.
+f: Động từ + Bổ ngữ kết quả + (Tân ngữ) + 了 · 没 + Động từ + Bổ ngữ kết quả
+ex: 菜都做好了。 | Món ăn đã nấu xong cả rồi.
+ex: 我吃完饭了。 | Tôi ăn cơm xong rồi.
+ex: 我没吃完饭。 | Tôi chưa ăn xong cơm.
+## Câu hỏi với bổ ngữ kết quả
+Có ba cách hỏi: thêm 了吗 cuối câu; thêm (了)没有 cuối câu; hoặc dùng dạng Động từ + 没 + Động từ + Bổ ngữ kết quả.
+f: …了吗？ · …(了)没有？ · Động từ + 没 + Động từ + Bổ ngữ
+ex: 你吃完饭了吗？ | Bạn ăn cơm xong chưa?
+ex: 小雪来晚了没有？ | Tiểu Tuyết có đến muộn không?
+ex: 你学没学会？ | Bạn học được chưa?
+## Động từ lặp lại
+Lặp lại động từ để biểu thị thời gian ngắn, làm thử, làm một chút; giọng câu nhẹ nhàng, tự nhiên. A → A(一)A; AB → ABAB; động từ li hợp AB → AAB. Việc đã xảy ra: A了A, AB了一下, A了AB.
+f: A(一)A · ABAB · AAB · A了A
+ex: 那你再想一想。 | Vậy bạn nghĩ thêm chút nữa đi.
+ex: 我有点儿累，现在想休息休息。 | Tôi hơi mệt, bây giờ muốn nghỉ ngơi một chút.
+ex: 你能过来帮帮忙吗？ | Bạn có thể qua đây giúp một tay không?
+ex: 我看了看网上的介绍。 | Tôi đã xem qua phần giới thiệu trên mạng.
+
+== text Bài khóa 1
+王一雪: 今天回来这么晚啊！ | Hôm nay anh về muộn thế!
+刘明: 工作太多了，下班的时候没做完。 | Công việc nhiều quá, lúc tan làm vẫn chưa làm xong.
+王一雪: 菜都做好了，过来吃饭吧。 | Cơm nấu xong cả rồi, lại đây ăn cơm đi.
+刘明: 我想休息一下，喝杯水。 | Anh muốn nghỉ một chút, uống cốc nước.
+王一雪: 好的。 | Được.
+
+== text Bài khóa 2
+刘明: 我们找个时间去旅游，怎么样？ | Chúng ta tìm thời gian đi du lịch, em thấy thế nào?
+王一雪: 好啊，我也很想一起出去玩。 | Hay quá, em cũng rất muốn cùng đi chơi.
+刘明: 你想去哪儿？ | Em muốn đi đâu?
+王一雪: 我还没想好呢。 | Em vẫn chưa nghĩ ra.
+刘明: 那你再想一想，你想好了，我来买票。 | Vậy em nghĩ thêm đi, em nghĩ xong thì anh mua vé.
+
+== text Bài khóa 3
+刘明: 吃个苹果吧，我都洗好了。 | Ăn táo đi, anh rửa xong cả rồi.
+王一雪: 好的。 | Vâng.
+刘明: 就在桌子上，你自己拿。 | Ở ngay trên bàn, em tự lấy nhé.
+王一雪: 我去洗洗手。对了，我们去西安旅游，怎么样？ | Em đi rửa tay đã. À phải rồi, chúng ta đi Tây An du lịch, anh thấy sao?
+刘明: 为什么想去西安？ | Sao lại muốn đi Tây An?
+王一雪: 我看了看网上的介绍，这个时候去西安很不错。 | Em đã xem giới thiệu trên mạng, đi Tây An vào thời điểm này rất tuyệt.
+
+== text Bài khóa 4
+早上，刘明开车送孩子去学校，送完孩子回家后，医院就来电话了，让他回去上班。我觉得他这个月每天都很累，真想让他休息休息。 | Buổi sáng, Lưu Minh lái xe đưa con đến trường, đưa con xong về nhà thì bệnh viện gọi điện đến, bảo anh ấy quay lại làm việc. Tôi thấy tháng này ngày nào anh ấy cũng rất mệt, thật muốn để anh ấy nghỉ ngơi một chút.
+
+== sentences
+你 今天 几 点 回来 ？ | Hôm nay mấy giờ bạn về? | 回来 | 出去 回去 过来
+今天 回来 这么 晚 啊 ！ | Hôm nay về muộn thế! | 这么 | 为什么 什么 怎么
+工作 太 多 了 ， 我 还 没 做完 。 | Công việc nhiều quá, tôi vẫn chưa làm xong. | 做完 | 洗好 回去 出去
+他们 一起 去 打 篮球 了 。 | Họ cùng nhau đi chơi bóng rổ rồi. | 一起 | 自己 每 不错
+他们 出去 玩 了 。 | Họ ra ngoài chơi rồi. | 出去 | 回来 回去 过来
+去 洗洗 这 个 苹果 吧 。 | Đi rửa quả táo này đi. | 洗洗 | 拿拿 送送 试试
+这 本 书 是 我 自己 买 的 。 | Quyển sách này là tôi tự mua. | 自己 | 一起 每 为什么
+自己 的 东西 自己 拿 。 | Đồ của mình thì tự mình cầm. | 拿 | 洗 送 累
+弟弟 的 手 很 小 。 | Tay của em trai rất nhỏ. | 手 | 书 票 车
+你 为什么 今天 没 上班 ？ | Tại sao hôm nay bạn không đi làm? | 为什么 | 这么 什么 怎么样
+你 的 中文 很 不错 。 | Tiếng Trung của bạn khá tốt. | 不错 | 累 远 难
+妈妈 每天 都 送 我 去 学校 。 | Ngày nào mẹ cũng đưa tôi đến trường. | 送 | 拿 洗 接
+很 晚 了 ， 你 怎么 还 不 回去 ？ | Muộn rồi, sao bạn vẫn chưa về? | 回去 | 出去 过来 进去
+每 个 人 都 有 自己 喜欢 的 东西 。 | Mỗi người đều có thứ mình thích. | 每 | 这么 一起 为什么
+今天 工作 太 累 了 。 | Hôm nay làm việc mệt quá. | 累 | 不错 远 难
+菜 都 做好 了 ， 过来 吃饭 吧 。 | Cơm nấu xong cả rồi, lại đây ăn đi. | 做好 | 洗洗 回去 一起
+我 有点儿 累 ， 想 休息休息 。 | Tôi hơi mệt, muốn nghỉ ngơi một chút. | 休息休息 | 洗洗 试试 想想
+那 你 再 想一想 。 | Vậy bạn nghĩ thêm chút nữa đi. | 想一想 | 洗一洗 试一试 送一送
+我 也 很 想 一起 出去 玩 。 | Tôi cũng rất muốn cùng đi chơi. | 一起 | 自己 每 不错
+我 去 洗洗 手 。 | Tôi đi rửa tay. | 手 | 书 票 车
+就 在 桌子 上 ， 你 自己 拿 。 | Ở ngay trên bàn, bạn tự lấy nhé. | 自己 | 一起 每 这么
+你 为什么 想 去 西安 ？ | Tại sao bạn muốn đi Tây An? | 西安 | 北京 外国 网上
+这 个 时候 去 西安 很 不错 。 | Đi Tây An vào lúc này rất tuyệt. | 不错 | 累 远 难
+刘明 开车 送 孩子 去 学校 。 | Lưu Minh lái xe đưa con đến trường. | 送 | 拿 洗 帮
+医院 来 电话 ， 让 他 回去 上班 。 | Bệnh viện gọi điện, bảo anh ấy quay lại làm việc. | 回去 | 出去 过来 进去
+他 这 个 月 每 天 都 很 累 。 | Tháng này ngày nào anh ấy cũng rất mệt. | 累 | 不错 远 难
+我 看 了 看 网上 的 介绍 。 | Tôi đã xem qua giới thiệu trên mạng. | 介绍 | 意思 颜色 旅游
+他 走 那么 长 时间 ， 很 累 吧 ？ | Anh ấy đi lâu như vậy, chắc mệt lắm nhỉ? | 吧 | 呢 吗 啊
+你 吃完 饭 了 吗 ？ | Bạn ăn cơm xong chưa? | 吃完 | 洗好 送完 回去
+爸爸 拿 了 一些 水果 给 孩子们 吃 。 | Bố lấy một ít hoa quả cho bọn trẻ ăn. | 拿 | 洗 送 累

@@ -1,0 +1,104 @@
+id: 11
+title: 我头有点儿疼
+py: Wǒ tóu yǒu diǎnr téng
+vi: Tôi hơi đau đầu
+goal: Nói về sức khỏe, đi khám bệnh, thăm người ốm; dùng trợ từ động thái 着 và phó từ 最.
+slides: 11
+
+== vocab
+头 | tóu | danh từ | đầu | 你头怎么了？ | Đầu bạn làm sao thế?
+疼 | téng | tính từ | đau | 我头有点儿疼。 | Tôi hơi đau đầu.
+经常 | jīng cháng | phó từ | thường xuyên | 她经常喝奶茶。 | Cô ấy thường xuyên uống trà sữa.
+动 | dòng | động từ | động, cử động | 我一动就疼。 | Tôi cứ cử động là đau.
+着 | zhe | trợ từ | (biểu thị trạng thái đang tiếp diễn) | 那你在这儿坐着。 | Vậy bạn ngồi đây nhé.
+路上 | lù shang | danh từ | trên đường | 现在是上班时间，路上车很多。 | Bây giờ là giờ đi làm, trên đường rất nhiều xe.
+慢 | màn | tính từ | chậm | 你开车开慢点儿。 | Bạn lái xe chậm một chút.
+进 | jìn | động từ | vào | 您来了，快请进！ | Anh đến rồi, mời vào!
+药 | yào | danh từ | thuốc | 吃完药就休息吧。 | Uống thuốc xong thì nghỉ đi.
+身体 | shēn tǐ | danh từ | cơ thể, sức khỏe | 今天身体不舒服就休息休息吧。 | Hôm nay người không khỏe thì nghỉ ngơi đi.
+时 | shí | danh từ | lúc, khi | 吃饭时，他打来一个电话。 | Lúc ăn cơm, anh ấy gọi điện đến.
+最 | zuì | phó từ | nhất | 我最喜欢吃越南菜。 | Tôi thích ăn món Việt Nam nhất.
+药店 | yào diàn | danh từ | hiệu thuốc | 他去药店买了一些药。 | Anh ấy đến hiệu thuốc mua ít thuốc.
+
+== grammar
+## Trợ từ động thái 着
+着 đứng sau động từ, biểu thị hành động hoặc trạng thái đang tiếp diễn. Phủ định: 没(有) + Động từ + 着. Nếu có tân ngữ, tân ngữ đặt sau 着.
+f: Động từ + 着 + (Tân ngữ) · 没(有) + Động từ + 着
+ex: 教室的门开着。 | Cửa phòng học đang mở.
+ex: 现在外面下着雪，你别出门了。 | Bên ngoài đang có tuyết rơi, bạn đừng ra ngoài.
+ex: 她穿着白色的裤子。 | Cô ấy mặc chiếc quần màu trắng.
+## Câu hỏi với 着
+Có ba cách hỏi: thêm 吗; thêm 没有 cuối câu; hoặc dạng Động từ + 没 + Động từ + 着.
+f: …着吗？ · …着没有？ · Động từ + 没 + Động từ + 着
+ex: 教室的门开着吗？ | Cửa phòng học có mở không?
+ex: 白家月坐着没有？ | Bạch Gia Nguyệt có đang ngồi không?
+ex: 她拿没拿着手机？ | Cô ấy có cầm điện thoại không?
+## Phó từ chỉ mức độ 最
+最 đặt trước tính từ hoặc động từ tâm lý (喜欢, 想…), biểu thị mức độ cao nhất so với những người / vật cùng loại.
+f: 最 + Tính từ / Động từ tâm lý
+ex: 在我们家，爸爸最高。 | Trong nhà tôi, bố cao nhất.
+ex: 你最喜欢吃中国菜。 | Bạn thích ăn món Trung Quốc nhất.
+ex: 你们班谁说中文说得最好？ | Lớp các bạn ai nói tiếng Trung giỏi nhất?
+
+== text Bài khóa 1
+王一飞: 家月，都下课了，你怎么还不回家？ | Gia Nguyệt, tan học rồi, sao em vẫn chưa về nhà?
+白家月: 我头疼，不太舒服。 | Em đau đầu, thấy không khỏe lắm.
+王一飞: 你这几天经常头疼，去医院看看吧。 | Mấy hôm nay em thường xuyên đau đầu, đi bệnh viện khám xem.
+白家月: 我想休息一下，现在不能动，一动就疼。 | Em muốn nghỉ một chút, bây giờ không cử động được, cứ động là đau.
+王一飞: 那你在这儿坐着，我去开车，一会儿送你去医院。 | Vậy em ngồi đây nhé, cô đi lấy xe, lát nữa đưa em đi bệnh viện.
+白家月: 谢谢王老师。 | Em cảm ơn cô Vương.
+
+== text Bài khóa 2
+王一飞: 现在路上车多，还下着雪，我开慢一点儿。 | Bây giờ trên đường nhiều xe, lại đang có tuyết rơi, cô lái chậm một chút.
+白家月: 没问题，现在头没那么疼了。 | Không sao ạ, bây giờ đầu không đau lắm nữa.
+王一飞: 好。李文来电话了，你帮我接一下。 | Được. Lý Văn gọi điện đến, em nghe giúp cô nhé.
+白家月: 喂，李文。王老师开着车呢，你找她有事吗？ | A lô, Lý Văn. Cô Vương đang lái xe, bạn tìm cô có việc gì không?
+李文: 没什么事。今天雪这么大，你们开车去哪儿啊？ | Không có gì. Hôm nay tuyết to thế, các bạn lái xe đi đâu vậy?
+白家月: 去医院，我头有点儿疼。 | Đi bệnh viện, mình hơi đau đầu.
+李文: 那我一会儿去看看你。 | Vậy lát nữa mình đến thăm bạn.
+
+== text Bài khóa 3
+白家月: 李文，快请进！ | Lý Văn, mời vào!
+李文: 家月，你怎么样了？头还疼吗？ | Gia Nguyệt, bạn thế nào rồi? Đầu còn đau không?
+白家月: 不那么疼了。医生开了一些药，吃完就好多了。 | Không đau lắm nữa. Bác sĩ kê ít thuốc, uống xong đỡ nhiều rồi.
+李文: 那就好！ | Vậy thì tốt!
+王一飞: 家月，你想不想吃点儿东西？ | Gia Nguyệt, em có muốn ăn chút gì không?
+白家月: 吃点儿什么呢？ | Ăn gì bây giờ ạ?
+李文: 吃点儿吧，身体不舒服时更要好好吃饭。 | Ăn một chút đi, lúc người không khỏe càng phải ăn uống đầy đủ.
+王一飞: 你最喜欢吃中国菜，我做几个中国菜吧。 | Em thích ăn món Trung Quốc nhất, cô nấu mấy món Trung Quốc nhé.
+白家月: 好的，谢谢王老师。 | Vâng, em cảm ơn cô Vương.
+
+== text Bài khóa 4
+我这几天经常头疼，从药店买了点儿药，没去医院。今天下课后，王老师看我不舒服，就送我去医院了。从医院回来，李文也来看我了。现在他们都回去了，我也要睡觉了。 | Mấy hôm nay tôi thường xuyên đau đầu, mua ít thuốc ở hiệu thuốc, không đi bệnh viện. Hôm nay tan học, cô Vương thấy tôi không khỏe nên đưa tôi đi bệnh viện. Từ bệnh viện về, Lý Văn cũng đến thăm tôi. Bây giờ mọi người đều về cả rồi, tôi cũng phải đi ngủ đây.
+
+== sentences
+你 头 怎么 了 ？ | Đầu bạn làm sao thế? | 头 | 手 药 门
+我 头 有点儿 疼 。 | Tôi hơi đau đầu. | 疼 | 慢 坏 错
+她 经常 喝 奶茶 。 | Cô ấy thường xuyên uống trà sữa. | 经常 | 已经 一起 快要
+我 一 动 就 疼 。 | Tôi cứ cử động là đau. | 动 | 进 考 笑
+那 你 在 这儿 坐 着 。 | Vậy bạn ngồi đây nhé. | 着 | 过 了 得
+现在 是 上班 时间 ， 路上 车 很 多 。 | Bây giờ là giờ đi làm, trên đường rất nhiều xe. | 路上 | 网上 门口 旁边
+你 开车 开 慢 点儿 。 | Bạn lái xe chậm một chút. | 慢 | 疼 坏 错
+您 来 了 ， 快 请 进 ！ | Anh đến rồi, mời vào! | 进 | 动 考 笑
+吃完 药 就 休息 吧 。 | Uống thuốc xong thì nghỉ đi. | 药 | 头 手 门
+今天 身体 不 舒服 就 休息 吧 。 | Hôm nay người không khỏe thì nghỉ đi. | 身体 | 药店 路上 个子
+吃饭 时 ， 他 打来 一 个 电话 。 | Lúc ăn cơm, anh ấy gọi điện đến. | 时 | 周 次 点
+我 最 喜欢 吃 越南 菜 。 | Tôi thích ăn món Việt Nam nhất. | 最 | 更 比 还
+他 去 药店 买 了 一些 药 。 | Anh ấy đến hiệu thuốc mua ít thuốc. | 药店 | 饭馆 商场 酒店
+教室 的 门 开 着 。 | Cửa phòng học đang mở. | 着 | 过 了 得
+她 穿 着 白色 的 裤子 。 | Cô ấy mặc chiếc quần màu trắng. | 白色 | 手表 药店 身体
+你 这 几 天 经常 头疼 ， 去 医院 看看 吧 。 | Mấy hôm nay bạn thường xuyên đau đầu, đi bệnh viện khám xem. | 经常 | 已经 一起 快要
+现在 外面 下 着 雪 ， 你 别 出门 了 。 | Bên ngoài đang có tuyết rơi, bạn đừng ra ngoài. | 着 | 过 了 得
+王老师 开 着 车 呢 。 | Cô Vương đang lái xe. | 车 | 药 头 门
+路上 下 了 大 雪 ， 你 开 慢 点儿 。 | Trên đường tuyết rơi to, bạn lái chậm một chút. | 慢 | 疼 坏 错
+现在 头 没 那么 疼 了 。 | Bây giờ đầu không đau lắm nữa. | 疼 | 慢 坏 错
+医生 开 了 一些 药 。 | Bác sĩ kê ít thuốc. | 药 | 头 手 门
+身体 不 舒服 时 更 要 好好 吃饭 。 | Lúc người không khỏe càng phải ăn uống đầy đủ. | 时 | 周 次 点
+在 我们 家 ， 爸爸 最 高 。 | Trong nhà tôi, bố cao nhất. | 最 | 更 比 还
+医生 说 不 能 动 。 | Bác sĩ nói không được cử động. | 动 | 进 考 笑
+你 身体 好 多 了 吗 ？ | Bạn đã khỏe hơn nhiều chưa? | 身体 | 药店 路上 个子
+附近 有 个 药店 ， 我 常 去 那儿 买 药 。 | Gần đây có một hiệu thuốc, tôi thường đến đó mua thuốc. | 药店 | 饭馆 商场 酒店
+他 头 上 戴 着 一 个 帽子 。 | Anh ấy đội một chiếc mũ trên đầu. | 头 | 手 药 门
+我 来 接 你 的 路上 看见 一 个 老 朋友 。 | Trên đường đến đón bạn tôi gặp một người bạn cũ. | 路上 | 网上 门口 旁边
+你们 班 谁 说 中文 说 得 最 好 ？ | Lớp các bạn ai nói tiếng Trung giỏi nhất? | 最 | 更 比 还
+她 拿没拿着 手机 ？ | Cô ấy có cầm điện thoại không? | 手机 | 身体 药店 路上

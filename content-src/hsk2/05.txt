@@ -1,0 +1,105 @@
+id: 5
+title: 第一次去中国朋友家
+py: Dì yī cì qù Zhōng guó péng you jiā
+vi: Lần đầu đến nhà bạn người Trung Quốc
+goal: Đến thăm nhà bạn, tặng quà, giới thiệu người thân; dùng bổ ngữ xu hướng đơn (来/去) và cấu trúc 都……了.
+slides: 05
+
+== vocab
+快 | kuài | tính từ | nhanh, mau lên | 你快点儿吧，我在外面了。 | Bạn nhanh lên đi, tôi ở ngoài rồi.
+下来 | xià lai | động từ | xuống (đây) | 不早了，快下来吧。 | Không còn sớm nữa, mau xuống đây đi.
+上来 | shàng lai | động từ | lên (đây) | 还有时间，你上来吧。 | Vẫn còn thời gian, bạn lên đây đi.
+上去 | shàng qu | động từ | lên (đó) | 我不上去了。 | Tôi không lên đâu.
+下面 | xià miàn | danh từ | phía dưới, bên dưới | 小狗在桌子下面。 | Con chó nhỏ ở dưới gầm bàn.
+等 | děng | động từ | đợi, chờ | 我们在等公交车。 | Chúng tôi đang đợi xe buýt.
+一会儿 | yí huìr | danh từ | một lát, lát nữa | 让他们等一会儿吧。 | Bảo họ đợi một lát đi.
+下去 | xià qu | động từ | xuống (đó) | 你先下去，我马上就来。 | Bạn xuống trước đi, tôi đến ngay.
+进来 | jìn lai | động từ | vào (đây) | 快进来，我给你们介绍一下。 | Mau vào đây, tôi giới thiệu với các bạn.
+爷爷 | yé ye | danh từ | ông nội | 我常跟爷爷去超市买东西。 | Tôi thường cùng ông nội đi siêu thị mua đồ.
+奶奶 | nǎi nai | danh từ | bà nội | 我奶奶今年八十多了。 | Bà nội tôi năm nay hơn tám mươi tuổi rồi.
+礼物 | lǐ wù | danh từ | quà | 这是送你们的礼物。 | Đây là quà tặng các bạn.
+准备 | zhǔn bèi | động từ | chuẩn bị | 这是我给你准备的礼物。 | Đây là món quà tôi chuẩn bị cho bạn.
+奶茶 | nǎi chá | danh từ | trà sữa | 这杯奶茶非常好喝。 | Cốc trà sữa này rất ngon.
+跟 | gēn | giới từ | cùng, với | 我一会儿跟妈妈去商场。 | Lát nữa tôi cùng mẹ đi trung tâm thương mại.
+走 | zǒu | động từ | đi (bộ) | 我们走吧，到时间了。 | Chúng ta đi thôi, đến giờ rồi.
+酒店 | jiǔ diàn | danh từ | khách sạn | 今晚你住酒店还是朋友家？ | Tối nay bạn ở khách sạn hay nhà bạn?
+
+== grammar
+## Bổ ngữ xu hướng đơn: Động từ + 来 / 去
+来 chỉ hành động hướng về phía người nói; 去 chỉ hành động rời xa người nói. Động từ hay dùng: 上, 下, 进, 出, 回, 过; ngoài ra 拿, 送, 买, 走, 找… cũng có thể kết hợp với 来 / 去. 起来 chỉ đứng dậy hoặc hướng lên.
+f: Động từ + 来 / 去
+ex: 我不上去了，就在下面等你。 | Tôi không lên đâu, đợi bạn ở dưới.
+ex: 家月到下边了，你下去接她吧。 | Gia Nguyệt đến dưới rồi, bạn xuống đón cô ấy đi.
+ex: 今天早上五点她就起来了。 | Sáng nay năm giờ cô ấy đã dậy rồi.
+## Vị trí tân ngữ với bổ ngữ xu hướng
+Tân ngữ chỉ địa điểm phải đặt trước 来 / 去. Tân ngữ chỉ sự vật có thể đặt trước hoặc sau 来 / 去.
+f: Động từ + Địa điểm + 来 / 去 · Động từ + 来 / 去 + Sự vật
+ex: 上课了，你们快进教室来吧。 | Vào học rồi, các bạn mau vào lớp đi.
+ex: 你们太客气了，还拿这么多礼物来。 | Các bạn khách sáo quá, còn mang nhiều quà thế này.
+ex: 家月给我送来一本书。 | Gia Nguyệt mang đến cho tôi một quyển sách.
+## Cấu trúc 都……了
+都……了 nghĩa là "đã … rồi", nhấn mạnh thời gian / mức độ đã đến; thường kèm ý thúc giục hoặc phàn nàn nhẹ.
+f: 都 + Thời gian / Sự việc + 了
+ex: 都十二点了，我们吃饭吧。 | Đã mười hai giờ rồi, chúng ta ăn cơm thôi.
+ex: 都八点半了，你还不起床吗？ | Đã tám rưỡi rồi, bạn còn chưa dậy à?
+ex: 我都去过北京了，不想再去了。 | Tôi đi Bắc Kinh rồi, không muốn đi nữa.
+
+== text Bài khóa 1
+安妮: 家月，快下来吧，第一次去中国朋友家，别晚了。 | Gia Nguyệt, mau xuống đi, lần đầu đến nhà bạn Trung Quốc, đừng đến muộn.
+白家月: 还有时间，你上来吧。 | Vẫn còn thời gian, bạn lên đây đi.
+安妮: 我不上去了，就在下面等你。 | Mình không lên đâu, đợi bạn ở dưới.
+白家月: 那我一会儿就下去。 | Vậy lát nữa mình xuống.
+安妮: 你快点儿吧。 | Bạn nhanh lên nhé.
+白家月: 没事，一雪姐说十一点前到就可以。 | Không sao, chị Nhất Tuyết nói đến trước mười một giờ là được.
+
+== text Bài khóa 2
+王一雪: 家月、安妮，快进来！我给你们介绍一下，这是孩子们的爷爷、奶奶。 | Gia Nguyệt, Annie, mau vào đi! Chị giới thiệu với các em, đây là ông bà nội của bọn trẻ.
+王一雪: 爸、妈，这是白家月，这是安妮。她们都是一飞的学生。 | Bố, mẹ, đây là Bạch Gia Nguyệt, đây là Annie. Các em ấy đều là học sinh của Nhất Phi.
+白家月: 爷爷、奶奶，你们好！这是送你们的礼物。 | Cháu chào ông bà ạ! Đây là quà tặng ông bà.
+刘爷爷: 家月、安妮，你们好！你们太客气了，还拿这么多礼物来！ | Chào Gia Nguyệt, Annie! Các cháu khách sáo quá, còn mang nhiều quà thế này!
+白家月: 一雪姐，这是给孩子们准备的礼物。 | Chị Nhất Tuyết, đây là quà chuẩn bị cho các bé.
+王一雪: 谢谢！你们别客气，快坐吧！ | Cảm ơn em! Các em đừng khách sáo, mau ngồi đi!
+
+== text Bài khóa 3
+王一雪: 都十二点了，我们吃饭吧。 | Đã mười hai giờ rồi, chúng ta ăn cơm thôi.
+白家月: 这么多好吃的，您太客气了！ | Nhiều món ngon thế này, chị khách sáo quá!
+王一雪: 都是我自己做的，你们多吃点儿。 | Đều là chị tự nấu, các em ăn nhiều vào.
+白家月: 奶茶也很好喝，是您自己做的吗？ | Trà sữa cũng ngon quá, là chị tự làm ạ?
+王一雪: 不是，奶茶是爷爷买的。 | Không phải, trà sữa là ông mua.
+白家月: 在哪儿买的？我还没喝过这么好喝的奶茶。 | Mua ở đâu vậy ạ? Em chưa từng uống trà sữa nào ngon như thế.
+王一雪: 就在前边的商场，吃完饭你们可以跟我去看看。 | Ở ngay trung tâm thương mại phía trước, ăn xong các em có thể đi cùng chị xem.
+
+== text Bài khóa 4
+回国前一天，我们去一雪姐家了。到她家的时候，饭菜都做好了。刘爷爷还准备了奶茶。因为吃了太多东西，我们吃完饭是走回酒店的。 | Một ngày trước khi về nước, chúng tôi đến nhà chị Nhất Tuyết. Lúc đến nhà chị, cơm nước đã nấu xong cả. Ông Lưu còn chuẩn bị trà sữa. Vì ăn quá nhiều, ăn xong chúng tôi đi bộ về khách sạn.
+
+== sentences
+你 快 点儿 吧 ， 我 在 外面 了 。 | Bạn nhanh lên đi, tôi ở ngoài rồi. | 快 | 累 远 更
+不 早 了 ， 快 下来 吧 。 | Không còn sớm nữa, mau xuống đây đi. | 下来 | 上去 进去 回去
+还 有 时间 ， 你 上来 吧 。 | Vẫn còn thời gian, bạn lên đây đi. | 上来 | 下去 出去 回去
+我 不 上去 了 ， 就 在 下面 等 你 。 | Tôi không lên đâu, đợi bạn ở dưới. | 下面 | 网上 外国 教室
+我们 在 等 公交车 。 | Chúng tôi đang đợi xe buýt. | 等 | 送 拿 洗
+让 他们 等 一会儿 吧 。 | Bảo họ đợi một lát đi. | 一会儿 | 一起 有时 已经
+你 先 下去 ， 我 马上 就 来 。 | Bạn xuống trước đi, tôi đến ngay. | 下去 | 上来 进来 过来
+快 进来 ， 我 给 你们 介绍 一下 。 | Mau vào đây, tôi giới thiệu với các bạn. | 进来 | 下去 上去 出去
+我 常 跟 爷爷 去 超市 。 | Tôi thường cùng ông nội đi siêu thị. | 爷爷 | 礼物 酒店 奶茶
+我 奶奶 今年 八十 多 了 。 | Bà nội tôi năm nay hơn tám mươi tuổi rồi. | 奶奶 | 礼物 酒店 奶茶
+这 是 送 你们 的 礼物 。 | Đây là quà tặng các bạn. | 礼物 | 奶茶 酒店 爷爷
+这 是 我 给 你 准备 的 礼物 。 | Đây là món quà tôi chuẩn bị cho bạn. | 准备 | 介绍 旅游 帮忙
+这 杯 奶茶 非常 好喝 。 | Cốc trà sữa này rất ngon. | 奶茶 | 礼物 酒店 爷爷
+我 一会儿 跟 妈妈 去 商场 。 | Lát nữa tôi cùng mẹ đi trung tâm thương mại. | 跟 | 给 让 送
+我们 走 吧 ， 到 时间 了 。 | Chúng ta đi thôi, đến giờ rồi. | 走 | 等 拿 送
+今晚 你 住 酒店 还是 朋友 家 ？ | Tối nay bạn ở khách sạn hay nhà bạn? | 酒店 | 礼物 奶茶 商场
+都 十二 点 了 ， 我们 吃饭 吧 。 | Đã mười hai giờ rồi, chúng ta ăn cơm thôi. | 都 | 也 还 就
+家月 到 下边 了 ， 你 下去 接 她 吧 。 | Gia Nguyệt đến dưới rồi, bạn xuống đón cô ấy đi. | 下去 | 上来 进来 过来
+你们 太 客气 了 ， 还 拿 这么 多 礼物 来 。 | Các bạn khách sáo quá, còn mang nhiều quà thế này. | 礼物 | 奶茶 酒店 爷爷
+上课 了 ， 你们 快 进 教室 来 吧 。 | Vào học rồi, các bạn mau vào lớp đi. | 教室 | 酒店 商场 车站
+家月 给 我 送来 一 本 书 。 | Gia Nguyệt mang đến cho tôi một quyển sách. | 送来 | 下来 上来 进来
+今天 早上 五 点 她 就 起来 了 。 | Sáng nay năm giờ cô ấy đã dậy rồi. | 起来 | 下来 进来 回来
+都 八点半 了 ， 你 还 不 起床 吗 ？ | Đã tám rưỡi rồi, bạn còn chưa dậy à? | 起床 | 准备 等 走
+我 还 没 喝 过 这么 好喝 的 奶茶 。 | Tôi chưa từng uống trà sữa nào ngon như thế. | 奶茶 | 礼物 酒店 爷爷
+吃完 饭 你们 可以 跟 我 去 看看 。 | Ăn xong các bạn có thể đi cùng tôi xem. | 跟 | 给 让 送
+小狗 在 桌子 下面 。 | Con chó nhỏ ở dưới gầm bàn. | 下面 | 网上 外国 教室
+我们 是 走 回 酒店 的 。 | Chúng tôi đi bộ về khách sạn. | 走 | 等 拿 送
+刘爷爷 还 准备 了 奶茶 。 | Ông Lưu còn chuẩn bị trà sữa. | 准备 | 介绍 旅游 帮忙
+那 我 一会儿 就 下去 。 | Vậy lát nữa tôi xuống. | 一会儿 | 一起 有时 已经
+你 先 回去 吧 ， 不要 等 我 。 | Bạn về trước đi, đừng đợi tôi. | 等 | 送 拿 洗
