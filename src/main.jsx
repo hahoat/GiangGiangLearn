@@ -36,23 +36,14 @@ function useHashRoute() {
 
 /* ================= Khung trang ================= */
 
-function Header({ view, courses, courseId, onCourse, dueCount, onReview, onLesson, onSettings, onMenu, onLogin, user }) {
-  const groups = [...new Set(courses.map(c => c.group))]
+function Header({ view, dueCount, onReview, onLesson, onSettings, onMenu, onLogin, user }) {
   return <header className="header">
     <button className="icon-btn only-mobile" onClick={onMenu} aria-label="Danh sách bài">☰</button>
-    <a className="logo" href="#/"><span className="logo-mark">江</span><span><b>Giang Giang</b><small>Học tiếng Trung</small></span></a>
+    <a className="logo" href="#/"><span className="logo-mark">江</span><span><b>Tiếng Trung Giang Giang</b><small>Học tiếng Trung mỗi ngày</small></span></a>
     <nav className="main-nav">
       <button className={view === 'lesson' ? 'active' : ''} onClick={onLesson}>📖 <span>Bài học</span></button>
       <button className={view === 'review' ? 'active' : ''} onClick={onReview}>🔁 <span>Ôn tập</span>{dueCount > 0 && <i className="badge">{dueCount}</i>}</button>
     </nav>
-    <label className="level-select">
-      <span className="sr-only">Giáo trình</span>
-      <select value={courseId} onChange={e => onCourse(e.target.value)}>
-        {groups.map(g => <optgroup key={g} label={g}>
-          {courses.filter(c => c.group === g).map(c => <option key={c.id} value={c.id}>{c.label}{c.lessons.length ? '' : ' (sắp có)'}</option>)}
-        </optgroup>)}
-      </select>
-    </label>
     <button className="icon-btn" onClick={onSettings} aria-label="Cài đặt hiển thị" title="Cài đặt hiển thị">Aa</button>
     {syncEnabled && <button className={`icon-btn user-btn ${user ? 'in' : ''}`} onClick={onLogin} title={user ? user.email : 'Đăng nhập để đồng bộ tiến độ'}>
       {user ? (user.email?.[0] ?? '✓').toUpperCase() : <><span className="only-wide">Đăng nhập</span><span className="only-narrow">👤</span></>}
@@ -72,11 +63,24 @@ function TodayCard({ xp, goal, streak, dueCount, onReview }) {
   </section>
 }
 
-function Sidebar({ course, lessonId, progress, open, onClose, today, onPick }) {
+function LevelSelect({ courses, courseId, onCourse }) {
+  const groups = [...new Set(courses.map(c => c.group))]
+  return <label className="level-select">
+    <span>Cấp học</span>
+    <select value={courseId} onChange={e => onCourse(e.target.value)}>
+      {groups.map(g => <optgroup key={g} label={g}>
+        {courses.filter(c => c.group === g).map(c => <option key={c.id} value={c.id}>{c.label}{c.lessons.length ? '' : ' (sắp có)'}</option>)}
+      </optgroup>)}
+    </select>
+  </label>
+}
+
+function Sidebar({ course, lessonId, progress, open, onClose, today, levels, onPick }) {
   return <>
     <div className={`backdrop ${open ? 'show' : ''}`} onClick={onClose} />
     <aside className={`sidebar ${open ? 'open' : ''}`}>
       {today}
+      {levels}
       <div className="side-title"><span>{course.label} · {course.book}</span><small>{course.lessons.length ? `${course.lessons.length} bài` : ''}</small></div>
       {!course.lessons.length && <p className="side-empty">Giáo trình này đang được cập nhật. Hãy quay lại sau nhé!</p>}
       <ol className="lesson-list">
@@ -349,12 +353,12 @@ function App() {
 
   return <AppContext.Provider value={ctx}>
     <div className="app">
-      <Header view={view} courses={courses} courseId={course.id} user={user} dueCount={dueCount}
-        onCourse={id => { const c = courses.find(x => x.id === id); go(c.lessons.length ? `${id}/${c.lessons[0].id}/lecture` : id) }}
+      <Header view={view} user={user} dueCount={dueCount}
         onLesson={() => go(`${course.id}${validLesson ? `/${lessonId}/${stepId}` : ''}`)} onReview={() => go('review')}
         onSettings={() => setPanel('settings')} onLogin={() => setPanel('login')} onMenu={() => setMenuOpen(true)} />
       <div className="layout">
         <Sidebar course={course} lessonId={view === 'lesson' ? lessonId : null} progress={progress} open={menuOpen} onClose={() => setMenuOpen(false)} today={today}
+          levels={<LevelSelect courses={courses} courseId={course.id} onCourse={id => { const c = courses.find(x => x.id === id); go(c.lessons.length ? `${id}/${c.lessons[0].id}/lecture` : id) }} />}
           onPick={id => go(`${course.id}/${id}/lecture`)} />
         <main className="main">
           {view === 'review' ? <ReviewView onBack={() => go(course.id)} />

@@ -113,7 +113,8 @@ kbd { font-family: inherit; font-size: 11px; padding: 1px 6px; border-radius: 5p
 .main-nav button { position: relative; display: flex; align-items: center; gap: 6px; padding: 7px 14px; border-radius: 9px; font-size: 14px; font-weight: 600; color: var(--muted) }
 .main-nav button.active { background: var(--surface); color: var(--ink); box-shadow: var(--shadow) }
 .badge { font-style: normal; min-width: 20px; height: 20px; padding: 0 6px; border-radius: 99px; background: var(--brand); color: #fff; font-size: 11px; display: grid; place-items: center }
-.level-select select { height: 40px; padding: 0 12px; border-radius: 12px; border: 1px solid var(--line); background: var(--surface); font-weight: 600; font-size: 14px; cursor: pointer }
+.level-select { display: flex; align-items: center; gap: 10px; padding: 0 8px; margin-bottom: 18px; font-size: 13px; font-weight: 700 }
+.level-select select { flex: 1; height: 40px; padding: 0 12px; border-radius: 12px; border: 1px solid var(--line); background: var(--surface); font-weight: 600; font-size: 14px; cursor: pointer }
 
 /* ============ Bố cục ============ */
 .layout { display: grid; grid-template-columns: 300px minmax(0, 1fr) }
@@ -206,7 +207,11 @@ kbd { font-family: inherit; font-size: 11px; padding: 1px 6px; border-radius: 5p
 .flash-meaning { font-size: 20px; font-weight: 600 }
 .flash-ex { font-size: calc(18px * var(--hs)); color: var(--muted) }
 .grade-bar { margin-top: 16px }
-.grades { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px }
+.grades { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px }
+.flip-row { display: flex; gap: 8px }
+.flip-row .btn-block { flex: 1 }
+.skip-row { display: flex; justify-content: center; margin-top: 8px }
+.skip-btn { white-space: nowrap }
 .grade { position: relative; display: flex; flex-direction: column; align-items: center; padding: 10px 6px; border-radius: 12px; border: 1px solid var(--line); background: var(--surface); transition: transform .1s }
 .grade:hover { transform: translateY(-2px) }
 .grade b { font-size: 15px }
@@ -342,6 +347,11 @@ a.logo { color: inherit; text-decoration: none }
 .stage-sep { flex: 0 0 1px; align-self: stretch; margin: 6px 2px; background: var(--line) }
 
 .lecture-area { scroll-margin-top: 76px }
+.canva { display: flex; flex-direction: column; gap: 10px; background: var(--surface) }
+.canva-frame { position: relative; width: 100%; max-height: 70vh; aspect-ratio: 16 / 9; margin: 0 auto; border-radius: 10px; overflow: hidden; background: var(--surface-2) }
+.canva-frame iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0 }
+.canva:fullscreen { padding: 12px 16px; background: #111; color: #f1f1f1 }
+.canva:fullscreen .canva-frame { flex: 1; max-height: none; aspect-ratio: auto }
 .deck-tabs { display: flex; gap: 6px; margin-bottom: 12px; flex-wrap: wrap }
 .deck-tabs button { padding: 7px 14px; border-radius: 10px; border: 1px solid var(--line); background: var(--surface); font-size: 13px; font-weight: 600 }
 .deck-tabs button small { margin-left: 6px; font-weight: 400; color: var(--muted) }
@@ -415,7 +425,6 @@ a.btn { text-decoration: none }
   .logo small, .logo b { display: none }
   .main-nav button { padding: 7px 10px }
   .main-nav button span { display: none }
-  .level-select select { max-width: 92px; padding: 0 6px }
   .main { padding: 14px 12px 110px }
   .lesson-head h1 { font-size: calc(30px * var(--hs)) }
   .meta-ring { width: 54px; height: 54px }
@@ -429,7 +438,8 @@ a.btn { text-decoration: none }
   .vocab-han { flex-basis: 76px; font-size: calc(26px * var(--hs)) }
   .flash-inner { height: 280px }
   .flash-han { font-size: calc(76px * var(--hs)) }
-  .grades { grid-template-columns: repeat(2, 1fr) }
+  .grades { grid-template-columns: repeat(3, 1fr) }
+  .grade b { font-size: 13px }
   .bubble-row { max-width: 100% }
   .choices { grid-template-columns: repeat(2, 1fr) }
   .choices, .bank, .hint, .fill-row, .feedback, .quiz > .link { margin-left: 0 }

@@ -1,0 +1,26 @@
+{
+ "id": "hsk-1-thanh-mau-van-mau",
+ "title": "HSK 1 Thanh Mẫu + Vận Mẫu",
+ "level": "hsk1",
+ "width": 1280,
+ "slides": [
+  {
+   "img": "001.webp",
+   "thumb": "thumbs/001.webp"
+  },
+  {
+   "img": "002.webp",
+   "thumb": "thumbs/002.webp"
+  },
+  {
+   "img": "003.webp",
+   "thumb": "thumbs/003.webp"
+  },
+  {
+   "img": "004.webp",
+   "thumb": "thumbs/004.webp"
+  }
+ ],
+ "audioAligned": true,
+ "videosNotExported": []
+}

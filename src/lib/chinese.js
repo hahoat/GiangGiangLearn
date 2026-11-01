@@ -62,10 +62,9 @@ export function segment(text) {
 const DAY = 24 * 60 * 60 * 1000
 
 export const grades = [
-  { id: 'again', label: 'Quên', key: '1' },
-  { id: 'hard', label: 'Khó', key: '2' },
-  { id: 'good', label: 'Nhớ', key: '3' },
-  { id: 'easy', label: 'Dễ', key: '4' }
+  { id: 'again', label: 'Chưa nhớ', key: '1' },
+  { id: 'hard', label: 'Không chắc', key: '2' },
+  { id: 'good', label: 'Đã nhớ', key: '3' }
 ]
 
 // Trả về trạng thái mới của thẻ sau khi người học tự đánh giá.

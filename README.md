@@ -23,7 +23,7 @@ Cần Node.js ≥ 20.19 và pnpm 9. Mở địa chỉ Vite hiển thị trong te
 
 - Pinyin hiển thị phía trên chữ Hán, tô màu theo thanh điệu (bật/tắt được).
 - Chạm vào bất kỳ từ nào trong hội thoại, bài khóa, ví dụ để xem nghĩa, nghe phát âm, thêm vào bộ ôn tập.
-- Thẻ nhớ có lặp lại ngắt quãng (SRS): tự chấm Quên/Khó/Nhớ/Dễ, hệ thống tự hẹn ngày ôn lại. Mặt trước không tô màu để không lộ thanh điệu.
+- Thẻ nhớ có lặp lại ngắt quãng (SRS): tự chấm Chưa nhớ/Không chắc/Đã nhớ (có nút “Từ khác” để bỏ qua), hệ thống tự hẹn ngày ôn lại. Mặt trước không tô màu để không lộ thanh điệu.
 - Trang Ôn tập riêng cho các thẻ đến hạn, có phím tắt (Space, 1–4).
 - Bài tập phản hồi ngay sau mỗi câu, có đáp án đúng và câu hoàn chỉnh để nghe lại.
 - Mục tiêu XP mỗi ngày và chuỗi ngày học liên tiếp.

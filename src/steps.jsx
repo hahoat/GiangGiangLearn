@@ -6,9 +6,9 @@ import { PinyinText, Sentence, SpeakButton, StepHead, Translation, Word, useApp,
 
 export const steps = [
   { id: 'lecture', stage: 'Bài giảng', label: 'Bài giảng', icon: '🎞️' },
-  { id: 'flashcard', stage: 'Ôn tập', label: 'Flashcard', icon: '🃏' },
   { id: 'grammar', stage: 'Ôn tập', label: 'Ngữ pháp', icon: '🧩' },
   { id: 'vocab', stage: 'Ôn tập', label: 'Từ vựng', icon: '📝' },
+  { id: 'flashcard', stage: 'Ôn tập', label: 'Flashcard', icon: '🃏' },
   { id: 'reading', stage: 'Thực hành', label: 'Bài khóa', icon: '📜' },
   { id: 'choice', stage: 'Thực hành', label: 'Chọn đáp án', icon: '✅' },
   { id: 'order', stage: 'Thực hành', label: 'Sắp xếp câu', icon: '🔀' },
@@ -38,6 +38,7 @@ export function LectureStep({ course, lesson, onDone }) {
   }, [course, lesson])
 
   const head = <StepHead title="Bài giảng" desc="Xem slide bài giảng của giáo viên. Dùng phím ← → để chuyển slide, bấm ▶ để nghe âm thanh." />
+  if (lesson.canva) return <>{head}<CanvaViewer src={lesson.canva} onDone={onDone} /></>
   if (!lesson.decks.length || (manifests && manifests.every(m => !m))) {
     return <>{head}<div className="empty-state small"><span className="big">🎞️</span><p>Bài giảng của bài này đang được cập nhật.</p></div></>
   }
@@ -55,6 +56,21 @@ export function LectureStep({ course, lesson, onDone }) {
       : <div className="empty-state small"><p>Phần này đang được cập nhật.</p></div>}
     </div>
   </>
+}
+
+function CanvaViewer({ src, onDone }) {
+  const box = useRef(null)
+  const fullscreen = () => (document.fullscreenElement ? document.exitFullscreen() : box.current?.requestFullscreen?.())?.catch?.(() => {})
+  return <div className="lecture-area canva" ref={box}>
+    <div className="canva-frame"><iframe src={src} title="Bài giảng Canva" loading="lazy" allow="fullscreen" allowFullScreen /></div>
+    <div className="slide-bar">
+      <span className="slide-note">Bấm vào slide hoặc dùng mũi tên trong khung để chuyển trang</span>
+      <span className="spacer" />
+      <a className="btn btn-ghost btn-sm" href={src.replace('?embed', '')} target="_blank" rel="noreferrer">Mở trên Canva ↗</a>
+      <button className="btn btn-ghost btn-sm" onClick={fullscreen} title="Toàn màn hình" aria-label="Toàn màn hình"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" strokeWidth="1.8"><path d="M1 5V1h4M9 1h4v4M13 9v4H9M5 13H1V9" /></svg></button>
+      <button className="btn btn-primary btn-sm" onClick={onDone}>Xong bài giảng ✓</button>
+    </div>
+  </div>
 }
 
 function SlideViewer({ course, manifest, onEnd, last }) {
@@ -140,17 +156,18 @@ function SlideViewer({ course, manifest, onEnd, last }) {
 
 /* ================= Ôn tập ================= */
 
-function useCardKeys(flipped, setFlipped, grade) {
+function useCardKeys(flipped, setFlipped, grade, skip) {
   useEffect(() => {
     const onKey = e => {
       if (isTyping(e)) return
       if (e.key === ' ' || e.key === 'Enter') { e.preventDefault(); setFlipped(f => !f) }
       const g = grades.find(x => x.key === e.key)
       if (g && flipped) grade(g.id)
+      if (e.key === 'ArrowRight' && skip) skip()
     }
     window.addEventListener('keydown', onKey)
     return () => window.removeEventListener('keydown', onKey)
-  }, [flipped, setFlipped, grade])
+  }, [flipped, setFlipped, grade, skip])
 }
 
 function CardView({ card, flipped, setFlipped }) {
@@ -172,14 +189,20 @@ function CardView({ card, flipped, setFlipped }) {
   </div>
 }
 
-function GradeBar({ entry, flipped, setFlipped, grade }) {
-  if (!flipped) return <div className="grade-bar"><button className="btn btn-primary btn-block" onClick={() => setFlipped(true)}>Lật thẻ</button></div>
-  return <div className="grade-bar grades">
-    {grades.map(g => <button key={g.id} className={`grade ${g.id}`} onClick={() => grade(g.id)}>
-      <b>{g.label}</b><small>{intervalLabel(entry, g.id)}</small><kbd>{g.key}</kbd>
-    </button>)}
+function GradeBar({ entry, flipped, setFlipped, grade, skip }) {
+  const skipBtn = skip && <button className="btn btn-ghost skip-btn" onClick={skip} title="Bỏ qua, chưa chấm từ này (phím →)">Từ khác →</button>
+  if (!flipped) return <div className="grade-bar flip-row"><button className="btn btn-primary btn-block" onClick={() => setFlipped(true)}>Lật thẻ</button>{skipBtn}</div>
+  return <div className="grade-bar">
+    <div className="grades">
+      {grades.map(g => <button key={g.id} className={`grade ${g.id}`} onClick={() => grade(g.id)}>
+        <b>{g.label}</b><small>{intervalLabel(entry, g.id)}</small><kbd>{g.key}</kbd>
+      </button>)}
+    </div>
+    {skipBtn && <div className="skip-row">{skipBtn}</div>}
   </div>
 }
+
+const keyHelp = <p className="kbd-help">Phím tắt: <kbd>Space</kbd> lật thẻ · <kbd>1</kbd>–<kbd>3</kbd> tự chấm · <kbd>→</kbd> từ khác</p>
 
 export function FlashcardStep({ lesson, onDone }) {
   const { srs, rate } = useApp()
@@ -192,13 +215,14 @@ export function FlashcardStep({ lesson, onDone }) {
     setFlipped(false)
     if (i + 1 < cards.length) setI(i + 1); else onDone()
   }, [card, cards.length, i, onDone, rate])
-  useCardKeys(flipped, setFlipped, grade)
+  const skip = useCallback(() => { setFlipped(false); setI(n => (n + 1) % cards.length) }, [cards.length])
+  useCardKeys(flipped, setFlipped, grade, skip)
   return <>
-    <StepHead title="Flashcard" desc="Mặt trước là chữ Hán. Tự nhớ cách đọc và nghĩa, lật thẻ để xem pinyin + nghĩa, nghe cách đọc rồi tự chấm. Từ chấm “Quên/Khó” sẽ quay lại sớm trong trang Ôn tập."><span className="counter">{i + 1}/{cards.length}</span></StepHead>
+    <StepHead title="Flashcard" desc="Mặt trước là chữ Hán. Tự nhớ cách đọc và nghĩa, lật thẻ để xem pinyin + nghĩa, nghe cách đọc rồi tự chấm. Từ chấm “Chưa nhớ/Không chắc” sẽ quay lại sớm trong trang Ôn tập."><span className="counter">{i + 1}/{cards.length}</span></StepHead>
     <div className="progress-line"><i style={{ width: `${(i / cards.length) * 100}%` }} /></div>
     <CardView card={card} flipped={flipped} setFlipped={setFlipped} />
-    <GradeBar entry={srs[card.han]} flipped={flipped} setFlipped={setFlipped} grade={grade} />
-    <p className="kbd-help">Phím tắt: <kbd>Space</kbd> lật thẻ · <kbd>1</kbd>–<kbd>4</kbd> tự chấm</p>
+    <GradeBar entry={srs[card.han]} flipped={flipped} setFlipped={setFlipped} grade={grade} skip={cards.length > 1 ? skip : null} />
+    {keyHelp}
   </>
 }
 
@@ -391,7 +415,8 @@ export function ReviewView({ onBack }) {
     setFlipped(false)
     setQueue(q => (g === 'again' ? [...q.slice(1), q[0]] : q.slice(1)))
   }, [card, rate])
-  useCardKeys(flipped, setFlipped, grade)
+  const skip = useCallback(() => { setFlipped(false); setQueue(q => [...q.slice(1), q[0]]) }, [])
+  useCardKeys(flipped, setFlipped, grade, skip)
   const learned = Object.values(srs).filter(e => e.card).length
   if (!card) return <div className="lesson"><section className="step-card empty-state">
     <span className="big">{learned ? '🎉' : '🃏'}</span>
@@ -404,8 +429,8 @@ export function ReviewView({ onBack }) {
     <section className="step-card">
       <div className="progress-line"><i style={{ width: `${(reviewed / (reviewed + queue.length)) * 100}%` }} /></div>
       <CardView card={card} flipped={flipped} setFlipped={setFlipped} />
-      <GradeBar entry={entry} flipped={flipped} setFlipped={setFlipped} grade={grade} />
-      <p className="kbd-help">Phím tắt: <kbd>Space</kbd> lật thẻ · <kbd>1</kbd>–<kbd>4</kbd> tự chấm</p>
+      <GradeBar entry={entry} flipped={flipped} setFlipped={setFlipped} grade={grade} skip={queue.length > 1 ? skip : null} />
+      {keyHelp}
     </section>
   </div>
 }

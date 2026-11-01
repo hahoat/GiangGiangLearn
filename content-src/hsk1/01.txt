@@ -2,10 +2,16 @@ id: 1
 title: 你好
 py: Nǐ hǎo
 vi: Xin chào
-goal: Nắm cấu tạo âm tiết và 4 thanh điệu; biết chào hỏi, cảm ơn, tạm biệt và dùng các đại từ nhân xưng.
-slides: HSK 1 BUỔI 1; HSK 1 BUỔI 2; HSK 1 BUỔI 5
+goal: Nắm cấu tạo âm tiết (21 thanh mẫu, 36 vận mẫu, 4 thanh điệu); biết chào hỏi, cảm ơn, tạm biệt và dùng các đại từ nhân xưng.
+slides: HSK 1 Thanh Mẫu + Vận Mẫu
+canva: https://www.canva.com/design/DAHWpmFYGkU/NcHoPsbIdaybz6YgzeDYBA/view?embed
 
 == vocab
+# Thuật ngữ ngữ âm (lấy từ slide Thanh mẫu + Vận mẫu)
+声母 | shēng mǔ | danh từ | thanh mẫu (phụ âm đầu) | b、p、m、f 是声母。 | b, p, m, f là thanh mẫu.
+韵母 | yùn mǔ | danh từ | vận mẫu (phần vần) | a、o、e 是韵母。 | a, o, e là vận mẫu.
+声调 | shēng diào | danh từ | thanh điệu | 你好 | Xin chào (nǐ hǎo: hai thanh 3)
+拼音 | pīn yīn | danh từ | phiên âm pinyin | 你好 | nǐ hǎo là pinyin của 你好
 你 | nǐ | đại từ | bạn, anh, chị | 你好！ | Xin chào!
 我 | wǒ | đại từ | tôi | 我是学生。 | Tôi là học sinh.
 您 | nín | đại từ | ông, bà, ngài (kính trọng) | 您好！ | Chào ông/bà!
@@ -26,6 +32,27 @@ slides: HSK 1 BUỔI 1; HSK 1 BUỔI 2; HSK 1 BUỔI 5
 再见 | zài jiàn | động từ | tạm biệt, hẹn gặp lại | 老师，再见！ | Tạm biệt thầy/cô!
 
 == grammar
+## Cấu tạo âm tiết
+Mỗi âm tiết tiếng Hán gồm 3 phần: thanh mẫu (声母, phụ âm đầu), vận mẫu (韵母, phần vần) và thanh điệu (声调, dấu thanh).
+Tiếng Hán có tổng cộng 21 thanh mẫu, 36 vận mẫu và 4 thanh điệu cơ bản.
+f: Thanh mẫu + Vận mẫu + Thanh điệu
+ex: 你 | n (thanh mẫu) + i (vận mẫu) + thanh 3 → nǐ
+ex: 好 | h (thanh mẫu) + ao (vận mẫu) + thanh 3 → hǎo
+## 21 thanh mẫu
+Hàng 1: b  p  m  f  d  t  n  l
+Hàng 2: g  k  h  j  q  x
+Hàng 3: zh  ch  sh  r  z  c  s
+ex: 老师 | l + ao → lǎo · sh + i → shī
+ex: 谢谢 | x + ie → xiè
+ex: 再见 | z + ai → zài · j + ian → jiàn
+## 36 vận mẫu
+Vận mẫu đơn và kép: a  o  e  ai  ei  ao  ou  an  en  ang  eng  ong
+Bắt đầu bằng i: i  ia  ie  iao  iou (iu)  ian  in  iang  ing  iong
+Bắt đầu bằng u: u  ua  uo  uai  uei (ui)  uan  uen (un)  uang  ueng
+Bắt đầu bằng ü: ü  üe  üan  ün · Vận mẫu đặc biệt: er
+Khi có thanh mẫu đứng trước, iou viết gọn thành iu, uei thành ui, uen thành un.
+ex: 我 | không có thanh mẫu, vận mẫu uo → viết thành wǒ
+ex: 谢谢 | vận mẫu ie → xiè
 ## Thanh điệu và biến điệu thanh 3
 Tiếng Trung có 4 thanh chính và thanh nhẹ: ā (thanh 1 – cao, bằng), á (thanh 2 – đi lên), ǎ (thanh 3 – xuống rồi lên), à (thanh 4 – đi xuống).
 Khi hai thanh 3 đi liền nhau, thanh 3 đứng trước được đọc thành thanh 2 (chữ viết vẫn giữ dấu thanh 3).

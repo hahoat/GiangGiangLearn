@@ -8,6 +8,7 @@
     vi: Tôi là người Trung Quốc
     goal: Mục tiêu bài học
     slides: 03 我是中国人            (tên deck slide, nhiều deck cách nhau bởi ;)
+    canva: https://www.canva.com/design/<mã>/<mã>/view   (tùy chọn: bài giảng là thiết kế Canva, thay cho slide)
 
     == vocab
     中文 | Zhōng wén | danh từ | tiếng Trung | 他是中文老师。 | Anh ấy là giáo viên tiếng Trung.
@@ -131,6 +132,19 @@ def deck_slug(name):
     return re.sub(r'[^a-z0-9]+', '-', ascii_name.lower()).strip('-') or 'deck'
 
 
+def canva_embed(url, where):
+    """Link xem / nhúng của Canva → link nhúng '.../view?embed'. Không nhận link chỉnh sửa."""
+    m = re.match(r'^https://www\.canva\.com/design/([\w-]+)/([\w-]+)/(view|edit|watch)\b', url)
+    if not m:
+        err(where, f'link Canva không đúng dạng https://www.canva.com/design/…/view: {url}')
+        return ''
+    if m.group(3) == 'edit':
+        err(where, 'đây là link CHỈNH SỬA của Canva – đưa lên web thì ai cũng sửa được thiết kế. '
+                   'Trong Canva chọn Chia sẻ → Xem thêm → Nhúng (hoặc "Link chỉ xem") và dán link đó.')
+        return ''
+    return f'https://www.canva.com/design/{m.group(1)}/{m.group(2)}/view?embed'
+
+
 def build_practice(lesson, where):
     s = lesson.pop('sentences')
     if len(s) != 30:
@@ -193,6 +207,8 @@ def main():
                     lesson = parse_lesson(os.path.join(folder, f))
                     lesson['id'] = int(lesson['id'])
                     lesson['decks'] = [deck_slug(n) for n in lesson.pop('slides', '').split(';') if n.strip()]
+                    if lesson.get('canva'):
+                        lesson['canva'] = canva_embed(lesson['canva'], f'{course["id"]}/{f}')
                     build_practice(lesson, f'{course["id"]}/{f}')
                     lessons.append(lesson)
                     for v in lesson['vocab']:
