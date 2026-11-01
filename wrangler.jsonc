@@ -1,0 +1,7 @@
+// Cấu hình Cloudflare Workers: chỉ phục vụ file tĩnh trong dist/ (sau khi chạy pnpm build).
+// "name" phải trùng tên project trên Cloudflare.
+{
+  "name": "gianggianglearn",
+  "compatibility_date": "2025-09-01",
+  "assets": { "directory": "./dist" }
+}
